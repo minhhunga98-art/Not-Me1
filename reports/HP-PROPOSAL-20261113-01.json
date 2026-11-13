@@ -1,6 +1,6 @@
 {
   "report_id": "HP-PROPOSAL-20261113-01",
-  "generated_at": "2026-11-13 08:42:04",
+  "generated_at": "2026-11-13 08:57:30",
   "company_name": "Công ty Cổ phần Công nghệ Hưng Phát",
   "solution_name": "Hưng Phát Smart WMS (Hệ thống Quản lý Kho Chuỗi Bán Lẻ)",
   "selected_provinces": [
@@ -99,19 +99,19 @@
   "audit_trail_summary": {
     "total_audit_logs": 2,
     "doc_ids_referenced": [
-      "DOC-HP-003",
-      "DOC-HP-007",
-      "DOC-HP-004",
-      "DOC-HP-006",
-      "DOC-HP-008",
-      "DOC-HP-002",
       "DOC-HP-001",
+      "DOC-HP-008",
+      "DOC-HP-006",
+      "DOC-HP-003",
+      "DOC-HP-002",
+      "DOC-HP-004",
+      "DOC-HP-007",
       "DOC-HP-005"
     ],
     "audit_logs": [
       {
-        "log_id": "LOG-1794534124",
-        "timestamp": "2026-11-13 08:42:04",
+        "log_id": "LOG-1794535050",
+        "timestamp": "2026-11-13 08:57:30",
         "actor": "Nguyễn Văn Hùng - Trưởng phòng PTKD",
         "action": "MANAGER_REQUEST_RECALIBRATION",
         "target_province": "ALL",
@@ -163,8 +163,8 @@
         "justification": "Cần ưu tiên tối đa tối ưu chi phí phục vụ gần hub kỹ thuật để bảo toàn dòng tiền."
       },
       {
-        "log_id": "LOG-1794534124",
-        "timestamp": "2026-11-13 08:42:04",
+        "log_id": "LOG-1794535050",
+        "timestamp": "2026-11-13 08:57:30",
         "actor": "Nguyễn Văn Hùng - Trưởng phòng PTKD",
         "action": "MANAGER_CONFIRM_SHORTLIST",
         "target_province": "Bắc Ninh,Hải Phòng",

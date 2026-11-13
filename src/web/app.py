@@ -27,9 +27,14 @@ class HungPhatWebHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.end_headers()
-            index_path = TEMPLATE_DIR / "index.html"
-            with open(index_path, "rb") as f:
-                self.wfile.write(f.read())
+            root_index = Path("c:/Agent/index.html")
+            if root_index.exists():
+                with open(root_index, "rb") as f:
+                    self.wfile.write(f.read())
+            else:
+                index_path = TEMPLATE_DIR / "index.html"
+                with open(index_path, "rb") as f:
+                    self.wfile.write(f.read())
             return
 
         elif path == "/static/glass-tokens.css":

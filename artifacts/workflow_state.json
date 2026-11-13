@@ -1,6 +1,6 @@
 {
-  "workflow_id": "WF-HP-20261113083138",
-  "current_step": "Task_CostToServe",
+  "workflow_id": "WF-HP-20261113085730",
+  "current_step": "Task_CleanData",
   "current_swimlane": "LANE_1_AI_AGENT",
   "company_profile": {
     "company_name": "Công ty Cổ phần Công nghệ Hưng Phát",
@@ -350,33 +350,15 @@
   "audit_logs": [],
   "history": [
     {
-      "timestamp": "2026-11-13 08:31:38",
+      "timestamp": "2026-11-13 08:57:30",
       "node": "INITIALIZE",
       "message": "Khởi tạo hệ thống workflow BPMN 2.0 Công ty Hưng Phát.",
       "swimlane": "LANE_1_AI_AGENT"
     },
     {
-      "timestamp": "2026-11-13 08:47:31",
+      "timestamp": "2026-11-13 08:57:30",
       "node": "Task_CleanData",
       "message": "Hoàn tất chuẩn hóa số liệu và cấp Doc_ID.",
-      "swimlane": "LANE_1_AI_AGENT"
-    },
-    {
-      "timestamp": "2026-11-13 08:47:32",
-      "node": "Task_FitAnalysis",
-      "message": "Hoàn tất ma trận PMF và kiểm tra ngưỡng sàn SLA.",
-      "swimlane": "LANE_1_AI_AGENT"
-    },
-    {
-      "timestamp": "2026-11-13 08:47:32",
-      "node": "Gateway_HurdleRate",
-      "message": "Phát hiện địa bàn vượt năng lực hỗ trợ tại chỗ -> Kích hoạt nhánh Task 1.3a Cost-to-Serve.",
-      "swimlane": "LANE_1_AI_AGENT"
-    },
-    {
-      "timestamp": "2026-11-13 08:47:32",
-      "node": "Task_CostToServe",
-      "message": "Hoàn tất tính chi phí thuê ngoài và áp Score Cap.",
       "swimlane": "LANE_1_AI_AGENT"
     }
   ],
@@ -460,7 +442,7 @@
       "verification_hash": "e4a49577-5f6"
     }
   ],
-  "clean_dataset_artifact": "c:\\Agent\\artifacts\\clean_dataset.json",
+  "clean_dataset_artifact": "C:\\Agent\\artifacts\\clean_dataset.json",
   "discarded_data": [
     {
       "raw_id": "RAW-002",
@@ -477,83 +459,5 @@
       "province": "Cần Thơ",
       "reason": "Nguồn thứ cấp/sao chép (Diễn đàn Kinh tế Tây Nam). Ghi chú: Dữ liệu lạc hậu năm 2023, đã có số liệu chính thống 2026 từ ĐH Cần Thơ."
     }
-  ],
-  "fit_feasibility_records": [
-    {
-      "province": "Bắc Ninh",
-      "doc_id_market": "DOC-HP-001",
-      "doc_id_feedback": "DOC-HP-005",
-      "feature_match_pct": 88.0,
-      "switching_barrier": "LOW_TO_MEDIUM",
-      "readiness_score": 85.0,
-      "distance_km": 40,
-      "travel_time_hours": 0.8,
-      "meets_direct_sla": true,
-      "hurdle_status": "PASS",
-      "rationale": "Độ khớp PMF đạt 88.0%. Rào cản chuyển đổi: LOW_TO_MEDIUM (Điểm sẵn sàng: 85.0/100). Khoảng cách tới hub kỹ thuật: 40km (0.8h di chuyển). Trạng thái SLA trực tiếp 4h: Đạt.",
-      "assigned_hub": "HUB-HN"
-    },
-    {
-      "province": "Hải Phòng",
-      "doc_id_market": "DOC-HP-002",
-      "doc_id_feedback": "DOC-HP-006",
-      "feature_match_pct": 92.0,
-      "switching_barrier": "MEDIUM_HIGH",
-      "readiness_score": 75.0,
-      "distance_km": 120,
-      "travel_time_hours": 1.75,
-      "meets_direct_sla": true,
-      "hurdle_status": "PASS",
-      "rationale": "Độ khớp PMF đạt 92.0%. Rào cản chuyển đổi: MEDIUM_HIGH (Điểm sẵn sàng: 75.0/100). Khoảng cách tới hub kỹ thuật: 120km (1.75h di chuyển). Trạng thái SLA trực tiếp 4h: Đạt.",
-      "assigned_hub": "HUB-HN"
-    },
-    {
-      "province": "Đà Nẵng",
-      "doc_id_market": "DOC-HP-003",
-      "doc_id_feedback": "DOC-HP-007",
-      "feature_match_pct": 74.0,
-      "switching_barrier": "MEDIUM",
-      "readiness_score": 68.0,
-      "distance_km": 760,
-      "travel_time_hours": 8.5,
-      "meets_direct_sla": false,
-      "hurdle_status": "FAIL_CAPACITY",
-      "rationale": "Độ khớp PMF đạt 74.0%. Rào cản chuyển đổi: MEDIUM (Điểm sẵn sàng: 68.0/100). Khoảng cách tới hub kỹ thuật: 760km (8.5h di chuyển). Trạng thái SLA trực tiếp 4h: Vượt năng lực hỗ trợ tại chỗ.",
-      "assigned_hub": null
-    },
-    {
-      "province": "Cần Thơ",
-      "doc_id_market": "DOC-HP-004",
-      "doc_id_feedback": "DOC-HP-008",
-      "feature_match_pct": 86.0,
-      "switching_barrier": "VERY_LOW",
-      "readiness_score": 92.0,
-      "distance_km": 160,
-      "travel_time_hours": 2.0,
-      "meets_direct_sla": true,
-      "hurdle_status": "PASS",
-      "rationale": "Độ khớp PMF đạt 86.0%. Rào cản chuyển đổi: VERY_LOW (Điểm sẵn sàng: 92.0/100). Khoảng cách tới hub kỹ thuật: 160km (2.0h di chuyển). Trạng thái SLA trực tiếp 4h: Đạt.",
-      "assigned_hub": "HUB-HCM"
-    }
-  ],
-  "gateway_1_routing": {
-    "Bắc Ninh": "DIRECT_TO_SCORING (Task 1.4)",
-    "Hải Phòng": "DIRECT_TO_SCORING (Task 1.4)",
-    "Đà Nẵng": "ROUTE_TO_COST_ANALYZER (Task 1.3a)",
-    "Cần Thơ": "DIRECT_TO_SCORING (Task 1.4)"
-  },
-  "fit_feasibility_artifact": "c:\\Agent\\artifacts\\fit_feasibility_matrix.json",
-  "cost_to_serve_records": {
-    "Đà Nẵng": {
-      "province": "Đà Nẵng",
-      "is_capped": true,
-      "score_cap": 80.0,
-      "outsourced_partner_monthly_vnd": 18000000,
-      "quarterly_trip_vnd": 6000000,
-      "annual_extra_cost_vnd": 240000000,
-      "margin_impact_pct": -12.5,
-      "mitigation_strategy": "Phải thiết lập thỏa thuận đối tác đại lý IT ủy quyền tại Đà Nẵng để đảm bảo SLA."
-    }
-  },
-  "cost_to_serve_artifact": "c:\\Agent\\artifacts\\cost_to_serve_analysis.json"
+  ]
 }
