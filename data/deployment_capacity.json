@@ -1,0 +1,61 @@
+{
+  "support_hubs": [
+    {
+      "hub_id": "HUB-HN",
+      "city": "Hà Nội",
+      "active_engineers": 12,
+      "max_direct_radius_km": 100,
+      "standard_sla_hours": 4
+    },
+    {
+      "hub_id": "HUB-HCM",
+      "city": "TP. Hồ Chí Minh",
+      "active_engineers": 16,
+      "max_direct_radius_km": 100,
+      "standard_sla_hours": 4
+    }
+  ],
+  "candidate_provinces_feasibility": {
+    "Bắc Ninh": {
+      "assigned_hub": "HUB-HN",
+      "distance_km": 40,
+      "travel_time_hours": 0.8,
+      "meets_direct_sla": true,
+      "hurdle_status": "PASS",
+      "reason": "Nằm hoàn toàn trong bán kính phục vụ 100km của Trụ sở Hà Nội. Đội phản ứng nhanh có mặt dưới 1 giờ."
+    },
+    "Hải Phòng": {
+      "assigned_hub": "HUB-HN",
+      "distance_km": 120,
+      "travel_time_hours": 1.75,
+      "meets_direct_sla": true,
+      "hurdle_status": "PASS",
+      "reason": "Khoảng cách 120km qua tuyến cao tốc Hà Nội - Hải Phòng cho phép di chuyển trong 1 giờ 45 phút, đáp ứng chuẩn SLA cam kết 4 giờ."
+    },
+    "Đà Nẵng": {
+      "assigned_hub": null,
+      "distance_km": 760,
+      "travel_time_hours": 8.5,
+      "meets_direct_sla": false,
+      "hurdle_status": "FAIL_CAPACITY",
+      "reason": "Cách hai trung tâm kỹ thuật 760km. Không thể đáp ứng cam kết hỗ trợ tại chỗ 4 giờ nếu chỉ dựa vào nhân sự bay từ HN/HCM. Vượt ngưỡng sàn triển khai trực tiếp.",
+      "cost_to_serve_model": {
+        "score_cap": 80.0,
+        "outsourced_partner_retainer_monthly_vnd": 18000000,
+        "quarterly_onsite_audit_trip_vnd": 6000000,
+        "estimated_annual_extra_cost_vnd": 240000000,
+        "margin_impact_pct": -12.5,
+        "recommendation": "Phải thiết lập thỏa thuận đối tác đại lý IT ủy quyền tại Đà Nẵng để đảm bảo SLA."
+      }
+    },
+    "Cần Thơ": {
+      "assigned_hub": "HUB-HCM",
+      "distance_km": 160,
+      "travel_time_hours": 2.0,
+      "meets_direct_sla": true,
+      "hurdle_status": "PASS",
+      "reason": "Khoảng cách 160km qua cao tốc Mỹ Thuận - Cần Thơ mất 2 giờ di chuyển, nằm trong biên an toàn của SLA 4 giờ từ Chi nhánh TP.HCM."
+    }
+  }
+}
+

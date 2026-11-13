@@ -1,0 +1,16 @@
+{
+  "title": "Phân Tích Chi Phí Thuê Ngoài (Cost-to-Serve) & Ràng Buộc Score Cap",
+  "capped_provinces_count": 1,
+  "records": {
+    "Đà Nẵng": {
+      "province": "Đà Nẵng",
+      "is_capped": true,
+      "score_cap": 80.0,
+      "outsourced_partner_monthly_vnd": 18000000,
+      "quarterly_trip_vnd": 6000000,
+      "annual_extra_cost_vnd": 240000000,
+      "margin_impact_pct": -12.5,
+      "mitigation_strategy": "Phải thiết lập thỏa thuận đối tác đại lý IT ủy quyền tại Đà Nẵng để đảm bảo SLA."
+    }
+  }
+}

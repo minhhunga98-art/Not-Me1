@@ -1,0 +1,68 @@
+{
+  "evaluation_title": "Ma Trận Đối Chiếu PMF & Năng Lực Triển Khai",
+  "evaluated_provinces": 4,
+  "gateway_1_summary": {
+    "Bắc Ninh": "DIRECT_TO_SCORING (Task 1.4)",
+    "Hải Phòng": "DIRECT_TO_SCORING (Task 1.4)",
+    "Đà Nẵng": "ROUTE_TO_COST_ANALYZER (Task 1.3a)",
+    "Cần Thơ": "DIRECT_TO_SCORING (Task 1.4)"
+  },
+  "records": [
+    {
+      "province": "Bắc Ninh",
+      "doc_id_market": "DOC-HP-001",
+      "doc_id_feedback": "DOC-HP-005",
+      "feature_match_pct": 88.0,
+      "switching_barrier": "LOW_TO_MEDIUM",
+      "readiness_score": 85.0,
+      "distance_km": 40,
+      "travel_time_hours": 0.8,
+      "meets_direct_sla": true,
+      "hurdle_status": "PASS",
+      "rationale": "Độ khớp PMF đạt 88.0%. Rào cản chuyển đổi: LOW_TO_MEDIUM (Điểm sẵn sàng: 85.0/100). Khoảng cách tới hub kỹ thuật: 40km (0.8h di chuyển). Trạng thái SLA trực tiếp 4h: Đạt.",
+      "assigned_hub": "HUB-HN"
+    },
+    {
+      "province": "Hải Phòng",
+      "doc_id_market": "DOC-HP-002",
+      "doc_id_feedback": "DOC-HP-006",
+      "feature_match_pct": 92.0,
+      "switching_barrier": "MEDIUM_HIGH",
+      "readiness_score": 75.0,
+      "distance_km": 120,
+      "travel_time_hours": 1.75,
+      "meets_direct_sla": true,
+      "hurdle_status": "PASS",
+      "rationale": "Độ khớp PMF đạt 92.0%. Rào cản chuyển đổi: MEDIUM_HIGH (Điểm sẵn sàng: 75.0/100). Khoảng cách tới hub kỹ thuật: 120km (1.75h di chuyển). Trạng thái SLA trực tiếp 4h: Đạt.",
+      "assigned_hub": "HUB-HN"
+    },
+    {
+      "province": "Đà Nẵng",
+      "doc_id_market": "DOC-HP-003",
+      "doc_id_feedback": "DOC-HP-007",
+      "feature_match_pct": 74.0,
+      "switching_barrier": "MEDIUM",
+      "readiness_score": 68.0,
+      "distance_km": 760,
+      "travel_time_hours": 8.5,
+      "meets_direct_sla": false,
+      "hurdle_status": "FAIL_CAPACITY",
+      "rationale": "Độ khớp PMF đạt 74.0%. Rào cản chuyển đổi: MEDIUM (Điểm sẵn sàng: 68.0/100). Khoảng cách tới hub kỹ thuật: 760km (8.5h di chuyển). Trạng thái SLA trực tiếp 4h: Vượt năng lực hỗ trợ tại chỗ.",
+      "assigned_hub": null
+    },
+    {
+      "province": "Cần Thơ",
+      "doc_id_market": "DOC-HP-004",
+      "doc_id_feedback": "DOC-HP-008",
+      "feature_match_pct": 86.0,
+      "switching_barrier": "VERY_LOW",
+      "readiness_score": 92.0,
+      "distance_km": 160,
+      "travel_time_hours": 2.0,
+      "meets_direct_sla": true,
+      "hurdle_status": "PASS",
+      "rationale": "Độ khớp PMF đạt 86.0%. Rào cản chuyển đổi: VERY_LOW (Điểm sẵn sàng: 92.0/100). Khoảng cách tới hub kỹ thuật: 160km (2.0h di chuyển). Trạng thái SLA trực tiếp 4h: Đạt.",
+      "assigned_hub": "HUB-HCM"
+    }
+  ]
+}

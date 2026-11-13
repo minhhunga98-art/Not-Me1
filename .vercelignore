@@ -1,0 +1,5 @@
+.git
+template_ui
+__pycache__
+*.pyc
+

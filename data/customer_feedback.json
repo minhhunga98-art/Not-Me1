@@ -1,0 +1,75 @@
+[
+  {
+    "province": "Bắc Ninh",
+    "doc_id": "DOC-HP-005",
+    "survey_sample_size": 25,
+    "current_system_breakdown": {
+      "excel_manual": 32,
+      "local_accounting_software": 48,
+      "tier1_erp_sap_oracle": 20
+    },
+    "feature_match_pct": 88.0,
+    "switching_barrier_level": "LOW_TO_MEDIUM",
+    "readiness_score": 85.0,
+    "quote": "72% chuỗi bán lẻ tại Bắc Ninh cần giải pháp quét mã vạch và định vị ô kệ kho vệ tinh; hầu hết dùng phần mềm kế toán nội địa nên việc tích hợp API diễn ra nhanh chóng, rào cản chuyển đổi thấp.",
+    "key_pain_points": [
+      "Kiểm kê kho chậm trễ, sai lệch số tồn kho thực tế với quầy bán",
+      "Thiếu khả năng tự động hóa lộ trình nhặt hàng theo đơn đa kênh"
+    ]
+  },
+  {
+    "province": "Hải Phòng",
+    "doc_id": "DOC-HP-006",
+    "survey_sample_size": 30,
+    "current_system_breakdown": {
+      "excel_manual": 15,
+      "local_accounting_software": 50,
+      "tier1_erp_sap_oracle": 35
+    },
+    "feature_match_pct": 92.0,
+    "switching_barrier_level": "MEDIUM_HIGH",
+    "readiness_score": 75.0,
+    "quote": "Nhu cầu quản lý kho tại Hải Phòng rất tinh vi với bài toán quản lý lô/hạn dùng (Batch/Expiry) cho hàng nhập khẩu; 35% doanh nghiệp đang duy trì ERP lớn như SAP B1 nên chi phí chuyển đổi cao, cần chiến lược tích hợp dạng Module WMS mở rộng thay vì thay thế toàn diện.",
+    "key_pain_points": [
+      "Quản lý hạn sử dụng và đảo hàng FEFO/FIFO cho chuỗi thực phẩm",
+      "Tắc nghẽn xuất nhập hàng tại cửa kho giờ cao điểm"
+    ]
+  },
+  {
+    "province": "Đà Nẵng",
+    "doc_id": "DOC-HP-007",
+    "survey_sample_size": 20,
+    "current_system_breakdown": {
+      "excel_manual": 40,
+      "local_accounting_software": 45,
+      "tier1_erp_sap_oracle": 15
+    },
+    "feature_match_pct": 74.0,
+    "switching_barrier_level": "MEDIUM",
+    "readiness_score": 68.0,
+    "quote": "Doanh nghiệp Đà Nẵng hứng thú với mô hình SaaS chi phí linh hoạt nhưng 80% khách hàng yêu cầu cam kết hỗ trợ onsite trong vòng 4 giờ; họ e ngại Hưng Phát chưa có kỹ sư thường trực tại miền Trung.",
+    "key_pain_points": [
+      "E ngại rủi ro dừng kho nếu hệ thống lỗi mà không có kỹ sư tại chỗ",
+      "Ngân sách đầu tư ban đầu cho thiết bị RFID/PDA còn hạn hẹp"
+    ]
+  },
+  {
+    "province": "Cần Thơ",
+    "doc_id": "DOC-HP-008",
+    "survey_sample_size": 28,
+    "current_system_breakdown": {
+      "excel_manual": 55,
+      "local_accounting_software": 38,
+      "tier1_erp_sap_oracle": 7
+    },
+    "feature_match_pct": 86.0,
+    "switching_barrier_level": "VERY_LOW",
+    "readiness_score": 92.0,
+    "quote": "Hơn 90% doanh nghiệp Cần Thơ đang dùng phương pháp thủ công và phần mềm bán hàng cơ bản; không vướng mắc hợp đồng ERP đắt tiền, nhu cầu số hóa quy trình kho rất khát khao và thời gian ra quyết định chuyển đổi nhanh.",
+    "key_pain_points": [
+      "Thất thoát hàng hóa và sai sót số liệu tồn kho do ghi chép tay",
+      "Thiếu nhân lực kho thành thạo công nghệ, cần phần mềm cực kỳ dễ thao tác"
+    ]
+  }
+]
+

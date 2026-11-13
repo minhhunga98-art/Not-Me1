@@ -1,0 +1,27 @@
+:root {
+  --window-opacity: 0.28;
+  --window-blur: 28px;
+  --card-opacity: 0.38;
+  --card-blur: 18px;
+  --sidebar-opacity: 0.34;
+  --sidebar-blur: 32px;
+  --text-primary: #1a1817;
+  --text-secondary: rgba(26, 24, 23, 0.65);
+  --border-light: rgba(255, 255, 255, 0.45);
+  --border-subtle: rgba(255, 255, 255, 0.24);
+}
+
+.spatial-window {
+  background: rgba(255, 250, 245, var(--window-opacity));
+  backdrop-filter: blur(var(--window-blur)) saturate(145%);
+  -webkit-backdrop-filter: blur(var(--window-blur)) saturate(145%);
+  border: 1.5px solid var(--border-light);
+  box-shadow: 0 32px 80px rgba(18, 12, 8, 0.34), inset 0 1px 1px rgba(255, 255, 255, 0.65);
+}
+
+.glass-sidebar {
+  background: linear-gradient(165deg, rgba(52, 44, 38, 0.44) 0%, rgba(38, 31, 26, 0.36) 55%, rgba(92, 62, 38, 0.38) 100%);
+  backdrop-filter: blur(var(--sidebar-blur)) saturate(160%);
+  -webkit-backdrop-filter: blur(var(--sidebar-blur)) saturate(160%);
+  border: 1.5px solid rgba(255, 255, 255, 0.32);
+}

@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hưng Phát Smart WMS • BPMN 2.0 Multi-Agent Command Center</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/glass-tokens.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: var(--text-primary);
+      background: #231b15;
+      transition: color 0.35s ease;
+    }
+
+    /* Architectural Warm Room Backdrop */
+    .ambient-room {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 0.6s ease, filter 0.5s ease;
+    }
+
+    .room-warm {
+      background-image:
+        radial-gradient(circle at 22% 18%, rgba(255, 214, 170, 0.55) 0%, transparent 45%),
+        radial-gradient(circle at 82% 75%, rgba(168, 114, 72, 0.50) 0%, transparent 50%),
+        linear-gradient(125deg, #d8c3ae 0%, #8e6c52 45%, #3d2c22 100%);
+    }
+
+    .room-studio {
+      background-image:
+        radial-gradient(circle at 30% 20%, rgba(226, 232, 240, 0.65) 0%, transparent 48%),
+        radial-gradient(circle at 78% 80%, rgba(148, 163, 184, 0.45) 0%, transparent 50%),
+        linear-gradient(135deg, #cbd5e1 0%, #64748b 50%, #1e293b 100%);
+    }
+
+    .room-sunset {
+      background-image:
+        radial-gradient(circle at 20% 25%, rgba(253, 186, 116, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 80% 70%, rgba(244, 114, 182, 0.40) 0%, transparent 50%),
+        linear-gradient(135deg, #fed7aa 0%, #c2410c 48%, #431407 100%);
+    }
+
+    .architectural-slats {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        90deg,
+        rgba(35, 22, 14, 0.12) 0px,
+        rgba(35, 22, 14, 0.12) 18px,
+        rgba(255, 235, 215, 0.05) 18px,
+        rgba(255, 235, 215, 0.05) 36px
+      );
+      mask-image: linear-gradient(to right, rgba(0,0,0,0.65), rgba(0,0,0,0.15) 45%, rgba(0,0,0,0.75));
+    }
+
+    /* Glass SideBar V5 */
+    .glass-sidebar {
+      width: 270px;
+      box-shadow: 0 28px 64px rgba(15, 10, 6, 0.42), inset 0 1px 1px rgba(255, 255, 255, 0.55);
+      color: #f8f6f4;
+      transition: width 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+      position: relative;
+      z-index: 40;
+      flex-shrink: 0;
+    }
+
+    .glass-sidebar.collapsed {
+      width: 78px;
+    }
+
+    .glass-sidebar.collapsed .sb-hide {
+      opacity: 0;
+      width: 0;
+      overflow: hidden;
+      display: none;
+    }
+
+    .sidebar-pill-indicator {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      height: 44px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.20) 100%);
+      border: 1.2px solid rgba(255, 255, 255, 0.55);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25), inset 0 1.5px 1px rgba(255, 255, 255, 0.75);
+      transition: transform 0.34s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .sb-nav-item {
+      position: relative;
+      z-index: 2;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 14px;
+      border-radius: 9999px;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.78);
+      cursor: pointer;
+      transition: color 0.2s ease, transform 0.15s ease;
+      user-select: none;
+    }
+
+    .sb-nav-item:hover {
+      color: #ffffff;
+      transform: translateX(2px);
+    }
+
+    .sb-nav-item.active {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* Swimlane Styling in Glass */
+    .swimlane-glass {
+      border-radius: 16px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      border: 1.5px solid;
+      position: relative;
+    }
+
+    .lane-ai {
+      background: rgba(30, 58, 138, 0.12);
+      border-color: rgba(96, 165, 250, 0.45);
+    }
+
+    .lane-ptkd {
+      background: rgba(5, 150, 105, 0.12);
+      border-color: rgba(52, 211, 153, 0.45);
+    }
+
+    .lane-manager {
+      background: rgba(217, 119, 6, 0.12);
+      border-color: rgba(251, 191, 36, 0.45);
+    }
+
+    .node-glass {
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(12px);
+      border: 1.2px solid rgba(255, 255, 255, 0.6);
+      border-radius: 12px;
+      padding: 12px 14px;
+      min-width: 175px;
+      font-size: 13px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    body.night-mode .node-glass {
+      background: rgba(30, 26, 23, 0.65);
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    .node-glass:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+    }
+
+    .node-glass.active-step {
+      border-color: #2563eb !important;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.35), 0 10px 24px rgba(37, 99, 235, 0.2) !important;
+      animation: pulse-border 2s infinite;
+    }
+
+    .node-glass.completed-step {
+      border-color: #10b981;
+      background: rgba(16, 185, 129, 0.12);
+    }
+
+    @keyframes pulse-border {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+
+    .gateway-diamond {
+      width: 44px;
+      height: 44px;
+      transform: rotate(45deg);
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      border: 2px solid #f59e0b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      flex-shrink: 0;
+      margin: 0 6px;
+    }
+
+    body.night-mode .gateway-diamond {
+      background: rgba(35, 30, 26, 0.75);
+    }
+
+    .gateway-diamond span {
+      transform: rotate(-45deg);
+      font-weight: 800;
+      font-size: 11px;
+      color: #b45309;
+    }
+
+    /* Toast Notification */
+    #toast-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .toast-msg {
+      background: rgba(15, 23, 42, 0.90);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 10px;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13.5px;
+      animation: slide-up 0.3s ease;
+    }
+
+    @keyframes slide-up {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .code-font {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Custom Scrollbars */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.45);
+    }
+  </style>
+</head>
+<body class="p-3 sm:p-5 flex gap-4 min-h-screen">
+
+  <!-- Architectural Background Simulation -->
+  <div id="ambientBg" class="ambient-room room-warm"></div>
+  <div class="architectural-slats"></div>
+
+  <!-- Toast Container -->
+  <div id="toast-container"></div>
+
+  <!-- Glassy SideBar V5 -->
+  <aside id="mainSidebar" class="glass-sidebar rounded-3xl p-4 flex flex-col justify-between">
+    <div>
+      <!-- Brand & Pin Button -->
+      <div class="flex items-center justify-between px-2 mb-6">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white shadow-lg">
+            <i data-lucide="layers" class="w-5 h-5"></i>
+          </div>
+          <div class="sb-hide">
+            <h2 class="font-bold text-sm tracking-tight leading-none text-white">HƯNG PHÁT</h2>
+            <span class="text-[11px] text-white/60">Smart WMS Agent</span>
+          </div>
+        </div>
+        <button id="sidebarPinBtn" class="p-1.5 rounded-xl hover:bg-white/10 text-white/70 hover:text-white transition" title="Thu gọn / Mở rộng">
+          <i data-lucide="chevron-left" id="pinIcon" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Navigation Items with Refractive Sliding Pill -->
+      <div class="relative flex flex-col gap-1.5" id="sidebarNavList">
+        <div class="sidebar-pill-indicator" id="sidebarPill"></div>
+
+        <div class="sb-nav-item active" data-panel="panel-flow" onclick="switchPanel('panel-flow', this)">
+          <i data-lucide="git-branch" class="w-4 h-4"></i>
+          <span class="sb-hide">Sơ Đồ BPMN 2.0</span>
+        </div>
+
+        <div class="sb-nav-item" data-panel="panel-leaderboard" onclick="switchPanel('panel-leaderboard', this)">
+          <i data-lucide="trophy" class="w-4 h-4"></i>
+          <span class="sb-hide">Bảng Xếp Hạng & PMF</span>
+        </div>
+
+        <div class="sb-nav-item" data-panel="panel-audit" onclick="switchPanel('panel-audit', this)">
+          <i data-lucide="shield-check" class="w-4 h-4"></i>
+          <span class="sb-hide">Lane 2: PTKD Audit (25%)</span>
+        </div>
+
+        <div class="sb-nav-item" data-panel="panel-manager" onclick="switchPanel('panel-manager', this)">
+          <i data-lucide="user-check" class="w-4 h-4"></i>
+          <span class="sb-hide">Lane 3: Cổng Phê Duyệt</span>
+        </div>
+
+        <div class="sb-nav-item" data-panel="panel-proposal" onclick="switchPanel('panel-proposal', this)">
+          <i data-lucide="file-text" class="w-4 h-4"></i>
+          <span class="sb-hide">Hồ Sơ Đề Xuất BGĐ</span>
+        </div>
+
+        <div class="sb-nav-item" data-panel="panel-clean" onclick="switchPanel('panel-clean', this)">
+          <i data-lucide="database" class="w-4 h-4"></i>
+          <span class="sb-hide">Dữ Liệu Sạch & Doc_ID</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Sidebar Section -->
+    <div class="pt-4 border-t border-white/15">
+      <div class="sb-hide flex items-center justify-between text-xs text-white/70 mb-3 px-2">
+        <span>Chế độ ban đêm</span>
+        <div id="nightToggle" class="w-11 h-6 rounded-full bg-white/20 p-1 cursor-pointer flex items-center transition" onclick="toggleNightMode()">
+          <div id="nightKnob" class="w-4 h-4 rounded-full bg-white shadow transition-transform"></div>
+        </div>
+      </div>
+      <div class="flex items-center gap-2.5 px-2">
+        <div class="w-8 h-8 rounded-full bg-emerald-500/30 border border-emerald-400/50 flex items-center justify-center text-emerald-300">
+          <i data-lucide="cpu" class="w-4 h-4"></i>
+        </div>
+        <div class="sb-hide text-xs">
+          <p class="font-semibold text-white">Gemini 3.8 Flash</p>
+          <span class="text-emerald-400 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> Live Engine</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Spatial Glass Window -->
+  <main class="spatial-window flex-1 rounded-3xl p-5 sm:p-7 flex flex-col relative z-20 min-h-[92vh]">
+    
+    <!-- Top Action Bar -->
+    <div class="flex flex-wrap items-center justify-between gap-4 pb-5 border-b border-white/25">
+      <div>
+        <div class="flex items-center gap-2.5">
+          <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-700 dark:text-blue-300 border border-blue-400/30">BPMN 2.0 WORKFLOW</span>
+          <span id="activeStepBadge" class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-400/30 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            <span id="txtCurrentStep">Khởi tạo</span>
+          </span>
+        </div>
+        <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight mt-1" id="pageTitle">Trung Tâm Điều Phối Quy Trình Mở Rộng Địa Bàn</h1>
+        <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mt-0.5" id="pageSubtitle">Sàng lọc 4 địa bàn $\rightarrow$ Chọn 2 địa bàn ưu tiên $\rightarrow$ Trình Ban Giám Đốc (100% kiểm toán ngược).</p>
+      </div>
+
+      <!-- Action Buttons & Optical Controls -->
+      <div class="flex items-center gap-2.5">
+        <button class="px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs sm:text-sm shadow-lg shadow-blue-600/30 flex items-center gap-1.5 transition active:scale-95" onclick="runNextStep()">
+          <i data-lucide="zap" class="w-4 h-4"></i>
+          <span>Bước Kế Tiếp</span>
+        </button>
+
+        <button class="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm shadow-lg shadow-emerald-600/30 flex items-center gap-1.5 transition active:scale-95" onclick="runAutoPipeline()">
+          <i data-lucide="play" class="w-4 h-4"></i>
+          <span>Chạy Toàn Tuyến</span>
+        </button>
+
+        <button class="p-2 rounded-xl bg-white/40 dark:bg-white/10 hover:bg-white/60 border border-white/30 text-neutral-700 dark:text-neutral-200 transition" onclick="resetWorkflow()" title="Reset Hệ Thống">
+          <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+        </button>
+
+        <div class="relative">
+          <button id="btnOptics" class="p-2 rounded-xl bg-white/40 dark:bg-white/10 hover:bg-white/60 border border-white/30 text-neutral-700 dark:text-neutral-200 transition" onclick="toggleOpticsPanel()" title="Hiệu Ứng Không Gian (Optics)">
+            <i data-lucide="sliders" class="w-4 h-4"></i>
+          </button>
+
+          <!-- Optics Floating Panel -->
+          <div id="opticsPanel" class="hidden absolute right-0 mt-2 w-64 glass-card rounded-2xl p-4 shadow-2xl z-50">
+            <h4 class="text-xs font-bold uppercase tracking-wider mb-3">Hiệu Ứng Không Gian (Optics)</h4>
+            <div class="mb-3">
+              <label class="text-[11px] font-medium text-neutral-500">Khung Cảnh Nền</label>
+              <div class="grid grid-cols-3 gap-1.5 mt-1">
+                <button class="px-2 py-1 text-xs rounded-lg bg-amber-500/20 hover:bg-amber-500/30 font-medium" onclick="setScene('room-warm')">Warm</button>
+                <button class="px-2 py-1 text-xs rounded-lg bg-slate-500/20 hover:bg-slate-500/30 font-medium" onclick="setScene('room-studio')">Studio</button>
+                <button class="px-2 py-1 text-xs rounded-lg bg-orange-500/20 hover:bg-orange-500/30 font-medium" onclick="setScene('room-sunset')">Sunset</button>
+              </div>
+            </div>
+            <div class="mb-2">
+              <div class="flex justify-between text-[11px] mb-1">
+                <span>Độ Trong Suốt</span>
+                <span id="txtOpacity">32%</span>
+              </div>
+              <input type="range" min="15" max="60" value="32" class="w-full accent-blue-600" oninput="setOpacity(this.value)">
+            </div>
+            <div>
+              <div class="flex justify-between text-[11px] mb-1">
+                <span>Độ Mờ Nền (Blur)</span>
+                <span id="txtBlur">28px</span>
+              </div>
+              <input type="range" min="10" max="50" value="28" class="w-full accent-blue-600" oninput="setBlur(this.value)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bento KPI Summary Cards -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 my-5">
+      <div class="glass-card rounded-2xl p-4">
+        <div class="flex items-center justify-between text-neutral-500 dark:text-neutral-400 mb-1">
+          <span class="text-xs font-medium">Địa Bàn Sàng Lọc</span>
+          <i data-lucide="map-pin" class="w-4 h-4 text-blue-500"></i>
+        </div>
+        <div class="text-2xl font-black text-blue-600 dark:text-blue-400" id="kpiCandidateCount">4 Địa Bàn</div>
+        <p class="text-[11px] text-neutral-500 mt-1">Bắc Ninh, Hải Phòng, Cần Thơ, Đà Nẵng</p>
+      </div>
+
+      <div class="glass-card rounded-2xl p-4">
+        <div class="flex items-center justify-between text-neutral-500 dark:text-neutral-400 mb-1">
+          <span class="text-xs font-medium">Gateway 1 (Ngưỡng Sàn)</span>
+          <i data-lucide="clock" class="w-4 h-4 text-amber-500"></i>
+        </div>
+        <div class="text-2xl font-black text-amber-600 dark:text-amber-400" id="kpiHurdleStatus">3 Đạt / 1 Vượt</div>
+        <p class="text-[11px] text-neutral-500 mt-1">Đà Nẵng áp Score Cap 80 & Thuê ngoài</p>
+      </div>
+
+      <div class="glass-card rounded-2xl p-4">
+        <div class="flex items-center justify-between text-neutral-500 dark:text-neutral-400 mb-1">
+          <span class="text-xs font-medium">Kiểm Chứng Chéo (Lane 2)</span>
+          <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+        </div>
+        <div class="text-2xl font-black text-emerald-600 dark:text-emerald-400" id="kpiAuditRate">25% Mẫu</div>
+        <p class="text-[11px] text-neutral-500 mt-1">Khóa 100% trích dẫn Doc_ID gốc</p>
+      </div>
+
+      <div class="glass-card rounded-2xl p-4">
+        <div class="flex items-center justify-between text-neutral-500 dark:text-neutral-400 mb-1">
+          <span class="text-xs font-medium">Chốt 2 Địa Bàn Ưu Tiên</span>
+          <i data-lucide="award" class="w-4 h-4 text-indigo-500"></i>
+        </div>
+        <div class="text-2xl font-black text-indigo-600 dark:text-indigo-400" id="kpiTop2">Hải Phòng & Bắc Ninh</div>
+        <p class="text-[11px] text-neutral-500 mt-1">Sẵn sàng trình Ban Giám Đốc</p>
+      </div>
+    </div>
+
+    <!-- Dynamic Main Panels Container -->
+    <div class="flex-1 overflow-y-auto">
+
+      <!-- ==================== PANEL 1: BPMN FLOW VISUALIZER ==================== -->
+      <section id="panel-flow" class="panel-view">
+        <div class="mb-4 flex items-center justify-between">
+          <h3 class="font-bold text-base flex items-center gap-2">
+            <i data-lucide="workflow" class="w-4 h-4 text-blue-600"></i>
+            <span>Sơ Đồ Quy Trình Tương Tác 3 Swimlanes (BPMN 2.0 Standard)</span>
+          </h3>
+          <span class="text-xs text-neutral-500">Bấm vào từng tác vụ để xem chi tiết kết quả xử lý</span>
+        </div>
+
+        <!-- SWIMLANE 1: AI AGENT -->
+        <div class="swimlane-glass lane-ai">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+              <span class="font-extrabold text-xs tracking-wider uppercase text-blue-800 dark:text-blue-300">LANE 1: HỆ THỐNG AI AGENT (Tự động hóa & Khóa dữ liệu Doc_ID)</span>
+            </div>
+            <span class="text-[11px] px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-700 dark:text-blue-300 font-semibold">Tự động 100%</span>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="node-glass" id="node-Task_CleanData" onclick="switchPanel('panel-clean')">
+              <div class="text-[10px] text-blue-600 font-bold uppercase tracking-wider">Task 1.1 • Data Auditor</div>
+              <div class="font-semibold text-xs mt-0.5">Chuẩn hóa & Khử trùng lặp</div>
+              <div class="text-[11px] text-neutral-500 mt-1 flex items-center gap-1">
+                <i data-lucide="file-check" class="w-3 h-3 text-emerald-500"></i>
+                <span id="lblCleanStatus">4 địa bàn chuẩn hóa</span>
+              </div>
+            </div>
+
+            <div class="text-neutral-400 font-bold">➔</div>
+
+            <div class="node-glass" id="node-Task_FitAnalysis" onclick="switchPanel('panel-leaderboard')">
+              <div class="text-[10px] text-blue-600 font-bold uppercase tracking-wider">Task 1.2 • Fit & Feasibility</div>
+              <div class="font-semibold text-xs mt-0.5">Đối chiếu PMF & SLA Năng Lực</div>
+              <div class="text-[11px] text-neutral-500 mt-1 flex items-center gap-1">
+                <i data-lucide="compass" class="w-3 h-3 text-blue-500"></i>
+                <span>SLA 4h Onsite</span>
+              </div>
+            </div>
+
+            <!-- GATEWAY 1 -->
+            <div class="gateway-diamond" title="Gateway 1: Đạt ngưỡng sàn triển khai (Hurdle Rate)?">
+              <span>GW1</span>
+            </div>
+
+            <div class="node-glass" id="node-Task_CostToServe" onclick="switchPanel('panel-leaderboard')">
+              <div class="text-[10px] text-amber-600 font-bold uppercase tracking-wider">Task 1.3a • Cost Analyzer</div>
+              <div class="font-semibold text-xs mt-0.5">Cost-to-Serve & Score Cap</div>
+              <div class="text-[11px] text-amber-600 mt-1 flex items-center gap-1">
+                <i data-lucide="alert-triangle" class="w-3 h-3"></i>
+                <span>Đà Nẵng (Cap: 80)</span>
+              </div>
+            </div>
+
+            <div class="text-neutral-400 font-bold">➔</div>
+
+            <div class="node-glass" id="node-Task_Scoring" onclick="switchPanel('panel-leaderboard')">
+              <div class="text-[10px] text-blue-600 font-bold uppercase tracking-wider">Task 1.4 • Scoring Agent</div>
+              <div class="font-semibold text-xs mt-0.5">Chấm điểm Đa tiêu chí</div>
+              <div class="text-[11px] text-neutral-500 mt-1 flex items-center gap-1">
+                <i data-lucide="award" class="w-3 h-3 text-indigo-500"></i>
+                <span>100% Doc_ID Citation</span>
+              </div>
+            </div>
+
+            <div class="text-neutral-400 font-bold">➔</div>
+
+            <div class="node-glass" id="node-Task_GenerateProposal" onclick="switchPanel('panel-proposal')">
+              <div class="text-[10px] text-blue-600 font-bold uppercase tracking-wider">Task 1.5 • Proposal Architect</div>
+              <div class="font-semibold text-xs mt-0.5">Bộ câu hỏi & Tờ trình BGĐ</div>
+              <div class="text-[11px] text-neutral-500 mt-1 flex items-center gap-1">
+                <i data-lucide="file-text" class="w-3 h-3 text-purple-500"></i>
+                <span>Xuất Word & Markdown</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SWIMLANE 2: HUMAN-IN-THE-LOOP PTKD -->
+        <div class="swimlane-glass lane-ptkd">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+              <span class="font-extrabold text-xs tracking-wider uppercase text-emerald-800 dark:text-emerald-300">LANE 2: NHÂN VIÊN PTKD (Kiểm chứng chéo 25% Mẫu & Human Audit)</span>
+            </div>
+            <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 font-semibold">Human-in-the-Loop</span>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="node-glass" id="node-Task_AuditSample" onclick="switchPanel('panel-audit')">
+              <div class="text-[10px] text-emerald-600 font-bold uppercase tracking-wider">Task 2.1 • Audit Trích Dẫn</div>
+              <div class="font-semibold text-xs mt-0.5">Kiểm tra chéo 25% mẫu gốc</div>
+              <div class="text-[11px] text-neutral-500 mt-1 flex items-center gap-1">
+                <i data-lucide="search" class="w-3 h-3 text-emerald-500"></i>
+                <span id="lblSampleCount">4 mẫu thẩm định</span>
+              </div>
+            </div>
+
+            <!-- GATEWAY 2 -->
+            <div class="gateway-diamond" style="border-color: #10b981;" title="Gateway 2: Dữ liệu & Ngữ cảnh khớp 100%?">
+              <span style="color: #059669;">GW2</span>
+            </div>
+
+            <div class="node-glass" id="node-Task_ManualAdjust" onclick="switchPanel('panel-audit')">
+              <div class="text-[10px] text-emerald-600 font-bold uppercase tracking-wider">Task 2.2 • Override & Audit Log</div>
+              <div class="font-semibold text-xs mt-0.5">Hiệu chỉnh tham số & Ghi Log</div>
+              <div class="text-[11px] text-neutral-500 mt-1 flex items-center gap-1">
+                <i data-lucide="edit-3" class="w-3 h-3 text-amber-500"></i>
+                <span id="lblOverrideCount">Nhật ký bất biến</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SWIMLANE 3: BD MANAGER -->
+        <div class="swimlane-glass lane-manager">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+              <span class="font-extrabold text-xs tracking-wider uppercase text-amber-800 dark:text-amber-300">LANE 3: TRƯỞNG PHÒNG PTKD (Ra Quyết Định & Phê Duyệt Hồ Sơ)</span>
+            </div>
+            <span class="text-[11px] px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-700 dark:text-amber-300 font-semibold">Quyền Phê Duyệt</span>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="node-glass" id="node-Task_ReviewShortlist" onclick="switchPanel('panel-manager')">
+              <div class="text-[10px] text-amber-600 font-bold uppercase tracking-wider">Task 3.1 • Rà Soát Thứ Hạng</div>
+              <div class="font-semibold text-xs mt-0.5">Duyệt ngoại lệ Cost-to-Serve</div>
+              <div class="text-[11px] text-neutral-500 mt-1 flex items-center gap-1">
+                <i data-lucide="check-square" class="w-3 h-3 text-amber-500"></i>
+                <span>Xem xét Top 2</span>
+              </div>
+            </div>
+
+            <!-- GATEWAY 3 -->
+            <div class="gateway-diamond" style="border-color: #d97706;" title="Gateway 3: Chốt được 2 địa bàn ưu tiên?">
+              <span style="color: #92400e;">GW3</span>
+            </div>
+
+            <div class="node-glass" id="node-Task_SubmitBOD" onclick="switchPanel('panel-manager')">
+              <div class="text-[10px] text-amber-600 font-bold uppercase tracking-wider">Task 3.2 • Ký Duyệt & Trình BGĐ</div>
+              <div class="font-semibold text-xs mt-0.5">Trình Ban Giám Đốc Phê Duyệt</div>
+              <div class="text-[11px] text-neutral-500 mt-1 flex items-center gap-1">
+                <i data-lucide="send" class="w-3 h-3 text-emerald-500"></i>
+                <span id="lblBODStatus">Chờ ký duyệt</span>
+              </div>
+            </div>
+
+            <div class="text-neutral-400 font-bold">➔</div>
+
+            <div class="w-14 h-14 rounded-full bg-red-500/10 border-2 border-red-500 flex flex-col items-center justify-center font-black text-xs text-red-600 shadow-lg shadow-red-500/20" id="node-EndEvent_1">
+              <span>END</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PANEL 2: LEADERBOARD & PMF ==================== -->
+      <section id="panel-leaderboard" class="panel-view hidden">
+        <div class="glass-card rounded-2xl p-5 mb-5">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="font-bold text-base">Bảng Xếp Hạng Đa Tiêu Chí 4 Địa Bàn (Task 1.4 Scoring Agent)</h3>
+              <p class="text-xs text-neutral-500">Trọng số: PMF (30%), Quy mô (25%), Sẵn sàng (25%), Chi phí phục vụ (20%). Ràng buộc 100% Doc_ID.</p>
+            </div>
+            <span class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-700 dark:text-blue-300 font-bold" id="badgeShortlist">Chưa chốt</span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs sm:text-sm">
+              <thead>
+                <tr class="border-b border-white/20 text-neutral-500">
+                  <th class="py-2.5 px-3">Hạng</th>
+                  <th class="py-2.5 px-3">Địa Bàn</th>
+                  <th class="py-2.5 px-3">Điểm Tổng Kết</th>
+                  <th class="py-2.5 px-3">Điểm Thô</th>
+                  <th class="py-2.5 px-3">Score Cap</th>
+                  <th class="py-2.5 px-3">Cost-to-Serve Flag</th>
+                  <th class="py-2.5 px-3">PMF (30%)</th>
+                  <th class="py-2.5 px-3">Quy Mô (25%)</th>
+                  <th class="py-2.5 px-3">Sẵn Sàng (25%)</th>
+                  <th class="py-2.5 px-3">Chi Phí (20%)</th>
+                </tr>
+              </thead>
+              <tbody id="leaderboardTbody">
+                <tr><td colspan="10" class="py-6 text-center text-neutral-500">Đang tải dữ liệu...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- PMF & Hurdle Matrix -->
+          <div class="glass-card rounded-2xl p-4">
+            <h4 class="font-bold text-sm mb-2 flex items-center gap-2">
+              <i data-lucide="compass" class="w-4 h-4 text-blue-500"></i>
+              <span>Ma Trận PMF & SLA Năng Lực (Task 1.2)</span>
+            </h4>
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs">
+                <thead>
+                  <tr class="border-b border-white/15 text-neutral-500">
+                    <th class="py-2 px-2">Địa Bàn</th>
+                    <th class="py-2 px-2">Khớp PMF</th>
+                    <th class="py-2 px-2">Sẵn Sàng</th>
+                    <th class="py-2 px-2">Khoảng Cách</th>
+                    <th class="py-2 px-2">SLA 4h</th>
+                  </tr>
+                </thead>
+                <tbody id="fitMatrixTbody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Cost-to-serve analysis -->
+          <div class="glass-card rounded-2xl p-4">
+            <h4 class="font-bold text-sm mb-2 flex items-center gap-2">
+              <i data-lucide="alert-circle" class="w-4 h-4 text-amber-500"></i>
+              <span>Phân Tích Chi Phí Thuê Ngoài (Task 1.3a)</span>
+            </h4>
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs">
+                <thead>
+                  <tr class="border-b border-white/15 text-neutral-500">
+                    <th class="py-2 px-2">Địa Bàn</th>
+                    <th class="py-2 px-2">Score Cap</th>
+                    <th class="py-2 px-2">Phụ Phí / Năm</th>
+                    <th class="py-2 px-2">Biên Lợi Nhuận</th>
+                    <th class="py-2 px-2">Phương Án</th>
+                  </tr>
+                </thead>
+                <tbody id="costMatrixTbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PANEL 3: PTKD AUDIT (LANE 2) ==================== -->
+      <section id="panel-audit" class="panel-view hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-5">
+          <!-- 25% Sample Inspection -->
+          <div class="glass-card rounded-2xl p-5 lg:col-span-2">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <h3 class="font-bold text-base flex items-center gap-2">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+                  <span>Task 2.1: Rút Mẫu Ngẫu Nhiên 25% Trích Dẫn Thẩm Định</span>
+                </h3>
+                <p class="text-xs text-neutral-500">Chuyên viên PTKD đối chiếu câu trích dẫn với tài liệu gốc để triệt tiêu ảo giác (Hallucination).</p>
+              </div>
+              <button class="px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs flex items-center gap-1 shadow-md shadow-emerald-600/30 transition" onclick="approveAudit()">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                <span>Xác Nhận Khớp 100%</span>
+              </button>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs">
+                <thead>
+                  <tr class="border-b border-white/20 text-neutral-500">
+                    <th class="py-2 px-2">Mã Mẫu</th>
+                    <th class="py-2 px-2">Địa Bàn</th>
+                    <th class="py-2 px-2">Tiêu Chí</th>
+                    <th class="py-2 px-2">Doc_ID</th>
+                    <th class="py-2 px-2">Trích Dẫn Gốc Đang Thẩm Định</th>
+                  </tr>
+                </thead>
+                <tbody id="auditSamplesTbody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Parameter Override Form -->
+          <div class="glass-card rounded-2xl p-5">
+            <h3 class="font-bold text-sm mb-3 flex items-center gap-2">
+              <i data-lucide="edit-3" class="w-4 h-4 text-amber-500"></i>
+              <span>Task 2.2: Can Thiệp & Ghi Audit Log</span>
+            </h3>
+            <form onsubmit="handleOverrideSubmit(event)">
+              <div class="mb-2">
+                <label class="text-[11px] font-medium text-neutral-500">Địa bàn hiệu chỉnh:</label>
+                <select id="ovrProvince" class="w-full text-xs p-2 rounded-xl bg-white/50 dark:bg-neutral-800/50 border border-white/30 mt-1">
+                  <option value="Hải Phòng">Hải Phòng</option>
+                  <option value="Bắc Ninh">Bắc Ninh</option>
+                  <option value="Cần Thơ">Cần Thơ</option>
+                  <option value="Đà Nẵng">Đà Nẵng</option>
+                </select>
+              </div>
+
+              <div class="mb-2">
+                <label class="text-[11px] font-medium text-neutral-500">Tiêu chí:</label>
+                <select id="ovrCriterion" class="w-full text-xs p-2 rounded-xl bg-white/50 dark:bg-neutral-800/50 border border-white/30 mt-1">
+                  <option value="pmf_fit">PMF Fit (pmf_fit)</option>
+                  <option value="market_size">Quy Mô Chuỗi (market_size)</option>
+                  <option value="switching_cost">Sự Sẵn Sàng (switching_cost)</option>
+                  <option value="cost_to_serve">Chi Phí Phục Vụ (cost_to_serve)</option>
+                </select>
+              </div>
+
+              <div class="mb-2">
+                <label class="text-[11px] font-medium text-neutral-500">Điểm số mới (0 - 100):</label>
+                <input type="number" id="ovrScore" min="0" max="100" step="0.5" value="95.0" class="w-full text-xs p-2 rounded-xl bg-white/50 dark:bg-neutral-800/50 border border-white/30 mt-1" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="text-[11px] font-medium text-neutral-500">Lý do giải trình (Bắt buộc ghi Audit Log):</label>
+                <textarea id="ovrReason" rows="2" placeholder="Ví dụ: Khảo sát thực tế phát hiện thêm 12 chuỗi bách hóa..." class="w-full text-xs p-2 rounded-xl bg-white/50 dark:bg-neutral-800/50 border border-white/30 mt-1" required></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs shadow-md transition">
+                Ghi Audit Log & Tái Chấm Điểm
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Immutable Audit Log Table -->
+        <div class="glass-card rounded-2xl p-5">
+          <h4 class="font-bold text-sm mb-3 flex items-center gap-2">
+            <i data-lucide="book-open" class="w-4 h-4 text-blue-500"></i>
+            <span>Sổ Nhật Ký Kiểm Toán Không Thể Sửa Đổi (Immutable Audit Log)</span>
+          </h4>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs">
+              <thead>
+                <tr class="border-b border-white/20 text-neutral-500">
+                  <th class="py-2 px-2">Thời Gian</th>
+                  <th class="py-2 px-2">Tác Nhân</th>
+                  <th class="py-2 px-2">Hành Động</th>
+                  <th class="py-2 px-2">Địa Bàn</th>
+                  <th class="py-2 px-2">Trường Tác Động</th>
+                  <th class="py-2 px-2">Giá Trị Cũ</th>
+                  <th class="py-2 px-2">Giá Trị Mới</th>
+                  <th class="py-2 px-2">Giải Trình Lý Do</th>
+                </tr>
+              </thead>
+              <tbody id="auditLogsTbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PANEL 4: MANAGER DECISION (LANE 3) ==================== -->
+      <section id="panel-manager" class="panel-view hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+          <!-- Shortlist Decision Card -->
+          <div class="glass-card rounded-2xl p-5">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold text-base flex items-center gap-2">
+                <i data-lucide="user-check" class="w-4 h-4 text-amber-500"></i>
+                <span>Task 3.1 & Gateway 3: Quyết Định Chốt Danh Sách</span>
+              </h3>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-700 dark:text-amber-300 font-semibold">Trưởng Phòng PTKD</span>
+            </div>
+
+            <p class="text-xs text-neutral-500 mb-4">Trưởng phòng rà soát điểm tổng kết, đánh giá các địa bàn ngoại lệ (có cờ chi phí) và ra quyết định chốt 2 địa bàn.</p>
+
+            <div class="p-3.5 rounded-2xl bg-white/40 dark:bg-neutral-800/40 border border-white/30 mb-4">
+              <span class="text-[11px] text-neutral-500 font-medium">Top 2 Ứng Viên Đề Xuất Ưu Tiên:</span>
+              <div class="text-lg font-black text-blue-600 dark:text-blue-400 mt-1" id="boxManagerTop2">Đang tải...</div>
+            </div>
+
+            <div class="flex flex-wrap gap-2.5">
+              <button class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-md shadow-emerald-600/30 flex items-center gap-1.5 transition" onclick="managerApprove()">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+                <span>Phê Duyệt Chốt 2 Địa Bàn (Kích Hoạt Task 1.5)</span>
+              </button>
+
+              <button class="px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-semibold text-xs shadow-md shadow-amber-600/30 flex items-center gap-1.5 transition" onclick="managerReject()">
+                <i data-lucide="refresh-cw" class="w-4 h-4"></i>
+                <span>Yêu Cầu Tái Cân Bằng Trọng Số</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Formal BOD Sign-off Card -->
+          <div class="glass-card rounded-2xl p-5">
+            <h3 class="font-bold text-base flex items-center gap-2 mb-3">
+              <i data-lucide="send" class="w-4 h-4 text-blue-500"></i>
+              <span>Task 3.2: Ký Duyệt & Trình Ban Giám Đốc</span>
+            </h3>
+            <p class="text-xs text-neutral-500 mb-4">Sau khi Task 1.5 sinh đầy đủ Hồ sơ khảo sát và Tờ trình, Trưởng phòng ký số phê duyệt và chính thức nộp lên Ban Giám Đốc.</p>
+
+            <div class="p-3.5 rounded-2xl bg-white/40 dark:bg-neutral-800/40 border border-white/30 mb-4 text-xs space-y-1">
+              <div><strong>Người ký duyệt:</strong> Nguyễn Văn Hùng - Trưởng phòng PTKD</div>
+              <div><strong>Trạng thái tờ trình:</strong> <span id="txtSignStatus" class="font-semibold text-amber-600">Chờ hoàn tất</span></div>
+              <div><strong>Thời gian ký:</strong> <span id="txtSignDate">--</span></div>
+            </div>
+
+            <button class="w-full py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2 transition" onclick="submitToBOD()">
+              <i data-lucide="pen-tool" class="w-4 h-4"></i>
+              <span>Ký Duyệt Điện Tử & Trình Ban Giám Đốc (Hoàn Tất BPMN)</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PANEL 5: PROPOSAL REPORT (TASK 1.5) ==================== -->
+      <section id="panel-proposal" class="panel-view hidden">
+        <div class="glass-card rounded-2xl p-5 mb-5">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <div>
+              <h3 class="font-bold text-base flex items-center gap-2">
+                <i data-lucide="file-text" class="w-4 h-4 text-purple-500"></i>
+                <span>Tờ Trình Ban Giám Đốc & Hồ Sơ Khảo Sát Thực Địa (Task 1.5)</span>
+              </h3>
+              <p class="text-xs text-neutral-500">Được tự động biên soạn bởi Proposal Architect Agent dựa trên 100% căn cứ kiểm toán Doc_ID.</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <a id="linkDownloadMd" href="#" target="_blank" class="px-3 py-1.5 rounded-xl bg-white/40 dark:bg-neutral-800/40 hover:bg-white/60 border border-white/30 text-xs font-semibold flex items-center gap-1.5 transition">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                <span>Tải Báo Cáo Markdown</span>
+              </a>
+              <a id="linkDownloadDocx" href="#" target="_blank" class="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold flex items-center gap-1.5 shadow-md transition">
+                <i data-lucide="file-down" class="w-3.5 h-3.5"></i>
+                <span>Tải File Word (.docx) Chuẩn BGĐ</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Document Preview Window -->
+          <div id="proposalReportBox" class="p-5 rounded-2xl bg-white/40 dark:bg-neutral-900/40 border border-white/30 max-h-[500px] overflow-y-auto text-xs sm:text-sm font-sans leading-relaxed whitespace-pre-wrap">
+            Đang tải nội dung tờ trình Ban Giám Đốc...
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PANEL 6: CLEAN DATASET & DOC_ID ==================== -->
+      <section id="panel-clean" class="panel-view hidden">
+        <div class="glass-card rounded-2xl p-5">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="font-bold text-base flex items-center gap-2">
+                <i data-lucide="database" class="w-4 h-4 text-emerald-500"></i>
+                <span>CSDL Đã Chuẩn Hóa & Mã Định Danh Doc_ID (Task 1.1 Data Auditor)</span>
+              </h3>
+              <p class="text-xs text-neutral-500">Dữ liệu nguồn sơ cấp được quy đổi về năm cơ sở 2026 kèm mã băm kiểm toán độc lập.</p>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 font-bold">Khử trùng lặp 100%</span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs">
+              <thead>
+                <tr class="border-b border-white/20 text-neutral-500">
+                  <th class="py-2.5 px-3">Mã Doc_ID</th>
+                  <th class="py-2.5 px-3">Địa Bàn</th>
+                  <th class="py-2.5 px-3">Cơ Quan Xuất Bản</th>
+                  <th class="py-2.5 px-3">Năm Gốc</th>
+                  <th class="py-2.5 px-3">Năm Quy Đổi</th>
+                  <th class="py-2.5 px-3">Mã Băm Toàn Vẹn</th>
+                  <th class="py-2.5 px-3">Trích Dẫn Số Liệu Sơ Cấp</th>
+                </tr>
+              </thead>
+              <tbody id="cleanDatasetTbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <script>
+    let stateCache = {};
+
+    // Panel switching with sliding pill
+    function switchPanel(panelId, navEl) {
+      document.querySelectorAll('.panel-view').forEach(p => p.classList.add('hidden'));
+      const target = document.getElementById(panelId);
+      if (target) target.classList.remove('hidden');
+
+      if (navEl) {
+        document.querySelectorAll('.sb-nav-item').forEach(el => el.classList.remove('active'));
+        navEl.classList.add('active');
+        updatePill(navEl);
+      } else {
+        const item = document.querySelector(`.sb-nav-item[data-panel="${panelId}"]`);
+        if (item) {
+          document.querySelectorAll('.sb-nav-item').forEach(el => el.classList.remove('active'));
+          item.classList.add('active');
+          updatePill(item);
+        }
+      }
+    }
+
+    function updatePill(el) {
+      const pill = document.getElementById('sidebarPill');
+      if (pill && el) {
+        pill.style.transform = `translateY(${el.offsetTop}px)`;
+      }
+    }
+
+    // Sidebar collapse / pin toggle
+    const sidebar = document.getElementById('mainSidebar');
+    const pinBtn = document.getElementById('sidebarPinBtn');
+    let isCollapsed = false;
+
+    pinBtn.addEventListener('click', () => {
+      isCollapsed = !isCollapsed;
+      sidebar.classList.toggle('collapsed', isCollapsed);
+      const icon = document.getElementById('pinIcon');
+      if (isCollapsed) {
+        icon.setAttribute('data-lucide', 'chevron-right');
+      } else {
+        icon.setAttribute('data-lucide', 'chevron-left');
+      }
+      lucide.createIcons();
+    });
+
+    // Night Mode Toggle
+    function toggleNightMode() {
+      document.body.classList.toggle('night-mode');
+      const isNight = document.body.classList.contains('night-mode');
+      document.getElementById('nightKnob').style.transform = isNight ? 'translateX(20px)' : 'translateX(0px)';
+    }
+
+    // Optics controls
+    function toggleOpticsPanel() {
+      document.getElementById('opticsPanel').classList.toggle('hidden');
+    }
+    function setScene(sceneName) {
+      const bg = document.getElementById('ambientBg');
+      bg.className = `ambient-room ${sceneName}`;
+    }
+    function setOpacity(val) {
+      document.documentElement.style.setProperty('--window-opacity', (val / 100).toFixed(2));
+      document.getElementById('txtOpacity').textContent = `${val}%`;
+    }
+    function setBlur(val) {
+      document.documentElement.style.setProperty('--window-blur', `${val}px`);
+      document.getElementById('txtBlur').textContent = `${val}px`;
+    }
+
+    // Toast notification
+    function showToast(msg, iconName = 'info') {
+      const c = document.getElementById('toast-container');
+      const t = document.createElement('div');
+      t.className = 'toast-msg';
+      t.innerHTML = `<i data-lucide="${iconName}" class="w-4 h-4 text-emerald-400"></i><span>${msg}</span>`;
+      c.appendChild(t);
+      lucide.createIcons();
+      setTimeout(() => {
+        t.style.opacity = '0';
+        t.style.transition = 'opacity 0.4s';
+        setTimeout(() => t.remove(), 400);
+      }, 3500);
+    }
+
+    // Fetch live state from backend
+    async function fetchState() {
+      try {
+        const res = await fetch('/api/state');
+        const data = await res.json();
+        stateCache = data;
+        renderState(data);
+      } catch (err) {
+        console.error('Lỗi nạp trạng thái:', err);
+      }
+    }
+
+    function renderState(s) {
+      // Current step badge
+      const stepName = s.current_step || 'START';
+      document.getElementById('txtCurrentStep').textContent = stepName;
+
+      // Highlight active node in BPMN
+      document.querySelectorAll('.node-glass').forEach(n => {
+        n.classList.remove('active-step', 'completed-step');
+      });
+      const activeNode = document.getElementById('node-' + stepName);
+      if (activeNode) {
+        activeNode.classList.add('active-step');
+      }
+
+      // Mark completed steps
+      const histSteps = (s.history || []).map(h => h.node);
+      histSteps.forEach(st => {
+        const n = document.getElementById('node-' + st);
+        if (n && st !== stepName) n.classList.add('completed-step');
+      });
+
+      // Top 2 KPI
+      const selected = s.selected_provinces || [];
+      if (selected.length > 0) {
+        document.getElementById('kpiTop2').textContent = selected.join(' & ');
+        document.getElementById('badgeShortlist').textContent = 'Đã chốt: ' + selected.join(', ');
+        document.getElementById('boxManagerTop2').textContent = selected.join(' & ');
+      }
+
+      // Leaderboard Table
+      const tbL = document.getElementById('leaderboardTbody');
+      if (s.score_results && s.score_results.length > 0) {
+        tbL.innerHTML = '';
+        s.score_results.forEach(r => {
+          const isSel = selected.includes(r.province);
+          const tr = document.createElement('tr');
+          tr.className = `border-b border-white/10 hover:bg-white/10 transition ${isSel ? 'bg-emerald-500/10' : ''}`;
+          tr.innerHTML = `
+            <td class="py-2.5 px-3 font-bold">#${r.rank}</td>
+            <td class="py-2.5 px-3 font-semibold flex items-center gap-1.5">
+              <span>${r.province}</span>
+              ${isSel ? '<span class="text-xs text-amber-500 font-bold">⭐ TOP 2</span>' : ''}
+            </td>
+            <td class="py-2.5 px-3 font-black text-blue-600 dark:text-blue-400">${r.final_score.toFixed(2)}</td>
+            <td class="py-2.5 px-3 text-neutral-500">${r.raw_composite_score.toFixed(2)}</td>
+            <td class="py-2.5 px-3">${r.is_score_capped ? `<span class="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-600 font-bold text-[11px]">Trần ${r.score_cap}</span>` : '<span class="text-neutral-400">Không</span>'}</td>
+            <td class="py-2.5 px-3">${r.cost_to_serve_flag ? '<span class="px-2 py-0.5 rounded-full bg-red-500/20 text-red-600 font-bold text-[11px]">Cờ Chi Phí Vùng</span>' : '<span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-600 font-bold text-[11px]">Đạt Chuẩn SLA</span>'}</td>
+            <td class="py-2.5 px-3 font-semibold">${(r.criteria_scores.find(c => c.criterion_id === 'pmf_fit') || {}).raw_score || '-'}</td>
+            <td class="py-2.5 px-3 font-semibold">${(r.criteria_scores.find(c => c.criterion_id === 'market_size') || {}).raw_score || '-'}</td>
+            <td class="py-2.5 px-3 font-semibold">${(r.criteria_scores.find(c => c.criterion_id === 'switching_cost') || {}).raw_score || '-'}</td>
+            <td class="py-2.5 px-3 font-semibold">${(r.criteria_scores.find(c => c.criterion_id === 'cost_to_serve') || {}).raw_score || '-'}</td>
+          `;
+          tbL.appendChild(tr);
+        });
+      }
+
+      // PMF Table
+      const tbFit = document.getElementById('fitMatrixTbody');
+      if (s.fit_records && s.fit_records.length > 0) {
+        tbFit.innerHTML = '';
+        s.fit_records.forEach(f => {
+          const tr = document.createElement('tr');
+          tr.className = 'border-b border-white/10';
+          tr.innerHTML = `
+            <td class="py-2 px-2 font-bold">${f.province}</td>
+            <td class="py-2 px-2">${f.feature_match_pct}%</td>
+            <td class="py-2 px-2">${f.readiness_score}/100</td>
+            <td class="py-2 px-2">${f.distance_km} km</td>
+            <td class="py-2 px-2">${f.meets_direct_sla ? '<span class="text-emerald-500 font-bold">Đạt SLA</span>' : '<span class="text-amber-500 font-bold">Vượt bán kính</span>'}</td>
+          `;
+          tbFit.appendChild(tr);
+        });
+      }
+
+      // Cost Table
+      const tbCost = document.getElementById('costMatrixTbody');
+      if (s.cost_records) {
+        tbCost.innerHTML = '';
+        for (const [p, cr] of Object.entries(s.cost_records)) {
+          const tr = document.createElement('tr');
+          tr.className = 'border-b border-white/10';
+          tr.innerHTML = `
+            <td class="py-2 px-2 font-bold">${p}</td>
+            <td class="py-2 px-2 font-bold text-amber-500">${cr.score_cap}/100</td>
+            <td class="py-2 px-2">${(cr.annual_extra_cost_vnd || 0).toLocaleString()} đ</td>
+            <td class="py-2 px-2 text-red-500 font-bold">${cr.margin_impact_pct}%</td>
+            <td class="py-2 px-2 text-[11px] text-neutral-500">${cr.mitigation_strategy || ''}</td>
+          `;
+          tbCost.appendChild(tr);
+        }
+      }
+
+      // Audit Samples
+      const tbSmp = document.getElementById('auditSamplesTbody');
+      if (s.audit_samples && s.audit_samples.length > 0) {
+        tbSmp.innerHTML = '';
+        s.audit_samples.forEach(smp => {
+          const tr = document.createElement('tr');
+          tr.className = 'border-b border-white/10';
+          tr.innerHTML = `
+            <td class="py-2 px-2 font-mono font-bold text-neutral-400">${smp.sample_id}</td>
+            <td class="py-2 px-2 font-bold">${smp.province}</td>
+            <td class="py-2 px-2 font-medium">${smp.criterion_name}</td>
+            <td class="py-2 px-2 font-mono font-bold text-blue-500">${smp.doc_id}</td>
+            <td class="py-2 px-2 text-[11px] text-neutral-600 dark:text-neutral-300 italic">"${smp.citation_quote}"</td>
+          `;
+          tbSmp.appendChild(tr);
+        });
+      }
+
+      // Audit Logs
+      const tbLog = document.getElementById('auditLogsTbody');
+      if (s.audit_logs && s.audit_logs.length > 0) {
+        tbLog.innerHTML = '';
+        s.audit_logs.forEach(l => {
+          const tr = document.createElement('tr');
+          tr.className = 'border-b border-white/10';
+          tr.innerHTML = `
+            <td class="py-2 px-2 font-mono text-[11px]">${l.timestamp}</td>
+            <td class="py-2 px-2 font-bold">${l.actor}</td>
+            <td class="py-2 px-2 font-mono font-bold text-blue-500">${l.action}</td>
+            <td class="py-2 px-2 font-semibold">${l.target_province}</td>
+            <td class="py-2 px-2 font-mono text-[11px]">${l.field_affected}</td>
+            <td class="py-2 px-2 text-neutral-400">${JSON.stringify(l.previous_value)}</td>
+            <td class="py-2 px-2 font-bold text-emerald-500">${JSON.stringify(l.new_value)}</td>
+            <td class="py-2 px-2 text-[11px]">${l.justification}</td>
+          `;
+          tbLog.appendChild(tr);
+        });
+      }
+
+      // Clean Data
+      const tbCln = document.getElementById('cleanDatasetTbody');
+      if (s.clean_dataset && s.clean_dataset.length > 0) {
+        tbCln.innerHTML = '';
+        s.clean_dataset.forEach(c => {
+          const tr = document.createElement('tr');
+          tr.className = 'border-b border-white/10';
+          tr.innerHTML = `
+            <td class="py-2.5 px-3 font-mono font-bold text-blue-500">${c.doc_id}</td>
+            <td class="py-2.5 px-3 font-bold">${c.province}</td>
+            <td class="py-2.5 px-3">${c.publisher}</td>
+            <td class="py-2.5 px-3 font-mono">${c.publication_year}</td>
+            <td class="py-2.5 px-3 font-mono font-bold text-emerald-500">${c.normalized_year}</td>
+            <td class="py-2.5 px-3 font-mono text-[11px] text-neutral-400">${c.verification_hash}</td>
+            <td class="py-2.5 px-3 text-[11px] italic">"${c.direct_quote}"</td>
+          `;
+          tbCln.appendChild(tr);
+        });
+      }
+
+      // Proposal Preview & Links
+      if (s.proposal_md_url) {
+        document.getElementById('linkDownloadMd').href = s.proposal_md_url;
+        fetch(s.proposal_md_url).then(r => r.text()).then(txt => {
+          document.getElementById('proposalReportBox').textContent = txt;
+        });
+      }
+      if (s.proposal_docx_url) {
+        document.getElementById('linkDownloadDocx').href = s.proposal_docx_url;
+        document.getElementById('linkDownloadDocx').classList.remove('hidden');
+      }
+
+      // Sign status
+      if (stepName === 'EndEvent_1') {
+        document.getElementById('txtSignStatus').textContent = 'ĐÃ KÝ DUYỆT & TRÌNH BGĐ THÀNH CÔNG';
+        document.getElementById('txtSignStatus').className = 'font-bold text-emerald-600';
+        document.getElementById('lblBODStatus').textContent = 'Đã trình ký';
+      }
+    }
+
+    // Backend actions
+    async function runNextStep() {
+      const res = await fetch('/api/run_step_forward', { method: 'POST' });
+      const data = await res.json();
+      showToast(data.message, 'zap');
+      fetchState();
+    }
+
+    async function runAutoPipeline() {
+      showToast('Đang khởi chạy toàn tuyến BPMN 2.0...', 'play');
+      const res = await fetch('/api/run_auto', { method: 'POST' });
+      showToast('Quy trình BPMN hoàn tất! Báo cáo Word đã sẵn sàng.', 'check');
+      fetchState();
+    }
+
+    async function resetWorkflow() {
+      await fetch('/api/reset', { method: 'POST' });
+      showToast('Đã thiết lập lại hệ thống ban đầu!', 'rotate-ccw');
+      fetchState();
+    }
+
+    async function approveAudit() {
+      await fetch('/api/ptkd_approve', { method: 'POST' });
+      showToast('Chuyên viên PTKD xác nhận 100% khớp tài liệu gốc!', 'check-circle');
+      fetchState();
+    }
+
+    async function handleOverrideSubmit(e) {
+      e.preventDefault();
+      const payload = {
+        province: document.getElementById('ovrProvince').value,
+        criterion_id: document.getElementById('ovrCriterion').value,
+        new_value: parseFloat(document.getElementById('ovrScore').value),
+        justification: document.getElementById('ovrReason').value,
+        old_value: 80.0
+      };
+      await fetch('/api/ptkd_override', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      showToast(`Đã ghi Audit Log & chấm điểm lại cho ${payload.province}!`, 'edit-3');
+      fetchState();
+    }
+
+    async function managerApprove() {
+      await fetch('/api/manager_decide', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ approved: true })
+      });
+      showToast('Trưởng phòng PTKD đã phê duyệt Top 2! Đang sinh tờ trình BGĐ...', 'check');
+      fetchState();
+      switchPanel('panel-proposal');
+    }
+
+    async function managerReject() {
+      const reason = prompt('Nhập lý do điều chỉnh gửi lại chuyên viên PTKD:', 'Tăng tỷ trọng Chi phí phục vụ để ưu tiên các địa bàn gần hub.');
+      if (!reason) return;
+      await fetch('/api/manager_decide', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          approved: false,
+          reason: reason,
+          weights: { pmf_fit: 0.25, market_size: 0.15, switching_cost: 0.20, cost_to_serve: 0.40 }
+        })
+      });
+      showToast('Đã gửi yêu cầu điều chỉnh trọng số và tái chấm điểm!', 'refresh-cw');
+      fetchState();
+    }
+
+    async function submitToBOD() {
+      await fetch('/api/run_step', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ step: 'Task_SubmitBOD' })
+      });
+      showToast('Đã ký duyệt và chuyển hồ sơ lên Ban Giám Đốc!', 'send');
+      fetchState();
+    }
+
+    window.addEventListener('load', () => {
+      lucide.createIcons();
+      fetchState();
+      updatePill(document.querySelector('.sb-nav-item.active'));
+    });
+  </script>
+</body>
+</html>
+

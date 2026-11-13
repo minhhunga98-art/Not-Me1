@@ -1,0 +1,38 @@
+{
+  "company_name": "Công ty Cổ phần Công nghệ Hưng Phát",
+  "solution_name": "Hưng Phát Smart WMS (Hệ thống Quản lý Kho Chuỗi Bán Lẻ)",
+  "value_proposition": "Giải pháp WMS chuyên sâu cho chuỗi bán lẻ đa điểm, quản lý tồn kho thời gian thực, điều phối quét mã RFID/Barcode, tối ưu lộ trình nhặt hàng (Pick-and-Pack) và tích hợp đa kênh Omni-channel.",
+  "target_customers": [
+    "Chuỗi siêu thị mini & bách hóa tiện lợi (>= 15 điểm bán)",
+    "Chuỗi phân phối thời trang, phụ kiện & mỹ phẩm (>= 10 cửa hàng)",
+    "Chuỗi điện máy, gia dụng & nội thất",
+    "Trung tâm phân phối vùng (Regional Distribution Center - RDC)"
+  ],
+  "technical_footprint": {
+    "deployment_modes": ["Cloud SaaS", "Hybrid On-Premise"],
+    "api_readiness": "REST API mở, kết nối ERP (SAP, Oracle NetSuite, MISA AMIS, Bravo, Fast)",
+    "sla_standard": "Hỗ trợ kỹ thuật tại chỗ trong vòng 4 giờ đối với sự cố nghiêm trọng (P1)"
+  },
+  "deployment_capacity": {
+    "hubs": [
+      {
+        "name": "Trụ sở Hà Nội",
+        "radius_km": 100,
+        "max_direct_coverage_provinces": ["Hà Nội", "Bắc Ninh", "Hưng Yên", "Vĩnh Phúc", "Hà Nam"]
+      },
+      {
+        "name": "Chi nhánh TP. Hồ Chí Minh",
+        "radius_km": 100,
+        "max_direct_coverage_provinces": ["TP. Hồ Chí Minh", "Bình Dương", "Đồng Nai", "Long An"]
+      }
+    ],
+    "hurdle_rate_rules": {
+      "max_distance_direct_km": 100,
+      "max_response_time_hours": 4,
+      "score_cap_over_capacity": 80.0,
+      "outsourced_sla_monthly_vnd": 18000000,
+      "travel_support_cost_per_trip_vnd": 4500000
+    }
+  }
+}
+

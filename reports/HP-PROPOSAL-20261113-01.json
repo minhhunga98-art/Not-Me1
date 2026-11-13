@@ -1,0 +1,184 @@
+{
+  "report_id": "HP-PROPOSAL-20261113-01",
+  "generated_at": "2026-11-13 08:42:04",
+  "company_name": "Công ty Cổ phần Công nghệ Hưng Phát",
+  "solution_name": "Hưng Phát Smart WMS (Hệ thống Quản lý Kho Chuỗi Bán Lẻ)",
+  "selected_provinces": [
+    "Bắc Ninh",
+    "Hải Phòng"
+  ],
+  "executive_summary": "Báo cáo đề xuất chiến lược mở rộng địa bàn kinh doanh của Công ty Hưng Phát cho giải pháp Smart WMS. Sau quá trình sàng lọc 4 địa bàn tiềm năng qua hệ thống Multi-Agent AI (Lane 1), kiểm tra chéo mẫu trích dẫn từ nhân viên PTKD (Lane 2), và rà soát của Trưởng phòng PTKD (Lane 3), chúng tôi kính trình Ban Giám đốc phê duyệt kế hoạch khảo sát thực địa tại 2 địa bàn ưu tiên: **Bắc Ninh, Hải Phòng**.",
+  "detailed_provinces": [
+    {
+      "province": "Bắc Ninh",
+      "rank": 1,
+      "final_score": 90.2,
+      "retail_chains": 48,
+      "market_growth": 14.5,
+      "distance_km": 40,
+      "sla_readiness": "Đạt chuẩn SLA 4h trực tiếp",
+      "doc_citations": [
+        "DOC-HP-005",
+        "DOC-HP-001",
+        "DOC-HP-005",
+        "DOC-HP-001"
+      ]
+    },
+    {
+      "province": "Hải Phòng",
+      "rank": 2,
+      "final_score": 87.27,
+      "retail_chains": 58,
+      "market_growth": 16.8,
+      "distance_km": 120,
+      "sla_readiness": "Đạt chuẩn SLA 4h trực tiếp",
+      "doc_citations": [
+        "DOC-HP-006",
+        "DOC-HP-002",
+        "DOC-HP-006",
+        "DOC-HP-002"
+      ]
+    }
+  ],
+  "survey_agenda": [
+    {
+      "question_id": "Q-SURVEY-001",
+      "province": "Bắc Ninh",
+      "category": "Hạ tầng & Thiết bị phần cứng",
+      "question_text": "Kho hàng của doanh nghiệp tại Bắc Ninh hiện đã trang bị mạng WiFi công nghiệp phủ sóng toàn kho và thiết bị quét PDA/Barcode chuyên dụng hay chưa?",
+      "target_respondent": "Trưởng kho / Quản trị viên CNTT",
+      "blindspot_addressed": "Xác định chi phí đầu tư thiết bị ngoại vi của khách hàng tại Bắc Ninh để tính gói hỗ trợ trọn gói.",
+      "priority": "HIGH"
+    },
+    {
+      "question_id": "Q-SURVEY-002",
+      "province": "Bắc Ninh",
+      "category": "Tích hợp Hệ thống Hiện hữu",
+      "question_text": "Doanh nghiệp đang vận hành hệ thống kế toán/bán hàng nào? Nếu tích hợp Hưng Phát WMS qua Open API, quy trình kiểm toán nội bộ mất bao lâu để cấp quyền kết nối dữ liệu?",
+      "target_respondent": "Giám đốc CNTT (CIO) / Trưởng phòng Kế toán",
+      "blindspot_addressed": "Đo lường thời gian chốt hợp đồng và thời gian triển khai tích hợp kỹ thuật tại Bắc Ninh.",
+      "priority": "HIGH"
+    },
+    {
+      "question_id": "Q-SURVEY-003",
+      "province": "Bắc Ninh",
+      "category": "Quy trình Vận hành Thực tế & SLA",
+      "question_text": "Vào mùa cao điểm hoặc ca đêm, doanh nghiệp có quy định xử lý sự cố kho trong bao lâu? Mức độ chấp nhận xử lý từ xa qua TeamViewer/UltraView so với kỹ sư onsite?",
+      "target_respondent": "Giám đốc Vận hành (COO) / Trưởng bộ phận Chuỗi Cung ứng",
+      "blindspot_addressed": "Kiểm chứng tính khả thi của cam kết SLA 4 giờ và nhu cầu bố trí nhân sự tại Bắc Ninh.",
+      "priority": "MEDIUM"
+    },
+    {
+      "question_id": "Q-SURVEY-004",
+      "province": "Hải Phòng",
+      "category": "Hạ tầng & Thiết bị phần cứng",
+      "question_text": "Kho hàng của doanh nghiệp tại Hải Phòng hiện đã trang bị mạng WiFi công nghiệp phủ sóng toàn kho và thiết bị quét PDA/Barcode chuyên dụng hay chưa?",
+      "target_respondent": "Trưởng kho / Quản trị viên CNTT",
+      "blindspot_addressed": "Xác định chi phí đầu tư thiết bị ngoại vi của khách hàng tại Hải Phòng để tính gói hỗ trợ trọn gói.",
+      "priority": "HIGH"
+    },
+    {
+      "question_id": "Q-SURVEY-005",
+      "province": "Hải Phòng",
+      "category": "Tích hợp Hệ thống Hiện hữu",
+      "question_text": "Doanh nghiệp đang vận hành hệ thống kế toán/bán hàng nào? Nếu tích hợp Hưng Phát WMS qua Open API, quy trình kiểm toán nội bộ mất bao lâu để cấp quyền kết nối dữ liệu?",
+      "target_respondent": "Giám đốc CNTT (CIO) / Trưởng phòng Kế toán",
+      "blindspot_addressed": "Đo lường thời gian chốt hợp đồng và thời gian triển khai tích hợp kỹ thuật tại Hải Phòng.",
+      "priority": "HIGH"
+    },
+    {
+      "question_id": "Q-SURVEY-006",
+      "province": "Hải Phòng",
+      "category": "Quy trình Vận hành Thực tế & SLA",
+      "question_text": "Vào mùa cao điểm hoặc ca đêm, doanh nghiệp có quy định xử lý sự cố kho trong bao lâu? Mức độ chấp nhận xử lý từ xa qua TeamViewer/UltraView so với kỹ sư onsite?",
+      "target_respondent": "Giám đốc Vận hành (COO) / Trưởng bộ phận Chuỗi Cung ứng",
+      "blindspot_addressed": "Kiểm chứng tính khả thi của cam kết SLA 4 giờ và nhu cầu bố trí nhân sự tại Hải Phòng.",
+      "priority": "MEDIUM"
+    }
+  ],
+  "audit_trail_summary": {
+    "total_audit_logs": 2,
+    "doc_ids_referenced": [
+      "DOC-HP-003",
+      "DOC-HP-007",
+      "DOC-HP-004",
+      "DOC-HP-006",
+      "DOC-HP-008",
+      "DOC-HP-002",
+      "DOC-HP-001",
+      "DOC-HP-005"
+    ],
+    "audit_logs": [
+      {
+        "log_id": "LOG-1794534124",
+        "timestamp": "2026-11-13 08:42:04",
+        "actor": "Nguyễn Văn Hùng - Trưởng phòng PTKD",
+        "action": "MANAGER_REQUEST_RECALIBRATION",
+        "target_province": "ALL",
+        "field_affected": "criteria_weights",
+        "previous_value": {
+          "criteria": [
+            {
+              "id": "pmf_fit",
+              "name": "Độ Khớp Giải Pháp & Nhu Cầu Thị Trường (PMF)",
+              "weight": 0.3,
+              "hurdle_minimum": 65.0,
+              "description": "Mức độ phù hợp giữa tính năng WMS của Hưng Phát và yêu cầu quản lý kho phức hợp của các chuỗi bán lẻ tại địa bàn."
+            },
+            {
+              "id": "market_size",
+              "name": "Quy Mô & Mật Độ Chuỗi Bán Lẻ Tiềm Năng",
+              "weight": 0.25,
+              "hurdle_minimum": 50.0,
+              "description": "Số lượng chuỗi bán lẻ từ 10 điểm bán trở lên, diện tích kho trung bình và tốc độ tăng trưởng doanh thu bán lẻ vùng."
+            },
+            {
+              "id": "switching_cost",
+              "name": "Sự Sẵn Sàng & Rào Cản Chuyển Đổi (Switching Cost)",
+              "weight": 0.25,
+              "hurdle_minimum": 50.0,
+              "description": "Mức độ sẵn sàng thay đổi hệ thống. Điểm cao nếu doanh nghiệp đang dùng quy trình thủ công / Excel / phần mềm rời rạc dễ thay thế; điểm trừ nếu đang ràng buộc hợp đồng ERP lớn (SAP, Oracle) có chi phí chuyển đổi cao."
+            },
+            {
+              "id": "cost_to_serve",
+              "name": "Biên Lợi Nhuận & Chi Phí Phục Vụ (Cost-to-Serve Feasibility)",
+              "weight": 0.2,
+              "hurdle_minimum": 40.0,
+              "description": "Chi phí triển khai, chi phí nhân sự onsite, bảo trì SLA và mức độ tối ưu hóa hạ tầng kết nối với trung tâm kỹ thuật."
+            }
+          ],
+          "gateway_rules": {
+            "hurdle_rate_distance_threshold_km": 100,
+            "score_cap_on_hurdle_failure": 80.0,
+            "audit_sample_ratio": 0.25,
+            "shortlist_target_count": 2
+          }
+        },
+        "new_value": {
+          "pmf_fit": 0.25,
+          "market_size": 0.1,
+          "switching_cost": 0.2,
+          "cost_to_serve": 0.45
+        },
+        "justification": "Cần ưu tiên tối đa tối ưu chi phí phục vụ gần hub kỹ thuật để bảo toàn dòng tiền."
+      },
+      {
+        "log_id": "LOG-1794534124",
+        "timestamp": "2026-11-13 08:42:04",
+        "actor": "Nguyễn Văn Hùng - Trưởng phòng PTKD",
+        "action": "MANAGER_CONFIRM_SHORTLIST",
+        "target_province": "Bắc Ninh,Hải Phòng",
+        "field_affected": "shortlist_provinces",
+        "previous_value": null,
+        "new_value": [
+          "Bắc Ninh",
+          "Hải Phòng"
+        ],
+        "justification": "Trưởng phòng phê duyệt chính thức 2 địa bàn ưu tiên khảo sát thực địa: Bắc Ninh, Hải Phòng."
+      }
+    ]
+  },
+  "approval_status": "PENDING_BOD_SUBMISSION",
+  "signed_by": null,
+  "sign_off_date": null
+}

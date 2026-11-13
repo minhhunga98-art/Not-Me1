@@ -1,0 +1,95 @@
+{
+  "baseline_year": 2026,
+  "total_raw_scanned": 7,
+  "clean_records_count": 4,
+  "discarded_count": 3,
+  "discarded_summary": [
+    {
+      "raw_id": "RAW-002",
+      "province": "Bắc Ninh",
+      "reason": "Nguồn thứ cấp/sao chép (BizTech Blog Aggregate). Ghi chú: Trùng lặp nguồn thứ cấp với RAW-001, số liệu năm 2024 trích dẫn lại từ VILOG."
+    },
+    {
+      "raw_id": "RAW-004",
+      "province": "Hải Phòng",
+      "reason": "Nguồn thứ cấp/sao chép (Cổng tin tức Hải Phòng Xanh). Ghi chú: Số liệu thứ cấp sao chép từ Sở Công Thương Hải Phòng."
+    },
+    {
+      "raw_id": "RAW-007",
+      "province": "Cần Thơ",
+      "reason": "Nguồn thứ cấp/sao chép (Diễn đàn Kinh tế Tây Nam). Ghi chú: Dữ liệu lạc hậu năm 2023, đã có số liệu chính thống 2026 từ ĐH Cần Thơ."
+    }
+  ],
+  "records": [
+    {
+      "doc_id": "DOC-HP-001",
+      "raw_id": "RAW-001",
+      "province": "Bắc Ninh",
+      "publisher": "Viện Nghiên cứu Kinh tế & Logistics Việt Nam (VILOG)",
+      "publication_year": 2025,
+      "normalized_year": 2026,
+      "metrics": {
+        "retail_chain_count": 48,
+        "warehouse_density_sqm": 320000,
+        "growth_rate_pct": 14.5,
+        "distance_to_nearest_hub_km": 40,
+        "estimated_market_size_bil_vnd": 38.5,
+        "_normalized_note": "Quy đổi từ 2025 (42 chuỗi) sang 2026 (+14.499999999999998%/năm) = 48 chuỗi"
+      },
+      "direct_quote": "Bắc Ninh hiện có 42 chuỗi bán lẻ và phân phối vệ tinh với hơn 180 điểm kho bãi đang tăng trưởng 14.5% năm 2025, hưởng lợi trực tiếp từ hạ tầng kết nối với thủ đô Hà Nội chỉ 40km.",
+      "verification_hash": "fc9a7e64-46c"
+    },
+    {
+      "doc_id": "DOC-HP-002",
+      "raw_id": "RAW-003",
+      "province": "Hải Phòng",
+      "publisher": "Sở Công Thương & Hiệp hội Logistics Hải Phòng",
+      "publication_year": 2026,
+      "normalized_year": 2026,
+      "metrics": {
+        "retail_chain_count": 58,
+        "warehouse_density_sqm": 580000,
+        "growth_rate_pct": 16.8,
+        "distance_to_nearest_hub_km": 120,
+        "estimated_market_size_bil_vnd": 62.0
+      },
+      "direct_quote": "Hải Phòng có 58 chuỗi bán lẻ, đại siêu thị và cụm phân phối logistics cảng biển, cách trung tâm Hà Nội 120km, thời gian di chuyển cao tốc 1 giờ 45 phút, tốc độ tăng trưởng doanh số bán lẻ đạt 16.8%.",
+      "verification_hash": "38405246-cfd"
+    },
+    {
+      "doc_id": "DOC-HP-003",
+      "raw_id": "RAW-005",
+      "province": "Đà Nẵng",
+      "publisher": "Viện Nghiên cứu Phát triển Kinh tế - Xã hội Đà Nẵng",
+      "publication_year": 2025,
+      "normalized_year": 2026,
+      "metrics": {
+        "retail_chain_count": 40,
+        "warehouse_density_sqm": 210000,
+        "growth_rate_pct": 11.2,
+        "distance_to_nearest_hub_km": 760,
+        "estimated_market_size_bil_vnd": 29.0,
+        "_normalized_note": "Quy đổi từ 2025 (36 chuỗi) sang 2026 (+11.2%/năm) = 40 chuỗi"
+      },
+      "direct_quote": "Đà Nẵng ghi nhận 36 chuỗi phân phối bán lẻ quy mô trên 10 cửa hàng, khoảng cách địa lý cách hai đầu cầu kinh tế Hà Nội và TP.HCM xấp xỉ 760km, tăng trưởng thương mại bán lẻ đạt 11.2%.",
+      "verification_hash": "b60a7461-676"
+    },
+    {
+      "doc_id": "DOC-HP-004",
+      "raw_id": "RAW-006",
+      "province": "Cần Thơ",
+      "publisher": "Trường Đại học Cần Thơ & Hiệp hội Doanh nghiệp Vùng",
+      "publication_year": 2026,
+      "normalized_year": 2026,
+      "metrics": {
+        "retail_chain_count": 48,
+        "warehouse_density_sqm": 390000,
+        "growth_rate_pct": 15.2,
+        "distance_to_nearest_hub_km": 160,
+        "estimated_market_size_bil_vnd": 44.0
+      },
+      "direct_quote": "Cần Thơ đóng vai trò hạt nhân trung chuyển toàn vùng Tây Nam Bộ với 48 chuỗi bán lẻ và trung tâm phân phối tiêu dùng, cách TP.HCM 160km qua tuyến cao tốc Mỹ Thuận - Cần Thơ (khoảng 2 giờ di chuyển), tăng trưởng bán lẻ đạt 15.2%.",
+      "verification_hash": "e4a49577-5f6"
+    }
+  ]
+}

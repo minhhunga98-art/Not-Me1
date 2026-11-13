@@ -1,0 +1,54 @@
+[
+  {
+    "sample_id": "AUDIT-SMP-001",
+    "province": "Cần Thơ",
+    "criterion_id": "switching_cost",
+    "criterion_name": "Sự Sẵn Sàng & Chi Phí Chuyển Đổi",
+    "score_assigned": 92.0,
+    "doc_id": "DOC-HP-008",
+    "citation_quote": "Rào cản chuyển đổi VERY_LOW. Hơn 90% doanh nghiệp Cần Thơ đang dùng phương pháp thủ công và phần mềm bán hàng cơ bản; không vướng mắc hợp đồng ERP đắt tiền, nhu cầu số hóa quy trình kho rất khát khao và thời gian ra quyết định chuyển đổi nhanh.",
+    "source_title": "Đánh giá rào cản chuyển đổi hệ thống ERP (Cần Thơ)",
+    "verified": false,
+    "mismatch_detected": false,
+    "human_notes": ""
+  },
+  {
+    "sample_id": "AUDIT-SMP-002",
+    "province": "Đà Nẵng",
+    "criterion_id": "switching_cost",
+    "criterion_name": "Sự Sẵn Sàng & Chi Phí Chuyển Đổi",
+    "score_assigned": 68.0,
+    "doc_id": "DOC-HP-007",
+    "citation_quote": "Rào cản chuyển đổi MEDIUM. Doanh nghiệp Đà Nẵng hứng thú với mô hình SaaS chi phí linh hoạt nhưng 80% khách hàng yêu cầu cam kết hỗ trợ onsite trong vòng 4 giờ; họ e ngại Hưng Phát chưa có kỹ sư thường trực tại miền Trung.",
+    "source_title": "Đánh giá rào cản chuyển đổi hệ thống ERP (Đà Nẵng)",
+    "verified": false,
+    "mismatch_detected": false,
+    "human_notes": ""
+  },
+  {
+    "sample_id": "AUDIT-SMP-003",
+    "province": "Bắc Ninh",
+    "criterion_id": "cost_to_serve",
+    "criterion_name": "Chi Phí Phục Vụ & Khả Thi Triển Khai",
+    "score_assigned": 96.0,
+    "doc_id": "DOC-HP-001",
+    "citation_quote": "Khoảng cách 40km. Thời gian tiếp cận 0.8h. Đạt SLA trực tiếp",
+    "source_title": "Quy hoạch năng lực kỹ thuật Hưng Phát",
+    "verified": false,
+    "mismatch_detected": false,
+    "human_notes": ""
+  },
+  {
+    "sample_id": "AUDIT-SMP-004",
+    "province": "Cần Thơ",
+    "criterion_id": "cost_to_serve",
+    "criterion_name": "Chi Phí Phục Vụ & Khả Thi Triển Khai",
+    "score_assigned": 84.0,
+    "doc_id": "DOC-HP-004",
+    "citation_quote": "Khoảng cách 160km. Thời gian tiếp cận 2.0h. Đạt SLA trực tiếp",
+    "source_title": "Quy hoạch năng lực kỹ thuật Hưng Phát",
+    "verified": false,
+    "mismatch_detected": false,
+    "human_notes": ""
+  }
+]

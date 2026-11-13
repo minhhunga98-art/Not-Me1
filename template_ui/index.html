@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vertix Spatial Glassmorphism Dashboard V2 + SideBar V5</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --window-opacity: 0.28;
+      --window-blur: 28px;
+      --card-opacity: 0.38;
+      --card-blur: 18px;
+      --sidebar-opacity: 0.34;
+      --sidebar-blur: 32px;
+      --text-primary: #1a1817;
+      --text-secondary: rgba(26, 24, 23, 0.65);
+      --border-light: rgba(255, 255, 255, 0.45);
+      --border-subtle: rgba(255, 255, 255, 0.24);
+    }
+
+    body.night-mode {
+      --window-opacity: 0.22;
+      --card-opacity: 0.26;
+      --sidebar-opacity: 0.32;
+      --text-primary: #f7f5f3;
+      --text-secondary: rgba(247, 245, 243, 0.68);
+      --border-light: rgba(255, 255, 255, 0.26);
+      --border-subtle: rgba(255, 255, 255, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: var(--text-primary);
+      background: #231b15;
+      transition: color 0.35s ease;
+    }
+
+    /* Architectural Warm Room Backdrop */
+    .ambient-room {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 0.6s ease, filter 0.5s ease;
+    }
+
+    .room-warm {
+      background-image:
+        radial-gradient(circle at 22% 18%, rgba(255, 214, 170, 0.55) 0%, transparent 45%),
+        radial-gradient(circle at 82% 75%, rgba(168, 114, 72, 0.50) 0%, transparent 50%),
+        linear-gradient(125deg, #d8c3ae 0%, #8e6c52 45%, #3d2c22 100%);
+    }
+
+    .room-studio {
+      background-image:
+        radial-gradient(circle at 30% 20%, rgba(226, 232, 240, 0.65) 0%, transparent 48%),
+        radial-gradient(circle at 78% 80%, rgba(148, 163, 184, 0.45) 0%, transparent 50%),
+        linear-gradient(135deg, #cbd5e1 0%, #64748b 50%, #1e293b 100%);
+    }
+
+    .room-sunset {
+      background-image:
+        radial-gradient(circle at 20% 25%, rgba(253, 186, 116, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 80% 70%, rgba(244, 114, 182, 0.40) 0%, transparent 50%),
+        linear-gradient(135deg, #fed7aa 0%, #c2410c 48%, #431407 100%);
+    }
+
+    /* Architectural Wood Slats & TV Console Depth Simulation */
+    .architectural-slats {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        repeating-linear-gradient(
+          90deg,
+          rgba(35, 22, 14, 0.14) 0px,
+          rgba(35, 22, 14, 0.14) 18px,
+          rgba(255, 235, 215, 0.06) 18px,
+          rgba(255, 235, 215, 0.06) 36px
+        );
+      mask-image: linear-gradient(to right, rgba(0,0,0,0.65), rgba(0,0,0,0.15) 45%, rgba(0,0,0,0.75));
+    }
+
+    .architectural-panel {
+      position: fixed;
+      top: 14%;
+      left: 16%;
+      right: 16%;
+      height: 44%;
+      border-radius: 24px;
+      background: linear-gradient(145deg, rgba(20, 18, 17, 0.58), rgba(38, 32, 28, 0.44));
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Main Spatial Glass Window */
+    .spatial-window {
+      background: rgba(255, 250, 245, var(--window-opacity));
+      backdrop-filter: blur(var(--window-blur)) saturate(145%);
+      -webkit-backdrop-filter: blur(var(--window-blur)) saturate(145%);
+      border: 1.5px solid var(--border-light);
+      box-shadow:
+        0 32px 80px rgba(18, 12, 8, 0.34),
+        inset 0 1px 1px rgba(255, 255, 255, 0.65),
+        inset 0 -1px 1px rgba(255, 255, 255, 0.18);
+      transition: background 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease;
+    }
+
+    body.night-mode .spatial-window {
+      background: rgba(24, 21, 19, var(--window-opacity));
+      box-shadow:
+        0 32px 80px rgba(0, 0, 0, 0.55),
+        inset 0 1px 1px rgba(255, 255, 255, 0.25);
+    }
+
+    /* Inner Bento Frosted Cards */
+    .glass-card {
+      position: relative;
+      background: rgba(255, 252, 248, var(--card-opacity));
+      backdrop-filter: blur(var(--card-blur)) saturate(135%);
+      -webkit-backdrop-filter: blur(var(--card-blur)) saturate(135%);
+      border: 1px solid var(--border-subtle);
+      box-shadow:
+        0 10px 30px rgba(22, 16, 12, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.55);
+      transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease, background 0.3s ease;
+      overflow: hidden;
+    }
+
+    body.night-mode .glass-card {
+      background: rgba(32, 28, 25, var(--card-opacity));
+      box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.16);
+    }
+
+    .glass-card:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 16px 36px rgba(22, 16, 12, 0.14),
+        inset 0 1px 0 rgba(255, 255, 255, 0.72);
+    }
+
+    /* Cursor Specular Sheen */
+    .glass-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        340px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        rgba(255, 255, 255, 0.28),
+        transparent 70%
+      );
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .glass-card:hover::before {
+      opacity: 1;
+    }
+
+    /* Glassy SideBar V5 */
+    .glass-sidebar {
+      width: 268px;
+      background: linear-gradient(
+        165deg,
+        rgba(52, 44, 38, 0.44) 0%,
+        rgba(38, 31, 26, 0.36) 55%,
+        rgba(92, 62, 38, 0.38) 100%
+      );
+      backdrop-filter: blur(var(--sidebar-blur)) saturate(160%);
+      -webkit-backdrop-filter: blur(var(--sidebar-blur)) saturate(160%);
+      border: 1.5px solid rgba(255, 255, 255, 0.32);
+      box-shadow:
+        0 28px 64px rgba(15, 10, 6, 0.42),
+        inset 0 1px 1px rgba(255, 255, 255, 0.55),
+        inset 0 -1px 1px rgba(255, 255, 255, 0.15);
+      color: #f8f6f4;
+      transition: width 0.38s cubic-bezier(0.22, 1, 0.36, 1), padding 0.35s ease;
+      position: relative;
+      z-index: 30;
+      flex-shrink: 0;
+    }
+
+    .glass-sidebar.collapsed {
+      width: 78px;
+    }
+
+    .glass-sidebar.collapsed .sb-hide {
+      opacity: 0;
+      width: 0;
+      overflow: hidden;
+      pointer-events: none;
+      display: none;
+    }
+
+    /* Refractive Active Pill in Sidebar V5 */
+    .sidebar-pill-indicator {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      height: 44px;
+      border-radius: 9999px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.26) 0%,
+        rgba(255, 255, 255, 0.08) 50%,
+        rgba(255, 255, 255, 0.18) 100%
+      );
+      border: 1.2px solid rgba(255, 255, 255, 0.52);
+      box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.22),
+        inset 0 1.5px 1px rgba(255, 255, 255, 0.72),
+        inset 0 -1.5px 2px rgba(255, 255, 255, 0.22);
+      transition: transform 0.34s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .sb-nav-item {
+      position: relative;
+      z-index: 2;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 14px;
+      border-radius: 9999px;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.78);
+      cursor: pointer;
+      transition: color 0.2s ease, transform 0.15s ease;
+      user-select: none;
+    }
+
+    .sb-nav-item:hover {
+      color: #ffffff;
+    }
+
+    .sb-nav-item:active {
+      transform: scale(0.98);
+    }
+
+    .sb-nav-item.active {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* Project Tree Connector Lines */
+    .project-tree {
+      position: relative;
+      padding-left: 28px;
+      margin-top: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .project-branch {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 32px;
+      padding: 0 10px;
+      border-radius: 10px;
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.75);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .project-branch:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .project-branch::before {
+      content: "";
+      position: absolute;
+      left: -14px;
+      top: -14px;
+      width: 12px;
+      height: 30px;
+      border-left: 1.2px solid rgba(255, 255, 255, 0.26);
+      border-bottom: 1.2px solid rgba(255, 255, 255, 0.26);
+      border-bottom-left-radius: 8px;
+    }
+
+    /* Top Floating Bar & Bottom Pill Dock */
+    .glass-pill {
+      background: rgba(255, 250, 245, 0.34);
+      backdrop-filter: blur(22px) saturate(145%);
+      -webkit-backdrop-filter: blur(22px) saturate(145%);
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      box-shadow: 0 8px 24px rgba(18, 12, 8, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    }
+
+    body.night-mode .glass-pill {
+      background: rgba(28, 24, 22, 0.42);
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+
+    /* Custom Range Slider */
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 5px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.32);
+      outline: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="p-3 md:p-6 flex items-center justify-center">
+  <!-- Ambient Architectural Background -->
+  <div id="ambientBg" class="ambient-room room-warm"></div>
+  <div class="architectural-slats"></div>
+  <div class="architectural-panel"></div>
+
+  <!-- Floating Optical Transparency Control Button -->
+  <div class="fixed top-4 right-4 z-50 flex flex-col items-end gap-2">
+    <button id="toggleOpticsBtn" class="glass-pill px-3.5 py-2 rounded-full text-xs font-medium flex items-center gap-2 hover:scale-105 transition cursor-pointer">
+      <i data-lucide="sliders-horizontal" class="w-3.5 h-3.5"></i>
+      <span>Optical Glass Controls</span>
+    </button>
+
+    <div id="opticsPanel" class="hidden glass-sidebar rounded-2xl p-4 w-64 text-xs space-y-3.5 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-white/15 pb-2">
+        <span class="font-semibold tracking-wide uppercase text-[10px] text-white/75">Glass Refraction Studio</span>
+        <span id="pinBadge" class="px-2 py-0.5 rounded-full bg-emerald-500/25 text-emerald-200 border border-emerald-400/30 text-[10px]">Sidebar Pinned</span>
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-1 text-white/85">
+          <span>Window Transparency</span>
+          <span id="opacityVal">28%</span>
+        </div>
+        <input id="opacitySlider" type="range" min="10" max="65" value="28" />
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-1 text-white/85">
+          <span>Backdrop Blur</span>
+          <span id="blurVal">28px</span>
+        </div>
+        <input id="blurSlider" type="range" min="6" max="48" value="28" />
+      </div>
+
+      <div>
+        <span class="block mb-1.5 text-white/85">Environment Scene</span>
+        <div class="grid grid-cols-3 gap-1.5">
+          <button data-scene="room-warm" class="scene-btn py-1.5 rounded-lg bg-white/25 border border-white/40 font-medium text-white">Warm</button>
+          <button data-scene="room-studio" class="scene-btn py-1.5 rounded-lg bg-white/10 border border-white/15 text-white/75 hover:bg-white/20">Studio</button>
+          <button data-scene="room-sunset" class="scene-btn py-1.5 rounded-lg bg-white/10 border border-white/15 text-white/75 hover:bg-white/20">Sunset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Spatial App Container -->
+  <div class="relative z-10 w-full max-w-[1380px] flex flex-col lg:flex-row items-stretch gap-5">
+
+    <!-- GLASSY SIDEBAR V5 (Click to Hold / Pin) -->
+    <aside id="glassSidebar" class="glass-sidebar rounded-[32px] p-4 flex flex-col justify-between select-none" data-pinned="true">
+      <!-- Floating Collapse/Expand Circular Toggle -->
+      <button id="sidebarCollapseBtn" title="Toggle Hold / Collapse Sidebar"
+        class="hidden lg:flex absolute -right-3.5 top-7 w-7 h-7 rounded-full bg-white text-neutral-800 shadow-lg items-center justify-center hover:scale-110 transition cursor-pointer z-40">
+        <i id="collapseIcon" data-lucide="chevron-left" class="w-4 h-4 stroke-[2.5]"></i>
+      </button>
+
+      <div>
+        <!-- Brand Header: Vertix -->
+        <div class="flex items-center gap-3 px-1.5 pt-1 pb-4">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#ff5e3a] to-[#e03816] flex items-center justify-center shadow-lg shrink-0 border border-white/35">
+            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-white">
+              <path d="M4.5 5.5L12 19.5L19.5 5.5H15.8L12 12.8L8.2 5.5H4.5Z" />
+            </svg>
+          </div>
+          <div class="sb-hide overflow-hidden">
+            <div class="text-[15px] font-semibold tracking-tight text-white leading-tight">Vertix</div>
+            <div class="text-[11.5px] text-white/60 leading-tight mt-0.5">Finance workspace</div>
+          </div>
+        </div>
+
+        <!-- Search Pages Input -->
+        <div class="sb-hide mb-4">
+          <div class="flex items-center justify-between px-3.5 py-2.5 rounded-full bg-white/10 border border-white/15 text-white/70 text-xs focus-within:border-white/45 focus-within:bg-white/15 transition">
+            <div class="flex items-center gap-2 w-full">
+              <i data-lucide="search" class="w-3.5 h-3.5 text-white/65 shrink-0"></i>
+              <input id="sidebarSearch" type="text" placeholder="Search pages" class="bg-transparent outline-none text-white placeholder-white/55 w-full text-xs" />
+            </div>
+            <span class="px-1.5 py-0.5 rounded bg-white/15 text-[10px] font-medium text-white/80 shrink-0">⌘K</span>
+          </div>
+        </div>
+
+        <!-- Navigation Container with Floating Liquid Pill -->
+        <div id="sidebarNavContainer" class="relative space-y-1">
+          <div id="activePill" class="sidebar-pill-indicator"></div>
+
+          <div class="sb-hide px-3.5 pt-1 pb-1 text-[10px] font-semibold tracking-wider uppercase text-white/45">Main</div>
+
+          <div class="sb-nav-item" data-page="Dashboard">
+            <i data-lucide="layout-grid" class="w-4 h-4 shrink-0"></i>
+            <span class="sb-hide flex-1">Dashboard</span>
+          </div>
+
+          <div class="sb-nav-item" data-page="Activity">
+            <i data-lucide="zap" class="w-4 h-4 shrink-0"></i>
+            <span class="sb-hide flex-1">Activity</span>
+            <span class="sb-hide px-2 py-0.5 rounded-full bg-white/18 text-[11px] font-semibold text-white">12</span>
+          </div>
+
+          <div class="sb-nav-item" data-page="Wallet">
+            <i data-lucide="wallet" class="w-4 h-4 shrink-0"></i>
+            <span class="sb-hide flex-1">Wallet</span>
+          </div>
+
+          <div class="sb-nav-item" data-page="Schedule">
+            <i data-lucide="calendar" class="w-4 h-4 shrink-0"></i>
+            <span class="sb-hide flex-1">Schedule</span>
+            <span class="sb-hide w-2 h-2 rounded-full bg-[#ff5e3a] shadow-[0_0_8px_#ff5e3a]"></span>
+          </div>
+
+          <div class="sb-hide px-3.5 pt-3 pb-1 text-[10px] font-semibold tracking-wider uppercase text-white/45">Workspace</div>
+
+          <div class="sb-nav-item" data-page="Messages">
+            <i data-lucide="message-circle" class="w-4 h-4 shrink-0"></i>
+            <span class="sb-hide flex-1">Messages</span>
+            <span class="sb-hide w-5 h-5 rounded-full bg-[#ff5e3a] text-[11px] font-semibold text-white flex items-center justify-center shadow">3</span>
+          </div>
+
+          <!-- Projects Accordion -->
+          <div>
+            <div id="projectsToggle" class="sb-nav-item" data-page="Projects">
+              <i data-lucide="layers" class="w-4 h-4 shrink-0"></i>
+              <span class="sb-hide flex-1">Projects</span>
+              <i id="projectsChevron" data-lucide="chevron-up" class="sb-hide w-3.5 h-3.5 text-white/60 transition-transform"></i>
+            </div>
+
+            <div id="projectsTree" class="sb-hide project-tree">
+              <div class="project-branch" data-project="Website redesign">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span>Website redesign</span>
+              </div>
+              <div class="project-branch" data-project="Mobile app">
+                <span class="w-2 h-2 rounded-full bg-orange-400"></span>
+                <span>Mobile app</span>
+              </div>
+              <div class="project-branch" data-project="Brand kit">
+                <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+                <span>Brand kit</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-nav-item active" data-page="Reports">
+            <i data-lucide="bar-chart-2" class="w-4 h-4 shrink-0"></i>
+            <span class="sb-hide flex-1">Reports</span>
+          </div>
+
+          <div class="sb-nav-item" data-page="Settings">
+            <i data-lucide="settings" class="w-4 h-4 shrink-0"></i>
+            <span class="sb-hide flex-1">Settings</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer: Night Mode Toggle & User Profile -->
+      <div class="pt-4 mt-4 border-t border-white/12 space-y-3">
+        <div class="flex items-center justify-between px-3 py-1.5">
+          <div class="flex items-center gap-2.5 text-white/80 text-[13px]">
+            <i data-lucide="sun" class="w-4 h-4 shrink-0"></i>
+            <span class="sb-hide">Night mode</span>
+          </div>
+          <button id="nightModeToggle" class="sb-hide w-10 h-5 rounded-full bg-white/25 p-0.5 transition relative cursor-pointer border border-white/30">
+            <span id="nightModeKnob" class="block w-4 h-4 rounded-full bg-white shadow transition-transform translate-x-0"></span>
+          </button>
+        </div>
+
+        <div class="flex items-center justify-between px-2 py-1.5 rounded-2xl hover:bg-white/10 transition cursor-pointer">
+          <div class="flex items-center gap-2.5">
+            <div class="relative shrink-0">
+              <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-amber-200 to-orange-400 flex items-center justify-center text-neutral-900 font-bold text-xs border border-white/50">
+                AM
+              </div>
+              <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-2 ring-neutral-900"></span>
+            </div>
+            <div class="sb-hide">
+              <div class="text-[13px] font-semibold text-white leading-tight">Alex Morgan</div>
+              <div class="text-[11px] text-white/55 leading-tight">alex@vertix.io</div>
+            </div>
+          </div>
+          <i data-lucide="chevrons-up-down" class="sb-hide w-4 h-4 text-white/55"></i>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN SPATIAL GLASS WINDOW (V2) -->
+    <main class="spatial-window flex-1 rounded-[34px] p-5 md:p-7 flex flex-col justify-between min-h-[760px]">
+      <div>
+        <!-- Top Spatial Command Header -->
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+          <div class="glass-pill px-3.5 py-1.5 rounded-full flex items-center gap-2.5 text-xs font-medium">
+            <span class="w-6 h-6 rounded-full bg-neutral-900 text-white flex items-center justify-center text-[10px] font-bold">XR</span>
+            <span>Welcome, Code XR</span>
+            <span id="sidebarHoldStatus" class="ml-1 px-2 py-0.5 rounded-full bg-black/10 text-[10px] opacity-75">Sidebar Held</span>
+          </div>
+
+          <div class="glass-pill px-4 py-1.5 rounded-full flex items-center gap-2.5 text-xs flex-1 max-w-md">
+            <span class="w-4 h-4 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-amber-400 shrink-0"></span>
+            <input id="aiPromptInput" type="text" value="Can you send $250 to Jenny Wilson..." class="bg-transparent outline-none w-full text-xs font-medium opacity-85" />
+          </div>
+
+          <button class="glass-pill w-8 h-8 rounded-full flex items-center justify-center hover:scale-105 transition cursor-pointer">
+            <i data-lucide="bell" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <!-- Page Title & Timeframe Controls -->
+        <div class="flex flex-wrap items-end justify-between gap-4 mb-6">
+          <div>
+            <h1 id="pageTitle" class="text-2xl md:text-3xl font-semibold tracking-tight">Reports</h1>
+            <p id="pageSubtitle" class="text-xs opacity-65 mt-1">See income and money spent during a specified period.</p>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <div class="glass-pill p-1 rounded-full flex items-center text-xs font-medium">
+              <button data-range="week" class="range-btn px-3 py-1 rounded-full opacity-70 hover:opacity-100 transition cursor-pointer">This week</button>
+              <button data-range="month" class="range-btn px-3 py-1 rounded-full bg-neutral-900 text-white shadow transition cursor-pointer">This month</button>
+              <button data-range="year" class="range-btn px-3 py-1 rounded-full opacity-70 hover:opacity-100 transition cursor-pointer">This year</button>
+            </div>
+            <button id="exportCsvBtn" class="px-3.5 py-2 rounded-full bg-neutral-900 text-white text-xs font-medium flex items-center gap-1.5 shadow-md hover:opacity-90 transition cursor-pointer">
+              <i data-lucide="download" class="w-3.5 h-3.5"></i>
+              <span>Export CSV</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4 KPI Bento Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-5">
+          <div class="glass-card rounded-2xl p-4">
+            <div class="flex items-center gap-2 text-xs font-medium opacity-70 mb-2">
+              <span class="w-5 h-5 rounded-full bg-amber-500/20 text-amber-700 flex items-center justify-center">
+                <i data-lucide="arrow-down-left" class="w-3 h-3"></i>
+              </span>
+              <span>Income</span>
+            </div>
+            <div id="kpiIncome" class="text-2xl font-bold tracking-tight">$305.0k</div>
+            <div class="mt-2 flex items-center gap-1.5 text-[11px]">
+              <span class="px-1.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-800 font-semibold">+8.6%</span>
+              <span class="opacity-60">vs last period</span>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-4">
+            <div class="flex items-center gap-2 text-xs font-medium opacity-70 mb-2">
+              <span class="w-5 h-5 rounded-full bg-rose-500/20 text-rose-700 flex items-center justify-center">
+                <i data-lucide="arrow-up-right" class="w-3 h-3"></i>
+              </span>
+              <span>Expenses</span>
+            </div>
+            <div id="kpiExpenses" class="text-2xl font-bold tracking-tight">$210.8k</div>
+            <div class="mt-2 flex items-center gap-1.5 text-[11px]">
+              <span class="px-1.5 py-0.5 rounded-full bg-rose-500/20 text-rose-800 font-semibold">-2.4%</span>
+              <span class="opacity-60">vs last period</span>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-4">
+            <div class="flex items-center gap-2 text-xs font-medium opacity-70 mb-2">
+              <span class="w-5 h-5 rounded-full bg-indigo-500/20 text-indigo-700 flex items-center justify-center">
+                <i data-lucide="trending-up" class="w-3 h-3"></i>
+              </span>
+              <span>Net profit</span>
+            </div>
+            <div id="kpiProfit" class="text-2xl font-bold tracking-tight">$94.2k</div>
+            <div class="mt-2 flex items-center gap-1.5 text-[11px]">
+              <span class="px-1.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-800 font-semibold">+14.2%</span>
+              <span class="opacity-60">vs last period</span>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-4">
+            <div class="flex items-center gap-2 text-xs font-medium opacity-70 mb-2">
+              <span class="w-5 h-5 rounded-full bg-sky-500/20 text-sky-700 flex items-center justify-center">
+                <i data-lucide="piggy-bank" class="w-3 h-3"></i>
+              </span>
+              <span>Savings rate</span>
+            </div>
+            <div id="kpiSavings" class="text-2xl font-bold tracking-tight">31.5%</div>
+            <div class="mt-2 flex items-center gap-1.5 text-[11px]">
+              <span class="px-1.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-800 font-semibold">+3.1%</span>
+              <span class="opacity-60">target 25%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts Bento Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+          <!-- Income vs Expenses Wave Chart -->
+          <div class="glass-card rounded-2xl p-5 lg:col-span-7 flex flex-col justify-between">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <h2 class="text-sm font-semibold">Income vs expenses</h2>
+                <p class="text-[11px] opacity-60">Cashflow trajectory across selected window</p>
+              </div>
+              <div class="flex items-center gap-3 text-[11px] font-medium">
+                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#e0533c]"></span>Income</span>
+                <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-neutral-700"></span>Expenses</span>
+              </div>
+            </div>
+
+            <div class="relative w-full h-48">
+              <svg viewBox="0 0 520 170" class="w-full h-full overflow-visible">
+                <defs>
+                  <linearGradient id="incomeFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#e0533c" stop-opacity="0.28" />
+                    <stop offset="100%" stop-color="#e0533c" stop-opacity="0.0" />
+                  </linearGradient>
+                </defs>
+                <!-- Grid Lines -->
+                <line x1="0" y1="30" x2="520" y2="30" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4" />
+                <line x1="0" y1="80" x2="520" y2="80" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4" />
+                <line x1="0" y1="130" x2="520" y2="130" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4" />
+
+                <!-- Income Area & Curve -->
+                <path id="incomeAreaPath" d="M 10 125 C 85 115, 130 42, 210 48 C 290 54, 340 95, 415 62 C 460 44, 490 35, 510 28 L 510 155 L 10 155 Z" fill="url(#incomeFill)" />
+                <path id="incomeLinePath" d="M 10 125 C 85 115, 130 42, 210 48 C 290 54, 340 95, 415 62 C 460 44, 490 35, 510 28" fill="none" stroke="#e0533c" stroke-width="2.6" stroke-linecap="round" />
+
+                <!-- Expenses Line -->
+                <path id="expenseLinePath" d="M 10 142 C 95 132, 155 110, 235 118 C 310 126, 365 88, 435 96 C 475 100, 495 85, 510 80" fill="none" stroke="currentColor" stroke-opacity="0.65" stroke-width="2.2" stroke-linecap="round" />
+
+                <!-- Highlight Point -->
+                <circle cx="210" cy="48" r="5" fill="#e0533c" stroke="#fff" stroke-width="2" />
+              </svg>
+            </div>
+
+            <div class="flex justify-between text-[10px] opacity-55 pt-1">
+              <span>Week 1</span>
+              <span>Week 2</span>
+              <span>Week 3</span>
+              <span>Week 4</span>
+            </div>
+          </div>
+
+          <!-- Spending by Category Donut -->
+          <div class="glass-card rounded-2xl p-5 lg:col-span-5 flex flex-col justify-between">
+            <div>
+              <h2 class="text-sm font-semibold">Spending by category</h2>
+              <p class="text-[11px] opacity-60">Proportion of total monthly outflow</p>
+            </div>
+
+            <div class="flex items-center justify-center my-2 relative">
+              <svg viewBox="0 0 160 160" class="w-40 h-40 -rotate-90">
+                <circle cx="80" cy="80" r="56" fill="none" stroke="currentColor" stroke-opacity="0.1" stroke-width="18" />
+                <circle cx="80" cy="80" r="56" fill="none" stroke="#e0533c" stroke-width="18" stroke-dasharray="145 352" stroke-linecap="round" />
+                <circle cx="80" cy="80" r="56" fill="none" stroke="#f59e0b" stroke-width="18" stroke-dasharray="95 352" stroke-dashoffset="-152" stroke-linecap="round" />
+                <circle cx="80" cy="80" r="56" fill="none" stroke="#52525b" stroke-width="18" stroke-dasharray="78 352" stroke-dashoffset="-254" stroke-linecap="round" />
+              </svg>
+              <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+                <span class="text-[10px] opacity-60">Total spent</span>
+                <span id="donutTotal" class="text-lg font-bold">$210.8k</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 text-[11px]">
+              <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#e0533c]"></span><span>Operations</span></div>
+              <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#f59e0b]"></span><span>Payroll</span></div>
+              <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#52525b]"></span><span>Cloud & AI</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Spatial Dock Pill -->
+      <div class="mt-6 flex justify-center">
+        <div class="glass-pill px-2.5 py-1.5 rounded-full flex items-center gap-1 text-xs font-medium">
+          <button data-dock="Overview" class="dock-btn px-3 py-1 rounded-full opacity-70 hover:opacity-100 transition cursor-pointer">Overview</button>
+          <button data-dock="Activity" class="dock-btn px-3 py-1 rounded-full opacity-70 hover:opacity-100 transition cursor-pointer">Activity</button>
+          <button data-dock="Manage" class="dock-btn px-3 py-1 rounded-full opacity-70 hover:opacity-100 transition cursor-pointer">Manage</button>
+          <button data-dock="Program" class="dock-btn px-3 py-1 rounded-full opacity-70 hover:opacity-100 transition cursor-pointer">Program</button>
+          <button data-dock="Account" class="dock-btn px-3 py-1 rounded-full opacity-70 hover:opacity-100 transition cursor-pointer">Account</button>
+          <button data-dock="Reports" class="dock-btn px-3.5 py-1 rounded-full bg-white text-neutral-900 font-semibold shadow transition cursor-pointer">Reports</button>
+          <button class="w-6 h-6 rounded-full bg-black/10 flex items-center justify-center ml-1 hover:bg-black/20 transition cursor-pointer">
+            <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    const sidebar = document.getElementById('glassSidebar');
+    const collapseBtn = document.getElementById('sidebarCollapseBtn');
+    const collapseIcon = document.getElementById('collapseIcon');
+    const holdStatus = document.getElementById('sidebarHoldStatus');
+    const pinBadge = document.getElementById('pinBadge');
+    const navItems = document.querySelectorAll('.sb-nav-item');
+    const activePill = document.getElementById('activePill');
+    const navContainer = document.getElementById('sidebarNavContainer');
+
+    let isPinned = true;
+
+    function updatePillPosition(el) {
+      if (!el || !activePill) return;
+      const containerRect = navContainer.getBoundingClientRect();
+      const itemRect = el.getBoundingClientRect();
+      const offsetTop = itemRect.top - containerRect.top;
+      activePill.style.transform = `translateY(${offsetTop}px)`;
+    }
+
+    // Initialize pill on active item
+    window.addEventListener('load', () => {
+      const activeItem = document.querySelector('.sb-nav-item.active');
+      updatePillPosition(activeItem);
+    });
+    window.addEventListener('resize', () => {
+      const activeItem = document.querySelector('.sb-nav-item.active');
+      updatePillPosition(activeItem);
+    });
+
+    function setSidebarHeld(held) {
+      isPinned = held;
+      sidebar.dataset.pinned = held ? 'true' : 'false';
+      if (held) {
+        sidebar.classList.remove('collapsed');
+        collapseIcon.setAttribute('data-lucide', 'chevron-left');
+        holdStatus.textContent = 'Sidebar Held';
+        pinBadge.textContent = 'Sidebar Pinned';
+      } else {
+        sidebar.classList.add('collapsed');
+        collapseIcon.setAttribute('data-lucide', 'chevron-right');
+        holdStatus.textContent = 'Sidebar Collapsed';
+        pinBadge.textContent = 'Auto-Peek';
+      }
+      lucide.createIcons();
+      setTimeout(() => {
+        const activeItem = document.querySelector('.sb-nav-item.active');
+        updatePillPosition(activeItem);
+      }, 360);
+    }
+
+    // Click collapse/expand button
+    collapseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setSidebarHeld(!isPinned);
+    });
+
+    // Clicking anywhere inside collapsed sidebar holds/locks it open
+    sidebar.addEventListener('click', () => {
+      if (!isPinned) {
+        setSidebarHeld(true);
+      }
+    });
+
+    // Hover peek when collapsed
+    sidebar.addEventListener('mouseenter', () => {
+      if (!isPinned) {
+        sidebar.classList.remove('collapsed');
+        setTimeout(() => updatePillPosition(document.querySelector('.sb-nav-item.active')), 200);
+      }
+    });
+
+    sidebar.addEventListener('mouseleave', () => {
+      if (!isPinned) {
+        sidebar.classList.add('collapsed');
+        setTimeout(() => updatePillPosition(document.querySelector('.sb-nav-item.active')), 200);
+      }
+    });
+
+    // Navigation selection + holding pill
+    navItems.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        if (!isPinned) setSidebarHeld(true);
+        navItems.forEach((n) => n.classList.remove('active'));
+        item.classList.add('active');
+        updatePillPosition(item);
+
+        const pageName = item.dataset.page;
+        if (pageName) {
+          document.getElementById('pageTitle').textContent = pageName;
+          document.getElementById('pageSubtitle').textContent = `Viewing ${pageName.toLowerCase()} spatial workspace metrics and live telemetry.`;
+        }
+      });
+    });
+
+    // Projects Accordion Toggle
+    const projectsToggle = document.getElementById('projectsToggle');
+    const projectsTree = document.getElementById('projectsTree');
+    const projectsChevron = document.getElementById('projectsChevron');
+    let projectsOpen = true;
+
+    projectsToggle.addEventListener('click', () => {
+      projectsOpen = !projectsOpen;
+      projectsTree.style.display = projectsOpen ? 'flex' : 'none';
+      projectsChevron.style.transform = projectsOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+      setTimeout(() => updatePillPosition(document.querySelector('.sb-nav-item.active')), 50);
+    });
+
+    // Night Mode Switch
+    const nightModeToggle = document.getElementById('nightModeToggle');
+    const nightModeKnob = document.getElementById('nightModeKnob');
+    nightModeToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      document.body.classList.toggle('night-mode');
+      const isNight = document.body.classList.contains('night-mode');
+      nightModeKnob.style.transform = isNight ? 'translateX(20px)' : 'translateX(0px)';
+    });
+
+    // Sidebar Search Filter
+    document.getElementById('sidebarSearch').addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase();
+      navItems.forEach((item) => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(q) ? 'flex' : 'none';
+      });
+    });
+
+    // Cursor Specular Highlight on Cards
+    document.querySelectorAll('.glass-card').forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+        card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+      });
+    });
+
+    // Optical Controls Panel
+    const toggleOpticsBtn = document.getElementById('toggleOpticsBtn');
+    const opticsPanel = document.getElementById('opticsPanel');
+    toggleOpticsBtn.addEventListener('click', () => opticsPanel.classList.toggle('hidden'));
+
+    document.getElementById('opacitySlider').addEventListener('input', (e) => {
+      const val = e.target.value;
+      document.documentElement.style.setProperty('--window-opacity', (val / 100).toFixed(2));
+      document.getElementById('opacityVal').textContent = `${val}%`;
+    });
+
+    document.getElementById('blurSlider').addEventListener('input', (e) => {
+      const val = e.target.value;
+      document.documentElement.style.setProperty('--window-blur', `${val}px`);
+      document.getElementById('blurVal').textContent = `${val}px`;
+    });
+
+    document.querySelectorAll('.scene-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const bg = document.getElementById('ambientBg');
+        bg.className = `ambient-room ${btn.dataset.scene}`;
+      });
+    });
+
+    // Timeframe Data Switcher
+    const rangeData = {
+      week: { inc: '$76.4k', exp: '$48.2k', prof: '$28.2k', sav: '36.9%', tot: '$48.2k' },
+      month: { inc: '$305.0k', exp: '$210.8k', prof: '$94.2k', sav: '31.5%', tot: '$210.8k' },
+      year: { inc: '$3.64M', exp: '$2.41M', prof: '$1.23M', sav: '33.8%', tot: '$2.41M' }
+    };
+
+    document.querySelectorAll('.range-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.range-btn').forEach((b) => {
+          b.classList.remove('bg-neutral-900', 'text-white', 'shadow');
+          b.classList.add('opacity-70');
+        });
+        btn.classList.add('bg-neutral-900', 'text-white', 'shadow');
+        btn.classList.remove('opacity-70');
+
+        const d = rangeData[btn.dataset.range];
+        document.getElementById('kpiIncome').textContent = d.inc;
+        document.getElementById('kpiExpenses').textContent = d.exp;
+        document.getElementById('kpiProfit').textContent = d.prof;
+        document.getElementById('kpiSavings').textContent = d.sav;
+        document.getElementById('donutTotal').textContent = d.tot;
+      });
+    });
+
+    // Export CSV Feedback
+    document.getElementById('exportCsvBtn').addEventListener('click', () => {
+      const csv = "Metric,Value\nIncome,$305000\nExpenses,$210800\nNet Profit,$94200\nSavings Rate,31.5%";
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'vertix-spatial-report.csv';
+      a.click();
+    });
+  </script>
+</body>
+</html>

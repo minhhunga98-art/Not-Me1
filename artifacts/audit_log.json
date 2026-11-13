@@ -1,0 +1,13 @@
+[
+  {
+    "log_id": "LOG-1794534124",
+    "timestamp": "2026-11-13 08:42:04",
+    "actor": "Trần Thị Mai - Chuyên viên PTKD",
+    "action": "SCORE_OVERRIDE",
+    "target_province": "Cần Thơ",
+    "field_affected": "criteria_score:switching_cost",
+    "previous_value": 92.0,
+    "new_value": 98.0,
+    "justification": "Phỏng vấn thực tế xác nhận 100% chủ vựa phân phối đã ký cam kết chuyển đổi sang WMS."
+  }
+]

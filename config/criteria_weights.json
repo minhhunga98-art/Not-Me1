@@ -1,0 +1,39 @@
+{
+  "criteria": [
+    {
+      "id": "pmf_fit",
+      "name": "Độ Khớp Giải Pháp & Nhu Cầu Thị Trường (PMF)",
+      "weight": 0.30,
+      "hurdle_minimum": 65.0,
+      "description": "Mức độ phù hợp giữa tính năng WMS của Hưng Phát và yêu cầu quản lý kho phức hợp của các chuỗi bán lẻ tại địa bàn."
+    },
+    {
+      "id": "market_size",
+      "name": "Quy Mô & Mật Độ Chuỗi Bán Lẻ Tiềm Năng",
+      "weight": 0.25,
+      "hurdle_minimum": 50.0,
+      "description": "Số lượng chuỗi bán lẻ từ 10 điểm bán trở lên, diện tích kho trung bình và tốc độ tăng trưởng doanh thu bán lẻ vùng."
+    },
+    {
+      "id": "switching_cost",
+      "name": "Sự Sẵn Sàng & Rào Cản Chuyển Đổi (Switching Cost)",
+      "weight": 0.25,
+      "hurdle_minimum": 50.0,
+      "description": "Mức độ sẵn sàng thay đổi hệ thống. Điểm cao nếu doanh nghiệp đang dùng quy trình thủ công / Excel / phần mềm rời rạc dễ thay thế; điểm trừ nếu đang ràng buộc hợp đồng ERP lớn (SAP, Oracle) có chi phí chuyển đổi cao."
+    },
+    {
+      "id": "cost_to_serve",
+      "name": "Biên Lợi Nhuận & Chi Phí Phục Vụ (Cost-to-Serve Feasibility)",
+      "weight": 0.20,
+      "hurdle_minimum": 40.0,
+      "description": "Chi phí triển khai, chi phí nhân sự onsite, bảo trì SLA và mức độ tối ưu hóa hạ tầng kết nối với trung tâm kỹ thuật."
+    }
+  ],
+  "gateway_rules": {
+    "hurdle_rate_distance_threshold_km": 100,
+    "score_cap_on_hurdle_failure": 80.0,
+    "audit_sample_ratio": 0.25,
+    "shortlist_target_count": 2
+  }
+}
+
