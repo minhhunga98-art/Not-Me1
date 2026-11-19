@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCN-DA · Executive Spatial Glassmorphism BI Platform</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <link rel="stylesheet" href="glass-tokens.css">
+
+  <style>
+    /* ================= VERTIX SPATIAL GLASSMORPHISM DESIGN SYSTEM ================= */
+    :root {
+      --window-opacity: 0.16;
+      --window-blur: 28px;
+      --card-opacity: 0.12;
+      --card-blur: 24px;
+      --sidebar-opacity: 0.35;
+      --sidebar-blur: 32px;
+      --text-primary: #14241d;
+      --text-secondary: rgba(20, 36, 29, 0.68);
+      --border-light: rgba(255, 255, 255, 0.52);
+      --border-subtle: rgba(255, 255, 255, 0.28);
+      --gold-champagne: #D4B07B;
+      --gold-deep: #C8A870;
+      --emerald-dark: #0A261D;
+      --emerald-primary: #0D2B22;
+      --emerald-accent: #134232;
+    }
+
+    body.night-mode {
+      --window-opacity: 0.18;
+      --card-opacity: 0.18;
+      --sidebar-opacity: 0.35;
+      --text-primary: #f8faf9;
+      --text-secondary: rgba(248, 250, 249, 0.72);
+      --border-light: rgba(255, 255, 255, 0.22);
+      --border-subtle: rgba(255, 255, 255, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(160, 140, 120, 0.35);
+      border-radius: 999px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(10, 38, 29, 0.65);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: var(--text-primary);
+      background: #1c1815;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+
+    /* Ambient Architectural Room Backdrop (Warm, Studio, Sunset) */
+    .ambient-room {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+    }
+
+    .room-warm {
+      background-image:
+        radial-gradient(circle at 18% 18%, rgba(255, 225, 185, 0.58) 0%, transparent 45%),
+        radial-gradient(circle at 82% 75%, rgba(184, 134, 92, 0.50) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(20, 52, 40, 0.18) 0%, transparent 60%),
+        linear-gradient(135deg, #e3d2bf 0%, #a48265 40%, #2f2219 100%);
+    }
+
+    .room-studio {
+      background-image:
+        radial-gradient(circle at 25% 20%, rgba(226, 238, 245, 0.65) 0%, transparent 48%),
+        radial-gradient(circle at 78% 80%, rgba(148, 172, 184, 0.45) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(13, 43, 34, 0.20) 0%, transparent 60%),
+        linear-gradient(135deg, #d2dfe7 0%, #687f8c 50%, #17242a 100%);
+    }
+
+    .room-sunset {
+      background-image:
+        radial-gradient(circle at 18% 25%, rgba(254, 205, 150, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 82% 70%, rgba(244, 130, 160, 0.42) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(30, 48, 38, 0.18) 0%, transparent 60%),
+        linear-gradient(135deg, #fed7aa 0%, #c2410c 48%, #381208 100%);
+    }
+
+    /* Architectural Wood Slats & Depth Simulation */
+    .architectural-slats {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        repeating-linear-gradient(90deg,
+          rgba(30, 20, 14, 0.12) 0px,
+          rgba(30, 20, 14, 0.12) 18px,
+          rgba(255, 240, 225, 0.05) 18px,
+          rgba(255, 240, 225, 0.05) 36px);
+      mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.12) 45%, rgba(0, 0, 0, 0.70));
+    }
+
+    .architectural-panel {
+      position: fixed;
+      top: 12%;
+      left: 14%;
+      right: 14%;
+      height: 48%;
+      border-radius: 32px;
+      background: linear-gradient(145deg, rgba(16, 28, 22, 0.55), rgba(32, 28, 25, 0.40));
+      box-shadow: 0 35px 100px rgba(0, 0, 0, 0.42);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Spatial Glass Window (Main Outer Container) */
+    .spatial-window {
+      background: rgba(255, 252, 248, var(--window-opacity)) !important;
+      backdrop-filter: blur(var(--window-blur)) saturate(150%) !important;
+      -webkit-backdrop-filter: blur(var(--window-blur)) saturate(150%) !important;
+      border: 1.5px solid var(--border-light) !important;
+      box-shadow:
+        0 32px 85px rgba(18, 12, 8, 0.28),
+        inset 0 1.5px 1.5px rgba(255, 255, 255, 0.75),
+        inset 0 -1px 1px rgba(255, 255, 255, 0.20) !important;
+      transition: background 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    body.night-mode .spatial-window {
+      background: rgba(20, 26, 24, var(--window-opacity)) !important;
+      box-shadow:
+        0 35px 95px rgba(0, 0, 0, 0.55),
+        inset 0 1.5px 1.5px rgba(255, 255, 255, 0.25) !important;
+    }
+
+    /* Bento Frosted Glass Cards with Cursor Specular Sheen */
+    .glass-card {
+      position: relative;
+      background: rgba(255, 253, 250, var(--card-opacity)) !important;
+      backdrop-filter: blur(var(--card-blur)) saturate(140%) !important;
+      -webkit-backdrop-filter: blur(var(--card-blur)) saturate(140%) !important;
+      border: 1px solid var(--border-subtle) !important;
+      box-shadow:
+        0 12px 32px rgba(20, 16, 12, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.65) !important;
+      border-radius: 1.25rem !important;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, background 0.3s ease, border-color 0.25s ease !important;
+      overflow: hidden;
+    }
+
+    body.night-mode .glass-card {
+      background: rgba(28, 34, 31, var(--card-opacity)) !important;
+      box-shadow:
+        0 14px 34px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.16) !important;
+      border-color: rgba(255, 255, 255, 0.14) !important;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 18px 42px rgba(20, 16, 12, 0.14),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
+      border-color: rgba(212, 176, 123, 0.65) !important;
+    }
+
+    body.night-mode .glass-card:hover {
+      border-color: rgba(212, 176, 123, 0.45) !important;
+    }
+
+    /* Cursor Specular Highlight on Cards */
+    .glass-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(360px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+          rgba(255, 255, 255, 0.32),
+          transparent 70%);
+      opacity: 0;
+      transition: opacity 0.28s ease;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .glass-card:hover::before {
+      opacity: 1;
+    }
+
+    /* Glass Inputs */
+    .glass-input {
+      background: rgba(255, 255, 255, 0.35) !important;
+      backdrop-filter: blur(14px) saturate(140%) !important;
+      -webkit-backdrop-filter: blur(14px) saturate(140%) !important;
+      border: 1.2px solid var(--border-subtle) !important;
+      box-shadow:
+        inset 0 1px 2px rgba(10, 35, 26, 0.03),
+        0 1px 3px rgba(10, 35, 26, 0.02) !important;
+      border-radius: 0.875rem !important;
+      color: var(--text-primary) !important;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    body.night-mode .glass-input {
+      background: rgba(24, 30, 27, 0.45) !important;
+      border-color: rgba(255, 255, 255, 0.16) !important;
+      color: #f8faf9 !important;
+    }
+
+    .glass-input:hover {
+      background: rgba(255, 255, 255, 0.55) !important;
+      border-color: var(--gold-deep) !important;
+    }
+
+    body.night-mode .glass-input:hover {
+      background: rgba(32, 38, 35, 0.65) !important;
+    }
+
+    .glass-input:focus,
+    .glass-input:focus-within {
+      background: rgba(255, 255, 255, 0.82) !important;
+      border-color: #0A261D !important;
+      box-shadow: 0 0 0 3px rgba(10, 38, 29, 0.12), 0 4px 16px rgba(200, 168, 112, 0.20) !important;
+      outline: none !important;
+    }
+
+    body.night-mode .glass-input:focus,
+    body.night-mode .glass-input:focus-within {
+      background: rgba(38, 46, 42, 0.85) !important;
+      border-color: var(--gold-champagne) !important;
+      box-shadow: 0 0 0 3px rgba(212, 176, 123, 0.18) !important;
+    }
+
+    /* Transparent Frosted Glass for all Dashboard sections and subcards */
+    .glass-subcard {
+      background: rgba(255, 255, 255, 0.16) !important;
+      backdrop-filter: blur(16px) saturate(140%) !important;
+      -webkit-backdrop-filter: blur(16px) saturate(140%) !important;
+      border: 1px solid rgba(255, 255, 255, 0.32) !important;
+      box-shadow: 0 8px 24px rgba(20, 16, 12, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
+    }
+
+    body.night-mode .glass-subcard {
+      background: rgba(28, 36, 32, 0.35) !important;
+      border-color: rgba(255, 255, 255, 0.14) !important;
+    }
+
+    /* Strict override to eliminate solid white/cream backgrounds in dashboard */
+    #workspace-content .bg-white,
+    #workspace-content .bg-\[\#F9F7F4\],
+    #workspace-content .bg-\[\#FAF7F2\],
+    #workspace-content .bg-\[\#F5EFE6\],
+    #workspace-content .bg-\[\#FAF7F2\]\/50,
+    #workspace-content .bg-white\/60 {
+      background-color: rgba(255, 255, 255, 0.14) !important;
+      backdrop-filter: blur(16px) saturate(140%) !important;
+      -webkit-backdrop-filter: blur(16px) saturate(140%) !important;
+      border-color: rgba(255, 255, 255, 0.30) !important;
+      box-shadow: 0 8px 24px rgba(20, 16, 12, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
+    }
+
+    body.night-mode #workspace-content .bg-white,
+    body.night-mode #workspace-content .bg-\[\#F9F7F4\],
+    body.night-mode #workspace-content .bg-\[\#FAF7F2\],
+    body.night-mode #workspace-content .bg-\[\#F5EFE6\],
+    body.night-mode #workspace-content .bg-\[\#FAF7F2\]\/50,
+    body.night-mode #workspace-content .bg-white\/60 {
+      background-color: rgba(25, 35, 30, 0.28) !important;
+      border-color: rgba(255, 255, 255, 0.14) !important;
+    }
+
+    /* Glass Floating Pills & Tactile Hover-on-Click Effects */
+    .glass-pill,
+    .pill-btn,
+    .action-pill {
+      position: relative;
+      background: rgba(255, 252, 248, 0.52) !important;
+      backdrop-filter: blur(20px) saturate(150%) !important;
+      -webkit-backdrop-filter: blur(20px) saturate(150%) !important;
+      border: 1.2px solid rgba(255, 255, 255, 0.65) !important;
+      box-shadow:
+        0 4px 16px rgba(18, 12, 8, 0.06),
+        inset 0 1.2px 1px rgba(255, 255, 255, 0.85) !important;
+      color: var(--text-primary) !important;
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    body.night-mode .glass-pill,
+    body.night-mode .pill-btn,
+    body.night-mode .action-pill {
+      background: rgba(26, 34, 30, 0.65) !important;
+      border-color: rgba(255, 255, 255, 0.22) !important;
+      color: #f8faf9 !important;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.25) !important;
+    }
+
+    .glass-pill:hover,
+    .pill-btn:hover,
+    .action-pill:hover {
+      transform: translateY(-2px) scale(1.025) !important;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 252, 248, 0.62) 100%) !important;
+      border-color: rgba(212, 176, 123, 0.8) !important;
+      box-shadow:
+        0 10px 28px rgba(200, 168, 112, 0.28),
+        0 2px 6px rgba(10, 38, 29, 0.08),
+        inset 0 1.5px 1.5px rgba(255, 255, 255, 0.95) !important;
+    }
+
+    body.night-mode .glass-pill:hover,
+    body.night-mode .pill-btn:hover,
+    body.night-mode .action-pill:hover {
+      background: linear-gradient(180deg, rgba(38, 48, 42, 0.85) 0%, rgba(26, 34, 30, 0.65) 100%) !important;
+      border-color: rgba(212, 176, 123, 0.65) !important;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45), inset 0 1px 1.5px rgba(255, 255, 255, 0.35) !important;
+    }
+
+    .glass-pill:active,
+    .pill-btn:active,
+    .action-pill:active {
+      transform: translateY(0.5px) scale(0.95) !important;
+      box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.14),
+        inset 0 1.5px 3px rgba(10, 38, 29, 0.18) !important;
+      transition: transform 0.1s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.1s ease !important;
+    }
+
+    /* Glassy SideBar V5 */
+    .glass-sidebar {
+      width: 268px;
+      background: linear-gradient(165deg,
+          rgba(36, 48, 42, var(--sidebar-opacity)) 0%,
+          rgba(20, 32, 26, calc(var(--sidebar-opacity) * 0.95)) 55%,
+          rgba(48, 38, 28, var(--sidebar-opacity)) 100%) !important;
+      backdrop-filter: blur(var(--sidebar-blur)) saturate(160%) !important;
+      -webkit-backdrop-filter: blur(var(--sidebar-blur)) saturate(160%) !important;
+      border: 1.5px solid rgba(255, 255, 255, 0.32) !important;
+      box-shadow:
+        0 28px 64px rgba(12, 18, 15, 0.42),
+        inset 0 1px 1.5px rgba(255, 255, 255, 0.55),
+        inset 0 -1px 1px rgba(255, 255, 255, 0.15) !important;
+      color: #f8f6f4 !important;
+      transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1), padding 0.35s ease !important;
+      position: sticky;
+      top: 1.25rem;
+      z-index: 30;
+      flex-shrink: 0;
+    }
+
+    .glass-sidebar.collapsed {
+      width: 78px;
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+    }
+
+    .glass-sidebar.collapsed .sb-hide {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      pointer-events: none;
+      display: none !important;
+    }
+
+    .glass-sidebar.collapsed .sb-brand-header {
+      justify-content: center;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .glass-sidebar.collapsed .sb-footer-item {
+      justify-content: center;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    /* Refractive Liquid Sliding Active Pill in Sidebar - THE ONLY CAPSULE/BORDER RENDERER */
+    .sidebar-pill-indicator {
+      position: absolute;
+      left: 6px;
+      right: 6px;
+      height: 44px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.28) 0%,
+          rgba(255, 255, 255, 0.10) 50%,
+          rgba(255, 255, 255, 0.22) 100%);
+      border: 1.2px solid rgba(255, 255, 255, 0.55);
+      box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.25),
+        inset 0 1.5px 1px rgba(255, 255, 255, 0.75),
+        inset 0 -1px 1.5px rgba(255, 255, 255, 0.25);
+      transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1), left 0.32s ease, right 0.32s ease, border-radius 0.32s ease, opacity 0.2s ease;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .glass-sidebar.collapsed .sidebar-pill-indicator {
+      left: 5px;
+      right: 5px;
+      border-radius: 9999px;
+    }
+
+    .sb-nav-item {
+      position: relative;
+      z-index: 2;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 16px;
+      border-radius: 9999px;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.78);
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      cursor: pointer;
+      transition: color 0.2s ease, transform 0.15s ease, padding 0.32s ease, justify-content 0.32s ease;
+      user-select: none;
+      box-sizing: border-box;
+    }
+
+    .glass-sidebar.collapsed .sb-nav-item {
+      justify-content: center;
+      padding: 0 !important;
+      width: 100%;
+    }
+
+    .sb-nav-item:hover {
+      color: #ffffff;
+    }
+
+    .sb-nav-item:active {
+      transform: scale(0.98);
+    }
+
+    /* Active nav item has NO border or background, relying solely on sliding liquid pill */
+    .sb-nav-item.active,
+    .sidebar-tab-active {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      color: #ffffff !important;
+      font-weight: 700 !important;
+    }
+
+    .sidebar-tab-inactive {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      color: rgba(255, 255, 255, 0.72) !important;
+      font-weight: 500 !important;
+    }
+
+    .sidebar-tab-inactive:hover:not(.active),
+    .sb-nav-item:not(.active):hover {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.05) 100%) !important;
+      border: 1px solid rgba(255, 255, 255, 0.28) !important;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
+      transform: translateY(-1px) scale(1.015);
+      color: #ffffff !important;
+    }
+
+    .sb-nav-item:active {
+      transform: scale(0.95) !important;
+      transition: transform 0.1s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+    }
+
+    .pill-press-active {
+      transform: scale(0.94) !important;
+      transition: transform 0.08s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+    }
+
+    /* Whole-Window Ambient Luminous Cursor Follower */
+    .window-cursor-glow {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      background: radial-gradient(660px circle at var(--win-cursor-x, 50%) var(--win-cursor-y, 50%),
+          rgba(255, 255, 255, 0.20) 0%,
+          rgba(212, 176, 123, 0.11) 28%,
+          rgba(255, 255, 255, 0.03) 55%,
+          transparent 72%);
+      opacity: 0;
+      transition: opacity 0.35s ease;
+      mix-blend-mode: soft-light;
+    }
+
+    .spatial-window:hover .window-cursor-glow {
+      opacity: 1;
+    }
+
+    body.night-mode .window-cursor-glow {
+      background: radial-gradient(660px circle at var(--win-cursor-x, 50%) var(--win-cursor-y, 50%),
+          rgba(212, 176, 123, 0.18) 0%,
+          rgba(255, 255, 255, 0.08) 32%,
+          transparent 72%);
+      mix-blend-mode: screen;
+    }
+
+    /* Ambient Cursor Light Aura across the whole viewport */
+    .ambient-cursor-aura {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 540px;
+      height: 540px;
+      margin-left: -270px;
+      margin-top: -270px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 2;
+      background: radial-gradient(circle,
+          rgba(255, 235, 205, 0.14) 0%,
+          rgba(212, 176, 123, 0.08) 35%,
+          rgba(255, 255, 255, 0.02) 55%,
+          transparent 70%);
+      filter: blur(32px);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      transform: translate3d(-1000px, -1000px, 0);
+    }
+
+    body.night-mode .ambient-cursor-aura {
+      background: radial-gradient(circle,
+          rgba(212, 176, 123, 0.14) 0%,
+          rgba(16, 185, 129, 0.06) 40%,
+          transparent 70%);
+    }
+
+    /* Subtle Luxury Mouse Click Ripple & Refraction Lens */
+    .lux-click-ripple {
+      position: fixed;
+      pointer-events: none;
+      border-radius: 50%;
+      transform: translate(-50%, -50%) scale(0.15);
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.50) 0%, rgba(212, 176, 123, 0.28) 35%, rgba(255, 255, 255, 0.08) 60%, transparent 75%);
+      box-shadow: 0 0 24px rgba(212, 176, 123, 0.35);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      animation: luxRippleAnim 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      z-index: 99999;
+    }
+
+    @keyframes luxRippleAnim {
+      0% {
+        transform: translate(-50%, -50%) scale(0.2);
+        opacity: 0.85;
+      }
+
+      50% {
+        opacity: 0.55;
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(1.25);
+        opacity: 0;
+      }
+    }
+
+    /* Range Sliders in Optical Studio */
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 5px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.35);
+      outline: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+
+    /* Night mode text compatibility overrides for app.js generated DOM */
+    body.night-mode .text-\[\#0A261D\],
+    body.night-mode .text-\[\#0D2B22\] {
+      color: #f8faf9 !important;
+    }
+
+    body.night-mode .text-\[\#4A635A\],
+    body.night-mode .text-\[\#2C423B\] {
+      color: rgba(248, 250, 249, 0.70) !important;
+    }
+
+    body.night-mode .bg-white,
+    body.night-mode .bg-\[\#FAF7F2\],
+    body.night-mode .bg-\[\#F5EFE6\] {
+      background-color: rgba(30, 36, 33, 0.45) !important;
+    }
+
+    body.night-mode .border-\[\#ECE4D8\],
+    body.night-mode .border-\[\#E2D9C8\] {
+      border-color: rgba(255, 255, 255, 0.12) !important;
+    }
+  </style>
+  <script src="payload.js?v=15"></script>
+  <script src="app.js?v=62"></script>
+</head>
+
+<body
+  class="antialiased min-h-screen selection:bg-[#0A261D] selection:text-white flex items-center justify-center p-2 sm:p-4 md:p-6">
+
+  <!-- ================= AMBIENT ARCHITECTURAL ROOM BACKGROUND ================= -->
+  <div id="ambientBg" class="ambient-room room-warm"></div>
+  <div class="architectural-slats"></div>
+  <div class="architectural-panel"></div>
+
+  <!-- ================= FLOATING OPTICAL GLASS CONTROLS BUTTON & POPUP STUDIO ================= -->
+  <div class="fixed top-4 right-4 z-50 flex flex-col items-end gap-2">
+    <button id="toggleOpticsBtn"
+      class="glass-pill px-3.5 py-2 rounded-full text-xs font-semibold flex items-center gap-2 hover:scale-105 transition cursor-pointer text-[#1a1817]"
+      title="Mở phòng điều khiển hiệu ứng kính mờ (Optical Studio)">
+      <svg class="w-3.5 h-3.5 text-[#C8A870]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="21" x2="4" y2="14"></line>
+        <line x1="4" y1="10" x2="4" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="12"></line>
+        <line x1="12" y1="8" x2="12" y2="3"></line>
+        <line x1="20" y1="21" x2="20" y2="16"></line>
+        <line x1="20" y1="12" x2="20" y2="3"></line>
+        <line x1="1" y1="14" x2="7" y2="14"></line>
+        <line x1="9" y1="8" x2="15" y2="8"></line>
+        <line x1="17" y1="16" x2="23" y2="16"></line>
+      </svg>
+      <span>Optical Glass Studio</span>
+    </button>
+
+    <div id="opticsPanel"
+      class="hidden glass-sidebar rounded-2xl p-4 w-72 text-xs space-y-3.5 shadow-2xl border border-white/30 backdrop-blur-2xl">
+      <div class="flex items-center justify-between border-b border-white/15 pb-2">
+        <span class="font-semibold tracking-wide uppercase text-[10px] text-white/80">Glass Refraction Studio</span>
+        <span id="pinBadge"
+          class="px-2 py-0.5 rounded-full bg-emerald-500/25 text-emerald-200 border border-emerald-400/30 text-[10px]">Auto-Peek
+          (Hover)</span>
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-1 text-white/85">
+          <span>Window Transparency (Độ trong suốt)</span>
+          <span id="opacityVal">28%</span>
+        </div>
+        <input id="opacitySlider" type="range" min="10" max="65" value="28"
+          class="w-full accent-white cursor-pointer" />
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-1 text-white/85">
+          <span>Backdrop Blur (Độ mờ kính)</span>
+          <span id="blurVal">28px</span>
+        </div>
+        <input id="blurSlider" type="range" min="6" max="48" value="28" class="w-full accent-white cursor-pointer" />
+      </div>
+
+      <div>
+        <span class="block mb-1.5 text-white/85">Bối cảnh không gian (Environment Scene)</span>
+        <div class="grid grid-cols-3 gap-1.5">
+          <button data-scene="room-warm"
+            class="scene-btn py-1.5 rounded-lg bg-white/25 border border-white/40 font-medium text-white transition hover:bg-white/30">Warm</button>
+          <button data-scene="room-studio"
+            class="scene-btn py-1.5 rounded-lg bg-white/10 border border-white/15 text-white/75 hover:bg-white/20 transition">Studio</button>
+          <button data-scene="room-sunset"
+            class="scene-btn py-1.5 rounded-lg bg-white/10 border border-white/15 text-white/75 hover:bg-white/20 transition">Sunset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN SPATIAL APP WRAPPER ================= -->
+  <div class="relative z-10 w-full max-w-[1520px] mx-auto min-h-screen flex flex-col lg:flex-row items-stretch gap-5">
+
+    <!-- ================= GLASSY SIDEBAR V5 (CLICK-TO-HOLD / PIN) ================= -->
+    <aside id="glassSidebar"
+      class="glass-sidebar collapsed rounded-[32px] p-4 flex flex-col justify-between select-none relative"
+      data-pinned="false">
+
+      <!-- Floating Collapse/Expand Circular Toggle -->
+      <button id="sidebarCollapseBtn" title="Mở rộng / Ghim Sidebar"
+        class="hidden lg:flex absolute -right-3.5 top-7 w-7 h-7 rounded-full bg-white text-neutral-800 shadow-lg items-center justify-center hover:scale-110 transition cursor-pointer z-40">
+        <svg id="collapseIconSvg" class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      <div>
+        <!-- Brand Header (Stylized 3D Gold Logo & Text) -->
+        <div class="sb-brand-header flex items-center gap-3 px-1.5 pt-1 pb-4 cursor-pointer transition-all"
+          onclick="switchToOverview()" title="CCN-DA - Quay về Tổng quan">
+          <div
+            class="w-10 h-10 rounded-full bg-gradient-to-br from-[#D4B07B] via-[#C8A870] to-[#0A261D] flex items-center justify-center shadow-lg shrink-0 border border-white/35">
+            <span class="font-black text-white text-[11px] tracking-wider">CCN</span>
+          </div>
+          <div class="sb-hide overflow-hidden">
+            <div class="text-[15px] font-bold tracking-tight text-white leading-tight">CCN-DA</div>
+            <div class="text-[11px] text-white/60 leading-tight mt-0.5">Spatial BI Platform</div>
+          </div>
+        </div>
+
+        <!-- Search Pages Input -->
+        <div class="sb-hide mb-4">
+          <div
+            class="flex items-center justify-between px-3.5 py-2 rounded-full bg-white/10 border border-white/15 text-white/70 text-xs focus-within:border-white/45 focus-within:bg-white/15 transition">
+            <div class="flex items-center gap-2 w-full">
+              <svg class="w-3.5 h-3.5 text-white/65 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+              <input id="sidebarSearch" type="text" placeholder="Tìm kiếm trang..."
+                class="bg-transparent outline-none text-white placeholder-white/55 w-full text-xs" />
+            </div>
+            <span class="px-1.5 py-0.5 rounded bg-white/15 text-[10px] font-medium text-white/80 shrink-0">⌘K</span>
+          </div>
+        </div>
+
+        <!-- Navigation Container with Sliding Liquid Pill -->
+        <div id="sidebarNavContainer" class="relative space-y-1">
+          <div id="activePill" class="sidebar-pill-indicator"></div>
+
+          <div class="sb-hide px-3.5 pt-1 pb-1 text-[10px] font-semibold tracking-wider uppercase text-white/45">Điều
+            Hướng</div>
+
+          <!-- 1. TỔNG QUAN -->
+          <button id="nav-btn-overview" onclick="switchToOverview()" class="sb-nav-item active w-full text-left"
+            data-page="Tổng quan">
+            <svg class="w-4 h-4 shrink-0 nav-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+            </svg>
+            <span class="sb-hide flex-1">Tổng quan</span>
+          </button>
+
+          <!-- 2. DỮ LIỆU -->
+          <button id="nav-btn-data" onclick="onSidebarDataClick()" class="sb-nav-item w-full text-left"
+            data-page="Dữ liệu">
+            <svg class="w-4 h-4 shrink-0 nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="8" ry="2.5"></ellipse>
+              <path d="M20 12c0 1.38-3.58 2.5-8 2.5s-8-1.12-8-2.5"></path>
+              <path d="M4 5v14c0 1.38 3.58 2.5 8 2.5s8-1.12 8-2.5V5"></path>
+            </svg>
+            <span class="sb-hide flex-1">Dữ liệu</span>
+          </button>
+
+          <!-- 3. PHÂN TÍCH -->
+          <button id="nav-btn-analysis" onclick="goToStep(2)" class="sb-nav-item w-full text-left"
+            data-page="Phân tích">
+            <svg class="w-4 h-4 shrink-0 nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="13" width="4" height="8" rx="2"></rect>
+              <rect x="10" y="5" width="4" height="16" rx="2"></rect>
+              <rect x="17" y="9" width="4" height="12" rx="2"></rect>
+            </svg>
+            <span class="sb-hide flex-1">Phân tích</span>
+          </button>
+
+          <!-- 4. BÁO CÁO -->
+          <button id="nav-btn-reporting" onclick="goToStep(3)" class="sb-nav-item w-full text-left" data-page="Báo cáo">
+            <svg class="w-4 h-4 shrink-0 nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            <span class="sb-hide flex-1">Báo cáo</span>
+          </button>
+
+          <!-- 5. CÀI ĐẶT -->
+          <button id="nav-btn-settings" onclick="toggleDemoUnlock()" class="sb-nav-item w-full text-left"
+            data-page="Cài đặt">
+            <svg class="w-4 h-4 shrink-0 nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+              </path>
+            </svg>
+            <span class="sb-hide flex-1">Cài đặt (Demo)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Footer: Night Mode Toggle & User Profile -->
+      <div class="pt-4 mt-4 border-t border-white/12 space-y-3">
+        <div class="sb-footer-item flex items-center justify-between px-3 py-1.5 transition-all">
+          <div class="flex items-center gap-2.5 text-white/80 text-[13px]">
+            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+            <span class="sb-hide">Night mode</span>
+          </div>
+          <button id="nightModeToggle"
+            class="sb-hide w-10 h-5 rounded-full bg-white/25 p-0.5 transition relative cursor-pointer border border-white/30"
+            title="Chuyển chế độ Sáng / Tối">
+            <span id="nightModeKnob"
+              class="block w-4 h-4 rounded-full bg-white shadow transition-transform translate-x-0"></span>
+          </button>
+        </div>
+
+        <div
+          class="sb-footer-item flex items-center justify-between px-2 py-1.5 rounded-2xl hover:bg-white/10 transition cursor-pointer">
+          <div class="flex items-center gap-2.5">
+            <div class="relative shrink-0">
+              <div
+                class="w-9 h-9 rounded-full bg-gradient-to-tr from-[#D4B07B] to-[#0A261D] flex items-center justify-center text-white font-bold text-xs border border-white/50 shadow">
+                NT
+              </div>
+              <span
+                class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-2 ring-neutral-900"></span>
+            </div>
+            <div class="sb-hide">
+              <div class="text-[13px] font-semibold text-white leading-tight">NovaTech Executive</div>
+              <div class="text-[11px] text-white/55 leading-tight">bi.admin@novatech.vn</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ================= MAIN SPATIAL GLASS WINDOW (VISIONOS SPATIAL GLASS) ================= -->
+    <main
+      class="spatial-window flex-1 rounded-[34px] p-4 sm:p-6 md:p-8 flex flex-col justify-between min-h-[760px] relative">
+      <div id="windowCursorGlow" class="window-cursor-glow"></div>
+
+      <div class="relative z-10">
+        <!-- ================= TOP SPATIAL COMMAND HEADER ================= -->
+        <header class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-white/20">
+          <div>
+            <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+              <span
+                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-800 dark:text-emerald-300 border border-emerald-500/30 text-[10px] font-bold tracking-wide uppercase backdrop-blur-md shadow-xs">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                Verify Gate 100% Pass · Audit MECE
+              </span>
+              <span
+                class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/25 border border-white/35 text-[10px] font-mono text-[#0A261D] font-bold shadow-xs">
+                Engine v5.2
+              </span>
+            </div>
+            <h1 class="text-xl sm:text-2xl lg:text-3xl font-black tracking-tight mt-0.5"
+              style="color: var(--text-primary)">
+              Khám Phá Giá Trị Từ Dữ Liệu
+            </h1>
+            <p class="text-xs text-[#4A635A] font-medium mt-0.5" style="color: var(--text-secondary)">
+              CCN-DA chuẩn hóa 4 giai đoạn, bảo toàn dữ liệu gốc 100% và cố vấn AI Gemini trực tiếp.
+            </p>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="flex items-center gap-2.5 flex-wrap">
+
+            <!-- DEMO TOGGLE -->
+            <button onclick="toggleDemoUnlock()" id="btn-demo-toggle" title="Mở khóa khám phá nhanh"
+              class="px-4 py-2 rounded-full glass-pill flex items-center gap-2 font-bold text-xs transition cursor-pointer">
+              <svg class="w-3.5 h-3.5 text-[#C8A870]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+                </path>
+              </svg>
+              <span id="txt-demo-toggle">Demo xem nhanh</span>
+            </button>
+
+            <!-- RESET -->
+            <button onclick="resetWorkflowProgression()" title="Bắt đầu lại từ Bước 1"
+              class="p-2.5 rounded-full glass-pill hover:text-[#DC2626] transition cursor-pointer">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                </path>
+              </svg>
+            </button>
+
+            <!-- AI ASSISTANT -->
+            <button onclick="openChatDrawer()"
+              class="px-4 py-2 rounded-full bg-gradient-to-r from-[#D4B07B] via-[#E2C799] to-[#C8A870] hover:brightness-105 text-[#0A261D] font-black text-xs shadow-md shadow-[#C8A870]/25 flex items-center gap-1.5 transition cursor-pointer border border-white/60">
+              <svg class="w-3.5 h-3.5 text-[#0A261D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+                  d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                </path>
+              </svg>
+              <span>Trợ Lý AI (Gemini)</span>
+            </button>
+
+            <!-- USER AVATAR -->
+            <div class="flex items-center gap-2 pl-1">
+              <div
+                class="w-8 h-8 rounded-full bg-[#0A261D] text-[#D4B07B] flex items-center justify-center font-bold text-xs border border-[#D4B07B]/40 shadow-sm">
+                NT
+              </div>
+            </div>
+
+          </div>
+        </header>
+
+        <!-- ================= 4-STAGE PIPELINE STEPPER ("QUY TRÌNH PHÂN TÍCH") ================= -->
+        <section class="glass-card p-4 md:p-5 mb-6" id="pipeline-card-container" style="display: none;">
+          <div class="flex items-center justify-between pb-3 mb-3 border-b border-white/20">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-[#D4B07B]"></span>
+              <h2 class="text-xs md:text-sm font-bold" style="color: var(--text-primary)">Quy trình phân tích & Kiểm duyệt AI</h2>
+            </div>
+            <div class="flex items-center gap-2 text-xs">
+              <span id="project-dataset-dot" class="w-2 h-2 rounded-full bg-[#A3B5AE]"></span>
+              <span class="text-[11px] font-bold" style="color: var(--text-secondary)" id="project-dataset-name">Chờ nạp
+                nguồn dữ liệu (Số liệu về 0)</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between" id="horizontal-pipeline-bar">
+            <!-- Dynamically populated by app.js -->
+          </div>
+        </section>
+
+        <!-- ================= MAIN WORKSPACE CANVAS (DUAL-PANE FROSTED GLASS) ================= -->
+        <main id="workspace-content" class="flex-1 mb-6 min-h-[460px]">
+          <!-- Rendered dynamically by app.js -->
+        </main>
+
+      </div>
+
+      <!-- ================= FOOTER ================= -->
+      <footer
+        class="py-4 border-t border-white/20 flex flex-col sm:flex-row items-center justify-between text-xs gap-2 mt-auto"
+        style="color: var(--text-secondary)">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-[#10B981]"></span>
+          <span class="font-semibold" style="color: var(--text-primary)">Hệ thống bảo toàn dữ liệu gốc 100% · Kiểm chứng
+            công thức toán học MECE</span>
+        </div>
+        <div class="flex items-center gap-3 font-mono text-[11px]">
+          <span>Kiến trúc: 4 Giai đoạn chuẩn (Spatial Glass)</span>
+          <span class="text-white/30">|</span>
+          <span class="font-bold" id="footer-wf-id" style="color: var(--text-primary)">AI301 Final Project</span>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <!-- ================= AI ASSISTANT DIALOG (FROSTED GLASS MODAL) ================= -->
+  <dialog id="ai-chat-dialog"
+    class="bg-transparent backdrop:bg-black/50 backdrop:backdrop-blur-md p-0 m-auto rounded-3xl max-w-xl w-full border-0 shadow-2xl">
+    <div class="glass-card p-6 shadow-2xl flex flex-col space-y-3.5 border border-white/40">
+      <div class="flex items-center justify-between border-b border-white/20 pb-3">
+        <div class="flex items-center gap-2.5">
+          <div
+            class="w-8 h-8 rounded-xl bg-[#0A261D] flex items-center justify-center font-bold text-[#D4B07B] text-xs shadow border border-[#D4B07B]/40">
+            AI</div>
+          <div>
+            <h3 class="text-sm font-bold" style="color: var(--text-primary)">Trợ Lý Phân Tích CCN-DA (Gemini)</h3>
+            <p class="text-[11px]" style="color: var(--text-secondary)">Hỏi đáp số liệu kinh doanh & kiểm chứng công
+              thức tức thời</p>
+          </div>
+        </div>
+        <button onclick="closeChatDrawer()" class="p-1 rounded-lg hover:bg-white/20 transition cursor-pointer"
+          style="color: var(--text-secondary)">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div id="modal-chat-log" class="h-64 overflow-y-auto space-y-2 p-1 font-sans text-xs">
+        <div class="p-3.5 rounded-2xl glass-input mr-8 leading-relaxed" style="color: var(--text-primary)">
+          Xin chào! Tôi là Trợ lý Phân tích CCN-DA tích hợp mô hình Google Gemini. Bạn có thể hỏi về doanh thu thuần,
+          biên lợi nhuận, hiệu quả theo kênh bán, phân cụm khách hàng RFM hoặc yêu cầu phân tích chi phí giao vận.
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2 pt-2 border-t border-white/20">
+        <input type="text" id="modal-chat-input"
+          placeholder="Ví dụ: Phân tích hiệu quả kênh Google Search vs TikTok Ads?"
+          class="flex-1 px-4 py-2.5 text-xs rounded-xl glass-input placeholder:text-neutral-500"
+          onkeydown="if(event.key==='Enter') sendModalChatMessage()">
+        <button onclick="sendModalChatMessage()"
+          class="px-5 py-2.5 bg-[#0A261D] hover:bg-[#133A2D] text-white border border-[#D4B07B]/40 rounded-xl text-xs font-bold shadow transition cursor-pointer">
+          Gửi
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ================= SPATIAL GLASS INTERACTIONS & OPTICAL STUDIO SCRIPT ================= -->
+  <script>
+    // 1. Sliding Liquid Pill Indicator for Sidebar V5
+    const sidebar = document.getElementById('glassSidebar');
+    const collapseBtn = document.getElementById('sidebarCollapseBtn');
+    const collapseIcon = document.getElementById('collapseIconSvg');
+    const pinBadge = document.getElementById('pinBadge');
+    const activePill = document.getElementById('activePill');
+    const navContainer = document.getElementById('sidebarNavContainer');
+
+    let isPinned = false; // Mặc định ở dạng thu gọn, chỉ mở rộng khi hover chuột
+
+    function updatePillPosition(el) {
+      if (!el || !activePill || !navContainer) return;
+      const containerRect = navContainer.getBoundingClientRect();
+      const itemRect = el.getBoundingClientRect();
+      const offsetTop = itemRect.top - containerRect.top;
+      activePill.style.transform = `translateY(${offsetTop}px)`;
+    }
+    window.updatePillPosition = updatePillPosition;
+
+    window.addEventListener('load', () => {
+      const activeItem = document.querySelector('.sb-nav-item.active') || document.getElementById('nav-btn-overview');
+      updatePillPosition(activeItem);
+    });
+
+    window.addEventListener('resize', () => {
+      const activeItem = document.querySelector('.sb-nav-item.active') || document.getElementById('nav-btn-overview');
+      updatePillPosition(activeItem);
+    });
+
+    function setSidebarHeld(held) {
+      isPinned = held;
+      if (!sidebar) return;
+      sidebar.dataset.pinned = held ? 'true' : 'false';
+      if (held) {
+        sidebar.classList.remove('collapsed');
+        if (collapseIcon) collapseIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>';
+        if (pinBadge) pinBadge.textContent = 'Sidebar Pinned';
+      } else {
+        sidebar.classList.add('collapsed');
+        if (collapseIcon) collapseIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>';
+        if (pinBadge) pinBadge.textContent = 'Auto-Peek (Hover)';
+      }
+      setTimeout(() => {
+        const activeItem = document.querySelector('.sb-nav-item.active') || document.getElementById('nav-btn-overview');
+        updatePillPosition(activeItem);
+      }, 350);
+    }
+
+    if (collapseBtn) {
+      collapseBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setSidebarHeld(!isPinned);
+      });
+    }
+
+    if (sidebar) {
+      sidebar.addEventListener('mouseenter', () => {
+        if (!isPinned) {
+          sidebar.classList.remove('collapsed');
+          setTimeout(() => {
+            const activeItem = document.querySelector('.sb-nav-item.active') || document.getElementById('nav-btn-overview');
+            updatePillPosition(activeItem);
+          }, 180);
+        }
+      });
+
+      sidebar.addEventListener('mouseleave', () => {
+        if (!isPinned) {
+          sidebar.classList.add('collapsed');
+          setTimeout(() => {
+            const activeItem = document.querySelector('.sb-nav-item.active') || document.getElementById('nav-btn-overview');
+            updatePillPosition(activeItem);
+          }, 180);
+        }
+      });
+    }
+
+    // 2. Whole-Window Cursor Glow & Specular Light Aura
+    const aura = document.getElementById('ambientCursorAura');
+    const spatialWin = document.querySelector('.spatial-window');
+
+    document.addEventListener('mousemove', (e) => {
+      // Ambient halo following cursor across window
+      if (aura) {
+        aura.style.opacity = '1';
+        aura.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+      }
+
+      // Specular light sheet within .spatial-window
+      if (spatialWin) {
+        const rect = spatialWin.getBoundingClientRect();
+        if (
+          e.clientX >= rect.left && e.clientX <= rect.right &&
+          e.clientY >= rect.top && e.clientY <= rect.bottom
+        ) {
+          spatialWin.style.setProperty('--win-cursor-x', `${e.clientX - rect.left}px`);
+          spatialWin.style.setProperty('--win-cursor-y', `${e.clientY - rect.top}px`);
+        }
+      }
+
+      // Glass cards specular sheen
+      const cards = document.querySelectorAll('.glass-card');
+      cards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        if (
+          e.clientX >= rect.left - 50 &&
+          e.clientX <= rect.right + 50 &&
+          e.clientY >= rect.top - 50 &&
+          e.clientY <= rect.bottom + 50
+        ) {
+          card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+          card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+        }
+      });
+    });
+
+    document.addEventListener('mouseleave', () => {
+      if (aura) aura.style.opacity = '0';
+    });
+
+    // 3. Subtle Luxury Mouse Click Ripple & Pill Click Feedback
+    document.addEventListener('click', (e) => {
+      const ripple = document.createElement('div');
+      ripple.className = 'lux-click-ripple';
+      ripple.style.left = `${e.clientX}px`;
+      ripple.style.top = `${e.clientY}px`;
+      document.body.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 400);
+
+      // Pill tactile spring on click
+      const pill = e.target.closest('.glass-pill, .sb-nav-item, button, .scene-btn');
+      if (pill) {
+        pill.classList.add('pill-press-active');
+        setTimeout(() => pill.classList.remove('pill-press-active'), 140);
+      }
+    });
+
+    // 4. Optical Controls Studio Panel (Transparency, Blur, Environment Scenes)
+    const toggleOpticsBtn = document.getElementById('toggleOpticsBtn');
+    const opticsPanel = document.getElementById('opticsPanel');
+    if (toggleOpticsBtn && opticsPanel) {
+      toggleOpticsBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        opticsPanel.classList.toggle('hidden');
+      });
+      document.addEventListener('click', (e) => {
+        if (!opticsPanel.contains(e.target) && !toggleOpticsBtn.contains(e.target)) {
+          opticsPanel.classList.add('hidden');
+        }
+      });
+    }
+
+    const opacitySlider = document.getElementById('opacitySlider');
+    const opacityVal = document.getElementById('opacityVal');
+    if (opacitySlider && opacityVal) {
+      opacitySlider.addEventListener('input', (e) => {
+        const val = e.target.value;
+        document.documentElement.style.setProperty('--window-opacity', (val / 100).toFixed(2));
+        document.documentElement.style.setProperty('--card-opacity', ((val * 1.3) / 100).toFixed(2));
+        opacityVal.textContent = `${val}%`;
+      });
+    }
+
+    const blurSlider = document.getElementById('blurSlider');
+    const blurVal = document.getElementById('blurVal');
+    if (blurSlider && blurVal) {
+      blurSlider.addEventListener('input', (e) => {
+        const val = e.target.value;
+        document.documentElement.style.setProperty('--window-blur', `${val}px`);
+        document.documentElement.style.setProperty('--card-blur', `${Math.max(10, Math.round(val * 0.7))}px`);
+        blurVal.textContent = `${val}px`;
+      });
+    }
+
+    document.querySelectorAll('.scene-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const bg = document.getElementById('ambientBg');
+        if (bg) {
+          bg.className = `ambient-room ${btn.dataset.scene}`;
+        }
+        document.querySelectorAll('.scene-btn').forEach((b) => {
+          b.classList.remove('bg-white/25', 'border-white/40', 'text-white');
+          b.classList.add('bg-white/10', 'border-white/15', 'text-white/75');
+        });
+        btn.classList.add('bg-white/25', 'border-white/40', 'text-white');
+        btn.classList.remove('bg-white/10', 'border-white/15', 'text-white/75');
+      });
+    });
+
+    // 5. Night Mode Switch
+    const nightModeToggle = document.getElementById('nightModeToggle');
+    const nightModeKnob = document.getElementById('nightModeKnob');
+    if (nightModeToggle && nightModeKnob) {
+      nightModeToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        document.body.classList.toggle('night-mode');
+        const isNight = document.body.classList.contains('night-mode');
+        nightModeKnob.style.transform = isNight ? 'translateX(20px)' : 'translateX(0px)';
+      });
+    }
+
+    // 6. Sidebar Search Filter
+    const sidebarSearch = document.getElementById('sidebarSearch');
+    if (sidebarSearch) {
+      sidebarSearch.addEventListener('input', (e) => {
+        const q = e.target.value.toLowerCase();
+        document.querySelectorAll('.sb-nav-item').forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          item.style.display = text.includes(q) ? 'flex' : 'none';
+        });
+      });
+    }
+  </script>
+  <!-- Ambient Viewport Cursor Light Aura -->
+  <div id="ambientCursorAura" class="ambient-cursor-aura"></div>
+</body>
+
+</html>
