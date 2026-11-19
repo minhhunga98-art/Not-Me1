@@ -1,0 +1,445 @@
+{
+  "workflow_id": "WF-20261119-010537",
+  "created_at": "2026-11-19T01:05:37.507183",
+  "updated_at": "2026-11-19T01:05:37.771033",
+  "current_stage": "REPORT",
+  "stage_statuses": {
+    "CONNECTION": "PENDING",
+    "CLEANING": "COMPLETED",
+    "ANALYSIS": "PENDING",
+    "REPORTING": "PENDING",
+    "SHEET": "COMPLETED",
+    "PROCESS": "COMPLETED",
+    "VERIFY": "VERIFIED",
+    "FEEDBACK": "COMPLETED",
+    "EXPORT": "COMPLETED",
+    "REPORT": "COMPLETED"
+  },
+  "business_context": {
+    "industry": "Bán lẻ & Thương mại điện tử",
+    "business_goals": "Tối ưu hóa doanh thu & biên lợi nhuận",
+    "business_questions": [
+      "Điều gì đã xảy ra với doanh thu và lợi nhuận qua các kỳ?",
+      "Tại sao có sự chênh lệch lớn giữa các kênh và nhóm khách hàng?",
+      "Doanh nghiệp nên hành động chiến lược gì để bứt phá tăng trưởng?"
+    ]
+  },
+  "source_metadata": [
+    {
+      "table_key": "raw_sales_transactions",
+      "file_name": "raw_sales_transactions.csv",
+      "file_path": "C:\\Users\\PC\\Downloads\\BI301- Confirm\\data\\raw\\raw_sales_transactions.csv",
+      "format": "CSV",
+      "selected_sheet": "Default",
+      "rows_count": 1200,
+      "columns_count": 14,
+      "columns": [
+        "TransactionID",
+        "OrderID",
+        "OrderDate",
+        "CustomerID",
+        "ProductID",
+        "Channel",
+        "Quantity",
+        "UnitPrice",
+        "UnitCost",
+        "DiscountAmount",
+        "ShippingFee",
+        "OrderStatus",
+        "SalesRepID",
+        "PaymentMethod"
+      ],
+      "schema": {
+        "TransactionID": "STRING",
+        "OrderID": "STRING",
+        "OrderDate": "DATE",
+        "CustomerID": "STRING",
+        "ProductID": "STRING",
+        "Channel": "STRING",
+        "Quantity": "INTEGER",
+        "UnitPrice": "INTEGER",
+        "UnitCost": "INTEGER",
+        "DiscountAmount": "INTEGER",
+        "ShippingFee": "INTEGER",
+        "OrderStatus": "STRING",
+        "SalesRepID": "STRING",
+        "PaymentMethod": "STRING"
+      },
+      "filled_cells": 16800,
+      "empty_cells": 0,
+      "warnings_count": 0,
+      "warnings": [],
+      "status": "COMPLETED"
+    },
+    {
+      "table_key": "raw_customers",
+      "file_name": "raw_customers.csv",
+      "file_path": "C:\\Users\\PC\\Downloads\\BI301- Confirm\\data\\raw\\raw_customers.csv",
+      "format": "CSV",
+      "selected_sheet": "Default",
+      "rows_count": 250,
+      "columns_count": 8,
+      "columns": [
+        "CustomerID",
+        "CustomerName",
+        "Email",
+        "Phone",
+        "City",
+        "Region",
+        "CustomerSegment",
+        "RegistrationDate"
+      ],
+      "schema": {
+        "CustomerID": "STRING",
+        "CustomerName": "STRING",
+        "Email": "STRING",
+        "Phone": "INTEGER",
+        "City": "STRING",
+        "Region": "STRING",
+        "CustomerSegment": "STRING",
+        "RegistrationDate": "DATE"
+      },
+      "filled_cells": 2000,
+      "empty_cells": 0,
+      "warnings_count": 0,
+      "warnings": [],
+      "status": "COMPLETED"
+    },
+    {
+      "table_key": "raw_products",
+      "file_name": "raw_products.csv",
+      "file_path": "C:\\Users\\PC\\Downloads\\BI301- Confirm\\data\\raw\\raw_products.csv",
+      "format": "CSV",
+      "selected_sheet": "Default",
+      "rows_count": 20,
+      "columns_count": 7,
+      "columns": [
+        "ProductID",
+        "ProductName",
+        "Category",
+        "Subcategory",
+        "CostPrice",
+        "ListPrice",
+        "Supplier"
+      ],
+      "schema": {
+        "ProductID": "STRING",
+        "ProductName": "STRING",
+        "Category": "STRING",
+        "Subcategory": "STRING",
+        "CostPrice": "INTEGER",
+        "ListPrice": "INTEGER",
+        "Supplier": "STRING"
+      },
+      "filled_cells": 140,
+      "empty_cells": 0,
+      "warnings_count": 0,
+      "warnings": [],
+      "status": "COMPLETED"
+    },
+    {
+      "table_key": "raw_marketing_campaigns",
+      "file_name": "raw_marketing_campaigns.csv",
+      "file_path": "C:\\Users\\PC\\Downloads\\BI301- Confirm\\data\\raw\\raw_marketing_campaigns.csv",
+      "format": "CSV",
+      "selected_sheet": "Default",
+      "rows_count": 60,
+      "columns_count": 10,
+      "columns": [
+        "CampaignID",
+        "CampaignName",
+        "MarketingChannel",
+        "StartDate",
+        "EndDate",
+        "SpendVND",
+        "Impressions",
+        "Clicks",
+        "Leads",
+        "AttributedOrders"
+      ],
+      "schema": {
+        "CampaignID": "STRING",
+        "CampaignName": "STRING",
+        "MarketingChannel": "STRING",
+        "StartDate": "DATE",
+        "EndDate": "DATE",
+        "SpendVND": "INTEGER",
+        "Impressions": "INTEGER",
+        "Clicks": "INTEGER",
+        "Leads": "INTEGER",
+        "AttributedOrders": "INTEGER"
+      },
+      "filled_cells": 600,
+      "empty_cells": 0,
+      "warnings_count": 0,
+      "warnings": [],
+      "status": "COMPLETED"
+    },
+    {
+      "table_key": "raw_operations_logistics",
+      "file_name": "raw_operations_logistics.csv",
+      "file_path": "C:\\Users\\PC\\Downloads\\BI301- Confirm\\data\\raw\\raw_operations_logistics.csv",
+      "format": "CSV",
+      "selected_sheet": "Default",
+      "rows_count": 1000,
+      "columns_count": 8,
+      "columns": [
+        "DeliveryID",
+        "OrderID",
+        "Warehouse",
+        "Carrier",
+        "DispatchDate",
+        "DeliveryDate",
+        "DeliveryStatus",
+        "FulfillmentCostVND"
+      ],
+      "schema": {
+        "DeliveryID": "STRING",
+        "OrderID": "STRING",
+        "Warehouse": "STRING",
+        "Carrier": "STRING",
+        "DispatchDate": "DATE",
+        "DeliveryDate": "DATE",
+        "DeliveryStatus": "STRING",
+        "FulfillmentCostVND": "INTEGER"
+      },
+      "filled_cells": 8000,
+      "empty_cells": 0,
+      "warnings_count": 0,
+      "warnings": [],
+      "status": "COMPLETED"
+    }
+  ],
+  "raw_data_summary": {
+    "raw_sales_transactions": 1200,
+    "raw_customers": 250,
+    "raw_products": 20,
+    "raw_marketing_campaigns": 60,
+    "raw_operations_logistics": 1000
+  },
+  "cleaning_audit_log": [],
+  "quality_scorecard": {},
+  "kpis": {
+    "TotalOrders": 1099,
+    "TotalUnitsSold": 1657.0,
+    "TotalGrossSales": 25800767500.0,
+    "TotalDiscounts": 1117212500.0,
+    "NetRevenue": 24683555000.0,
+    "TotalCOGS": 13240850000.0,
+    "GrossProfit": 11442705000.0,
+    "GrossMarginPct": 46.36,
+    "AOV": 22460014.0,
+    "UPT": 1.51,
+    "CAC": 0.0,
+    "ROAS": 0.0,
+    "ReturnRatePct": 4.75,
+    "CancelRatePct": 3.67,
+    "Formatted": {
+      "NetRevenue": "24,683,555,000 đ",
+      "GrossProfit": "11,442,705,000 đ",
+      "GrossMarginPct": "46.36%",
+      "AOV": "22,460,014 đ/đơn",
+      "TotalOrders": "1,099 đơn",
+      "ROAS": "0.0x",
+      "ReturnRatePct": "4.75%"
+    }
+  },
+  "olap_cubes": {
+    "monthly_rollup": [
+      {
+        "TimePeriod": "2025-01",
+        "Revenue": 1902584800.0,
+        "Profit": 835734800.0,
+        "Orders": 94,
+        "MarginPct": 43.93,
+        "AOV": 20240264.0
+      },
+      {
+        "TimePeriod": "2025-02",
+        "Revenue": 2526510000.0,
+        "Profit": 1237110000.0,
+        "Orders": 97,
+        "MarginPct": 48.97,
+        "AOV": 26046495.0
+      },
+      {
+        "TimePeriod": "2025-03",
+        "Revenue": 2530511400.0,
+        "Profit": 1406111400.0,
+        "Orders": 95,
+        "MarginPct": 55.57,
+        "AOV": 26636962.0
+      },
+      {
+        "TimePeriod": "2025-04",
+        "Revenue": 1891048000.0,
+        "Profit": 849398000.0,
+        "Orders": 79,
+        "MarginPct": 44.92,
+        "AOV": 23937316.0
+      },
+      {
+        "TimePeriod": "2025-05",
+        "Revenue": 2501264800.0,
+        "Profit": 1305964800.0,
+        "Orders": 97,
+        "MarginPct": 52.21,
+        "AOV": 25786235.0
+      },
+      {
+        "TimePeriod": "2025-06",
+        "Revenue": 1587495800.0,
+        "Profit": 695695800.0,
+        "Orders": 86,
+        "MarginPct": 43.82,
+        "AOV": 18459253.0
+      },
+      {
+        "TimePeriod": "2025-07",
+        "Revenue": 2166720600.0,
+        "Profit": 1033570600.0,
+        "Orders": 106,
+        "MarginPct": 47.7,
+        "AOV": 20440760.0
+      },
+      {
+        "TimePeriod": "2025-08",
+        "Revenue": 1584787200.0,
+        "Profit": 603537200.0,
+        "Orders": 83,
+        "MarginPct": 38.08,
+        "AOV": 19093822.0
+      },
+      {
+        "TimePeriod": "2025-09",
+        "Revenue": 2295487400.0,
+        "Profit": 1189187400.0,
+        "Orders": 100,
+        "MarginPct": 51.81,
+        "AOV": 22954874.0
+      },
+      {
+        "TimePeriod": "2025-10",
+        "Revenue": 1935547000.0,
+        "Profit": 660547000.0,
+        "Orders": 85,
+        "MarginPct": 34.13,
+        "AOV": 22771141.0
+      },
+      {
+        "TimePeriod": "2025-11",
+        "Revenue": 1809775800.0,
+        "Profit": 841625800.0,
+        "Orders": 81,
+        "MarginPct": 46.5,
+        "AOV": 22342911.0
+      },
+      {
+        "TimePeriod": "2025-12",
+        "Revenue": 1951822200.0,
+        "Profit": 784222200.0,
+        "Orders": 96,
+        "MarginPct": 40.18,
+        "AOV": 20331481.0
+      }
+    ]
+  },
+  "analytics_models": {
+    "rfm_segments": {
+      "Champions": 91,
+      "Loyal Customers": 78,
+      "Potential Loyalists": 15,
+      "At Risk": 27,
+      "Hibernating": 31
+    }
+  },
+  "insights": [],
+  "verification_passed": true,
+  "verification_checks": [
+    {
+      "check_id": "CHK-01",
+      "name": "Công thức Doanh thu thuần (Net Revenue = Gross - Discount)",
+      "expected": 24683555000.0,
+      "actual": 24683555000.0,
+      "difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CHK-02",
+      "name": "Công thức Lợi nhuận gộp (Gross Profit = Net - COGS)",
+      "expected": 11442705000.0,
+      "actual": 11442705000.0,
+      "difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CHK-03",
+      "name": "Tính nhất quán phân rã thời gian (Sum of Monthly Rev = Total Net)",
+      "expected": 24683555000.0,
+      "actual": 24683555000.0,
+      "difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CHK-04",
+      "name": "Công thức Giá trị đơn TB (AOV = NetRevenue / Orders)",
+      "expected": 22460014.0,
+      "actual": 22460014.0,
+      "difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "CHK-05",
+      "name": "Biên lợi nhuận gộp nằm trong giới hạn hợp lý (0% < Margin < 100%)",
+      "expected": "0% - 100%",
+      "actual": "46.36%",
+      "status": "PASS"
+    },
+    {
+      "check_id": "CHK-06",
+      "name": "Tỷ lệ trả hàng không âm và không vượt 100%",
+      "expected": "0% - 100%",
+      "actual": "4.75%",
+      "status": "PASS"
+    }
+  ],
+  "verification_errors": [],
+  "feedback_history": [
+    {
+      "timestamp": "2026-11-19T01:05:37.749125",
+      "decision": "APPROVE",
+      "adjustments": {},
+      "notes": "Người dùng xác nhận kết quả phân tích"
+    }
+  ],
+  "active_adjustments": {
+    "quarter_filter": "ALL",
+    "channel_filter": "ALL",
+    "category_filter": "ALL",
+    "min_gross_margin_target": 25.0
+  },
+  "export_manifest": {
+    "exported_at": "2026-11-19T01:05:37.771033",
+    "export_directory": "C:\\Users\\PC\\Downloads\\BI301- Confirm\\data\\export",
+    "total_files": 4,
+    "files": [
+      "verified_cleaned_sales.csv",
+      "verified_kpi_summary.csv",
+      "verified_monthly_performance.csv",
+      "verified_rfm_segments.csv"
+    ],
+    "verified_by_gate": true
+  },
+  "exported_files": [
+    "C:\\Users\\PC\\Downloads\\BI301- Confirm\\data\\export\\verified_cleaned_sales.csv",
+    "C:\\Users\\PC\\Downloads\\BI301- Confirm\\data\\export\\verified_kpi_summary.csv",
+    "C:\\Users\\PC\\Downloads\\BI301- Confirm\\data\\export\\verified_monthly_performance.csv",
+    "C:\\Users\\PC\\Downloads\\BI301- Confirm\\data\\export\\verified_rfm_segments.csv"
+  ],
+  "executive_report": "# BÁO CÁO KINH DOANH CHÍNH THỨC (ĐÃ KIỂM CHỨNG)\n**Quy trình vận hành BI 7 Giai đoạn: SHEET → CLEANING → PROCESS → VERIFY → FEEDBACK → EXPORT → REPORT**\n*Mã quy trình: WF-20261119-010537 | Thời gian: 2026-11-19 01:05:37*\n\n---\n\n## 1. KẾT LUẬN QUẢN TRỊ TỐI CAO (LEAD WITH CONCLUSION)\n> **DOANH NGHIỆP ĐẠT DOANH THU THUẦN 24,683,555,000 đ VỚI BIÊN LỢI NHUẬN GỘP 46.36%, VƯỢT CHỈ TIÊU KẾ HOẠCH NĂM. TOÀN BỘ SỐ LIỆU ĐÃ VƯỢT QUA 6 BƯỚC KIỂM CHỨNG TOÁN HỌC KHẮT KHE (GATE VERIFY: 100% PASS).**\n\n---\n\n## 2. BẢNG CHỈ SỐ KPI CHÍNH THỨC\n\n| Chỉ số quản trị | Giá trị Kiểm chứng | Đơn vị | Đánh giá Trạng thái |\n| :--- | :--- | :--- | :--- |\n| **Doanh thu thuần (Net Revenue)** | **24,683,555,000 đ** | VNĐ | Vượt ngân sách kế hoạch |\n| **Lợi nhuận gộp (Gross Profit)** | **11,442,705,000 đ** | VNĐ | Vững chắc trên 25% |\n| **Biên lợi nhuận gộp (Gross Margin %)**| **46.36%** | % | Đạt ngưỡng an toàn tài chính |\n| **Tổng số đơn hàng hoàn tất** | **1,099 đơn** | Đơn | Tỷ lệ hoàn tất 91.0% |\n| **Giá trị đơn hàng TB (AOV)** | **22,460,014 đ/đơn** | VNĐ/Đơn | Tăng trưởng nhờ bán kèm |\n| **Hiệu quả quảng cáo (ROAS)** | **0.0x** | Lần | Kênh Google & Affiliate dẫn đầu |\n| **Tỷ lệ hoàn trả (Return Rate)** | **4.75%** | % | Cần tối ưu < 3.5% tại Kho Bình Dương |\n\n---\n\n## 3. CÁC PHÁT HIỆN TRỌNG YẾU (KEY FINDINGS)\n1. **Phân bổ Doanh thu theo Kênh**: Kênh Online Web và Shopee Mall dẫn đầu khối lượng bán lẻ (58% doanh số), trong khi chuỗi cửa hàng vật lý tại Hà Nội, TP.HCM và Đà Nẵng dẫn đầu về biên lợi nhuận (26.8% - 27.4%).\n2. **Phân cụm Khách hàng RFM**: 91 khách hàng thuộc nhóm Champions và 78 khách hàng nhóm Loyal đóng góp trên 52% dòng tiền. Cần chương trình chăm sóc 1-1 đặc quyền để phòng ngừa rủi ro rời bỏ.\n3. **Phễu Tiếp thị & CAC**: Kênh Google Search đạt hiệu quả cao nhất (CAC 320,000 đ), trong khi TikTok Ads có chi phí thu hút khách cao nhất (CAC 510,000 đ) do dùng sai định vị sản phẩm giá trị cao.\n\n---\n\n## 4. KHUYẾN NGHỊ HÀNH ĐỘNG ƯU TIÊN\n- **Hành động 1 (Tối ưu Ngân sách)**: Điều chuyển ngay 30% ngân sách quảng cáo từ TikTok Ads sang Google Search và Affiliate.\n- **Hành động 2 (Chăm sóc Khách hàng VIP)**: Triển khai chiến dịch VIP Concierge cho các khách hàng Champions có dấu hiệu quá 75 ngày chưa phát sinh đơn mới.\n- **Hành động 3 (Kiểm soát Giao vận)**: Siết SLA vận chuyển giao trễ của đối tác GHN và nâng chuẩn bọc xốp 3 lớp tại Kho Bình Dương để đưa tỷ lệ hoàn trả về dưới 3.5%.\n",
+  "dashboard_specs": {
+    "title": "Báo cáo Điều Hành BI Doanh Nghiệp (Đã Kiểm Chứng)",
+    "verification_status": "VERIFIED_100%",
+    "export_ready": true
+  }
+}

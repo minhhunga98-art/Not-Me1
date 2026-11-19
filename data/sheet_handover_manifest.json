@@ -1,0 +1,3036 @@
+{
+  "status": "COMPLETED",
+  "readable": true,
+  "file_name": "21_vuot_201_cot.csv",
+  "file_path": "C:\\Users\\PC\\Downloads\\BI301- Confirm\\data\\uploads\\21_vuot_201_cot.csv",
+  "file_size": 2306,
+  "format": "CSV",
+  "file_format": "CSV",
+  "available_sheets": [
+    "Default"
+  ],
+  "selected_sheet": "Default",
+  "rows_count": 1,
+  "row_count": 1,
+  "columns_count": 201,
+  "column_count": 201,
+  "columns": [
+    "Cột 1",
+    "Cột 2",
+    "Cột 3",
+    "Cột 4",
+    "Cột 5",
+    "Cột 6",
+    "Cột 7",
+    "Cột 8",
+    "Cột 9",
+    "Cột 10",
+    "Cột 11",
+    "Cột 12",
+    "Cột 13",
+    "Cột 14",
+    "Cột 15",
+    "Cột 16",
+    "Cột 17",
+    "Cột 18",
+    "Cột 19",
+    "Cột 20",
+    "Cột 21",
+    "Cột 22",
+    "Cột 23",
+    "Cột 24",
+    "Cột 25",
+    "Cột 26",
+    "Cột 27",
+    "Cột 28",
+    "Cột 29",
+    "Cột 30",
+    "Cột 31",
+    "Cột 32",
+    "Cột 33",
+    "Cột 34",
+    "Cột 35",
+    "Cột 36",
+    "Cột 37",
+    "Cột 38",
+    "Cột 39",
+    "Cột 40",
+    "Cột 41",
+    "Cột 42",
+    "Cột 43",
+    "Cột 44",
+    "Cột 45",
+    "Cột 46",
+    "Cột 47",
+    "Cột 48",
+    "Cột 49",
+    "Cột 50",
+    "Cột 51",
+    "Cột 52",
+    "Cột 53",
+    "Cột 54",
+    "Cột 55",
+    "Cột 56",
+    "Cột 57",
+    "Cột 58",
+    "Cột 59",
+    "Cột 60",
+    "Cột 61",
+    "Cột 62",
+    "Cột 63",
+    "Cột 64",
+    "Cột 65",
+    "Cột 66",
+    "Cột 67",
+    "Cột 68",
+    "Cột 69",
+    "Cột 70",
+    "Cột 71",
+    "Cột 72",
+    "Cột 73",
+    "Cột 74",
+    "Cột 75",
+    "Cột 76",
+    "Cột 77",
+    "Cột 78",
+    "Cột 79",
+    "Cột 80",
+    "Cột 81",
+    "Cột 82",
+    "Cột 83",
+    "Cột 84",
+    "Cột 85",
+    "Cột 86",
+    "Cột 87",
+    "Cột 88",
+    "Cột 89",
+    "Cột 90",
+    "Cột 91",
+    "Cột 92",
+    "Cột 93",
+    "Cột 94",
+    "Cột 95",
+    "Cột 96",
+    "Cột 97",
+    "Cột 98",
+    "Cột 99",
+    "Cột 100",
+    "Cột 101",
+    "Cột 102",
+    "Cột 103",
+    "Cột 104",
+    "Cột 105",
+    "Cột 106",
+    "Cột 107",
+    "Cột 108",
+    "Cột 109",
+    "Cột 110",
+    "Cột 111",
+    "Cột 112",
+    "Cột 113",
+    "Cột 114",
+    "Cột 115",
+    "Cột 116",
+    "Cột 117",
+    "Cột 118",
+    "Cột 119",
+    "Cột 120",
+    "Cột 121",
+    "Cột 122",
+    "Cột 123",
+    "Cột 124",
+    "Cột 125",
+    "Cột 126",
+    "Cột 127",
+    "Cột 128",
+    "Cột 129",
+    "Cột 130",
+    "Cột 131",
+    "Cột 132",
+    "Cột 133",
+    "Cột 134",
+    "Cột 135",
+    "Cột 136",
+    "Cột 137",
+    "Cột 138",
+    "Cột 139",
+    "Cột 140",
+    "Cột 141",
+    "Cột 142",
+    "Cột 143",
+    "Cột 144",
+    "Cột 145",
+    "Cột 146",
+    "Cột 147",
+    "Cột 148",
+    "Cột 149",
+    "Cột 150",
+    "Cột 151",
+    "Cột 152",
+    "Cột 153",
+    "Cột 154",
+    "Cột 155",
+    "Cột 156",
+    "Cột 157",
+    "Cột 158",
+    "Cột 159",
+    "Cột 160",
+    "Cột 161",
+    "Cột 162",
+    "Cột 163",
+    "Cột 164",
+    "Cột 165",
+    "Cột 166",
+    "Cột 167",
+    "Cột 168",
+    "Cột 169",
+    "Cột 170",
+    "Cột 171",
+    "Cột 172",
+    "Cột 173",
+    "Cột 174",
+    "Cột 175",
+    "Cột 176",
+    "Cột 177",
+    "Cột 178",
+    "Cột 179",
+    "Cột 180",
+    "Cột 181",
+    "Cột 182",
+    "Cột 183",
+    "Cột 184",
+    "Cột 185",
+    "Cột 186",
+    "Cột 187",
+    "Cột 188",
+    "Cột 189",
+    "Cột 190",
+    "Cột 191",
+    "Cột 192",
+    "Cột 193",
+    "Cột 194",
+    "Cột 195",
+    "Cột 196",
+    "Cột 197",
+    "Cột 198",
+    "Cột 199",
+    "Cột 200",
+    "Cột 201"
+  ],
+  "detected_schema": {
+    "Cột 1": "STRING",
+    "Cột 2": "STRING",
+    "Cột 3": "STRING",
+    "Cột 4": "STRING",
+    "Cột 5": "STRING",
+    "Cột 6": "STRING",
+    "Cột 7": "STRING",
+    "Cột 8": "STRING",
+    "Cột 9": "STRING",
+    "Cột 10": "STRING",
+    "Cột 11": "STRING",
+    "Cột 12": "STRING",
+    "Cột 13": "STRING",
+    "Cột 14": "STRING",
+    "Cột 15": "STRING",
+    "Cột 16": "STRING",
+    "Cột 17": "STRING",
+    "Cột 18": "STRING",
+    "Cột 19": "STRING",
+    "Cột 20": "STRING",
+    "Cột 21": "STRING",
+    "Cột 22": "STRING",
+    "Cột 23": "STRING",
+    "Cột 24": "STRING",
+    "Cột 25": "STRING",
+    "Cột 26": "STRING",
+    "Cột 27": "STRING",
+    "Cột 28": "STRING",
+    "Cột 29": "STRING",
+    "Cột 30": "STRING",
+    "Cột 31": "STRING",
+    "Cột 32": "STRING",
+    "Cột 33": "STRING",
+    "Cột 34": "STRING",
+    "Cột 35": "STRING",
+    "Cột 36": "STRING",
+    "Cột 37": "STRING",
+    "Cột 38": "STRING",
+    "Cột 39": "STRING",
+    "Cột 40": "STRING",
+    "Cột 41": "STRING",
+    "Cột 42": "STRING",
+    "Cột 43": "STRING",
+    "Cột 44": "STRING",
+    "Cột 45": "STRING",
+    "Cột 46": "STRING",
+    "Cột 47": "STRING",
+    "Cột 48": "STRING",
+    "Cột 49": "STRING",
+    "Cột 50": "STRING",
+    "Cột 51": "STRING",
+    "Cột 52": "STRING",
+    "Cột 53": "STRING",
+    "Cột 54": "STRING",
+    "Cột 55": "STRING",
+    "Cột 56": "STRING",
+    "Cột 57": "STRING",
+    "Cột 58": "STRING",
+    "Cột 59": "STRING",
+    "Cột 60": "STRING",
+    "Cột 61": "STRING",
+    "Cột 62": "STRING",
+    "Cột 63": "STRING",
+    "Cột 64": "STRING",
+    "Cột 65": "STRING",
+    "Cột 66": "STRING",
+    "Cột 67": "STRING",
+    "Cột 68": "STRING",
+    "Cột 69": "STRING",
+    "Cột 70": "STRING",
+    "Cột 71": "STRING",
+    "Cột 72": "STRING",
+    "Cột 73": "STRING",
+    "Cột 74": "STRING",
+    "Cột 75": "STRING",
+    "Cột 76": "STRING",
+    "Cột 77": "STRING",
+    "Cột 78": "STRING",
+    "Cột 79": "STRING",
+    "Cột 80": "STRING",
+    "Cột 81": "STRING",
+    "Cột 82": "STRING",
+    "Cột 83": "STRING",
+    "Cột 84": "STRING",
+    "Cột 85": "STRING",
+    "Cột 86": "STRING",
+    "Cột 87": "STRING",
+    "Cột 88": "STRING",
+    "Cột 89": "STRING",
+    "Cột 90": "STRING",
+    "Cột 91": "STRING",
+    "Cột 92": "STRING",
+    "Cột 93": "STRING",
+    "Cột 94": "STRING",
+    "Cột 95": "STRING",
+    "Cột 96": "STRING",
+    "Cột 97": "STRING",
+    "Cột 98": "STRING",
+    "Cột 99": "STRING",
+    "Cột 100": "STRING",
+    "Cột 101": "STRING",
+    "Cột 102": "STRING",
+    "Cột 103": "STRING",
+    "Cột 104": "STRING",
+    "Cột 105": "STRING",
+    "Cột 106": "STRING",
+    "Cột 107": "STRING",
+    "Cột 108": "STRING",
+    "Cột 109": "STRING",
+    "Cột 110": "STRING",
+    "Cột 111": "STRING",
+    "Cột 112": "STRING",
+    "Cột 113": "STRING",
+    "Cột 114": "STRING",
+    "Cột 115": "STRING",
+    "Cột 116": "STRING",
+    "Cột 117": "STRING",
+    "Cột 118": "STRING",
+    "Cột 119": "STRING",
+    "Cột 120": "STRING",
+    "Cột 121": "STRING",
+    "Cột 122": "STRING",
+    "Cột 123": "STRING",
+    "Cột 124": "STRING",
+    "Cột 125": "STRING",
+    "Cột 126": "STRING",
+    "Cột 127": "STRING",
+    "Cột 128": "STRING",
+    "Cột 129": "STRING",
+    "Cột 130": "STRING",
+    "Cột 131": "STRING",
+    "Cột 132": "STRING",
+    "Cột 133": "STRING",
+    "Cột 134": "STRING",
+    "Cột 135": "STRING",
+    "Cột 136": "STRING",
+    "Cột 137": "STRING",
+    "Cột 138": "STRING",
+    "Cột 139": "STRING",
+    "Cột 140": "STRING",
+    "Cột 141": "STRING",
+    "Cột 142": "STRING",
+    "Cột 143": "STRING",
+    "Cột 144": "STRING",
+    "Cột 145": "STRING",
+    "Cột 146": "STRING",
+    "Cột 147": "STRING",
+    "Cột 148": "STRING",
+    "Cột 149": "STRING",
+    "Cột 150": "STRING",
+    "Cột 151": "STRING",
+    "Cột 152": "STRING",
+    "Cột 153": "STRING",
+    "Cột 154": "STRING",
+    "Cột 155": "STRING",
+    "Cột 156": "STRING",
+    "Cột 157": "STRING",
+    "Cột 158": "STRING",
+    "Cột 159": "STRING",
+    "Cột 160": "STRING",
+    "Cột 161": "STRING",
+    "Cột 162": "STRING",
+    "Cột 163": "STRING",
+    "Cột 164": "STRING",
+    "Cột 165": "STRING",
+    "Cột 166": "STRING",
+    "Cột 167": "STRING",
+    "Cột 168": "STRING",
+    "Cột 169": "STRING",
+    "Cột 170": "STRING",
+    "Cột 171": "STRING",
+    "Cột 172": "STRING",
+    "Cột 173": "STRING",
+    "Cột 174": "STRING",
+    "Cột 175": "STRING",
+    "Cột 176": "STRING",
+    "Cột 177": "STRING",
+    "Cột 178": "STRING",
+    "Cột 179": "STRING",
+    "Cột 180": "STRING",
+    "Cột 181": "STRING",
+    "Cột 182": "STRING",
+    "Cột 183": "STRING",
+    "Cột 184": "STRING",
+    "Cột 185": "STRING",
+    "Cột 186": "STRING",
+    "Cột 187": "STRING",
+    "Cột 188": "STRING",
+    "Cột 189": "STRING",
+    "Cột 190": "STRING",
+    "Cột 191": "STRING",
+    "Cột 192": "STRING",
+    "Cột 193": "STRING",
+    "Cột 194": "STRING",
+    "Cột 195": "STRING",
+    "Cột 196": "STRING",
+    "Cột 197": "STRING",
+    "Cột 198": "STRING",
+    "Cột 199": "STRING",
+    "Cột 200": "STRING",
+    "Cột 201": "STRING"
+  },
+  "column_profiles": {
+    "Cột 1": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 2": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 3": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 4": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 5": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 6": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 7": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 8": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 9": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 10": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 11": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 12": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 13": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 14": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 15": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 16": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 17": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 18": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 19": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 20": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 21": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 22": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 23": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 24": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 25": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 26": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 27": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 28": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 29": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 30": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 31": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 32": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 33": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 34": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 35": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 36": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 37": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 38": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 39": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 40": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 41": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 42": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 43": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 44": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 45": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 46": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 47": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 48": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 49": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 50": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 51": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 52": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 53": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 54": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 55": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 56": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 57": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 58": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 59": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 60": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 61": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 62": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 63": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 64": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 65": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 66": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 67": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 68": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 69": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 70": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 71": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 72": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 73": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 74": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 75": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 76": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 77": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 78": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 79": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 80": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 81": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 82": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 83": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 84": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 85": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 86": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 87": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 88": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 89": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 90": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 91": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 92": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 93": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 94": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 95": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 96": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 97": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 98": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 99": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 100": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 101": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 102": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 103": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 104": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 105": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 106": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 107": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 108": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 109": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 110": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 111": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 112": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 113": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 114": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 115": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 116": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 117": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 118": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 119": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 120": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 121": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 122": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 123": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 124": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 125": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 126": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 127": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 128": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 129": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 130": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 131": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 132": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 133": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 134": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 135": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 136": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 137": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 138": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 139": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 140": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 141": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 142": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 143": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 144": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 145": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 146": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 147": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 148": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 149": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 150": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 151": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 152": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 153": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 154": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 155": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 156": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 157": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 158": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 159": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 160": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 161": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 162": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 163": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 164": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 165": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 166": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 167": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 168": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 169": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 170": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 171": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 172": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 173": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 174": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 175": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 176": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 177": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 178": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 179": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 180": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 181": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 182": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 183": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 184": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 185": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 186": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 187": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 188": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 189": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 190": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 191": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 192": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 193": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 194": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 195": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 196": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 197": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 198": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 199": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 200": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    },
+    "Cột 201": {
+      "non_null_count": 1,
+      "null_count": 0,
+      "sample_values": [
+        "x"
+      ],
+      "inferred_type": "STRING"
+    }
+  },
+  "classified_columns": {
+    "measures": [],
+    "dimensions": [
+      "Cột 1",
+      "Cột 2",
+      "Cột 3",
+      "Cột 4",
+      "Cột 5",
+      "Cột 6",
+      "Cột 7",
+      "Cột 8",
+      "Cột 9",
+      "Cột 10",
+      "Cột 11",
+      "Cột 12",
+      "Cột 13",
+      "Cột 14",
+      "Cột 15",
+      "Cột 16",
+      "Cột 17",
+      "Cột 18",
+      "Cột 19",
+      "Cột 20",
+      "Cột 21",
+      "Cột 22",
+      "Cột 23",
+      "Cột 24",
+      "Cột 25",
+      "Cột 26",
+      "Cột 27",
+      "Cột 28",
+      "Cột 29",
+      "Cột 30",
+      "Cột 31",
+      "Cột 32",
+      "Cột 33",
+      "Cột 34",
+      "Cột 35",
+      "Cột 36",
+      "Cột 37",
+      "Cột 38",
+      "Cột 39",
+      "Cột 40",
+      "Cột 41",
+      "Cột 42",
+      "Cột 43",
+      "Cột 44",
+      "Cột 45",
+      "Cột 46",
+      "Cột 47",
+      "Cột 48",
+      "Cột 49",
+      "Cột 50",
+      "Cột 51",
+      "Cột 52",
+      "Cột 53",
+      "Cột 54",
+      "Cột 55",
+      "Cột 56",
+      "Cột 57",
+      "Cột 58",
+      "Cột 59",
+      "Cột 60",
+      "Cột 61",
+      "Cột 62",
+      "Cột 63",
+      "Cột 64",
+      "Cột 65",
+      "Cột 66",
+      "Cột 67",
+      "Cột 68",
+      "Cột 69",
+      "Cột 70",
+      "Cột 71",
+      "Cột 72",
+      "Cột 73",
+      "Cột 74",
+      "Cột 75",
+      "Cột 76",
+      "Cột 77",
+      "Cột 78",
+      "Cột 79",
+      "Cột 80",
+      "Cột 81",
+      "Cột 82",
+      "Cột 83",
+      "Cột 84",
+      "Cột 85",
+      "Cột 86",
+      "Cột 87",
+      "Cột 88",
+      "Cột 89",
+      "Cột 90",
+      "Cột 91",
+      "Cột 92",
+      "Cột 93",
+      "Cột 94",
+      "Cột 95",
+      "Cột 96",
+      "Cột 97",
+      "Cột 98",
+      "Cột 99",
+      "Cột 100",
+      "Cột 101",
+      "Cột 102",
+      "Cột 103",
+      "Cột 104",
+      "Cột 105",
+      "Cột 106",
+      "Cột 107",
+      "Cột 108",
+      "Cột 109",
+      "Cột 110",
+      "Cột 111",
+      "Cột 112",
+      "Cột 113",
+      "Cột 114",
+      "Cột 115",
+      "Cột 116",
+      "Cột 117",
+      "Cột 118",
+      "Cột 119",
+      "Cột 120",
+      "Cột 121",
+      "Cột 122",
+      "Cột 123",
+      "Cột 124",
+      "Cột 125",
+      "Cột 126",
+      "Cột 127",
+      "Cột 128",
+      "Cột 129",
+      "Cột 130",
+      "Cột 131",
+      "Cột 132",
+      "Cột 133",
+      "Cột 134",
+      "Cột 135",
+      "Cột 136",
+      "Cột 137",
+      "Cột 138",
+      "Cột 139",
+      "Cột 140",
+      "Cột 141",
+      "Cột 142",
+      "Cột 143",
+      "Cột 144",
+      "Cột 145",
+      "Cột 146",
+      "Cột 147",
+      "Cột 148",
+      "Cột 149",
+      "Cột 150",
+      "Cột 151",
+      "Cột 152",
+      "Cột 153",
+      "Cột 154",
+      "Cột 155",
+      "Cột 156",
+      "Cột 157",
+      "Cột 158",
+      "Cột 159",
+      "Cột 160",
+      "Cột 161",
+      "Cột 162",
+      "Cột 163",
+      "Cột 164",
+      "Cột 165",
+      "Cột 166",
+      "Cột 167",
+      "Cột 168",
+      "Cột 169",
+      "Cột 170",
+      "Cột 171",
+      "Cột 172",
+      "Cột 173",
+      "Cột 174",
+      "Cột 175",
+      "Cột 176",
+      "Cột 177",
+      "Cột 178",
+      "Cột 179",
+      "Cột 180",
+      "Cột 181",
+      "Cột 182",
+      "Cột 183",
+      "Cột 184",
+      "Cột 185",
+      "Cột 186",
+      "Cột 187",
+      "Cột 188",
+      "Cột 189",
+      "Cột 190",
+      "Cột 191",
+      "Cột 192",
+      "Cột 193",
+      "Cột 194",
+      "Cột 195",
+      "Cột 196",
+      "Cột 197",
+      "Cột 198",
+      "Cột 199",
+      "Cột 200",
+      "Cột 201"
+    ]
+  },
+  "usability_score": 100,
+  "usability_rating": "OPTIMAL_READY",
+  "total_cells": 201,
+  "filled_cells": 201,
+  "empty_cells": 0,
+  "blank_rows_count": 0,
+  "preview_rows": [
+    {
+      "Cột 1": "x",
+      "Cột 2": "x",
+      "Cột 3": "x",
+      "Cột 4": "x",
+      "Cột 5": "x",
+      "Cột 6": "x",
+      "Cột 7": "x",
+      "Cột 8": "x",
+      "Cột 9": "x",
+      "Cột 10": "x",
+      "Cột 11": "x",
+      "Cột 12": "x",
+      "Cột 13": "x",
+      "Cột 14": "x",
+      "Cột 15": "x",
+      "Cột 16": "x",
+      "Cột 17": "x",
+      "Cột 18": "x",
+      "Cột 19": "x",
+      "Cột 20": "x",
+      "Cột 21": "x",
+      "Cột 22": "x",
+      "Cột 23": "x",
+      "Cột 24": "x",
+      "Cột 25": "x",
+      "Cột 26": "x",
+      "Cột 27": "x",
+      "Cột 28": "x",
+      "Cột 29": "x",
+      "Cột 30": "x",
+      "Cột 31": "x",
+      "Cột 32": "x",
+      "Cột 33": "x",
+      "Cột 34": "x",
+      "Cột 35": "x",
+      "Cột 36": "x",
+      "Cột 37": "x",
+      "Cột 38": "x",
+      "Cột 39": "x",
+      "Cột 40": "x",
+      "Cột 41": "x",
+      "Cột 42": "x",
+      "Cột 43": "x",
+      "Cột 44": "x",
+      "Cột 45": "x",
+      "Cột 46": "x",
+      "Cột 47": "x",
+      "Cột 48": "x",
+      "Cột 49": "x",
+      "Cột 50": "x",
+      "Cột 51": "x",
+      "Cột 52": "x",
+      "Cột 53": "x",
+      "Cột 54": "x",
+      "Cột 55": "x",
+      "Cột 56": "x",
+      "Cột 57": "x",
+      "Cột 58": "x",
+      "Cột 59": "x",
+      "Cột 60": "x",
+      "Cột 61": "x",
+      "Cột 62": "x",
+      "Cột 63": "x",
+      "Cột 64": "x",
+      "Cột 65": "x",
+      "Cột 66": "x",
+      "Cột 67": "x",
+      "Cột 68": "x",
+      "Cột 69": "x",
+      "Cột 70": "x",
+      "Cột 71": "x",
+      "Cột 72": "x",
+      "Cột 73": "x",
+      "Cột 74": "x",
+      "Cột 75": "x",
+      "Cột 76": "x",
+      "Cột 77": "x",
+      "Cột 78": "x",
+      "Cột 79": "x",
+      "Cột 80": "x",
+      "Cột 81": "x",
+      "Cột 82": "x",
+      "Cột 83": "x",
+      "Cột 84": "x",
+      "Cột 85": "x",
+      "Cột 86": "x",
+      "Cột 87": "x",
+      "Cột 88": "x",
+      "Cột 89": "x",
+      "Cột 90": "x",
+      "Cột 91": "x",
+      "Cột 92": "x",
+      "Cột 93": "x",
+      "Cột 94": "x",
+      "Cột 95": "x",
+      "Cột 96": "x",
+      "Cột 97": "x",
+      "Cột 98": "x",
+      "Cột 99": "x",
+      "Cột 100": "x",
+      "Cột 101": "x",
+      "Cột 102": "x",
+      "Cột 103": "x",
+      "Cột 104": "x",
+      "Cột 105": "x",
+      "Cột 106": "x",
+      "Cột 107": "x",
+      "Cột 108": "x",
+      "Cột 109": "x",
+      "Cột 110": "x",
+      "Cột 111": "x",
+      "Cột 112": "x",
+      "Cột 113": "x",
+      "Cột 114": "x",
+      "Cột 115": "x",
+      "Cột 116": "x",
+      "Cột 117": "x",
+      "Cột 118": "x",
+      "Cột 119": "x",
+      "Cột 120": "x",
+      "Cột 121": "x",
+      "Cột 122": "x",
+      "Cột 123": "x",
+      "Cột 124": "x",
+      "Cột 125": "x",
+      "Cột 126": "x",
+      "Cột 127": "x",
+      "Cột 128": "x",
+      "Cột 129": "x",
+      "Cột 130": "x",
+      "Cột 131": "x",
+      "Cột 132": "x",
+      "Cột 133": "x",
+      "Cột 134": "x",
+      "Cột 135": "x",
+      "Cột 136": "x",
+      "Cột 137": "x",
+      "Cột 138": "x",
+      "Cột 139": "x",
+      "Cột 140": "x",
+      "Cột 141": "x",
+      "Cột 142": "x",
+      "Cột 143": "x",
+      "Cột 144": "x",
+      "Cột 145": "x",
+      "Cột 146": "x",
+      "Cột 147": "x",
+      "Cột 148": "x",
+      "Cột 149": "x",
+      "Cột 150": "x",
+      "Cột 151": "x",
+      "Cột 152": "x",
+      "Cột 153": "x",
+      "Cột 154": "x",
+      "Cột 155": "x",
+      "Cột 156": "x",
+      "Cột 157": "x",
+      "Cột 158": "x",
+      "Cột 159": "x",
+      "Cột 160": "x",
+      "Cột 161": "x",
+      "Cột 162": "x",
+      "Cột 163": "x",
+      "Cột 164": "x",
+      "Cột 165": "x",
+      "Cột 166": "x",
+      "Cột 167": "x",
+      "Cột 168": "x",
+      "Cột 169": "x",
+      "Cột 170": "x",
+      "Cột 171": "x",
+      "Cột 172": "x",
+      "Cột 173": "x",
+      "Cột 174": "x",
+      "Cột 175": "x",
+      "Cột 176": "x",
+      "Cột 177": "x",
+      "Cột 178": "x",
+      "Cột 179": "x",
+      "Cột 180": "x",
+      "Cột 181": "x",
+      "Cột 182": "x",
+      "Cột 183": "x",
+      "Cột 184": "x",
+      "Cột 185": "x",
+      "Cột 186": "x",
+      "Cột 187": "x",
+      "Cột 188": "x",
+      "Cột 189": "x",
+      "Cột 190": "x",
+      "Cột 191": "x",
+      "Cột 192": "x",
+      "Cột 193": "x",
+      "Cột 194": "x",
+      "Cột 195": "x",
+      "Cột 196": "x",
+      "Cột 197": "x",
+      "Cột 198": "x",
+      "Cột 199": "x",
+      "Cột 200": "x",
+      "Cột 201": "x"
+    }
+  ],
+  "preview_data": [
+    {
+      "Cột 1": "x",
+      "Cột 2": "x",
+      "Cột 3": "x",
+      "Cột 4": "x",
+      "Cột 5": "x",
+      "Cột 6": "x",
+      "Cột 7": "x",
+      "Cột 8": "x",
+      "Cột 9": "x",
+      "Cột 10": "x",
+      "Cột 11": "x",
+      "Cột 12": "x",
+      "Cột 13": "x",
+      "Cột 14": "x",
+      "Cột 15": "x",
+      "Cột 16": "x",
+      "Cột 17": "x",
+      "Cột 18": "x",
+      "Cột 19": "x",
+      "Cột 20": "x",
+      "Cột 21": "x",
+      "Cột 22": "x",
+      "Cột 23": "x",
+      "Cột 24": "x",
+      "Cột 25": "x",
+      "Cột 26": "x",
+      "Cột 27": "x",
+      "Cột 28": "x",
+      "Cột 29": "x",
+      "Cột 30": "x",
+      "Cột 31": "x",
+      "Cột 32": "x",
+      "Cột 33": "x",
+      "Cột 34": "x",
+      "Cột 35": "x",
+      "Cột 36": "x",
+      "Cột 37": "x",
+      "Cột 38": "x",
+      "Cột 39": "x",
+      "Cột 40": "x",
+      "Cột 41": "x",
+      "Cột 42": "x",
+      "Cột 43": "x",
+      "Cột 44": "x",
+      "Cột 45": "x",
+      "Cột 46": "x",
+      "Cột 47": "x",
+      "Cột 48": "x",
+      "Cột 49": "x",
+      "Cột 50": "x",
+      "Cột 51": "x",
+      "Cột 52": "x",
+      "Cột 53": "x",
+      "Cột 54": "x",
+      "Cột 55": "x",
+      "Cột 56": "x",
+      "Cột 57": "x",
+      "Cột 58": "x",
+      "Cột 59": "x",
+      "Cột 60": "x",
+      "Cột 61": "x",
+      "Cột 62": "x",
+      "Cột 63": "x",
+      "Cột 64": "x",
+      "Cột 65": "x",
+      "Cột 66": "x",
+      "Cột 67": "x",
+      "Cột 68": "x",
+      "Cột 69": "x",
+      "Cột 70": "x",
+      "Cột 71": "x",
+      "Cột 72": "x",
+      "Cột 73": "x",
+      "Cột 74": "x",
+      "Cột 75": "x",
+      "Cột 76": "x",
+      "Cột 77": "x",
+      "Cột 78": "x",
+      "Cột 79": "x",
+      "Cột 80": "x",
+      "Cột 81": "x",
+      "Cột 82": "x",
+      "Cột 83": "x",
+      "Cột 84": "x",
+      "Cột 85": "x",
+      "Cột 86": "x",
+      "Cột 87": "x",
+      "Cột 88": "x",
+      "Cột 89": "x",
+      "Cột 90": "x",
+      "Cột 91": "x",
+      "Cột 92": "x",
+      "Cột 93": "x",
+      "Cột 94": "x",
+      "Cột 95": "x",
+      "Cột 96": "x",
+      "Cột 97": "x",
+      "Cột 98": "x",
+      "Cột 99": "x",
+      "Cột 100": "x",
+      "Cột 101": "x",
+      "Cột 102": "x",
+      "Cột 103": "x",
+      "Cột 104": "x",
+      "Cột 105": "x",
+      "Cột 106": "x",
+      "Cột 107": "x",
+      "Cột 108": "x",
+      "Cột 109": "x",
+      "Cột 110": "x",
+      "Cột 111": "x",
+      "Cột 112": "x",
+      "Cột 113": "x",
+      "Cột 114": "x",
+      "Cột 115": "x",
+      "Cột 116": "x",
+      "Cột 117": "x",
+      "Cột 118": "x",
+      "Cột 119": "x",
+      "Cột 120": "x",
+      "Cột 121": "x",
+      "Cột 122": "x",
+      "Cột 123": "x",
+      "Cột 124": "x",
+      "Cột 125": "x",
+      "Cột 126": "x",
+      "Cột 127": "x",
+      "Cột 128": "x",
+      "Cột 129": "x",
+      "Cột 130": "x",
+      "Cột 131": "x",
+      "Cột 132": "x",
+      "Cột 133": "x",
+      "Cột 134": "x",
+      "Cột 135": "x",
+      "Cột 136": "x",
+      "Cột 137": "x",
+      "Cột 138": "x",
+      "Cột 139": "x",
+      "Cột 140": "x",
+      "Cột 141": "x",
+      "Cột 142": "x",
+      "Cột 143": "x",
+      "Cột 144": "x",
+      "Cột 145": "x",
+      "Cột 146": "x",
+      "Cột 147": "x",
+      "Cột 148": "x",
+      "Cột 149": "x",
+      "Cột 150": "x",
+      "Cột 151": "x",
+      "Cột 152": "x",
+      "Cột 153": "x",
+      "Cột 154": "x",
+      "Cột 155": "x",
+      "Cột 156": "x",
+      "Cột 157": "x",
+      "Cột 158": "x",
+      "Cột 159": "x",
+      "Cột 160": "x",
+      "Cột 161": "x",
+      "Cột 162": "x",
+      "Cột 163": "x",
+      "Cột 164": "x",
+      "Cột 165": "x",
+      "Cột 166": "x",
+      "Cột 167": "x",
+      "Cột 168": "x",
+      "Cột 169": "x",
+      "Cột 170": "x",
+      "Cột 171": "x",
+      "Cột 172": "x",
+      "Cột 173": "x",
+      "Cột 174": "x",
+      "Cột 175": "x",
+      "Cột 176": "x",
+      "Cột 177": "x",
+      "Cột 178": "x",
+      "Cột 179": "x",
+      "Cột 180": "x",
+      "Cột 181": "x",
+      "Cột 182": "x",
+      "Cột 183": "x",
+      "Cột 184": "x",
+      "Cột 185": "x",
+      "Cột 186": "x",
+      "Cột 187": "x",
+      "Cột 188": "x",
+      "Cột 189": "x",
+      "Cột 190": "x",
+      "Cột 191": "x",
+      "Cột 192": "x",
+      "Cột 193": "x",
+      "Cột 194": "x",
+      "Cột 195": "x",
+      "Cột 196": "x",
+      "Cột 197": "x",
+      "Cột 198": "x",
+      "Cột 199": "x",
+      "Cột 200": "x",
+      "Cột 201": "x"
+    }
+  ],
+  "ai_ingestion_audit": {
+    "source": "gemini_api",
+    "model": "gemini-flash-lite-latest",
+    "file_name": "21_vuot_201_cot.csv",
+    "rows_count": 1,
+    "columns_count": 201,
+    "satisfied_count": 0,
+    "missing_count": 8,
+    "total_formulas_count": 8,
+    "readiness_pct": 0,
+    "column_mapping": {
+      "revenue": null,
+      "cogs": null,
+      "discounts": null,
+      "channels": null,
+      "customer_rfm": null,
+      "timeline": null,
+      "products": null,
+      "logistics": null
+    },
+    "satisfied_formulas": [],
+    "missing_formulas": [
+      {
+        "id": "revenue",
+        "name": "Doanh Thu Thuần / Bán Hàng",
+        "reason": "Không tìm thấy cột tương ứng với 'Doanh Thu Thuần / Bán Hàng' trong 201 cột đầu vào.",
+        "impacted_in_stage_3_4": [
+          "Doanh thu thuần (Net Revenue)",
+          "Giá trị đơn hàng trung bình (AOV = Net Revenue / Total Orders)",
+          "Tổng quy mô tăng trưởng hệ thống"
+        ],
+        "suggested_question": "Tệp dữ liệu hiện tại đang chứa các giá trị 'x', xin vui lòng cung cấp các cột chứa thông tin về Doanh thu thuần, Tổng giá trị đơn hàng hoặc chi tiết đơn hàng để tính toán Doanh thu?"
+      },
+      {
+        "id": "cogs",
+        "name": "Giá Vốn Hàng Bán (COGS)",
+        "reason": "Không tìm thấy cột tương ứng với 'Giá Vốn Hàng Bán (COGS)' trong 201 cột đầu vào.",
+        "impacted_in_stage_3_4": [
+          "Lợi nhuận gộp (Gross Profit = Net Revenue - Total COGS)",
+          "Biên lợi nhuận gộp % (Gross Margin = Gross Profit / Net Revenue * 100)",
+          "Xếp hạng sản phẩm theo Lợi nhuận sinh lời"
+        ],
+        "suggested_question": "Vui lòng cung cấp tên các cột chứa dữ liệu về Giá vốn hàng bán (COGS) hoặc Lợi nhuận gộp để hệ thống có thể xây dựng công thức phân tích biên lợi nhuận?"
+      },
+      {
+        "id": "discounts",
+        "name": "Chiết Khấu & Khuyến Mại",
+        "reason": "Không tìm thấy cột tương ứng với 'Chiết Khấu & Khuyến Mại' trong 201 cột đầu vào.",
+        "impacted_in_stage_3_4": [
+          "Tổng doanh thu niêm yết (Gross Sales = Net Revenue + Discounts)",
+          "Tỷ lệ chiết khấu thực tế (Discount Rate = Total Discounts / Gross Revenue * 100)",
+          "Chẩn đoán tác động ăn mòn biên lợi nhuận của Voucher"
+        ],
+        "suggested_question": "Hệ thống đang thiếu dữ liệu về chiết khấu và khuyến mại, bạn có thể bổ sung các cột tương ứng không?"
+      },
+      {
+        "id": "channels",
+        "name": "Kênh Bán Hàng & Phân Phối",
+        "reason": "Không tìm thấy cột tương ứng với 'Kênh Bán Hàng & Phân Phối' trong 201 cột đầu vào.",
+        "impacted_in_stage_3_4": [
+          "Phân bổ thị phần doanh thu theo kênh (Channel Market Share)",
+          "So sánh biên lợi nhuận & quy mô AOV giữa các kênh",
+          "Đánh giá hiệu quả mô hình Omnichannel / Bán lẻ đa kênh"
+        ],
+        "suggested_question": "Tên cột nào trong hệ thống của bạn thể hiện Kênh bán hàng hoặc Phương thức phân phối?"
+      },
+      {
+        "id": "customer_rfm",
+        "name": "Mã Khách Hàng (CustomerID)",
+        "reason": "Không tìm thấy cột tương ứng với 'Mã Khách Hàng (CustomerID)' trong 201 cột đầu vào.",
+        "impacted_in_stage_3_4": [
+          "Mô hình phân khúc khách hàng 5 nhóm RFM (Champions, Loyalists, At Risk...)",
+          "Đo lường tần suất mua hàng lặp lại (Retention Rate)",
+          "Giá trị trọn đời khách hàng trung bình (CLV)"
+        ],
+        "suggested_question": "Bạn có thể chỉ định cột nào chứa Mã khách hàng (CustomerID), ngày mua gần nhất và tổng giá trị mua hàng để chạy mô hình RFM không?"
+      },
+      {
+        "id": "timeline",
+        "name": "Mốc Thời Gian / Ngày Đặt Hàng",
+        "reason": "Không tìm thấy cột tương ứng với 'Mốc Thời Gian / Ngày Đặt Hàng' trong 201 cột đầu vào.",
+        "impacted_in_stage_3_4": [
+          "Xu hướng doanh thu & lợi nhuận 12 tháng (Monthly Trend)",
+          "Biến động chu kỳ 4 Quý (Quarterly Seasonality)",
+          "Tốc độ tăng trưởng kỳ trước (MoM / QoQ Growth)"
+        ],
+        "suggested_question": "Cột nào trong tệp dữ liệu đại diện cho Mốc thời gian hoặc Ngày đặt hàng để phân tích xu hướng theo tháng/quý?"
+      },
+      {
+        "id": "products",
+        "name": "Tên Sản Phẩm / Mặt Hàng",
+        "reason": "Không tìm thấy cột tương ứng với 'Tên Sản Phẩm / Mặt Hàng' trong 201 cột đầu vào.",
+        "impacted_in_stage_3_4": [
+          "Top sản phẩm đóng góp doanh thu & lợi nhuận lớn nhất",
+          "Phân tích Pareto 80/20 danh mục sản phẩm",
+          "Biên lợi nhuận trên từng đơn vị sản phẩm bán ra"
+        ],
+        "suggested_question": "Vui lòng cho biết cột nào chứa Tên sản phẩm hoặc Mã mặt hàng để thực hiện phân tích danh mục Pareto?"
+      },
+      {
+        "id": "logistics",
+        "name": "Trạng Thái Giao Vận & Hoàn Hủy",
+        "reason": "Không tìm thấy cột tương ứng với 'Trạng Thái Giao Vận & Hoàn Hủy' trong 201 cột đầu vào.",
+        "impacted_in_stage_3_4": [
+          "Tỷ lệ hoàn trả (Return Rate %) và tỷ lệ hủy đơn (Cancel Rate %)",
+          "Tỷ lệ đơn hàng giao thành công thực tế (Fulfillment Rate %)"
+        ],
+        "suggested_question": "Hệ thống cần các cột ghi nhận Trạng thái giao vận, tỷ lệ hoàn trả hoặc hủy đơn để đo lường hiệu suất logistics. Cột nào chứa thông tin này?"
+      }
+    ],
+    "ai_summary": "Tệp dữ liệu đầu vào '21_vuot_201_cot.csv' hiện có 1 dòng và 201 cột nhưng toàn bộ các cột đều có mẫu giá trị là 'x', không có tên tiêu đề cột cụ thể hoặc dữ liệu ngữ nghĩa để ánh xạ với 8 nhóm công thức BI. Do đó, hiện tại không có nhóm công thức nào (0/8) đáp ứng được để tính toán trực tiếp doanh thu, giá vốn, chiết khấu hay các chỉ số phân tích khác.",
+    "stage_2_5_note": "Khuyến nghị chuyển sang Bước 2.5 để yêu cầu người dùng cung cấp lại tệp dữ liệu có header (tiêu đề cột) chuẩn xác hoặc ánh xạ lại tên cột thực tế, vì dữ liệu hiện tại toàn bộ là ký tự 'x' và không thể sử dụng cho mô hình BI."
+  },
+  "validation": {
+    "has_headers": true,
+    "duplicate_columns": [],
+    "is_empty": false,
+    "blocking_errors": [],
+    "warnings": [],
+    "can_proceed_to_cleaning": true
+  },
+  "raw_records": [
+    {
+      "Cột 1": "x",
+      "Cột 2": "x",
+      "Cột 3": "x",
+      "Cột 4": "x",
+      "Cột 5": "x",
+      "Cột 6": "x",
+      "Cột 7": "x",
+      "Cột 8": "x",
+      "Cột 9": "x",
+      "Cột 10": "x",
+      "Cột 11": "x",
+      "Cột 12": "x",
+      "Cột 13": "x",
+      "Cột 14": "x",
+      "Cột 15": "x",
+      "Cột 16": "x",
+      "Cột 17": "x",
+      "Cột 18": "x",
+      "Cột 19": "x",
+      "Cột 20": "x",
+      "Cột 21": "x",
+      "Cột 22": "x",
+      "Cột 23": "x",
+      "Cột 24": "x",
+      "Cột 25": "x",
+      "Cột 26": "x",
+      "Cột 27": "x",
+      "Cột 28": "x",
+      "Cột 29": "x",
+      "Cột 30": "x",
+      "Cột 31": "x",
+      "Cột 32": "x",
+      "Cột 33": "x",
+      "Cột 34": "x",
+      "Cột 35": "x",
+      "Cột 36": "x",
+      "Cột 37": "x",
+      "Cột 38": "x",
+      "Cột 39": "x",
+      "Cột 40": "x",
+      "Cột 41": "x",
+      "Cột 42": "x",
+      "Cột 43": "x",
+      "Cột 44": "x",
+      "Cột 45": "x",
+      "Cột 46": "x",
+      "Cột 47": "x",
+      "Cột 48": "x",
+      "Cột 49": "x",
+      "Cột 50": "x",
+      "Cột 51": "x",
+      "Cột 52": "x",
+      "Cột 53": "x",
+      "Cột 54": "x",
+      "Cột 55": "x",
+      "Cột 56": "x",
+      "Cột 57": "x",
+      "Cột 58": "x",
+      "Cột 59": "x",
+      "Cột 60": "x",
+      "Cột 61": "x",
+      "Cột 62": "x",
+      "Cột 63": "x",
+      "Cột 64": "x",
+      "Cột 65": "x",
+      "Cột 66": "x",
+      "Cột 67": "x",
+      "Cột 68": "x",
+      "Cột 69": "x",
+      "Cột 70": "x",
+      "Cột 71": "x",
+      "Cột 72": "x",
+      "Cột 73": "x",
+      "Cột 74": "x",
+      "Cột 75": "x",
+      "Cột 76": "x",
+      "Cột 77": "x",
+      "Cột 78": "x",
+      "Cột 79": "x",
+      "Cột 80": "x",
+      "Cột 81": "x",
+      "Cột 82": "x",
+      "Cột 83": "x",
+      "Cột 84": "x",
+      "Cột 85": "x",
+      "Cột 86": "x",
+      "Cột 87": "x",
+      "Cột 88": "x",
+      "Cột 89": "x",
+      "Cột 90": "x",
+      "Cột 91": "x",
+      "Cột 92": "x",
+      "Cột 93": "x",
+      "Cột 94": "x",
+      "Cột 95": "x",
+      "Cột 96": "x",
+      "Cột 97": "x",
+      "Cột 98": "x",
+      "Cột 99": "x",
+      "Cột 100": "x",
+      "Cột 101": "x",
+      "Cột 102": "x",
+      "Cột 103": "x",
+      "Cột 104": "x",
+      "Cột 105": "x",
+      "Cột 106": "x",
+      "Cột 107": "x",
+      "Cột 108": "x",
+      "Cột 109": "x",
+      "Cột 110": "x",
+      "Cột 111": "x",
+      "Cột 112": "x",
+      "Cột 113": "x",
+      "Cột 114": "x",
+      "Cột 115": "x",
+      "Cột 116": "x",
+      "Cột 117": "x",
+      "Cột 118": "x",
+      "Cột 119": "x",
+      "Cột 120": "x",
+      "Cột 121": "x",
+      "Cột 122": "x",
+      "Cột 123": "x",
+      "Cột 124": "x",
+      "Cột 125": "x",
+      "Cột 126": "x",
+      "Cột 127": "x",
+      "Cột 128": "x",
+      "Cột 129": "x",
+      "Cột 130": "x",
+      "Cột 131": "x",
+      "Cột 132": "x",
+      "Cột 133": "x",
+      "Cột 134": "x",
+      "Cột 135": "x",
+      "Cột 136": "x",
+      "Cột 137": "x",
+      "Cột 138": "x",
+      "Cột 139": "x",
+      "Cột 140": "x",
+      "Cột 141": "x",
+      "Cột 142": "x",
+      "Cột 143": "x",
+      "Cột 144": "x",
+      "Cột 145": "x",
+      "Cột 146": "x",
+      "Cột 147": "x",
+      "Cột 148": "x",
+      "Cột 149": "x",
+      "Cột 150": "x",
+      "Cột 151": "x",
+      "Cột 152": "x",
+      "Cột 153": "x",
+      "Cột 154": "x",
+      "Cột 155": "x",
+      "Cột 156": "x",
+      "Cột 157": "x",
+      "Cột 158": "x",
+      "Cột 159": "x",
+      "Cột 160": "x",
+      "Cột 161": "x",
+      "Cột 162": "x",
+      "Cột 163": "x",
+      "Cột 164": "x",
+      "Cột 165": "x",
+      "Cột 166": "x",
+      "Cột 167": "x",
+      "Cột 168": "x",
+      "Cột 169": "x",
+      "Cột 170": "x",
+      "Cột 171": "x",
+      "Cột 172": "x",
+      "Cột 173": "x",
+      "Cột 174": "x",
+      "Cột 175": "x",
+      "Cột 176": "x",
+      "Cột 177": "x",
+      "Cột 178": "x",
+      "Cột 179": "x",
+      "Cột 180": "x",
+      "Cột 181": "x",
+      "Cột 182": "x",
+      "Cột 183": "x",
+      "Cột 184": "x",
+      "Cột 185": "x",
+      "Cột 186": "x",
+      "Cột 187": "x",
+      "Cột 188": "x",
+      "Cột 189": "x",
+      "Cột 190": "x",
+      "Cột 191": "x",
+      "Cột 192": "x",
+      "Cột 193": "x",
+      "Cột 194": "x",
+      "Cột 195": "x",
+      "Cột 196": "x",
+      "Cột 197": "x",
+      "Cột 198": "x",
+      "Cột 199": "x",
+      "Cột 200": "x",
+      "Cột 201": "x"
+    }
+  ],
+  "business_context": {
+    "company_type": "Bán lẻ đa kênh (Omnichannel)",
+    "industry": "",
+    "time_scope": "",
+    "additional_notes": "",
+    "questions": [
+      "Doanh thu theo kênh bán hàng nào cao nhất?",
+      "Chi phí chiết khấu ảnh hưởng thế nào đến biên lợi nhuận?",
+      "Tỷ lệ hoàn hủy hàng hóa tập trung ở kênh bán nào nhiều nhất?"
+    ],
+    "question_evaluations": [
+      {
+        "question": "Doanh thu theo kênh bán hàng nào cao nhất?",
+        "status": "UNSUPPORTED",
+        "domains": [
+          "revenue",
+          "channel"
+        ],
+        "matched_columns": [],
+        "missing_domains": [
+          "revenue",
+          "channel"
+        ],
+        "analysis_note": "⚠️ Cảnh báo: Tệp dữ liệu hiện tại không có cột về 'doanh thu, kênh' để trả lời câu hỏi này."
+      },
+      {
+        "question": "Chi phí chiết khấu ảnh hưởng thế nào đến biên lợi nhuận?",
+        "status": "UNSUPPORTED",
+        "domains": [
+          "profit",
+          "discount",
+          "cost"
+        ],
+        "matched_columns": [],
+        "missing_domains": [
+          "profit",
+          "discount",
+          "cost"
+        ],
+        "analysis_note": "⚠️ Cảnh báo: Tệp dữ liệu hiện tại không có cột về 'lợi nhuận, chiết khấu, chi phí' để trả lời câu hỏi này."
+      },
+      {
+        "question": "Tỷ lệ hoàn hủy hàng hóa tập trung ở kênh bán nào nhiều nhất?",
+        "status": "UNSUPPORTED",
+        "domains": [
+          "channel"
+        ],
+        "matched_columns": [],
+        "missing_domains": [
+          "channel"
+        ],
+        "analysis_note": "⚠️ Cảnh báo: Tệp dữ liệu hiện tại không có cột về 'kênh' để trả lời câu hỏi này."
+      }
+    ]
+  }
+}

@@ -1,0 +1,611 @@
+﻿Order_ID,Order_Date,Customer_ID,Region,City,Customer_Segment,Sales_Channel,Product_Category,Product_Name,Unit_Price_VND,Quantity,Discount_Rate,Revenue_VND,Cost_VND,Profit_VND,Payment_Method,Order_Status,Customer_Rating
+GH10001,2025-04-15,KH1023,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Mạng xã hội,Điện tử,Tai nghe Bluetooth,478722,3,0.0,1436166,780000,656166,Tiền mặt,Hoàn thành,1.0
+GH10002,2026-07-13,KH1072,Miền Bắc,Hải Phòng,Cá nhân,Website,Phụ kiện,Balo laptop,518638,2,0.15,881685,620000,261685,Ví điện tử,Hoàn thành,4.0
+GH10003,2025-12-19,KH1118,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Cửa hàng,Gia dụng,Ấm siêu tốc,409917,1,0.1,368925,220000,148925,Ví điện tử,Hoàn thành,2.0
+GH10004,2025-08-22,KH1060,Miền Trung,Nghệ An,Cá nhân,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,172445,1,0.0,172445,65000,107445,Thẻ ngân hàng,Hoàn thành,4.0
+GH10005,2025-03-15,KH1063,Miền Trung,Huế,Cá nhân,Mạng xã hội,Gia dụng,Ấm siêu tốc,372711,2,0.2,596338,440000,156338,Ví điện tử,Hoàn thành,4.0
+GH10006,2025-02-02,KH1017,Miền Nam,Cần Thơ,Cá nhân,Sàn thương mại điện tử,Gia dụng,Ấm siêu tốc,386168,4,0.0,1544672,880000,664672,Chuyển khoản,Hoàn thành,5.0
+GH10007,2026-07-06,KH1150,Miền Trung,Quảng Nam,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Chuột không dây,284952,1,0.0,284952,145000,139952,Chuyển khoản,Hoàn thành,5.0
+GH10008,2025-06-13,KH1017,Miền Bắc,Thanh Hóa,Doanh nghiệp,Mạng xã hội,Điện tử,Loa mini,615860,3,0.0,1847580,1170000,677580,Ví điện tử,Hoàn thành,4.0
+GH10009,2025-12-15,KH1117,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Sàn thương mại điện tử,Điện tử,Loa mini,617033,3,0.15,1573434,1170000,403434,Chuyển khoản,Hoàn thành,4.0
+GH10010,2025-06-15,KH1001,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,,Phụ kiện,Balo laptop,555549,2,0.0,1111098,620000,491098,Ví điện tử,Hoàn thành,1.0
+GH10011,2025-03-29,,Miền Trung,Nghệ An,Cá nhân,Website,Gia dụng,Nồi chiên không dầu,1946946,1,0.15,1654904,1250000,404904,Ví điện tử,Đang giao,5.0
+GH10012,2026-07-07,KH1080,Miền Bắc,Bắc Ninh,Doanh nghiệp,Sàn thương mại điện tử,Phụ kiện,Balo laptop,537409,4,0.1,1934672,1240000,694672,Ví điện tử,Hoàn trả,5.0
+GH10013,2026-07-22,KH1019,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Cửa hàng,Gia dụng,Nồi chiên không dầu,1781610,1,0.05,1692530,1250000,442530,Chuyển khoản,Hoàn thành,2.0
+GH10014,2025-08-08,KH1147,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,643871,2,0.05,1223355,780000,443355,Chuyển khoản,Hoàn thành,5.0
+GH10015,2026-02-25,KH1173,Miền Trung,Huế,Khách hàng thân thiết,Cửa hàng,Điện tử,Loa mini,644404,1,0.1,579964,390000,189964,Tiền mặt,Hoàn thành,4.0
+GH10016,2026-03-09,KH1020,Miền Trung,Đà Nẵng,Doanh nghiệp,Cửa hàng,Gia dụng,Nồi chiên không dầu,1848879,1,0.15,1571547,1250000,321547,Tiền mặt,Hoàn thành,5.0
+GH10017,2026-05-13,KH1016,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Mạng xã hội,Điện tử,Loa mini,657012,4,0.0,2628048,1560000,1068048,Tiền mặt,Hoàn thành,
+GH10018,2026-07-24,KH1049,Miền Trung,Quảng Nam,Doanh nghiệp,Website,Gia dụng,Máy xay sinh tố,892670,2,0.2,1428272,1120000,308272,Tiền mặt,Hoàn trả,4.0
+GH10019,2026-06-28,KH1021,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Cửa hàng,Gia dụng,Ấm siêu tốc,418905,1,0.15,356069,220000,136069,Tiền mặt,Hoàn thành,5.0
+GH10020,2026-09-01,KH1169,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Loa mini,584224,5,0.15,2482952,1950000,532952,Thẻ ngân hàng,Hoàn thành,3.0
+GH10021,2025-11-04,KH1019,miền nam,Bình Dương,Cá nhân,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1978302,1,0.0,1978302,1250000,728302,Tiền mặt,Hoàn thành,2.0
+GH10022,2026-01-14,KH1140,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Chuột không dây,278803,5,0.0,1394015,725000,669015,Tiền mặt,Đã hủy,5.0
+GH10023,2025-04-20,KH1073,Miền Nam,Bình Dương,Khách hàng thân thiết,Website,Điện tử,Loa mini,591056,5,0.0,2955280,1950000,1005280,Thẻ ngân hàng,Hoàn thành,3.0
+GH10024,2026-03-10,KH1086,Miền Nam,Bình Dương,Cá nhân,Sàn thương mại điện tử,Phụ kiện,Balo laptop,487038,2,0.0,974076,620000,354076,Chuyển khoản,Hoàn thành,5.0
+GH10025,2025-06-02,KH1150,Miền Nam,Đồng Nai,Khách hàng thân thiết,Website,Phụ kiện,Balo laptop,548698,1,0.0,548698,310000,238698,Ví điện tử,Đang giao,3.0
+GH10026,16/04/2025,KH1105,Miền Trung,Nghệ An,Khách hàng thân thiết,Website,Điện tử,Tai nghe Bluetooth,456292,4,0.0,1825168,1040000,785168,Chuyển khoản,Hoàn thành,5.0
+GH10027,2026-02-26,KH1064,Miền Bắc,Thanh Hóa,Doanh nghiệp,Website,Điện tử,Tai nghe Bluetooth,476824,1,0.05,452983,260000,192983,Tiền mặt,Hoàn thành,4.0
+GH10028,2025-08-22,KH1103,Miền Bắc,Thanh Hóa,Doanh nghiệp,Sàn thương mại điện tử,Gia dụng,Nồi chiên không dầu,1903659,1,0.1,1713293,1250000,463293,Tiền mặt,Hoàn thành,5.0
+GH10029,2025-01-29,KH1046,Miền Trung,Nghệ An,Khách hàng thân thiết,Sàn thương mại điện tử,Phụ kiện,Balo laptop,559291,2,0.15,950795,620000,330795,Tiền mặt,Hoàn thành,
+GH10030,2026-08-14,KH1112,Miền Trung,Nghệ An,Cá nhân,Website,Gia dụng,Ấm siêu tốc,365296,2,0.15,621003,440000,181003,Thẻ ngân hàng,Hoàn thành,4.0
+GH10031,2025-11-04,KH1084,Miền Nam,Bình Dương,Doanh nghiệp,Sàn thương mại điện tử,Phụ kiện,Cáp sạc nhanh,164805,1,0.0,164805,65000,99805,Chuyển khoản,Hoàn thành,3.0
+GH10032,2025-01-01,KH1149,Miền Nam,Đồng Nai,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Chuột không dây,269227,2,0.05,511531,290000,221531,Ví điện tử,Hoàn thành,4.0
+GH10033,28/03/2025,KH1159,Miền Nam,Cần Thơ,Doanh nghiệp, CỬA HÀNG ,Phụ kiện,Balo laptop,535380,2,0.2,856608,620000,236608,Chuyển khoản,Hoàn thành,5.0
+GH10034,2026-09-18,KH1107,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Website,Điện tử,Chuột không dây,263458,1,0.0,263458,145000,118458,Ví điện tử,Hoàn trả,4.0
+GH10035,2025-08-13,KH1133,Miền Bắc,Hải Phòng,Doanh nghiệp,Cửa hàng,Điện tử,Tai nghe Bluetooth,483162,4,0.0,1932648,1040000,892648,Chuyển khoản,Hoàn thành,5.0
+GH10036,2026-07-27,KH1114,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Mạng xã hội,Điện tử,Chuột không dây,300301,3,0.2,720722,435000,285722,Ví điện tử,Hoàn thành,5.0
+GH10037,2025-10-11,KH1161,Miền Nam,Đồng Nai,Cá nhân,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,75614,1,0.0,75614,32000,43614,Ví điện tử,Đã hủy,2.0
+GH10038,2025-06-04,KH1055,Miền Trung,Huế,Cá nhân,Mạng xã hội,Gia dụng,Máy xay sinh tố,920342,1,0.15,782291,560000,222291,Ví điện tử,Hoàn thành,4.0
+GH10039,2026-08-22,KH1148,Miền Trung,Quảng Nam,Doanh nghiệp,Mạng xã hội,Điện tử,Tai nghe Bluetooth,476329,1,0.1,428696,260000,168696,Tiền mặt,Hoàn thành,5.0
+GH10040,2026-09-10,KH1112,Miền Trung,Quảng Nam,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Bút ký,43331,2,0.2,69330,36000,33330,Ví điện tử,Hoàn thành,4.0
+GH10041,2026-07-01,KH1145,Miền Nam,Đồng Nai,Khách hàng thân thiết,Cửa hàng,Điện tử,Chuột không dây,276948,4,0.0,1107792,580000,527792,Tiền mặt,Hoàn trả,5.0
+GH10042,2026-04-11,KH1098,Miền Bắc,Thanh Hóa,Doanh nghiệp,Mạng xã hội,Điện tử,Chuột không dây,292371,1,0.1,263134,145000,118134,Thẻ ngân hàng,Hoàn thành,5.0
+GH10043,2025-03-12,KH1008,Miền Trung,Đà Nẵng,Cá nhân,Website,Phụ kiện,Balo laptop,486740,1,0.05,462403,310000,152403,Tiền mặt,Hoàn thành,5.0
+GH10044,2026-04-22,KH1043,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Sổ tay,78377,3,0.15,199861,96000,103861,Chuyển khoản,Đang giao,5.0
+GH10045,2025-07-23,KH1161,Miền Bắc,Hà Nội,Cá nhân,Cửa hàng,Gia dụng,Máy xay sinh tố,919897,2,0.1,1655815,1120000,535815,Thẻ ngân hàng,Hoàn thành,5.0
+GH10046,2026-01-15,KH1004,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,164341,3,0.05,468372,195000,273372,Tiền mặt,Hoàn thành,4.0
+GH10047,2025-10-04,KH1124,Miền Trung,Quảng Nam,Doanh nghiệp,Mạng xã hội,Điện tử,Chuột không dây,299023,2,0.2,478437,290000,188437,Thẻ ngân hàng,Hoàn thành,4.0
+GH10048,2026-08-07,KH1008,Miền Bắc,Hà Nội,Doanh nghiệp,Sàn thương mại điện tử,Gia dụng,Máy xay sinh tố,878295,4,0.0,3513180,2240000,1273180,Chuyển khoản,Hoàn thành,
+GH10049,2025-10-10,KH1049,Miền Trung,Nghệ An,Cá nhân,Website,Gia dụng,Ấm siêu tốc,392922,1,0.15,333984,220000,113984,Ví điện tử,Hoàn thành,4.0
+GH10050,2025-08-15,KH1170,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,72487,2,0.0,144974,64000,80974,Ví điện tử,Hoàn thành,4.0
+GH10051,2025-11-10,KH1050,Miền Trung,Quảng Nam,Doanh nghiệp,Cửa hàng,Phụ kiện,Balo laptop,493011,1,0.2,394409,310000,84409,Chuyển khoản,Hoàn thành,3.0
+GH10052,2025-04-13,KH1093,Miền Nam,Đồng Nai,Cá nhân,Sàn thương mại điện tử,Gia dụng,Máy xay sinh tố,867248,3,0.15,2211482,1680000,531482,Tiền mặt,Hoàn thành,5.0
+GH10053,2025-05-10,KH1027,Miền Bắc,Bắc Ninh,Cá nhân,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,469313,5,0.15,1994580,1300000,694580,Ví điện tử,Hoàn thành,4.0
+GH10054,2025-03-08,KH1162,Miền Trung,Huế,Khách hàng thân thiết,Cửa hàng,Điện tử,Tai nghe Bluetooth,423500,1,0.1,381150,260000,121150,Chuyển khoản,Hoàn thành,3.0
+GH10055,2026-03-03,KH1058,Miền Nam,Bình Dương,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,650138,6,0.0,3900828,2340000,1560828,Ví điện tử,Hoàn thành,5.0
+GH10056,2025-04-12,,Miền Trung,Quảng Nam,Khách hàng thân thiết,Cửa hàng,Gia dụng,Máy xay sinh tố,911206,2,0.0,1822412,1120000,702412,Chuyển khoản,Hoàn thành,
+GH10057,2026-04-27,KH1073,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Mạng xã hội,Điện tử,Chuột không dây,270122,-1,0.1,243110,145000,98110,Tiền mặt,Hoàn thành,5.0
+GH10058,2025-09-30,KH1043,Miền Trung,Huế,Doanh nghiệp,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,42332,1,0.0,42332,18000,24332,Ví điện tử,Hoàn thành,3.0
+GH10059,2026-03-25,KH1111,Miền Nam,,Khách hàng thân thiết,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,42119,5,0.15,179006,90000,89006,Thẻ ngân hàng,Hoàn thành,1.0
+GH10060,2026-03-29,KH1112,Miền Bắc,Hà Nội,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Máy xay sinh tố,960792,2,0.0,1921584,1120000,801584,Tiền mặt,Hoàn thành,4.0
+GH10061,2026-05-23,KH1141,Miền Trung,Nghệ An,Cá nhân,Mạng xã hội,Gia dụng,Ấm siêu tốc,417993,3,0.0,1253979,660000,593979,Tiền mặt,Hoàn thành,4.0
+GH10062,2026-07-10,KH1133,Miền Trung,Đà Nẵng,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Bút ký,42215,4,0.0,168860,72000,96860,Ví điện tử,Hoàn thành,5.0
+GH10063,2026-05-12,KH1156,Miền Bắc,Bắc Ninh,Cá nhân,Website,Phụ kiện,Balo laptop,559505,1,0.05,531530,310000,221530,Thẻ ngân hàng,Hoàn thành,4.0
+GH10064,2025-05-01,KH1075,Miền Nam,Đồng Nai,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Loa mini,590919,1,0.0,590919,390000,200919,Ví điện tử,Hoàn thành,5.0
+GH10065,2026-09-06,KH1018,Miền Trung,Huế,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Sổ tay,79642,2,0.1,143356,64000,79356,Thẻ ngân hàng,Hoàn thành,5.0
+GH10066,2026-08-17,KH1115,Miền Nam,Bình Dương,Khách hàng thân thiết,Mạng xã hội,Điện tử,Tai nghe Bluetooth,476905,1,0.05,453060,260000,193060,Thẻ ngân hàng,Đã hủy,4.0
+GH10067,2025-09-02,KH1106,Miền Nam,Đồng Nai,Cá nhân,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,72377,5,0.0,361885,160000,201885,Ví điện tử,Hoàn trả,5.0
+GH10068,2026-08-28,KH1113,Miền Trung,Quảng Nam,Cá nhân,Mạng xã hội,Điện tử,Chuột không dây,264615,2,0.0,529230,290000,239230,Tiền mặt,Hoàn thành,5.0
+GH10069,2026-02-12,KH1173,Miền Trung,Huế,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,655814,2,0.05,1246047,780000,466047,Thẻ ngân hàng,Hoàn thành,5.0
+GH10070,2025-10-22,KH1026,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Cáp sạc nhanh,150969,1,0.2,120775,65000,55775,Ví điện tử,Hoàn thành,3.0
+GH10071,2026-01-19,KH1106,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Website,Điện tử,Tai nghe Bluetooth,434983,1,0.0,434983,260000,174983,Chuyển khoản,Hoàn thành,3.0
+GH10072,2025-05-27,KH1118,Miền Nam,Đồng Nai,Doanh nghiệp,Cửa hàng,Phụ kiện,Cáp sạc nhanh,164109,3,0.1,443094,195000,248094,Ví điện tử,Đang giao,5.0
+GH10073,2025-11-03,KH1117,Miền Nam,Cần Thơ,Doanh nghiệp,Website,Điện tử,Loa mini,640799,2,0.05,1217518,780000,437518,Ví điện tử,Hoàn trả,5.0
+GH10074,2025-10-30,KH1071,Miền Bắc,Hải Phòng,Cá nhân,Cửa hàng,Văn phòng phẩm,Bút ký,46293,2,0.15,78698,36000,42698,Ví điện tử,Hoàn thành,5.0
+GH10075,2026-09-28,KH1169,Miền Trung,Huế,Khách hàng thân thiết,Website,Phụ kiện,Cáp sạc nhanh,166933,3,0.0,500799,195000,305799,Tiền mặt,Hoàn thành,5.0
+GH10076,2025-05-15,KH1107,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Website,Gia dụng,Máy xay sinh tố,867097,3,0.0,2601291,1680000,921291,Chuyển khoản,Hoàn thành,5.0
+GH10077,2025-10-30,KH1030,Miền Trung,Nghệ An,Doanh nghiệp,Cửa hàng,Điện tử,Chuột không dây,274626,1,0.1,247163,145000,102163,Chuyển khoản,Hoàn trả,5.0
+GH10078,2026-07-04,,Miền Bắc,Thanh Hóa,Doanh nghiệp,Mạng xã hội,Phụ kiện,Balo laptop,512349,2,0.1,922228,620000,302228,Thẻ ngân hàng,Hoàn thành,3.0
+GH10079,2026-09-17,,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,422767,2,0.15,718704,520000,198704,Ví điện tử,Hoàn thành,3.0
+GH10080,2026-07-05,KH1172,Miền Bắc,Hà Nội,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Máy xay sinh tố,888261,6,0.0,5329566,3360000,1969566,Chuyển khoản,Hoàn thành,5.0
+GH10081,2026-01-15,KH1061,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Sổ tay,74752,2,0.05,142029,64000,78029,Thẻ ngân hàng,Hoàn thành,4.0
+GH10082,2026-04-11,KH1164,Miền Nam,Bình Dương,Khách hàng thân thiết,Cửa hàng,Điện tử,Tai nghe Bluetooth,432817,2,0.0,865634,520000,345634,Tiền mặt,Hoàn trả,5.0
+GH10083,2025-08-10,KH1038,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Cáp sạc nhanh,154391,1,0.15,131232,65000,66232,Thẻ ngân hàng,Hoàn thành,5.0
+GH10084,2025-01-27,KH1061,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Sàn thương mại điện tử,Phụ kiện,Balo laptop,511542,1,0.0,511542,310000,201542,Tiền mặt,Hoàn thành,3.0
+GH10085,2026-04-05,KH1028,Miền Bắc,Hải Phòng,Doanh nghiệp,Website,Văn phòng phẩm,Bút ký,45314,2,0.2,72502,36000,36502,Tiền mặt,Hoàn thành,5.0
+GH10086,2026-05-06,KH1028,Miền Nam,Bình Dương,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Sổ tay,74545,2,0.0,149090,64000,85090,Tiền mặt,Hoàn thành,5.0
+GH10087,2026-07-16,KH1153,Miền Trung,Huế,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Loa mini,612024,1,0.15,520220,390000,130220,Ví điện tử,Hoàn thành,4.0
+GH10088,2026-07-19,KH1116,Miền Trung,Đà Nẵng,Cá nhân,Mạng xã hội,Điện tử,Loa mini,596597,4,0.2,1909110,1560000,349110,Thẻ ngân hàng,Đã hủy,5.0
+GH10089,2026-01-19,KH1018,Miền Trung,Quảng Nam,Cá nhân,Cửa hàng,Điện tử,Loa mini,662437,1,0.05,629315,390000,239315,Tiền mặt,Hoàn thành,4.0
+GH10090,2026-07-30,KH1091,Miền Nam,Bình Dương,Khách hàng thân thiết,Mạng xã hội,Điện tử,Chuột không dây,265533,2,0.15,451406,290000,161406,Tiền mặt,Đang giao,5.0
+GH10091,2026-05-09,KH1143,Miền Nam,Bình Dương,Doanh nghiệp,Cửa hàng,Gia dụng,Ấm siêu tốc,369030,1,0.15,313676,220000,93676,Thẻ ngân hàng,Hoàn thành,4.0
+GH10092,2025-07-04,KH1087,Miền Trung,Đà Nẵng,Doanh nghiệp,Cửa hàng,Phụ kiện,Cáp sạc nhanh,167097,4,0.2,534710,260000,274710,Chuyển khoản,Hoàn thành,5.0
+GH10093,2025-04-04,KH1108,Miền Nam,Đồng Nai,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Loa mini,596607,1,0.2,477286,390000,87286,Chuyển khoản,Hoàn trả,4.0
+GH10094,2026-09-25,KH1114,Miền Nam,Bình Dương,Khách hàng thân thiết,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,150757,2,0.0,301514,130000,171514,Ví điện tử,Hoàn thành,5.0
+GH10095,2025-04-24,KH1125,Miền Trung,Nghệ An,Khách hàng thân thiết,Sàn thương mại điện tử,Gia dụng,Nồi chiên không dầu,1908779,3,0.0,5726337,3750000,1976337,Tiền mặt,Hoàn thành,3.0
+GH10096,2025-09-19,KH1128,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Mạng xã hội,Điện tử,Tai nghe Bluetooth,426598,1,0.0,426598,260000,166598,Chuyển khoản,Hoàn thành,3.0
+GH10097,2025-03-15,KH1112,Miền Nam,Cần Thơ,Cá nhân,Mạng xã hội,Phụ kiện,Balo laptop,541479,2,0.2,866366,620000,246366,Tiền mặt,Hoàn thành,5.0
+GH10098,2025-04-28,KH1044,Miền Nam,Đồng Nai,Khách hàng thân thiết,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,171988,2,0.2,275181,130000,145181,Thẻ ngân hàng,Hoàn thành,2.0
+GH10099,2025-11-14,KH1044,Miền Bắc,Hải Phòng,Cá nhân,Cửa hàng,Văn phòng phẩm,Bút ký,43345,2,0.15,73686,36000,37686,Chuyển khoản,Hoàn thành,5.0
+GH10100,2025-06-27,KH1168,Miền Trung,Nghệ An,Cá nhân,Website,Điện tử,Chuột không dây,292329,1,0.0,292329,145000,147329,Ví điện tử,Hoàn thành,4.0
+GH10101,2026-10-05,KH1121,Miền Nam,Đồng Nai,Doanh nghiệp,Sàn thương mại điện tử,Phụ kiện,Cáp sạc nhanh,159354,2,0.15,270902,130000,140902,Thẻ ngân hàng,Hoàn thành,4.0
+GH10102,2025-10-21,KH1024,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Máy xay sinh tố,943077,2,0.0,1886154,1120000,766154,Ví điện tử,Hoàn thành,4.0
+GH10103,2025-11-26,KH1016,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Sổ tay,75390,4,0.15,256326,128000,128326,Thẻ ngân hàng,Hoàn thành,5.0
+GH10104,2026-06-21,KH1096,Miền Bắc,Hải Phòng,Doanh nghiệp,Mạng xã hội,Điện tử,Tai nghe Bluetooth,429215,1,0.1,386294,260000,126294,Ví điện tử,Hoàn trả,5.0
+GH10105,2026-01-31,KH1169,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Website,Gia dụng,Ấm siêu tốc,405038,1,0.0,405038,220000,185038,Thẻ ngân hàng,Hoàn thành,2.0
+GH10106,2026-02-06,KH1022,Miền Nam,Cần Thơ,Doanh nghiệp,Mạng xã hội,Gia dụng,Ấm siêu tốc,404166,1,0.2,323333,220000,103333,Thẻ ngân hàng,Hoàn thành,5.0
+GH10107,2025-07-04,KH1125,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Website,Văn phòng phẩm,Bút ký,48246,2,0.0,96492,36000,60492,Chuyển khoản,Hoàn thành,3.0
+GH10108,2025-02-08,KH1159,Miền Trung,Đà Nẵng,Cá nhân,Mạng xã hội,Phụ kiện,Balo laptop,551958,3,0.2,1324699,930000,394699,Chuyển khoản,Đang giao,7.0
+GH10109,2025-09-01,KH1115,Miền Nam,Cần Thơ,Cá nhân,Website,Văn phòng phẩm,Sổ tay,72955,1,0.05,69307,32000,37307,Thẻ ngân hàng,Hoàn thành,5.0
+GH10110,2026-04-18,KH1129,Miền Trung,Huế,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Ấm siêu tốc,408220,3,0.15,1040961,660000,380961,Chuyển khoản,Hoàn trả,5.0
+GH10111,2026-07-22,,Miền Nam,Cần Thơ,Doanh nghiệp,Cửa hàng,Gia dụng,Máy xay sinh tố,940626,1,0.1,846563,560000,286563,Chuyển khoản,Đã hủy,4.0
+GH10112,2025-12-24,KH1129,Miền Nam,Cần Thơ,Doanh nghiệp,Website,Văn phòng phẩm,Bút ký,42209,1,0.0,42209,18000,24209,Ví điện tử,Hoàn thành,5.0
+GH10113,2025-12-10,KH1074,Miền Trung,Huế,Doanh nghiệp,Website,Điện tử,Tai nghe Bluetooth,427787,1,0.0,427787,260000,167787,Ví điện tử,Đã hủy,4.0
+GH10114,2026-09-16,KH1074,Miền Bắc,Hà Nội,Cá nhân,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,426005,1,0.0,426005,260000,166005,Tiền mặt,Hoàn thành,2.0
+GH10115,2025-01-17,KH1037,Miền Trung,Quảng Nam,Doanh nghiệp,Mạng xã hội,Điện tử,Loa mini,630079,1,0.1,567071,390000,177071,Tiền mặt,Hoàn thành,5.0
+GH10116,2026-01-05,KH1130,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Cửa hàng,Điện tử,Chuột không dây,283251,3,0.0,849753,435000,414753,Ví điện tử,Hoàn thành,5.0
+GH10117,2025-03-11,KH1161,Miền Bắc,Thanh Hóa,Cá nhân,Sàn thương mại điện tử,Gia dụng,Ấm siêu tốc,405577,1,0.0,405577,220000,185577,Chuyển khoản,Hoàn thành,2.0
+GH10118,2026-05-06,KH1017,Miền Nam,Bình Dương,Khách hàng thân thiết,Mạng xã hội,Điện tử,Chuột không dây,294482,4,0.2,942342,580000,362342,Tiền mặt,Hoàn thành,4.0
+GH10119,2026-07-11,,Miền Bắc,Hải Phòng,Cá nhân,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,420971,1,0.05,399922,260000,139922,Thẻ ngân hàng,Hoàn thành,5.0
+GH10120,2026-02-14,KH1099,Miền Bắc,Bắc Ninh,Doanh nghiệp,Website,Gia dụng,Máy xay sinh tố,947134,1,0.05,899777,560000,339777,Ví điện tử,Hoàn thành,7.0
+GH10121,2025-07-04,KH1021,Miền Trung,Nghệ An,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Loa mini,606472,3,0.0,1819416,1170000,649416,Thẻ ngân hàng,Hoàn thành,4.0
+GH10122,2025-12-28,KH1015,Miền Nam,Đồng Nai,Cá nhân,Mạng xã hội,Điện tử,Chuột không dây,271931,3,0.05,775003,435000,340003,Thẻ ngân hàng,Hoàn thành,4.0
+GH10123,2026-03-25,KH1166,Miền Nam,Cần Thơ,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,423038,1,0.15,359582,260000,99582,Ví điện tử,Hoàn thành,5.0
+GH10124,2025-03-20,KH1102,Miền Bắc,Hải Phòng,Doanh nghiệp,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,75706,5,0.05,359604,160000,199604,Chuyển khoản,Hoàn thành,5.0
+GH10125,2025-09-24,KH1157,Miền Bắc,Hải Phòng,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Sổ tay,72163,2,0.15,122677,64000,58677,Chuyển khoản,Hoàn thành,3.0
+GH10126,2025-11-24,KH1141,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Chuột không dây,290200,4,0.1,1044720,580000,464720,Thẻ ngân hàng,Hoàn trả,5.0
+GH10127,2025-05-23,KH1093,Miền Nam,Cần Thơ,Khách hàng thân thiết,Sàn thương mại điện tử,Gia dụng,Ấm siêu tốc,391600,2,0.0,783200,440000,343200,Ví điện tử,Hoàn trả,5.0
+GH10128,2026-05-06,KH1148,Miền Nam,Cần Thơ,Cá nhân,Website,Phụ kiện,Cáp sạc nhanh,167259,4,0.0,669036,260000,409036,Thẻ ngân hàng,Hoàn thành,5.0
+GH10129,2025-07-06,KH1015,Miền Trung,Quảng Nam,Cá nhân,Website,Phụ kiện,Balo laptop,517344,1,0.15,439742,310000,129742,Thẻ ngân hàng,Hoàn thành,3.0
+GH10130,2025-03-22,KH1142,Miền Trung,Huế,Doanh nghiệp,Website,Gia dụng,Ấm siêu tốc,399850,5,0.15,1699362,1100000,599362,Thẻ ngân hàng,Đang giao,5.0
+GH10131,2026-10-02,KH1145,Miền Bắc,Hải Phòng,Cá nhân,Cửa hàng,Phụ kiện,Cáp sạc nhanh,163323,5,0.0,816615,325000,491615,Tiền mặt,Hoàn thành,2.0
+GH10132,2025-02-01,KH1075,Miền Nam,Bình Dương,Khách hàng thân thiết,Sàn thương mại điện tử,Gia dụng,Nồi chiên không dầu,1894538,3,0.1,5115253,3750000,1365253,Ví điện tử,Hoàn thành,3.0
+GH10133,2026-03-27,KH1088,Miền Nam,Đồng Nai,Khách hàng thân thiết, WEBSITE ,Gia dụng,Máy xay sinh tố,889703,2,0.2,1423525,1120000,303525,Thẻ ngân hàng,Hoàn thành,5.0
+GH10134,2025-04-19,KH1069,Miền Trung,Nghệ An,Doanh nghiệp,Website,Văn phòng phẩm,Bút ký,44998,1,0.05,42748,18000,24748,Chuyển khoản,Hoàn thành,3.0
+GH10135,2026-08-15,KH1041,Miền Trung,Quảng Nam,Doanh nghiệp,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,153356,2,0.0,306712,130000,176712,Ví điện tử,Hoàn thành,
+GH10136,2025-09-04,KH1013,Miền Trung,Đà Nẵng,Doanh nghiệp,Mạng xã hội,Điện tử,Loa mini,609419,5,0.15,2590031,1950000,640031,Ví điện tử,Hoàn thành,4.0
+GH10137,2026-02-17,KH1146,Miền Bắc,Hà Nội,Khách hàng thân thiết,Website,Văn phòng phẩm,Bút ký,44553,1,0.05,42325,18000,24325,Thẻ ngân hàng,Hoàn thành,4.0
+GH10138,2026-10-01,KH1025,Miền Bắc,Thanh Hóa,Doanh nghiệp,Sàn thương mại điện tử,Phụ kiện,Balo laptop,492867,2,0.15,837874,620000,217874,Thẻ ngân hàng,Hoàn thành,4.0
+GH10139,2025-02-16,KH1122,Miền Trung,Huế,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1918521,2,0.1,3453338,2500000,953338,Chuyển khoản,Hoàn thành,5.0
+GH10140,2026-09-24,KH1087,miền nam,Cần Thơ,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Ấm siêu tốc,380205,5,0.05,1805974,1100000,705974,Thẻ ngân hàng,Hoàn thành,
+GH10141,2026-10-07,KH1168,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,Website,Gia dụng,Ấm siêu tốc,390463,3,0.1,1054250,660000,394250,Tiền mặt,Hoàn thành,4.0
+GH10142,2025-04-23,KH1108,Miền Bắc,Thanh Hóa,Cá nhân,Mạng xã hội,Điện tử,Chuột không dây,278923,3,0.0,836769,435000,401769,Chuyển khoản,Hoàn thành,4.0
+GH10143,2025-11-29,KH1081,Miền Nam,Đồng Nai,Cá nhân,Mạng xã hội,Điện tử,Tai nghe Bluetooth,453969,3,0.15,1157621,780000,377621,Thẻ ngân hàng,Hoàn thành,4.0
+GH10144,2025-11-02,KH1054,Miền Nam,Bình Dương,Khách hàng thân thiết,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,167308,2,0.0,334616,130000,204616,Thẻ ngân hàng,Hoàn thành,4.0
+GH10145,2026-02-09,KH1038,Miền Nam,Bình Dương,Doanh nghiệp,Cửa hàng,Gia dụng,Máy xay sinh tố,955140,1,,764112,560000,204112,Thẻ ngân hàng,Hoàn thành,5.0
+GH10146,2025-07-26,KH1144,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,72800,3,0.2,174720,96000,78720,Chuyển khoản,Hoàn thành,3.0
+GH10147,2025-08-27,KH1121,Miền Nam,,Cá nhân,Website,Gia dụng,Nồi chiên không dầu,1835191,1,0.15,1559912,1250000,309912,Tiền mặt,Hoàn thành,5.0
+GH10148,2025-10-22,KH1023,Miền Bắc,,Khách hàng thân thiết,Website,Văn phòng phẩm,Sổ tay,77016,2,0.0,154032,64000,90032,Tiền mặt,Hoàn thành,5.0
+GH10149,11/02/2026,KH1075,Miền Bắc,Thanh Hóa,Cá nhân,Cửa hàng,Điện tử,Chuột không dây,268225,5,0.0,1341125,725000,616125,Thẻ ngân hàng,Hoàn trả,4.0
+GH10150,2026-05-21,KH1070,miền bắc,Bắc Ninh,Cá nhân,Cửa hàng,Gia dụng,Máy xay sinh tố,895012,2,0.2,1432019,1120000,312019,Thẻ ngân hàng,Hoàn thành,3.0
+GH10151,2026-08-05,KH1157,Miền Trung,Nghệ An,Khách hàng thân thiết,Mạng xã hội,Điện tử,Chuột không dây,268512,1,0.05,255086,145000,110086,Ví điện tử,Hoàn thành,4.0
+GH10152,2025-09-12,KH1115,Miền Bắc,Thanh Hóa,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Loa mini,612272,1,0.0,612272,390000,222272,Thẻ ngân hàng,Hoàn thành,4.0
+GH10153,2025-05-02,KH1176,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Sàn thương mại điện tử,Gia dụng,Máy xay sinh tố,849022,3,0.2,2037653,1680000,357653,Tiền mặt,Hoàn thành,5.0
+GH10154,2026-04-11,KH1180,Miền Trung,Nghệ An,Khách hàng thân thiết,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,157766,1,0.0,157766,65000,92766,Chuyển khoản,Hoàn thành,5.0
+GH10155,2026-08-01,KH1130,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Website,Phụ kiện,Balo laptop,548244,2,0.2,877190,620000,257190,Chuyển khoản,Hoàn thành,
+GH10156,2025-04-04,KH1117,Miền Nam,Đồng Nai,Cá nhân,Mạng xã hội,Điện tử,Loa mini,651808,3,0.2,1564339,1170000,394339,Ví điện tử,Hoàn thành,4.0
+GH10157,2025-01-04,KH1012,Miền Nam,Đồng Nai,Doanh nghiệp,Sàn thương mại điện tử,Gia dụng,Máy xay sinh tố,904904,3,0.1,2443241,1680000,763241,Tiền mặt,Hoàn thành,4.0
+GH10158,2025-05-19,KH1166,Miền Bắc,Hà Nội,Doanh nghiệp,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,80756,1,0.1,72680,32000,40680,Ví điện tử,Hoàn thành,4.0
+GH10159,2025-05-17,KH1046,Miền Trung,Quảng Nam,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,608942,3,0.2,1461461,1170000,291461,Chuyển khoản,Đã hủy,5.0
+GH10160,2026-07-12,KH1059,Miền Bắc,Hà Nội,Cá nhân,Mạng xã hội,Điện tử,Tai nghe Bluetooth,444101,5,0.1,1998454,1300000,698454,Thẻ ngân hàng,Hoàn thành,3.0
+GH10161,2025-01-17,KH1153,Miền Bắc,Hà Nội,Cá nhân,Mạng xã hội,Điện tử,Tai nghe Bluetooth,423042,3,0.1,1142213,780000,362213,Tiền mặt,Hoàn thành,3.0
+GH10162,2025-02-27,KH1060,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,80926,1,0.0,80926,32000,48926,Thẻ ngân hàng,Hoàn thành,3.0
+GH10163,29/08/2026,KH1174,Miền Bắc,Hải Phòng,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Bút ký,43032,1,0.0,43032,18000,25032,Tiền mặt,Hoàn thành,5.0
+GH10164,2025-11-04,KH1122,Miền Nam,Đồng Nai,Cá nhân,Website,Phụ kiện,Balo laptop,542444,1,0.1,488200,310000,178200,Thẻ ngân hàng,Hoàn thành,5.0
+GH10165,2025-05-18,KH1085,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Cửa hàng,Điện tử,Tai nghe Bluetooth,435712,2,0.1,784282,520000,264282,Ví điện tử,Hoàn thành,5.0
+GH10166,2025-02-10,KH1151,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Website,Điện tử,Tai nghe Bluetooth,431201,1,0.2,344961,260000,84961,Ví điện tử,Hoàn thành,3.0
+GH10167,2025-05-01,KH1063,Miền Trung,Nghệ An,Khách hàng thân thiết,Website,Điện tử,Tai nghe Bluetooth,450827,1,0.0,450827,260000,190827,Ví điện tử,Hoàn trả,5.0
+GH10168,2025-11-12,KH1128,Miền Nam,Bình Dương,Doanh nghiệp,Cửa hàng,Gia dụng,Máy xay sinh tố,896161,2,0.15,1523474,1120000,403474,Ví điện tử,Hoàn thành,5.0
+GH10169,2025-08-15,KH1142,Miền Trung,,Khách hàng thân thiết, MẠNG XÃ HỘI ,Gia dụng,Ấm siêu tốc,363648,1,0.0,363648,220000,143648,Thẻ ngân hàng,Hoàn thành,3.0
+GH10170,2025-12-12,KH1165,Miền Trung,Huế,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Bút ký,47395,2,0.0,94790,36000,58790,Ví điện tử,Hoàn thành,3.0
+GH10171,2026-07-10,KH1020,Miền Trung,Huế,Khách hàng thân thiết,Cửa hàng,Điện tử,Chuột không dây,282405,3,0.1,762494,435000,327494,Tiền mặt,Hoàn thành,4.0
+GH10172,2026-04-12,KH1171,Miền Nam,Cần Thơ,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,634058,3,0.0,1902174,1170000,732174,Ví điện tử,Hoàn thành,1.0
+GH10173,2025-10-21,KH1173,Miền Nam,Đồng Nai,Doanh nghiệp,Website,Điện tử,Tai nghe Bluetooth,473388,1,0.2,378710,260000,118710,Tiền mặt,Hoàn thành,5.0
+GH10174,2025-12-29,KH1096,Miền Nam,Cần Thơ,Doanh nghiệp,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1830638,1,0.15,1556042,1250000,306042,Chuyển khoản,Hoàn thành,5.0
+GH10175,2025-04-06,KH1122,Miền Bắc,Bắc Ninh,Cá nhân,Cửa hàng,Điện tử,Loa mini,611676,3,,1468022,1170000,298022,Chuyển khoản,Hoàn thành,2.0
+GH10176,2025-02-13,KH1178,Miền Trung,Nghệ An,Khách hàng thân thiết,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,170430,5,0.0,852150,325000,527150,Thẻ ngân hàng,Đang giao,2.0
+GH10177,2025-11-19,KH1102,Miền Bắc,Bắc Ninh,Cá nhân,Sàn thương mại điện tử,Phụ kiện,Balo laptop,529388,2,0.0,1058776,620000,438776,Chuyển khoản,Hoàn thành,4.0
+GH10178,2025-03-22,KH1014,Miền Nam,Đồng Nai,Cá nhân, MẠNG XÃ HỘI ,Phụ kiện,Balo laptop,559597,1,0.2,447678,310000,137678,Chuyển khoản,Hoàn thành,5.0
+GH10179,2026-04-07,KH1097,Miền Trung,Quảng Nam,Doanh nghiệp,Website,Gia dụng,Ấm siêu tốc,383514,1,0.05,364338,220000,144338,Ví điện tử,Hoàn thành,2.0
+GH10180,2026-01-25,KH1100,Miền Nam,Bình Dương,Doanh nghiệp,Sàn thương mại điện tử,Gia dụng,Nồi chiên không dầu,1896407,3,0.0,5689221,3750000,1939221,Tiền mặt,Hoàn thành,3.0
+GH10181,2025-07-11,KH1132,Miền Trung,Quảng Nam,Doanh nghiệp,Cửa hàng,Gia dụng,Ấm siêu tốc,395283,3,0.0,1185849,660000,525849,Tiền mặt,Hoàn thành,2.0
+GH10182,2025-01-13,,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết, WEBSITE ,Phụ kiện,Cáp sạc nhanh,158107,2,0.05,300403,130000,170403,Chuyển khoản,Đã hủy,5.0
+GH10183,2025-06-21,KH1124,Miền Bắc,Hải Phòng,Cá nhân,Sàn thương mại điện tử,Gia dụng,Máy xay sinh tố,883917,1,0.1,795525,560000,235525,Thẻ ngân hàng,Hoàn thành,5.0
+GH10184,2025-11-08,KH1159,Miền Nam,Đồng Nai,Doanh nghiệp,Sàn thương mại điện tử,Phụ kiện,Cáp sạc nhanh,156773,2,0.1,282191,130000,152191,Ví điện tử,Hoàn thành,4.0
+GH10185,2025-11-18,KH1075,Miền Nam,Cần Thơ,Khách hàng thân thiết, MẠNG XÃ HỘI ,Gia dụng,Máy xay sinh tố,957024,1,0.2,765619,560000,205619,Chuyển khoản,Hoàn thành,4.0
+GH10186,2026-07-13,KH1007,Miền Trung,Quảng Nam,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Ấm siêu tốc,407605,1,0.15,346464,220000,126464,Chuyển khoản,Hoàn thành,4.0
+GH10187,2025-09-05,KH1109,Miền Trung,Đà Nẵng,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Bút ký,42890,3,0.0,128670,54000,74670,Ví điện tử,Hoàn thành,5.0
+GH10188,2025-02-07,KH1138,Miền Trung,Quảng Nam,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Balo laptop,538327,2,0.2,861323,620000,241323,Tiền mặt,Hoàn thành,5.0
+GH10189,2026-02-14,KH1111,Miền Nam,Bình Dương,Cá nhân,Cửa hàng,Điện tử,Chuột không dây,300960,2,0.0,601920,290000,311920,Tiền mặt,Hoàn thành,4.0
+GH10190,2026-08-26,KH1007,Miền Nam,Cần Thơ,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Sổ tay,71445,2,0.1,128601,64000,64601,Thẻ ngân hàng,Hoàn thành,4.0
+GH10191,2025-07-31,KH1025,Miền Bắc,Hà Nội,Doanh nghiệp,Mạng xã hội,Điện tử,Chuột không dây,275028,1,0.05,261277,145000,116277,Thẻ ngân hàng,Hoàn thành,2.0
+GH10192,2025-06-18,KH1142,Miền Bắc,Hà Nội,Cá nhân,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,453329,4,0.2,1450653,1040000,410653,Ví điện tử,Hoàn thành,5.0
+GH10193,2025-01-30,KH1116,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Mạng xã hội,Điện tử,Chuột không dây,297490,1,0.2,237992,145000,92992,Ví điện tử,Hoàn thành,1.0
+GH10194,2026-07-04,KH1118,miền bắc,Hải Phòng,Cá nhân,Sàn thương mại điện tử,Gia dụng,Máy xay sinh tố,871218,3,0.0,2613654,1680000,933654,Ví điện tử,Hoàn thành,4.0
+GH10195,2025-12-23,KH1045,Miền Nam,Bình Dương,Khách hàng thân thiết,Sàn thương mại điện tử,Phụ kiện,Cáp sạc nhanh,159788,2,0.1,287618,130000,157618,Tiền mặt,Hoàn thành,5.0
+GH10196,2025-05-25,KH1036,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1836561,1,0.0,1836561,1250000,586561,Ví điện tử,Hoàn thành,3.0
+GH10197,2025-11-19,KH1092,Miền Nam,Cần Thơ,Cá nhân,Mạng xã hội,Phụ kiện,Balo laptop,531913,1,0.05,505317,310000,195317,Chuyển khoản,Hoàn thành,3.0
+GH10198,2026-03-31,KH1008,Miền Trung,Quảng Nam,Cá nhân,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,42408,3,0.1,114502,54000,60502,Tiền mặt,Hoàn thành,4.0
+GH10199,2026-05-23,KH1030,Miền Nam,Bình Dương,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Chuột không dây,265154,3,0.15,676143,435000,241143,Tiền mặt,Hoàn thành,5.0
+GH10200,2025-11-01,KH1090,Miền Trung,Huế,Cá nhân,Mạng xã hội,Văn phòng phẩm,Bút ký,44885,1,0.2,35908,18000,17908,Tiền mặt,Hoàn thành,5.0
+GH10201,2026-03-15,KH1053,Miền Bắc,Hải Phòng,Cá nhân,Cửa hàng,Phụ kiện,Cáp sạc nhanh,152141,3,0.2,365138,195000,170138,Thẻ ngân hàng,Hoàn thành,4.0
+GH10202,2025-10-01,KH1174,Miền Nam,Cần Thơ,Cá nhân,Website,Gia dụng,Ấm siêu tốc,420351,5,0.05,1996667,1100000,896667,Ví điện tử,Hoàn thành,5.0
+GH10203,2025-09-11,KH1126,Miền Trung,Huế,Cá nhân,Sàn thương mại điện tử,Điện tử,Chuột không dây,0,1,0.2,231041,145000,86041,Ví điện tử,Hoàn thành,4.0
+GH10204,2026-01-13,KH1001,Miền Bắc,Hà Nội,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Bút ký,44059,2,0.05,83712,36000,47712,Ví điện tử,Hoàn thành,5.0
+GH10205,2026-03-16,KH1083,Miền Nam,Bình Dương,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Loa mini,622608,3,0.1,1681042,1170000,511042,Chuyển khoản,Hoàn thành,4.0
+GH10206,2026-04-16,KH1041,Miền Trung,Nghệ An,Doanh nghiệp,Mạng xã hội,Điện tử,Tai nghe Bluetooth,481236,1,0.2,384989,260000,124989,Tiền mặt,Hoàn thành,5.0
+GH10207,2025-10-08,KH1022,Miền Trung,Huế,Doanh nghiệp,Website,Điện tử,Chuột không dây,275538,4,0.05,1047044,580000,467044,Tiền mặt,Hoàn thành,4.0
+GH10208,2025-08-07,KH1058,Miền Trung,Huế,Khách hàng thân thiết, MẠNG XÃ HỘI ,Văn phòng phẩm,Bút ký,42745,3,0.2,102588,54000,48588,Tiền mặt,Hoàn thành,1.0
+GH10209,2026-01-28,KH1027,Miền Trung,Đà Nẵng,Doanh nghiệp,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,47290,3,0.1,127683,54000,73683,Thẻ ngân hàng,Hoàn thành,3.0
+GH10210,2025-06-18,KH1161,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Website,Điện tử,Loa mini,643786,2,0.0,1287572,780000,507572,Ví điện tử,Hoàn thành,5.0
+GH10211,2026-08-27,KH1110,Miền Trung,Huế,Doanh nghiệp,Website,Điện tử,Loa mini,609292,4,0.0,2437168,1560000,877168,Chuyển khoản,Hoàn thành,4.0
+GH10212,2025-01-28,KH1078,Miền Bắc,Hải Phòng,Cá nhân,Website,Phụ kiện,Balo laptop,534955,2,0.2,855928,620000,235928,Ví điện tử,Hoàn thành,7.0
+GH10213,2026-09-01,KH1004,Miền Bắc,Hải Phòng,Doanh nghiệp,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,79748,2,0.0,159496,64000,95496,Chuyển khoản,Hoàn thành,4.0
+GH10214,2025-03-16,KH1068,Miền Nam,Đồng Nai,Cá nhân,Cửa hàng,Gia dụng,Ấm siêu tốc,366650,2,0.0,733300,440000,293300,Tiền mặt,Hoàn thành,5.0
+GH10215,2025-03-26,KH1040,Miền Trung,Nghệ An,Doanh nghiệp,Cửa hàng,Phụ kiện,Balo laptop,525537,3,0.1,1418950,930000,488950,Thẻ ngân hàng,Hoàn thành,2.0
+GH10216,2025-03-09,KH1062,Miền Bắc,Hải Phòng,Cá nhân,Website,Phụ kiện,Balo laptop,517723,1,0.15,440065,310000,130065,Tiền mặt,Hoàn thành,5.0
+GH10217,2025-06-29,KH1180,Miền Bắc,Thanh Hóa,Cá nhân,Website,Phụ kiện,Cáp sạc nhanh,165789,2,0.05,314999,130000,184999,Ví điện tử,Hoàn thành,5.0
+GH10218,2025-10-03,KH1008,Miền Nam,Bình Dương,Doanh nghiệp,Mạng xã hội,Điện tử,Chuột không dây,265358,2,0.2,424573,290000,134573,Thẻ ngân hàng,Hoàn thành,4.0
+GH10219,2026-08-04,KH1027,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Sổ tay,71519,2,0.05,135886,64000,71886,Chuyển khoản,Hoàn thành,
+GH10220,2025-06-03,KH1010,Miền Bắc,Hà Nội,Khách hàng thân thiết, MẠNG XÃ HỘI ,Điện tử,Tai nghe Bluetooth,483323,1,0.1,434991,260000,174991,Chuyển khoản,Hoàn thành,4.0
+GH10221,2026-05-30,KH1058,Miền Trung,Nghệ An,Khách hàng thân thiết,Cửa hàng,Gia dụng,Máy xay sinh tố,834731,3,0.15,2128564,1680000,448564,Ví điện tử,Hoàn thành,2.0
+GH10222,2026-01-13,KH1078,Miền Trung,Nghệ An,Khách hàng thân thiết,Website,Gia dụng,Máy xay sinh tố,902968,1,0.15,767523,560000,207523,Ví điện tử,Hoàn thành,4.0
+GH10223,2026-02-24,KH1163,Miền Trung,Huế,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Balo laptop,525840,3,0.0,1577520,930000,647520,Thẻ ngân hàng,Hoàn thành,1.0
+GH10224,2026-03-06,KH1037,Miền Nam,Đồng Nai,Khách hàng thân thiết,Sàn thương mại điện tử,Gia dụng,Máy xay sinh tố,957536,1,0.15,813906,560000,253906,Tiền mặt,Hoàn trả,2.0
+GH10225,2025-04-08,KH1101,Miền Bắc,Thanh Hóa,Cá nhân,Cửa hàng,Gia dụng,Ấm siêu tốc,399977,2,0.2,639963,440000,199963,Ví điện tử,Hoàn thành,5.0
+GH10226,2026-02-07,KH1082,Miền Bắc,Hải Phòng,Doanh nghiệp,Sàn thương mại điện tử,Gia dụng,Máy xay sinh tố,925869,1,0.05,879576,560000,319576,Chuyển khoản,Đang giao,2.0
+GH10227,2026-04-23,KH1092,Miền Bắc,Hải Phòng,Cá nhân,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,151697,1,0.0,151697,65000,86697,Thẻ ngân hàng,Hoàn thành,4.0
+GH10228,2026-09-10,KH1084,Miền Bắc,Hà Nội,Cá nhân,Cửa hàng,Điện tử,Chuột không dây,295508,3,0.05,842198,435000,407198,Chuyển khoản,Đã hủy,5.0
+GH10229,2026-02-19,KH1141,Miền Trung,Đà Nẵng,Cá nhân,Cửa hàng,Gia dụng,Máy xay sinh tố,901919,1,0.0,901919,560000,341919,Ví điện tử,Hoàn thành,3.0
+GH10230,2026-02-15,KH1166,Miền Bắc,Hà Nội,Cá nhân,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,461045,1,0.0,461045,260000,201045,Tiền mặt,Hoàn thành,1.0
+GH10231,2025-12-06,KH1013,Miền Bắc,Hải Phòng,Cá nhân,,Văn phòng phẩm,Sổ tay,80350,3,0.0,241050,96000,145050,Ví điện tử,Đang giao,4.0
+GH10232,2026-04-02,KH1158,Miền Trung,Quảng Nam,Cá nhân,Sàn thương mại điện tử,Điện tử,Chuột không dây,286192,2,0.0,572384,290000,282384,Ví điện tử,Hoàn thành,4.0
+GH10233,2025-07-24,KH1064,Miền Nam,Đồng Nai,Khách hàng thân thiết,Cửa hàng,Điện tử,Tai nghe Bluetooth,472310,1,0.1,425079,260000,165079,Ví điện tử,Hoàn thành,5.0
+GH10234,2026-05-30,KH1007,Miền Trung,Quảng Nam,Doanh nghiệp,Website,Phụ kiện,Balo laptop,504693,3,0.05,1438375,930000,508375,Tiền mặt,Đang giao,5.0
+GH10235,2025-06-13,KH1069,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Sổ tay,77139,2,0.15,131136,64000,67136,Chuyển khoản,Hoàn trả,4.0
+GH10236,2026-01-03,KH1091,Miền Trung,Nghệ An,Khách hàng thân thiết,Website,Điện tử,Chuột không dây,289945,1,0.15,246453,145000,101453,Chuyển khoản,Hoàn thành,5.0
+GH10237,2026-09-09,KH1001,Miền Trung,Nghệ An,Doanh nghiệp,Website,Điện tử,Chuột không dây,282510,2,0.0,565020,290000,275020,Chuyển khoản,Hoàn thành,4.0
+GH10238,2025-05-26,KH1094,miền bắc,Bắc Ninh,Cá nhân,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,475637,1,0.15,404291,260000,144291,Ví điện tử,Hoàn thành,4.0
+GH10239,2026-03-24,KH1167,Miền Trung,Nghệ An,Doanh nghiệp,Website,Gia dụng,Ấm siêu tốc,418898,1,0.0,418898,220000,198898,Thẻ ngân hàng,Hoàn thành,3.0
+GH10240,2025-07-01,KH1147,Miền Nam,Cần Thơ,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Bút ký,48254,1,0.2,38603,18000,20603,Chuyển khoản,Hoàn thành,5.0
+GH10241,2025-03-21,KH1043,Miền Nam,Cần Thơ,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Cáp sạc nhanh,172377,1,0.1,155139,65000,90139,Thẻ ngân hàng,Hoàn thành,4.0
+GH10242,2025-04-21,KH1113,Miền Trung,Huế,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1733860,3,0.05,4941501,3750000,1191501,Chuyển khoản,Hoàn thành,5.0
+GH10243,2026-08-15,KH1042,miền trung,Quảng Nam,Doanh nghiệp,Cửa hàng,Gia dụng,Ấm siêu tốc,402898,2,0.0,805796,440000,365796,Tiền mặt,Đã hủy,4.0
+GH10244,2025-06-14,KH1024,Miền Trung,Nghệ An,Doanh nghiệp,Mạng xã hội,Điện tử,Loa mini,627475,1,0.0,627475,390000,237475,Tiền mặt,Đang giao,4.0
+GH10245,2025-12-06,KH1142,Miền Nam,Cần Thơ,Khách hàng thân thiết,Sàn thương mại điện tử,Phụ kiện,Cáp sạc nhanh,158622,4,0.0,634488,260000,374488,Thẻ ngân hàng,Hoàn thành,4.0
+GH10246,2026-01-05,KH1170,Miền Bắc,Hà Nội,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Bút ký,42441,2,0.1,76394,36000,40394,Chuyển khoản,Hoàn thành,3.0
+GH10247,2025-11-12,KH1170,Miền Bắc,Hải Phòng,Doanh nghiệp,Cửa hàng,Gia dụng,Máy xay sinh tố,890571,5,0.1,4007570,2800000,1207570,Ví điện tử,Đã hủy,3.0
+GH10248,2025-09-27,KH1016,Miền Trung,Nghệ An,Cá nhân,Cửa hàng,Điện tử,Chuột không dây,271679,2,0.05,516190,290000,226190,Tiền mặt,Hoàn thành,
+GH10249,2026-06-20,KH1122,Miền Nam,Đồng Nai,Khách hàng thân thiết,Website,Phụ kiện,Cáp sạc nhanh,165289,1,0.0,165289,65000,100289,Ví điện tử,Đã hủy,4.0
+GH10250,2026-09-28,KH1115,Miền Trung,Đà Nẵng,Cá nhân,Website,Phụ kiện,Balo laptop,557641,2,0.15,947990,620000,327990,Chuyển khoản,Hoàn thành,5.0
+GH10251,2026-10-05,KH1082,Miền Bắc,Hà Nội,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Bút ký,45866,1,0.2,36693,18000,18693,Tiền mặt,Hoàn thành,4.0
+GH10252,2026-10-01,KH1029,Miền Trung,Nghệ An,Doanh nghiệp,Website,Gia dụng,Máy xay sinh tố,932055,2,0.0,1864110,1120000,744110,Chuyển khoản,Hoàn thành,4.0
+GH10253,2026-07-03,KH1099,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,614812,2,0.0,1229624,780000,449624,Ví điện tử,Hoàn thành,2.0
+GH10254,2025-02-09,KH1177,Miền Trung,Quảng Nam,Cá nhân,Cửa hàng,Điện tử,Chuột không dây,297316,2,0.2,475706,290000,185706,Ví điện tử,Hoàn thành,5.0
+GH10255,2026-05-19,KH1059,Miền Trung,Đà Nẵng,Cá nhân,Sàn thương mại điện tử,Gia dụng,Ấm siêu tốc,402763,3,0.05,1147875,660000,487875,Ví điện tử,Hoàn thành,5.0
+GH10256,2025-08-05,KH1133,Miền Trung,Nghệ An,Doanh nghiệp, CỬA HÀNG ,Văn phòng phẩm,Bút ký,46851,2,0.0,93702,36000,57702,Chuyển khoản,Hoàn thành,2.0
+GH10257,2025-01-30,KH1052,Miền Nam,Đồng Nai,Cá nhân,Website,Điện tử,Chuột không dây,297157,3,,757750,435000,322750,Tiền mặt,Đã hủy,4.0
+GH10258,2026-10-13,KH1096,Miền Trung,Huế,Doanh nghiệp,Mạng xã hội,Gia dụng,Máy xay sinh tố,831780,2,0.1,1497204,1120000,377204,Chuyển khoản,Hoàn thành,5.0
+GH10259,2025-04-03,KH1042,Miền Trung,Nghệ An,Khách hàng thân thiết,Website,Gia dụng,Ấm siêu tốc,385314,1,0.05,366048,220000,146048,Chuyển khoản,Hoàn thành,5.0
+GH10260,2025-01-10,KH1045,Miền Nam,Cần Thơ,Khách hàng thân thiết,Cửa hàng,Gia dụng,Máy xay sinh tố,845363,3,0.15,2155676,1680000,475676,Chuyển khoản,Hoàn thành,4.0
+GH10261,2025-08-12,KH1160,Miền Trung,Nghệ An,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Bút ký,46421,4,0.05,176400,72000,104400,Tiền mặt,Hoàn thành,4.0
+GH10262,2025-04-21,KH1071,Miền Nam,Bình Dương,Khách hàng thân thiết,Sàn thương mại điện tử,Phụ kiện,Balo laptop,509830,2,0.15,866711,620000,246711,Thẻ ngân hàng,Hoàn thành,4.0
+GH10263,2026-09-07,KH1036,Miền Nam,Bình Dương,Khách hàng thân thiết,Cửa hàng,Gia dụng,Nồi chiên không dầu,1809185,1,0.0,1809185,1250000,559185,Ví điện tử,Đang giao,5.0
+GH10264,2026-08-09,KH1057,Miền Trung,Quảng Nam,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Bút ký,44166,2,0.0,88332,36000,52332,Thẻ ngân hàng,Hoàn thành,4.0
+GH10265,2026-07-27,KH1175,Miền Bắc,Hải Phòng,Doanh nghiệp,Cửa hàng,Gia dụng,Máy xay sinh tố,852139,1,0.0,852139,560000,292139,Chuyển khoản,Hoàn thành,4.0
+GH10266,2026-08-23,KH1121,Miền Nam,Bình Dương,Cá nhân,Cửa hàng,Văn phòng phẩm,Bút ký,47595,3,0.05,135646,54000,81646,Ví điện tử,Hoàn thành,5.0
+GH10267,2025-06-04,KH1146,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Website,Văn phòng phẩm,Bút ký,44163,2,0.1,79493,36000,43493,Thẻ ngân hàng,Hoàn thành,5.0
+GH10268,2025-03-01,KH1044,Miền Bắc,Hà Nội,Khách hàng thân thiết,Website,Văn phòng phẩm,Sổ tay,0,1,0.0,72827,32000,40827,Ví điện tử,Hoàn thành,5.0
+GH10269,2026-05-04,KH1052,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Sàn thương mại điện tử,Phụ kiện,Cáp sạc nhanh,149705,2,0.1,269469,130000,139469,Tiền mặt,Hoàn thành,5.0
+GH10270,2025-08-20,KH1034,Miền Nam,Cần Thơ,Cá nhân,Mạng xã hội,Điện tử,Tai nghe Bluetooth,441743,3,0.2,1060183,780000,280183,Thẻ ngân hàng,Hoàn thành,3.0
+GH10271,2025-12-12,KH1035,Miền Bắc,,Doanh nghiệp,Mạng xã hội,Gia dụng,Máy xay sinh tố,919385,2,0.15,1562954,1120000,442954,Thẻ ngân hàng,Hoàn thành,5.0
+GH10272,2025-08-05,KH1044,Miền Bắc,Thanh Hóa,Cá nhân,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,458304,1,0.2,366643,260000,106643,Tiền mặt,Hoàn trả,4.0
+GH10273,2025-04-21,KH1177,Miền Nam,Bình Dương,Cá nhân,Mạng xã hội,Phụ kiện,Balo laptop,485139,2,0.15,824736,620000,204736,Ví điện tử,Hoàn trả,4.0
+GH10274,2026-10-08,KH1026,Miền Nam,Bình Dương,Khách hàng thân thiết,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,74484,3,0.0,223452,96000,127452,Chuyển khoản,Hoàn thành,4.0
+GH10275,2026-09-16,KH1134,Miền Bắc,Hà Nội,Cá nhân,Sàn thương mại điện tử,Gia dụng,Máy xay sinh tố,862809,1,0.0,862809,560000,302809,Ví điện tử,Hoàn thành,4.0
+GH10276,2025-01-03,KH1029,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1745198,3,0.1,4712035,3750000,962035,Chuyển khoản,Hoàn thành,5.0
+GH10277,2025-10-31,KH1045,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Sàn thương mại điện tử,Điện tử,Loa mini,581257,4,0.2,1860022,1560000,300022,Thẻ ngân hàng,Hoàn thành,5.0
+GH10278,2025-05-22,KH1092,Miền Trung,Quảng Nam,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Loa mini,592457,1,0.0,592457,390000,202457,Tiền mặt,Hoàn thành,4.0
+GH10279,2026-01-30,KH1108,Miền Trung,Huế,Khách hàng thân thiết,Website,Điện tử,Loa mini,621076,2,0.1,1117937,780000,337937,Tiền mặt,Hoàn thành,3.0
+GH10280,2026-08-06,KH1098,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Cửa hàng,Điện tử,Chuột không dây,268012,1,0.15,227810,145000,82810,Chuyển khoản,Hoàn thành,4.0
+GH10281,2025-11-18,KH1135,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Website,Văn phòng phẩm,Bút ký,47711,2,0.0,95422,36000,59422,Thẻ ngân hàng,Hoàn thành,4.0
+GH10282,2026-01-30,KH1157,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Cửa hàng,Văn phòng phẩm,Bút ký,47428,3,0.0,142284,54000,88284,Chuyển khoản,Hoàn thành,4.0
+GH10283,2025-12-05,KH1141,Miền Trung,Quảng Nam,Khách hàng thân thiết,Mạng xã hội,Điện tử,Chuột không dây,281691,1,0.1,253522,145000,108522,Ví điện tử,Hoàn thành,5.0
+GH10284,2026-05-26,KH1128,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Sổ tay,71085,3,0.1,191930,96000,95930,Tiền mặt,Hoàn thành,4.0
+GH10285,2026-06-05,,Miền Bắc,Hà Nội,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Loa mini,637477,3,0.15,1625566,1170000,455566,Tiền mặt,Hoàn thành,5.0
+GH10286,2026-01-08,KH1169,Miền Trung,Nghệ An,Cá nhân,Cửa hàng,Phụ kiện,Balo laptop,492493,3,0.15,1255857,930000,325857,Thẻ ngân hàng,Hoàn thành,
+GH10287,2025-06-18,KH1105,Miền Nam,Bình Dương,Cá nhân,Sàn thương mại điện tử,Phụ kiện,Balo laptop,547703,2,0.2,876325,620000,256325,Chuyển khoản,Hoàn thành,3.0
+GH10288,2025-04-21,KH1163,Miền Trung,Huế,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Sổ tay,70273,3,0.0,210819,96000,114819,Ví điện tử,Hoàn thành,4.0
+GH10289,2026-03-20,KH1131,Miền Nam,Cần Thơ,Cá nhân,Website,Văn phòng phẩm,Sổ tay,75182,1,0.2,60146,32000,28146,Chuyển khoản,Hoàn thành,3.0
+GH10290,2025-09-12,KH1076,Miền Nam,Bình Dương,Doanh nghiệp,Website,Phụ kiện,Balo laptop,558760,4,0.1,2011536,1240000,771536,Chuyển khoản,Hoàn trả,4.0
+GH10291,2026-07-21,KH1160,Miền Nam,Bình Dương,Khách hàng thân thiết,Sàn thương mại điện tử,Phụ kiện,Balo laptop,499269,4,0.2,1597661,1240000,357661,Thẻ ngân hàng,Hoàn thành,5.0
+GH10292,29/04/2025,KH1150,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Mạng xã hội,Phụ kiện,Balo laptop,527457,2,0.2,843931,620000,223931,Thẻ ngân hàng,Hoàn thành,
+GH10293,2025-02-27,KH1042,Miền Trung,Đà Nẵng,Doanh nghiệp,Sàn thương mại điện tử,Phụ kiện,Balo laptop,542114,1,0.1,487903,310000,177903,Chuyển khoản,Hoàn thành,5.0
+GH10294,2026-04-09,KH1144,Miền Nam,Bình Dương,Cá nhân,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1961379,3,0.0,5884137,3750000,2134137,Chuyển khoản,Hoàn thành,4.0
+GH10295,2025-11-17,KH1065,Miền Nam,Bình Dương,Cá nhân,Mạng xã hội,Điện tử,Tai nghe Bluetooth,419375,4,0.1,1509750,1040000,469750,Chuyển khoản,Hoàn thành,5.0
+GH10296,2025-07-18,KH1175,Miền Nam,Bình Dương,Cá nhân,Website,Phụ kiện,Cáp sạc nhanh,153058,2,0.15,260199,130000,130199,Chuyển khoản,Hoàn thành,5.0
+GH10297,2025-06-14,KH1085,Miền Bắc,Thanh Hóa,Doanh nghiệp,Website,Điện tử,Tai nghe Bluetooth,435713,2,0.15,740712,520000,220712,Tiền mặt,Hoàn thành,3.0
+GH10298,2026-08-10,KH1082,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Website,Phụ kiện,Cáp sạc nhanh,150549,4,0.05,572086,260000,312086,Chuyển khoản,Hoàn thành,4.0
+GH10299,2025-08-15,KH1093,Miền Nam,Cần Thơ,Doanh nghiệp,,Văn phòng phẩm,Bút ký,44090,2,0.1,79362,36000,43362,Ví điện tử,Hoàn thành,5.0
+GH10300,2026-09-21,KH1175,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Mạng xã hội,Điện tử,Loa mini,665777,3,0.1,1797598,1170000,627598,Tiền mặt,Hoàn thành,4.0
+GH10301,2026-06-05,KH1167,Miền Nam,Bình Dương,Cá nhân,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,421459,4,0.05,1601544,1040000,561544,Tiền mặt,Hoàn thành,5.0
+GH10302,2026-03-11,KH1180,Miền Bắc,Hà Nội,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,595718,1,0.2,476574,390000,86574,Tiền mặt,Hoàn thành,5.0
+GH10303,2025-02-25,KH1019,Miền Bắc,Hà Nội,Khách hàng thân thiết,Website,Văn phòng phẩm,Sổ tay,72583,3,0.0,217749,96000,121749,Thẻ ngân hàng,Hoàn thành,4.0
+GH10304,2026-07-02,KH1017,Miền Trung,Quảng Nam,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Bút ký,46711,1,0.1,42040,18000,24040,Tiền mặt,Hoàn thành,4.0
+GH10305,2025-10-16,KH1102,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Cửa hàng,Gia dụng,Máy xay sinh tố,886129,3,0.05,2525468,1680000,845468,Ví điện tử,Hoàn thành,3.0
+GH10306,2026-10-12,KH1166,Miền Bắc,Hải Phòng,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Bút ký,46421,3,0.15,118374,54000,64374,Chuyển khoản,Hoàn thành,3.0
+GH10307,2025-12-19,KH1132,Miền Bắc,Thanh Hóa,Cá nhân,Website,Phụ kiện,Balo laptop,554238,2,0.0,1108476,620000,488476,Chuyển khoản,Hoàn thành,3.0
+GH10308,2026-07-17,KH1075,Miền Trung,Huế,Khách hàng thân thiết,Cửa hàng,Điện tử,Loa mini,627718,1,0.15,533560,390000,143560,Thẻ ngân hàng,Đã hủy,3.0
+GH10309,2025-04-13,KH1050,Miền Nam,Đồng Nai,Doanh nghiệp,Mạng xã hội,Gia dụng,Ấm siêu tốc,366783,2,0.2,586853,440000,146853,Ví điện tử,Hoàn thành,4.0
+GH10310,2025-11-20,KH1064,Miền Nam,Bình Dương,Cá nhân,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,148915,1,0.15,126578,65000,61578,Thẻ ngân hàng,Hoàn thành,5.0
+GH10311,2026-05-14,KH1156,Miền Bắc,Bắc Ninh,Cá nhân,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,71727,2,0.05,136281,64000,72281,Chuyển khoản,Hoàn thành,5.0
+GH10312,2026-10-09,KH1104,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,Website,Điện tử,Loa mini,630715,3,0.0,1892145,1170000,722145,Tiền mặt,Đã hủy,4.0
+GH10313,2026-08-27,KH1119,Miền Nam,Đồng Nai,Khách hàng thân thiết,Cửa hàng,Điện tử,Chuột không dây,272621,2,0.0,545242,290000,255242,Ví điện tử,Đang giao,4.0
+GH10314,2025-06-13,KH1169,Miền Bắc,Hải Phòng,Cá nhân,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,171569,3,0.15,437501,195000,242501,Thẻ ngân hàng,Hoàn thành,2.0
+GH10315,2025-07-31,KH1100,Miền Trung,Huế,Doanh nghiệp,Mạng xã hội,Điện tử,Loa mini,0,1,0.0,650205,390000,260205,Tiền mặt,Hoàn thành,2.0
+GH10316,2025-10-08,KH1140,Miền Nam,Bình Dương,Khách hàng thân thiết,Website,Điện tử,Loa mini,601088,3,0.15,1532774,1170000,362774,Ví điện tử,Hoàn thành,5.0
+GH10317,2025-12-28,KH1124,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Balo laptop,510512,1,0.0,510512,310000,200512,Chuyển khoản,Hoàn thành,4.0
+GH10318,2025-06-11,KH1031,Miền Bắc,Hà Nội,Khách hàng thân thiết,Website,Phụ kiện,Balo laptop,539549,2,0.0,1079098,620000,459098,Ví điện tử,Hoàn thành,5.0
+GH10319,2025-06-15,KH1063,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Website,Văn phòng phẩm,Sổ tay,74372,3,0.1,200804,96000,104804,Chuyển khoản,Hoàn thành,3.0
+GH10320,2025-07-04,KH1145,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Cáp sạc nhanh,163184,1,0.0,163184,65000,98184,Thẻ ngân hàng,Hoàn thành,5.0
+GH10321,2026-02-25,KH1047,Miền Bắc,Thanh Hóa,Khách hàng thân thiết, SÀN THƯƠNG MẠI ĐIỆN TỬ ,Phụ kiện,Cáp sạc nhanh,167870,6,0.1,906498,390000,516498,Chuyển khoản,Hoàn thành,5.0
+GH10322,2025-05-16,KH1130,Miền Trung,Quảng Nam,Khách hàng thân thiết,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,153656,2,0.0,307312,130000,177312,Chuyển khoản,Hoàn thành,5.0
+GH10323,2025-05-01,KH1155,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Cáp sạc nhanh,164625,2,0.15,279862,130000,149862,Ví điện tử,Hoàn thành,4.0
+GH10324,2026-01-26,KH1179,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Balo laptop,546360,-1,0.1,983448,620000,363448,Ví điện tử,Hoàn thành,3.0
+GH10325,2025-07-13,KH1002,Miền Trung,Huế,Khách hàng thân thiết,Cửa hàng,Điện tử,Loa mini,645759,1,0.15,548895,390000,158895,Tiền mặt,Hoàn thành,4.0
+GH10326,2026-08-23,KH1109,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,47621,2,0.0,95242,36000,59242,Thẻ ngân hàng,Hoàn thành,5.0
+GH10327,2026-01-15,KH1079,Miền Trung,Huế,Khách hàng thân thiết,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,45115,2,0.15,76696,36000,40696,Ví điện tử,Hoàn thành,5.0
+GH10328,2025-04-13,KH1087,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết, CỬA HÀNG ,Gia dụng,Nồi chiên không dầu,1831655,2,0.2,2930648,2500000,430648,Chuyển khoản,Đang giao,4.0
+GH10329,2026-03-22,KH1095,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Cửa hàng,Điện tử,Loa mini,601067,3,0.1,1622881,1170000,452881,Ví điện tử,Đang giao,5.0
+GH10330,2026-03-26,KH1133,Miền Trung,Nghệ An,Doanh nghiệp,Website,Phụ kiện,Cáp sạc nhanh,169213,1,0.0,169213,65000,104213,Tiền mặt,Hoàn thành,5.0
+GH10331,2025-01-01,KH1103,Miền Nam,Cần Thơ,Doanh nghiệp,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,172723,1,0.0,172723,65000,107723,Ví điện tử,Hoàn thành,4.0
+GH10332,2026-07-27,KH1071,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Website,Điện tử,Loa mini,608915,4,0.15,2070311,1560000,510311,Ví điện tử,Hoàn thành,7.0
+GH10333,2025-03-16,KH1030,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Sàn thương mại điện tử,Gia dụng,Máy xay sinh tố,873085,1,0.15,742122,560000,182122,Thẻ ngân hàng,Hoàn thành,5.0
+GH10334,2026-08-24,KH1067,Miền Trung,Quảng Nam,Cá nhân,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1854246,3,0.1,5006464,3750000,1256464,Chuyển khoản,Hoàn thành,5.0
+GH10335,2025-09-27,KH1173,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,42477,5,0.15,180527,90000,90527,Tiền mặt,Hoàn thành,4.0
+GH10336,2025-07-14,KH1062,Miền Bắc,Thanh Hóa,Doanh nghiệp,Website,Gia dụng,Ấm siêu tốc,374380,2,0.15,636446,440000,196446,Chuyển khoản,Hoàn thành,3.0
+GH10337,2026-05-20,KH1139,Miền Bắc,Bắc Ninh,Cá nhân,Mạng xã hội,Điện tử,Chuột không dây,292498,3,0.0,877494,435000,442494,Thẻ ngân hàng,Đang giao,5.0
+GH10338,2025-08-16,KH1135,Miền Trung,Nghệ An,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Sổ tay,71192,1,0.15,60513,32000,28513,Tiền mặt,Hoàn thành,4.0
+GH10339,2025-11-20,KH1054,Miền Trung,Huế,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Sổ tay,69882,5,0.2,279528,160000,119528,Thẻ ngân hàng,Hoàn thành,4.0
+GH10340,2026-09-20,KH1109,Miền Trung,Huế,Cá nhân,Mạng xã hội,Phụ kiện,Balo laptop,0,1,0.05,473048,310000,163048,Thẻ ngân hàng,Hoàn thành,4.0
+GH10341,2025-08-23,KH1061,Miền Trung,Nghệ An,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Sổ tay,77859,1,0.0,77859,32000,45859,Ví điện tử,Hoàn trả,3.0
+GH10342,2025-05-18,KH1081,Miền Nam,Cần Thơ,Doanh nghiệp,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,75566,3,0.0,226698,96000,130698,Thẻ ngân hàng,Hoàn thành,4.0
+GH10343,2025-09-18,KH1116,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,46101,1,0.0,46101,18000,28101,Thẻ ngân hàng,Hoàn thành,4.0
+GH10344,2026-09-13,KH1167,Miền Nam,Bình Dương,Khách hàng thân thiết,Website,Gia dụng,Ấm siêu tốc,396389,1,0.0,396389,220000,176389,Thẻ ngân hàng,Hoàn thành,4.0
+GH10345,2026-04-20,KH1164,Miền Nam,Đồng Nai,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Sổ tay,79517,4,0.1,286261,128000,158261,Ví điện tử,Hoàn thành,5.0
+GH10346,26/10/2025,KH1102,Miền Bắc,Hà Nội,Doanh nghiệp,Mạng xã hội,Điện tử,Chuột không dây,285826,1,0.05,271535,145000,126535,Thẻ ngân hàng,Hoàn thành,5.0
+GH10347,2025-08-29,KH1180,Miền Nam,Đồng Nai,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Bút ký,48197,1,0.0,48197,18000,30197,Chuyển khoản,Hoàn thành,3.0
+GH10348,2025-01-27,KH1022,Miền Bắc,Hà Nội,Cá nhân,Sàn thương mại điện tử,Điện tử,Loa mini,625330,5,0.1,2813985,1950000,863985,Chuyển khoản,Hoàn thành,2.0
+GH10349,2025-05-10,KH1008,Miền Trung,Nghệ An,Cá nhân,Sàn thương mại điện tử,Gia dụng,Nồi chiên không dầu,1953188,1,0.05,1855529,1250000,605529,Thẻ ngân hàng,Hoàn thành,5.0
+GH10350,2026-08-29,,Miền Trung,Nghệ An,Khách hàng thân thiết,Mạng xã hội,Phụ kiện,Balo laptop,532821,2,0.2,852514,620000,232514,Thẻ ngân hàng,Hoàn thành,5.0
+GH10351,2025-06-09,KH1035,Miền Trung,Huế,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Loa mini,576608,2,0.05,1095555,780000,315555,Ví điện tử,Hoàn thành,4.0
+GH10352,2026-09-04,KH1096,Miền Nam,Đồng Nai,Cá nhân,Mạng xã hội,Văn phòng phẩm,Sổ tay,69831,1,0.1,62848,32000,30848,Ví điện tử,Hoàn thành,4.0
+GH10353,2025-09-03,KH1157,Miền Bắc,,Khách hàng thân thiết,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,47249,1,0.0,47249,18000,29249,Thẻ ngân hàng,Hoàn thành,5.0
+GH10354,2025-10-24,KH1116,Miền Nam,Bình Dương,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Bút ký,44923,1,0.0,44923,18000,26923,Chuyển khoản,Hoàn thành,4.0
+GH10355,2025-05-09,KH1060,Miền Bắc,Hà Nội,Cá nhân,Website,Phụ kiện,Balo laptop,540314,1,0.0,540314,310000,230314,Tiền mặt,Hoàn thành,4.0
+GH10356,2026-04-20,KH1021,Miền Trung,Quảng Nam,Cá nhân,Cửa hàng,Gia dụng,Máy xay sinh tố,831936,3,0.1,2246227,1680000,566227,Thẻ ngân hàng,Hoàn trả,5.0
+GH10357,2025-01-13,KH1099,Miền Bắc,Thanh Hóa,Doanh nghiệp,,Điện tử,Chuột không dây,290416,1,0.05,275895,145000,130895,Tiền mặt,Hoàn thành,3.0
+GH10358,2025-11-16,KH1011,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Balo laptop,532674,3,0.0,1598022,930000,668022,Thẻ ngân hàng,Hoàn thành,4.0
+GH10359,2025-04-26,KH1004,Miền Trung,Huế,Cá nhân,Sàn thương mại điện tử,Gia dụng,Ấm siêu tốc,388098,4,0.2,1241914,880000,361914,Tiền mặt,Hoàn thành,4.0
+GH10360,2026-09-03,KH1064,Miền Bắc,Hà Nội,Cá nhân,Mạng xã hội,Điện tử,Tai nghe Bluetooth,470528,2,0.2,752845,520000,232845,Tiền mặt,Hoàn thành,5.0
+GH10361,2025-04-20,KH1143,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,434205,2,0.0,868410,520000,348410,Ví điện tử,Hoàn thành,5.0
+GH10362,2026-05-12,KH1139,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Ấm siêu tốc,395402,3,0.05,1126896,660000,466896,Chuyển khoản,Đang giao,4.0
+GH10363,2026-09-06,KH1136,Miền Nam,Bình Dương,Cá nhân,Mạng xã hội,Gia dụng,Ấm siêu tốc,372080,3,0.05,1060428,660000,400428,Thẻ ngân hàng,Đã hủy,5.0
+GH10364,2025-07-09,KH1159,Miền Nam,Bình Dương,Cá nhân,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,79389,1,0.2,63511,32000,31511,Tiền mặt,Hoàn thành,5.0
+GH10365,2025-06-07,KH1165,Miền Nam,Đồng Nai,Doanh nghiệp,Cửa hàng,Gia dụng,Nồi chiên không dầu,1810021,2,0.1,3258038,2500000,758038,Tiền mặt,Hoàn thành,4.0
+GH10366,2026-05-13,KH1165,Miền Bắc,Hà Nội,Doanh nghiệp,Mạng xã hội,Điện tử,Chuột không dây,261736,1,0.0,261736,145000,116736,Thẻ ngân hàng,Hoàn thành,2.0
+GH10367,2025-03-23,KH1093,Miền Bắc,Hà Nội,Khách hàng thân thiết,Mạng xã hội,Điện tử,Tai nghe Bluetooth,461626,5,0.0,2308130,1300000,1008130,Thẻ ngân hàng,Hoàn thành,5.0
+GH10368,2025-03-21,KH1060,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,Mạng xã hội,Phụ kiện,Balo laptop,491175,1,0.0,491175,310000,181175,Chuyển khoản,Đã hủy,3.0
+GH10369,2026-07-26,KH1164,Miền Nam,Cần Thơ,Khách hàng thân thiết,Sàn thương mại điện tử,Phụ kiện,Cáp sạc nhanh,151332,2,0.0,302664,130000,172664,Ví điện tử,Hoàn thành,5.0
+GH10370,2025-12-12,KH1154,Miền Trung,Đà Nẵng,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Chuột không dây,282823,3,0.15,721199,435000,286199,Thẻ ngân hàng,Hoàn thành,4.0
+GH10371,2025-11-28,KH1055,Miền Trung,Nghệ An,Doanh nghiệp,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,45651,3,0.1,123258,54000,69258,Thẻ ngân hàng,Đã hủy,5.0
+GH10372,2026-06-15,KH1077,Miền Trung,Quảng Nam,Cá nhân,Website,Điện tử,Tai nghe Bluetooth,438874,3,0.05,1250791,780000,470791,Thẻ ngân hàng,Hoàn thành,1.0
+GH10373,2025-06-08,KH1040,Miền Nam,Bình Dương,Cá nhân,Sàn thương mại điện tử,Phụ kiện,Balo laptop,519508,2,0.15,883164,620000,263164,Thẻ ngân hàng,Đang giao,5.0
+GH10374,2026-08-06,KH1084,Miền Bắc,Hải Phòng,Doanh nghiệp,Website,Gia dụng,Máy xay sinh tố,838006,3,0.0,2514018,1680000,834018,Ví điện tử,Hoàn thành,5.0
+GH10375,2026-08-14,KH1086,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,167522,2,0.0,335044,130000,205044,Ví điện tử,Hoàn thành,5.0
+GH10376,2026-01-27,KH1082,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Website,Phụ kiện,Cáp sạc nhanh,161385,4,0.2,516432,260000,256432,Thẻ ngân hàng,Hoàn thành,4.0
+GH10377,2026-09-02,KH1111,Miền Bắc,Hải Phòng,Doanh nghiệp,Mạng xã hội,Điện tử,Tai nghe Bluetooth,424580,3,0.1,1146366,780000,366366,Chuyển khoản,Hoàn trả,3.0
+GH10378,2025-03-29,KH1179,Miền Bắc,Thanh Hóa,Cá nhân,Website,Phụ kiện,Cáp sạc nhanh,159227,3,0.15,406029,195000,211029,Ví điện tử,Hoàn thành,4.0
+GH10379,2026-06-21,KH1111,Miền Trung,Quảng Nam,Doanh nghiệp,Cửa hàng,Phụ kiện,Cáp sạc nhanh,150519,1,0.15,127941,65000,62941,Tiền mặt,Hoàn trả,5.0
+GH10380,2025-01-25,KH1090,Miền Trung,Nghệ An,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Ấm siêu tốc,372601,1,0.05,353971,220000,133971,Chuyển khoản,Hoàn thành,4.0
+GH10381,2025-04-26,KH1159,Miền Bắc,Hải Phòng,Cá nhân,Sàn thương mại điện tử,Gia dụng,Ấm siêu tốc,376918,1,0.2,301534,220000,81534,Tiền mặt,Đã hủy,4.0
+GH10382,2026-07-05,KH1067,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Sổ tay,75897,2,0.05,144204,64000,80204,Chuyển khoản,Hoàn thành,5.0
+GH10383,2025-09-19,KH1179,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,43767,2,0.2,70027,36000,34027,Tiền mặt,Hoàn thành,4.0
+GH10384,2026-01-04,KH1167,Miền Bắc,Hà Nội,Doanh nghiệp,Website,Văn phòng phẩm,Bút ký,41978,3,0.2,100747,54000,46747,Ví điện tử,Đã hủy,4.0
+GH10385,2025-07-10,KH1144,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Cửa hàng,Gia dụng,Ấm siêu tốc,419257,2,0.15,712737,440000,272737,Tiền mặt,Hoàn thành,3.0
+GH10386,2025-12-22,KH1078,Miền Nam,Bình Dương,Cá nhân,Sàn thương mại điện tử,Gia dụng,Ấm siêu tốc,383489,2,0.2,613582,440000,173582,Tiền mặt,Hoàn thành,5.0
+GH10387,2026-02-07,KH1098,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Website,Phụ kiện,Balo laptop,490448,5,0.0,2452240,1550000,902240,Ví điện tử,Hoàn thành,3.0
+GH10388,2025-05-15,KH1139,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Website,Gia dụng,Máy xay sinh tố,846199,4,0.05,3215556,2240000,975556,Chuyển khoản,Hoàn thành,4.0
+GH10389,2026-08-02,KH1137,Miền Nam,Cần Thơ,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Bút ký,42307,6,0.0,253842,108000,145842,Chuyển khoản,Hoàn thành,4.0
+GH10390,2025-11-07,KH1164,Miền Bắc,Hà Nội,Khách hàng thân thiết,Sàn thương mại điện tử,Gia dụng,Ấm siêu tốc,417325,4,0.1,1502370,880000,622370,Chuyển khoản,Hoàn trả,5.0
+GH10391,2026-09-13,KH1060,Miền Bắc,Hải Phòng,Cá nhân,Cửa hàng,Điện tử,Chuột không dây,270098,1,0.15,229583,145000,84583,Thẻ ngân hàng,Hoàn thành,2.0
+GH10392,2026-01-18,KH1122,Miền Trung,Huế,Cá nhân,Website,Phụ kiện,Balo laptop,513821,4,0.1,1849756,1240000,609756,Chuyển khoản,Hoàn thành,3.0
+GH10393,27/07/2025,KH1113,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Máy xay sinh tố,836529,5,0.0,4182645,2800000,1382645,Thẻ ngân hàng,Hoàn thành,5.0
+GH10394,2026-01-25,KH1147,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Bút ký,44510,3,0.15,113500,54000,59500,Tiền mặt,Hoàn thành,4.0
+GH10395,2026-02-01,KH1013,Miền Bắc,Hải Phòng,Cá nhân,Sàn thương mại điện tử,Phụ kiện,Balo laptop,532790,2,0.2,852464,620000,232464,Ví điện tử,Hoàn thành,4.0
+GH10396,2025-02-25,KH1119,Miền Trung,Nghệ An,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Sổ tay,79916,1,0.05,75920,32000,43920,Tiền mặt,Hoàn thành,5.0
+GH10397,2026-02-07,KH1046,Miền Bắc,Hải Phòng,Doanh nghiệp,Website,Phụ kiện,Cáp sạc nhanh,159621,5,0.2,638484,325000,313484,Ví điện tử,Hoàn thành,3.0
+GH10398,2026-01-07,KH1131,Miền Trung,Huế,Khách hàng thân thiết,Website,Điện tử,Loa mini,642376,1,0.2,513901,390000,123901,Ví điện tử,Hoàn thành,4.0
+GH10399,2025-06-16,KH1014,Miền Bắc,Hải Phòng,Doanh nghiệp,Sàn thương mại điện tử,Gia dụng,Ấm siêu tốc,373163,2,0.2,597061,440000,157061,Thẻ ngân hàng,Đã hủy,5.0
+GH10400,2025-01-04,KH1118,Miền Trung,Nghệ An,Doanh nghiệp,Mạng xã hội,Điện tử,Chuột không dây,271030,1,0.0,271030,145000,126030,Tiền mặt,Hoàn trả,5.0
+GH10401,2026-03-29,KH1063,Miền Trung,Huế,Khách hàng thân thiết,Sàn thương mại điện tử,Gia dụng,Nồi chiên không dầu,1887028,2,0.1,3396650,2500000,896650,Chuyển khoản,Hoàn thành,2.0
+GH10402,2026-09-10,KH1013,Miền Bắc,Hà Nội,Cá nhân,Mạng xã hội,Gia dụng,Ấm siêu tốc,416542,1,0.0,416542,220000,196542,Chuyển khoản,Hoàn thành,3.0
+GH10403,2025-04-06,KH1098,Miền Trung,Huế,Cá nhân,Mạng xã hội,Văn phòng phẩm,Sổ tay,73381,3,0.05,209136,96000,113136,Tiền mặt,Đang giao,4.0
+GH10404,2025-08-03,KH1162,Miền Bắc,Hà Nội,Khách hàng thân thiết,Cửa hàng,Gia dụng,Máy xay sinh tố,842291,1,0.1,758062,560000,198062,Ví điện tử,Hoàn thành,5.0
+GH10405,2026-08-12,KH1158,Miền Nam,Bình Dương,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Bút ký,48107,2,0.05,91403,36000,55403,Ví điện tử,Hoàn thành,4.0
+GH10406,2026-04-22,KH1054,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Máy xay sinh tố,843443,5,0.0,4217215,2800000,1417215,Ví điện tử,Hoàn thành,2.0
+GH10407,2025-03-11,KH1083,Miền Trung,Huế,Cá nhân,Cửa hàng,Điện tử,Tai nghe Bluetooth,452701,2,0.2,724322,520000,204322,Thẻ ngân hàng,Hoàn thành,4.0
+GH10408,2026-05-06,KH1035,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp, WEBSITE ,Điện tử,Chuột không dây,261893,1,0.05,248798,145000,103798,Ví điện tử,Đang giao,5.0
+GH10409,2025-02-27,KH1174,Miền Nam,Bình Dương,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Sổ tay,73117,3,0.1,197416,96000,101416,Chuyển khoản,Đang giao,
+GH10410,2025-12-14,KH1043,Miền Trung,Nghệ An,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,626287,5,0.05,2974863,1950000,1024863,Chuyển khoản,Đã hủy,4.0
+GH10411,2025-09-01,KH1078,Miền Trung,Nghệ An,Cá nhân,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,474488,1,0.0,474488,260000,214488,Chuyển khoản,Hoàn thành,3.0
+GH10412,2026-05-28,KH1124,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Loa mini,608230,2,0.0,1216460,780000,436460,Thẻ ngân hàng,Hoàn thành,3.0
+GH10413,2026-06-19,KH1012,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Cửa hàng,Gia dụng,Nồi chiên không dầu,1806797,3,0.1,4878352,3750000,1128352,Thẻ ngân hàng,Hoàn thành,4.0
+GH10414,2026-08-15,KH1054,Miền Bắc,Hà Nội,Doanh nghiệp,Website,Phụ kiện,Balo laptop,533430,3,0.2,1280232,930000,350232,Chuyển khoản,Hoàn thành,4.0
+GH10415,2025-10-08,KH1144,Miền Nam,Bình Dương,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Sổ tay,80530,3,0.05,229510,96000,133510,Chuyển khoản,Hoàn thành,4.0
+GH10416,2026-08-11,KH1157,Miền Nam,Bình Dương,Doanh nghiệp,Mạng xã hội,Gia dụng,Máy xay sinh tố,837210,1,0.2,669768,560000,109768,Tiền mặt,Hoàn thành,3.0
+GH10417,2025-07-03,KH1162,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,659488,2,0.0,1318976,780000,538976,Thẻ ngân hàng,Hoàn thành,4.0
+GH10418,2026-04-25,KH1165,Miền Bắc,Hà Nội,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Sổ tay,73241,2,0.0,146482,64000,82482,Ví điện tử,Hoàn thành,3.0
+GH10419,2025-12-05,KH1117,Miền Bắc,Hải Phòng,Doanh nghiệp,Cửa hàng,Phụ kiện,Cáp sạc nhanh,169977,1,0.05,161478,65000,96478,Tiền mặt,Hoàn thành,4.0
+GH10420,2026-09-11,,Miền Trung,Quảng Nam,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Sổ tay,75464,4,0.05,286763,128000,158763,Thẻ ngân hàng,Hoàn thành,4.0
+GH10421,2026-09-28,KH1124,Miền Bắc,Bắc Ninh,Doanh nghiệp,Cửa hàng,Phụ kiện,Balo laptop,496003,2,0.15,843205,620000,223205,Thẻ ngân hàng,Hoàn thành,3.0
+GH10422,2025-08-30,KH1147,Miền Nam,Đồng Nai,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Bút ký,46369,2,0.05,88101,36000,52101,Ví điện tử,Hoàn thành,4.0
+GH10423,2025-04-22,KH1098,Miền Bắc,Thanh Hóa,Doanh nghiệp,Mạng xã hội,Điện tử,Chuột không dây,285449,1,0.1,256904,145000,111904,Tiền mặt,Hoàn thành,3.0
+GH10424,04/02/2026,KH1053,Miền Bắc,Hà Nội,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Chuột không dây,279180,3,0.1,753786,435000,318786,Thẻ ngân hàng,Hoàn thành,4.0
+GH10425,2026-08-20,KH1104,Miền Nam,Bình Dương,Cá nhân,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,48508,3,0.05,138248,54000,84248,Tiền mặt,Hoàn trả,4.0
+GH10426,2025-10-16,KH1180,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Mạng xã hội,Điện tử,Tai nghe Bluetooth,434378,3,0.05,1237977,780000,457977,Thẻ ngân hàng,Hoàn thành,5.0
+GH10427,2025-05-23,KH1093,Miền Trung,Quảng Nam,Doanh nghiệp,Website,Văn phòng phẩm,Bút ký,44446,2,0.2,71114,36000,35114,Thẻ ngân hàng,Hoàn thành,5.0
+GH10428,2026-05-14,KH1035,Miền Nam,Cần Thơ,Cá nhân,Website,Điện tử,Chuột không dây,301348,1,0.2,241078,145000,96078,Ví điện tử,Hoàn thành,5.0
+GH10429,2026-04-06,KH1109,Miền Nam,Đồng Nai,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Cáp sạc nhanh,154217,1,0.15,131084,65000,66084,Ví điện tử,Hoàn thành,5.0
+GH10430,2025-02-08,KH1029,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Bút ký,46607,4,0.15,158464,72000,86464,Tiền mặt,Hoàn thành,3.0
+GH10431,2025-04-01,KH1170,Miền Nam,Bình Dương,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Sổ tay,76844,2,0.15,130635,64000,66635,Thẻ ngân hàng,Đang giao,5.0
+GH10432,2025-12-06,KH1076,Miền Trung,Đà Nẵng,Doanh nghiệp,Website,Văn phòng phẩm,Sổ tay,80556,2,0.1,145001,64000,81001,Tiền mặt,Hoàn thành,5.0
+GH10433,2025-06-23,KH1075,miền nam,Bình Dương,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Cáp sạc nhanh,164551,1,0.2,131641,65000,66641,Thẻ ngân hàng,Hoàn thành,4.0
+GH10434,2025-09-21,KH1045,Miền Bắc,Hà Nội,Khách hàng thân thiết,Website,Gia dụng,Máy xay sinh tố,842591,1,0.15,716202,560000,156202,Ví điện tử,Hoàn thành,4.0
+GH10435,2025-12-18,KH1040,Miền Bắc,Bắc Ninh,Doanh nghiệp,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1885763,2,0.15,3205797,2500000,705797,Ví điện tử,Đã hủy,3.0
+GH10436,2025-09-28,KH1043,Miền Trung,Huế,Doanh nghiệp,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1752688,2,0.05,3330107,2500000,830107,Ví điện tử,Hoàn thành,4.0
+GH10437,2025-05-29,KH1074,Miền Nam,Cần Thơ,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Bút ký,44784,3,0.1,120917,54000,66917,Thẻ ngân hàng,Hoàn thành,5.0
+GH10438,2026-03-19,KH1070,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Loa mini,637242,4,0.2,2039174,1560000,479174,Thẻ ngân hàng,Hoàn thành,5.0
+GH10439,2026-08-26,KH1174,Miền Trung,Quảng Nam,Khách hàng thân thiết,Website,Văn phòng phẩm,Sổ tay,75599,3,0.2,181438,96000,85438,Thẻ ngân hàng,Hoàn thành,4.0
+GH10440,2026-04-02,KH1065,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Cửa hàng,Điện tử,Loa mini,644048,1,0.0,644048,390000,254048,Tiền mặt,Hoàn thành,5.0
+GH10441,2025-03-30,KH1169,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Website,Phụ kiện,Cáp sạc nhanh,151917,2,0.2,243067,130000,113067,Tiền mặt,Đang giao,5.0
+GH10442,2025-10-11,KH1171,Miền Trung,Nghệ An,Doanh nghiệp,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,77537,3,0.0,232611,96000,136611,Chuyển khoản,Hoàn thành,5.0
+GH10443,2025-09-29,KH1052,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Bút ký,42318,2,,84636,36000,48636,Chuyển khoản,Hoàn thành,5.0
+GH10444,2025-04-19,KH1009,Miền Bắc,Hải Phòng,Cá nhân,Cửa hàng,Phụ kiện,Balo laptop,503801,3,0.0,1511403,930000,581403,Thẻ ngân hàng,Hoàn thành,5.0
+GH10445,2026-02-04,KH1101,miền bắc,Thanh Hóa,Khách hàng thân thiết,Cửa hàng,Điện tử,Chuột không dây,289802,3,0.0,869406,435000,434406,Ví điện tử,Đang giao,4.0
+GH10446,2026-05-09,KH1092,Miền Trung,Đà Nẵng,Doanh nghiệp,Sàn thương mại điện tử,Phụ kiện,Balo laptop,525353,1,0.1,472818,310000,162818,Ví điện tử,Đang giao,2.0
+GH10447,2026-04-16,KH1052,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Cửa hàng,Gia dụng,Ấm siêu tốc,379662,2,0.05,721358,440000,281358,Ví điện tử,Hoàn thành,5.0
+GH10448,2026-10-10,KH1010,Miền Trung,Quảng Nam,Cá nhân,Cửa hàng,Điện tử,Loa mini,594220,2,0.05,1129018,780000,349018,Chuyển khoản,Hoàn thành,
+GH10449,2025-01-17,KH1011,Miền Bắc,Bắc Ninh,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Sổ tay,70380,2,0.1,126684,64000,62684,Chuyển khoản,Hoàn trả,5.0
+GH10450,2025-03-15,KH1168,Miền Nam,Đồng Nai,Cá nhân,Mạng xã hội,Phụ kiện,Balo laptop,494644,1,0.15,420447,310000,110447,Tiền mặt,Hoàn thành,3.0
+GH10451,2025-04-10,KH1152,Miền Nam,Cần Thơ,Cá nhân,Cửa hàng,Điện tử,Tai nghe Bluetooth,430021,1,0.0,430021,260000,170021,Tiền mặt,Đang giao,4.0
+GH10452,2026-02-16,KH1148,Miền Nam,Cần Thơ,Khách hàng thân thiết,Website,Điện tử,Loa mini,667354,3,0.1,1801856,1170000,631856,Thẻ ngân hàng,Hoàn thành,5.0
+GH10453,2025-05-25,KH1095,Miền Bắc,Hà Nội,Khách hàng thân thiết,Website,Phụ kiện,Cáp sạc nhanh,152833,1,0.0,152833,65000,87833,Ví điện tử,Hoàn thành,3.0
+GH10454,2025-06-11,KH1002,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Website,Điện tử,Chuột không dây,280852,1,0.2,224682,145000,79682,Tiền mặt,Hoàn thành,5.0
+GH10455,2025-07-31,KH1116,Miền Nam,Bình Dương,Doanh nghiệp,Website,Văn phòng phẩm,Bút ký,43678,3,0.1,117931,54000,63931,Chuyển khoản,Hoàn thành,5.0
+GH10456,2025-11-05,KH1061,Miền Bắc,Hải Phòng,Cá nhân,Cửa hàng,Văn phòng phẩm,Sổ tay,69801,2,0.0,139602,64000,75602,Tiền mặt,Hoàn thành,5.0
+GH10457,2025-02-24,KH1176,Miền Nam,Cần Thơ,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Sổ tay,78711,3,0.2,188906,96000,92906,Chuyển khoản,Hoàn thành,3.0
+GH10458,2026-09-24,KH1012,Miền Bắc,Hà Nội,Cá nhân,Cửa hàng,Gia dụng,Ấm siêu tốc,407066,1,0.1,366359,220000,146359,Chuyển khoản,Hoàn thành,3.0
+GH10459,2026-08-30,KH1174,Miền Bắc,Thanh Hóa,Doanh nghiệp,Website,Phụ kiện,Balo laptop,516287,1,0.0,516287,310000,206287,Tiền mặt,Hoàn thành,4.0
+GH10460,2025-03-17,KH1112,Miền Bắc,Hải Phòng,Cá nhân,Website,Văn phòng phẩm,Bút ký,45119,4,0.1,162428,72000,90428,Ví điện tử,Đang giao,3.0
+GH10461,2025-10-04,KH1178,Miền Trung,Huế,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Sổ tay,71181,3,0.2,170834,96000,74834,Thẻ ngân hàng,Hoàn thành,3.0
+GH10462,2025-10-30,KH1164,Miền Trung,Quảng Nam,Khách hàng thân thiết,Website,Văn phòng phẩm,Bút ký,47179,1,0.05,44820,18000,26820,Chuyển khoản,Hoàn thành,2.0
+GH10463,2026-03-15,KH1084,Miền Nam,Đồng Nai,Doanh nghiệp,Website,Gia dụng,Nồi chiên không dầu,1788946,2,0.1,3220103,2500000,720103,Chuyển khoản,Hoàn thành,5.0
+GH10464,2026-06-01,KH1123,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Cửa hàng,Điện tử,Tai nghe Bluetooth,454350,1,0.1,408915,260000,148915,Ví điện tử,Hoàn thành,4.0
+GH10465,2025-09-02,KH1172,Miền Bắc,Hà Nội,Doanh nghiệp,Website,Văn phòng phẩm,Bút ký,41957,5,0.0,209785,90000,119785,Ví điện tử,Hoàn thành,5.0
+GH10466,2026-02-20,KH1161,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Sổ tay,79554,2,0.0,159108,64000,95108,Tiền mặt,Đã hủy,4.0
+GH10467,2026-09-20,KH1176,Miền Nam,Bình Dương,Cá nhân,Sàn thương mại điện tử,Phụ kiện,Balo laptop,545569,1,0.1,491012,310000,181012,Tiền mặt,Hoàn thành,4.0
+GH10468,2025-02-11,KH1144,Miền Nam,Bình Dương,Khách hàng thân thiết,Cửa hàng,Điện tử,Tai nghe Bluetooth,430330,1,0.05,408814,260000,148814,Chuyển khoản,Hoàn thành,3.0
+GH10469,2026-08-18,KH1058,Miền Trung,Huế,Doanh nghiệp,Sàn thương mại điện tử,Phụ kiện,Balo laptop,499963,1,0.1,449967,310000,139967,Thẻ ngân hàng,Hoàn thành,4.0
+GH10470,2026-05-29,,Miền Trung,Nghệ An,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,426782,1,0.05,405443,260000,145443,Ví điện tử,Hoàn thành,5.0
+GH10471,2026-02-05,KH1020,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Website,Gia dụng,Nồi chiên không dầu,1986416,4,0.1,7151098,5000000,2151098,Thẻ ngân hàng,Hoàn thành,
+GH10472,2025-01-24,KH1139,Miền Bắc,Thanh Hóa,Cá nhân,Mạng xã hội,Điện tử,Chuột không dây,301122,4,0.15,1023815,580000,443815,Thẻ ngân hàng,Đang giao,4.0
+GH10473,2025-08-26,KH1106,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Sàn thương mại điện tử,Gia dụng,Máy xay sinh tố,913763,1,0.0,913763,560000,353763,Thẻ ngân hàng,Đã hủy,4.0
+GH10474,2025-11-10,KH1124,Miền Nam,Đồng Nai,Doanh nghiệp,,Văn phòng phẩm,Sổ tay,72675,1,0.0,72675,32000,40675,Tiền mặt,Đang giao,3.0
+GH10475,2025-10-20,KH1178,Miền Trung,Quảng Nam,Khách hàng thân thiết,Website,Điện tử,Chuột không dây,295651,2,0.0,591302,290000,301302,Chuyển khoản,Hoàn thành,3.0
+GH10476,2025-07-30,KH1082,Miền Bắc,Bắc Ninh,Doanh nghiệp,Website,Phụ kiện,Cáp sạc nhanh,149632,1,0.05,142150,65000,77150,Thẻ ngân hàng,Hoàn thành,4.0
+GH10477,2025-05-29,KH1002,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Loa mini,606380,4,0.1,2182968,1560000,622968,Thẻ ngân hàng,Đang giao,4.0
+GH10478,2025-04-26,KH1036,Miền Trung,Huế,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Cáp sạc nhanh,170404,3,0.1,460091,195000,265091,Thẻ ngân hàng,Hoàn thành,1.0
+GH10479,2025-07-19,KH1072,Miền Nam,Cần Thơ,Cá nhân,Cửa hàng,Văn phòng phẩm,Sổ tay,72249,2,0.05,137273,64000,73273,Tiền mặt,Hoàn thành,4.0
+GH10480,2026-09-12,KH1093,Miền Trung,Đà Nẵng,Doanh nghiệp,Website,Phụ kiện,Balo laptop,554458,2,0.1,998024,620000,378024,Ví điện tử,Hoàn thành,4.0
+GH10481,2026-07-29,KH1114,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Máy xay sinh tố,924868,1,0.05,878625,560000,318625,Ví điện tử,Hoàn trả,4.0
+GH10482,2025-05-28,KH1135,Miền Nam,Đồng Nai,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Bút ký,45053,1,0.15,38295,18000,20295,Ví điện tử,Hoàn thành,2.0
+GH10483,2025-05-21,KH1075,Miền Trung,Nghệ An,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Bút ký,47467,1,0.1,42720,18000,24720,Tiền mặt,Hoàn thành,5.0
+GH10484,2025-01-03,KH1164,Miền Trung,Nghệ An,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Sổ tay,73126,2,0.1,131627,64000,67627,Tiền mặt,Hoàn thành,5.0
+GH10485,2025-01-30,KH1018,Miền Trung,Quảng Nam,Khách hàng thân thiết,,Điện tử,Chuột không dây,272043,2,0.2,435269,290000,145269,Ví điện tử,Hoàn thành,4.0
+GH10486,2025-09-23,KH1082,Miền Trung,Quảng Nam,Doanh nghiệp,Website,Điện tử,Loa mini,582041,2,0.2,931266,780000,151266,Thẻ ngân hàng,Hoàn thành,3.0
+GH10487,2025-10-26,KH1132,Miền Trung,Nghệ An,Cá nhân,Website,Văn phòng phẩm,Bút ký,48170,2,0.05,91523,36000,55523,Tiền mặt,Hoàn thành,4.0
+GH10488,2025-10-05,KH1025,Miền Bắc,Bắc Ninh,Khách hàng thân thiết,Sàn thương mại điện tử,Gia dụng,Ấm siêu tốc,402968,3,0.2,967123,660000,307123,Chuyển khoản,Hoàn thành,1.0
+GH10489,2025-06-16,KH1057,Miền Nam,Bình Dương,Cá nhân, CỬA HÀNG ,Gia dụng,Ấm siêu tốc,371741,3,0.1,1003701,660000,343701,Ví điện tử,Hoàn thành,
+GH10490,2026-01-07,KH1153,Miền Bắc,Hà Nội,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Chuột không dây,278961,4,,1004260,580000,424260,Chuyển khoản,Hoàn thành,5.0
+GH10491,2025-08-21,KH1021,Miền Bắc,Hà Nội,Doanh nghiệp,Cửa hàng,Gia dụng,Nồi chiên không dầu,1778730,1,0.2,1422984,1250000,172984,Tiền mặt,Hoàn thành,1.0
+GH10492,2026-06-10,KH1065,Miền Trung,Quảng Nam,Cá nhân,Cửa hàng,Điện tử,Tai nghe Bluetooth,450163,1,0.0,450163,260000,190163,Thẻ ngân hàng,Hoàn thành,5.0
+GH10493,2025-12-26,KH1072,Miền Bắc,Hà Nội,Khách hàng thân thiết,Sàn thương mại điện tử,Phụ kiện,Cáp sạc nhanh,152293,1,0.0,152293,65000,87293,Thẻ ngân hàng,Hoàn thành,3.0
+GH10494,2025-01-15,KH1073,Miền Nam,Cần Thơ,Cá nhân,Cửa hàng,Phụ kiện,Balo laptop,539433,2,0.0,1078866,620000,458866,Tiền mặt,Hoàn thành,5.0
+GH10495,2025-04-20,KH1098,Miền Nam,Đồng Nai,Doanh nghiệp,Website,Gia dụng,Ấm siêu tốc,383457,3,0.0,1150371,660000,490371,Chuyển khoản,Hoàn thành,4.0
+GH10496,2026-01-05,KH1011,Miền Trung,Đà Nẵng,Cá nhân,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,76017,1,0.0,76017,32000,44017,Ví điện tử,Hoàn thành,3.0
+GH10497,2026-03-31,KH1110,Miền Trung,Quảng Nam,Cá nhân,Cửa hàng,Phụ kiện,Cáp sạc nhanh,158574,3,0.2,380578,195000,185578,Ví điện tử,Hoàn trả,5.0
+GH10498,2026-02-10,KH1022,Miền Trung,Huế,Cá nhân,Website,Điện tử,Tai nghe Bluetooth,462952,-1,0.1,2499941,1560000,939941,Ví điện tử,Hoàn thành,4.0
+GH10499,2026-09-02,KH1109,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Mạng xã hội,Điện tử,Chuột không dây,265556,1,0.0,265556,145000,120556,Thẻ ngân hàng,Hoàn thành,5.0
+GH10500,2026-02-19,KH1117,Miền Nam,Bình Dương,Cá nhân, CỬA HÀNG ,Văn phòng phẩm,Bút ký,43732,2,0.2,69971,36000,33971,Thẻ ngân hàng,Hoàn thành,4.0
+GH10501,2026-05-26,KH1098,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,484114,1,0.0,484114,260000,224114,Chuyển khoản,Đã hủy,4.0
+GH10502,2026-04-23,KH1126,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Loa mini,638174,3,0.15,1627344,1170000,457344,Thẻ ngân hàng,Hoàn thành,5.0
+GH10503,2025-11-19,KH1010,Miền Nam,TP. Hồ Chí Minh,Cá nhân,Website,Điện tử,Tai nghe Bluetooth,448372,6,0.0,2690232,1560000,1130232,Thẻ ngân hàng,Hoàn thành,5.0
+GH10504,2025-04-23,KH1142,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Bút ký,45161,1,0.2,36129,18000,18129,Ví điện tử,Hoàn thành,4.0
+GH10505,2026-09-24,KH1073,Miền Bắc,Hà Nội,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Bút ký,47023,1,0.15,39970,18000,21970,Tiền mặt,Hoàn trả,4.0
+GH10506,2026-10-03,KH1089,Miền Bắc,Bắc Ninh,Doanh nghiệp,Mạng xã hội,Gia dụng,Ấm siêu tốc,368394,3,0.15,939405,660000,279405,Thẻ ngân hàng,Hoàn thành,2.0
+GH10507,2025-03-09,KH1044,Miền Bắc,Hải Phòng,Cá nhân,Sàn thương mại điện tử,Gia dụng,Nồi chiên không dầu,1752265,2,0.15,2978850,2500000,478850,Tiền mặt,Hoàn thành,4.0
+GH10508,2025-11-21,KH1147,Miền Trung,Quảng Nam,Cá nhân,Mạng xã hội,Gia dụng,Máy xay sinh tố,879805,1,0.1,791824,560000,231824,Tiền mặt,Hoàn thành,5.0
+GH10509,2026-09-22,KH1052,Miền Bắc,Bắc Ninh,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Sổ tay,80656,2,0.2,129050,64000,65050,Chuyển khoản,Hoàn thành,4.0
+GH10510,2025-04-05,KH1152,miền bắc,Bắc Ninh,Doanh nghiệp,Sàn thương mại điện tử,Phụ kiện,Cáp sạc nhanh,162676,2,0.0,325352,130000,195352,Tiền mặt,Hoàn thành,4.0
+GH10511,2025-11-06,KH1170,Miền Nam,Đồng Nai,Khách hàng thân thiết,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,43874,1,0.0,43874,18000,25874,Chuyển khoản,Hoàn thành,4.0
+GH10512,2026-06-13,KH1055,Miền Trung,Quảng Nam,Khách hàng thân thiết,Mạng xã hội,Phụ kiện,Balo laptop,528593,1,0.0,528593,310000,218593,Thẻ ngân hàng,Hoàn thành,5.0
+GH10513,2026-01-09,KH1176,Miền Nam,Đồng Nai,Doanh nghiệp,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,154568,3,0.0,463704,195000,268704,Ví điện tử,Hoàn thành,4.0
+GH10514,2025-09-20,KH1062,Miền Bắc,Hải Phòng,Cá nhân,Website,Văn phòng phẩm,Bút ký,43443,1,,41271,18000,23271,Chuyển khoản,Hoàn thành,1.0
+GH10515,2025-02-07,KH1008,Miền Trung,,Doanh nghiệp,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,72818,2,0.1,131072,64000,67072,Chuyển khoản,Hoàn thành,5.0
+GH10516,2025-11-02,KH1105,Miền Bắc,Thanh Hóa,Doanh nghiệp,Cửa hàng,Điện tử,Tai nghe Bluetooth,479288,1,0.0,479288,260000,219288,Ví điện tử,Hoàn thành,5.0
+GH10517,2025-05-04,KH1135,Miền Nam,Cần Thơ,Doanh nghiệp,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1950542,1,0.2,1560434,1250000,310434,Tiền mặt,Hoàn thành,3.0
+GH10518,2025-08-30,KH1045,Miền Bắc,Bắc Ninh,Cá nhân,Sàn thương mại điện tử,Gia dụng,Ấm siêu tốc,371140,4,0.2,1187648,880000,307648,Ví điện tử,Hoàn thành,4.0
+GH10519,2025-11-21,KH1064,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Website,Văn phòng phẩm,Sổ tay,75092,2,0.2,120147,64000,56147,Thẻ ngân hàng,Đang giao,4.0
+GH10520,25/02/2025,KH1062,Miền Trung,Nghệ An,Doanh nghiệp,Mạng xã hội,Điện tử,Tai nghe Bluetooth,471744,2,0.15,801965,520000,281965,Thẻ ngân hàng,Hoàn thành,5.0
+GH10521,2026-02-02,KH1066,Miền Nam,Bình Dương,Doanh nghiệp, CỬA HÀNG ,Điện tử,Loa mini,665949,2,0.0,1331898,780000,551898,Chuyển khoản,Đã hủy,4.0
+GH10522,04/02/2025,KH1126,Miền Bắc,Thanh Hóa,Doanh nghiệp,Mạng xã hội,Gia dụng,Ấm siêu tốc,367385,4,0.2,1175632,880000,295632,Thẻ ngân hàng,Hoàn thành,5.0
+GH10523,2026-07-15,KH1008,Miền Bắc,Hải Phòng,Cá nhân,Website,Gia dụng,Máy xay sinh tố,888210,2,0.05,1687599,1120000,567599,Ví điện tử,Hoàn thành,5.0
+GH10524,2025-03-26,KH1167,Miền Bắc,Hà Nội,Cá nhân,Mạng xã hội,Văn phòng phẩm,Bút ký,43534,1,0.05,41357,18000,23357,Thẻ ngân hàng,Hoàn thành,4.0
+GH10525,2025-10-16,KH1047,Miền Nam,Cần Thơ,Doanh nghiệp,Mạng xã hội,Gia dụng,Máy xay sinh tố,883035,1,0.15,750580,560000,190580,Chuyển khoản,Đã hủy,1.0
+GH10526,2025-06-22,KH1154,Miền Bắc,Hải Phòng,Doanh nghiệp,Website,Điện tử,Loa mini,634074,5,0.0,3170370,1950000,1220370,Tiền mặt,Hoàn thành,5.0
+GH10527,2026-04-10,KH1058,Miền Bắc,Hà Nội,Khách hàng thân thiết,Website,Điện tử,Tai nghe Bluetooth,451855,3,0.1,1220008,780000,440008,Chuyển khoản,Hoàn thành,
+GH10528,2026-09-07,KH1174,Miền Trung,Nghệ An,Cá nhân,Mạng xã hội,Văn phòng phẩm,Sổ tay,72933,2,0.1,131279,64000,67279,Chuyển khoản,Đã hủy,4.0
+GH10529,2025-09-12,KH1118,Miền Bắc,Hà Nội,Cá nhân,Cửa hàng,Gia dụng,Máy xay sinh tố,919049,-1,0.0,4595245,2800000,1795245,Ví điện tử,Hoàn thành,7.0
+GH10530,2026-09-04,KH1016,Miền Trung,Quảng Nam,Cá nhân,Sàn thương mại điện tử,Gia dụng,Nồi chiên không dầu,1746940,3,0.2,4192656,3750000,442656,Chuyển khoản,Hoàn thành,4.0
+GH10531,2026-02-09,KH1144,Miền Trung,Đà Nẵng,Cá nhân,Website,Điện tử,Tai nghe Bluetooth,427426,1,0.15,363312,260000,103312,Thẻ ngân hàng,Hoàn thành,3.0
+GH10532,2026-03-20,KH1012,Miền Trung,Nghệ An,Cá nhân,Mạng xã hội,Văn phòng phẩm,Sổ tay,71064,1,0.05,67511,32000,35511,Thẻ ngân hàng,Hoàn thành,5.0
+GH10533,2026-03-23,KH1126,Miền Trung,Nghệ An,Cá nhân,Mạng xã hội,Gia dụng,Máy xay sinh tố,926072,2,0.05,1759537,1120000,639537,Tiền mặt,Hoàn thành,3.0
+GH10534,2026-04-24,KH1127,Miền Bắc,Hải Phòng,Cá nhân,Mạng xã hội,Điện tử,Chuột không dây,302198,1,0.05,287088,145000,142088,Thẻ ngân hàng,Hoàn thành,5.0
+GH10535,2025-05-07,KH1073,Miền Nam,Đồng Nai,Cá nhân,Website,Văn phòng phẩm,Sổ tay,72042,2,0.2,115267,64000,51267,Thẻ ngân hàng,Đã hủy,4.0
+GH10536,2026-08-08,KH1064,Miền Nam,Cần Thơ,Doanh nghiệp,Cửa hàng,Phụ kiện,Cáp sạc nhanh,170889,6,0.0,1025334,390000,635334,Thẻ ngân hàng,Hoàn thành,1.0
+GH10537,07/06/2025,KH1169,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Bút ký,44956,2,0.0,89912,36000,53912,Thẻ ngân hàng,Đã hủy,4.0
+GH10538,2026-08-06,KH1165,Miền Bắc,Bắc Ninh,Doanh nghiệp,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,476771,3,0.1,1287282,780000,507282,Tiền mặt,Hoàn thành,5.0
+GH10539,13/02/2026,KH1042,Miền Nam,Đồng Nai,Doanh nghiệp,Mạng xã hội,Điện tử,Loa mini,655868,2,0.0,1311736,780000,531736,Thẻ ngân hàng,Hoàn thành,5.0
+GH10540,2025-11-14,KH1171,Miền Nam,Cần Thơ,Cá nhân,Sàn thương mại điện tử,Điện tử,Loa mini,588809,1,0.1,529928,390000,139928,Chuyển khoản,Hoàn thành,4.0
+GH10541,2026-03-09,KH1112,Miền Trung,Quảng Nam,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Máy xay sinh tố,909651,2,0.1,1637372,1120000,517372,Tiền mặt,Hoàn thành,2.0
+GH10542,2026-05-23,KH1022,Miền Trung,Quảng Nam,Doanh nghiệp,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1900105,2,0.2,3040168,2500000,540168,Ví điện tử,Hoàn thành,2.0
+GH10543,2025-09-12,KH1013,Miền Trung,Nghệ An,Khách hàng thân thiết,Cửa hàng,Điện tử,Chuột không dây,272810,6,0.2,1309488,870000,439488,Tiền mặt,Đang giao,4.0
+GH10544,2025-09-17,KH1129,Miền Nam,Đồng Nai,Cá nhân,Cửa hàng,Văn phòng phẩm,Bút ký,45802,1,0.2,36642,18000,18642,Ví điện tử,Hoàn thành,3.0
+GH10545,2026-08-25,KH1116,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Tai nghe Bluetooth,469621,1,0.2,375697,260000,115697,Thẻ ngân hàng,Hoàn thành,
+GH10546,2025-04-19,KH1102,Miền Bắc,Hải Phòng,Cá nhân,Cửa hàng,Điện tử,Chuột không dây,261152,1,0.15,221979,145000,76979,Chuyển khoản,Hoàn thành,5.0
+GH10547,2026-09-24,KH1177,Miền Trung,Quảng Nam,Khách hàng thân thiết,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,164971,3,0.05,470167,195000,275167,Thẻ ngân hàng,Hoàn thành,2.0
+GH10548,2025-07-12,KH1167,Miền Bắc,Hà Nội,Cá nhân,Website,Gia dụng,Nồi chiên không dầu,1778561,1,0.0,1778561,1250000,528561,Ví điện tử,Hoàn thành,5.0
+GH10549,2026-03-09,KH1040,Miền Nam,Cần Thơ,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,592047,1,0.1,532842,390000,142842,Ví điện tử,Hoàn thành,4.0
+GH10550,2025-01-09,KH1111,Miền Trung,Huế,Doanh nghiệp,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1955717,1,0.1,1760145,1250000,510145,Thẻ ngân hàng,Hoàn thành,2.0
+GH10551,2026-05-15,KH1005,Miền Trung,Quảng Nam,Doanh nghiệp,Sàn thương mại điện tử,Phụ kiện,Balo laptop,488334,2,0.15,830168,620000,210168,Tiền mặt,Đang giao,4.0
+GH10552,2025-12-22,KH1042,Miền Nam,Đồng Nai,Doanh nghiệp,Website,Văn phòng phẩm,Sổ tay,74657,1,0.15,63458,32000,31458,Ví điện tử,Đang giao,4.0
+GH10553,2026-04-25,KH1100,Miền Bắc,Hải Phòng,Doanh nghiệp,,Phụ kiện,Cáp sạc nhanh,155841,4,0.05,592196,260000,332196,Ví điện tử,Đang giao,5.0
+GH10554,2025-05-13,KH1126,Miền Bắc,Hải Phòng,Cá nhân,Mạng xã hội,Gia dụng,Máy xay sinh tố,848567,3,0.0,2545701,1680000,865701,Ví điện tử,Hoàn thành,4.0
+GH10555,2025-06-12,KH1129,Miền Bắc,Hà Nội,Cá nhân,Cửa hàng,Điện tử,Tai nghe Bluetooth,476513,2,0.05,905375,520000,385375,Thẻ ngân hàng,Hoàn thành,4.0
+GH10556,2025-12-15,KH1143,Miền Nam,Cần Thơ,Doanh nghiệp,Website,Điện tử,Loa mini,648151,2,0.1,1166672,780000,386672,Tiền mặt,Hoàn thành,5.0
+GH10557,2025-04-15,KH1027,miền trung,Quảng Nam,Cá nhân,Cửa hàng,Điện tử,Loa mini,580503,5,0.15,2467138,1950000,517138,Chuyển khoản,Hoàn thành,5.0
+GH10558,2025-04-12,KH1036,Miền Bắc,Bắc Ninh,Cá nhân,Website,Văn phòng phẩm,Sổ tay,73842,3,0.1,199373,96000,103373,Ví điện tử,Hoàn thành,5.0
+GH10559,2025-09-30,KH1093,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Website,Văn phòng phẩm,Sổ tay,78242,1,0.15,66506,32000,34506,Chuyển khoản,Hoàn thành,5.0
+GH10560,2026-02-24,KH1175,Miền Nam,Đồng Nai,Doanh nghiệp,Cửa hàng,Gia dụng,Nồi chiên không dầu,1863733,1,0.1,1677360,1250000,427360,Ví điện tử,Hoàn thành,3.0
+GH10561,2025-06-18,KH1010,Miền Bắc,Hà Nội,Khách hàng thân thiết,Website,Điện tử,Loa mini,613173,1,0.1,551856,390000,161856,Tiền mặt,Hoàn trả,5.0
+GH10562,2025-11-08,KH1089,Miền Nam,Bình Dương,Cá nhân,Sàn thương mại điện tử,Văn phòng phẩm,Bút ký,43967,2,0.2,70347,36000,34347,Chuyển khoản,Hoàn thành,5.0
+GH10563,2025-12-20,KH1051,Miền Trung,Huế,Doanh nghiệp,Cửa hàng,Phụ kiện,Balo laptop,534203,2,0.15,908145,620000,288145,Tiền mặt,Hoàn thành,4.0
+GH10564,2026-06-08,KH1163,Miền Trung,Huế,Cá nhân,Cửa hàng,Phụ kiện,Balo laptop,524264,6,0.05,2988305,1860000,1128305,Tiền mặt,Hoàn thành,5.0
+GH10565,2026-06-02,KH1096,Miền Nam,Bình Dương,Doanh nghiệp,Sàn thương mại điện tử,Gia dụng,Nồi chiên không dầu,1737134,4,0.05,6601109,5000000,1601109,Tiền mặt,Hoàn thành,2.0
+GH10566,2025-12-14,,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Website,Văn phòng phẩm,Sổ tay,78139,-1,0.2,62511,32000,30511,Thẻ ngân hàng,Hoàn thành,4.0
+GH10567,2026-06-13,KH1093,Miền Nam,Cần Thơ,Doanh nghiệp,Cửa hàng,Văn phòng phẩm,Bút ký,47404,2,0.0,94808,36000,58808,Chuyển khoản,Hoàn thành,5.0
+GH10568,2026-04-02,KH1104,Miền Trung,Đà Nẵng,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,639544,1,0.0,639544,390000,249544,Thẻ ngân hàng,Hoàn thành,4.0
+GH10569,2026-03-03,KH1033,Miền Nam,Đồng Nai,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Sổ tay,71373,3,0.1,192707,96000,96707,Chuyển khoản,Hoàn thành,5.0
+GH10570,2026-07-27,KH1155,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Cửa hàng,Gia dụng,Nồi chiên không dầu,1984630,2,0.0,3969260,2500000,1469260,Tiền mặt,Hoàn thành,4.0
+GH10571,2026-01-19,KH1037,Miền Trung,Đà Nẵng,Cá nhân,Mạng xã hội,Phụ kiện,Balo laptop,521502,1,0.05,495427,310000,185427,Tiền mặt,Hoàn thành,5.0
+GH10572,2025-05-06,KH1012,Miền Trung,Nghệ An,Doanh nghiệp,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1739249,1,0.2,1391399,1250000,141399,Thẻ ngân hàng,Hoàn thành,4.0
+GH10573,2025-05-22,KH1116,Miền Trung,Quảng Nam,Khách hàng thân thiết,Mạng xã hội,Văn phòng phẩm,Sổ tay,74935,4,0.15,254779,128000,126779,Chuyển khoản,Hoàn thành,5.0
+GH10574,2026-02-09,KH1172,Miền Trung,Đà Nẵng,Doanh nghiệp,Sàn thương mại điện tử,Phụ kiện,Cáp sạc nhanh,149899,3,0.1,404727,195000,209727,Tiền mặt,Hoàn thành,5.0
+GH10575,2025-05-07,KH1159,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Cáp sạc nhanh,150843,2,0.2,241349,130000,111349,Chuyển khoản,Hoàn thành,5.0
+GH10576,2025-01-20,KH1149,Miền Nam,TP. Hồ Chí Minh,Doanh nghiệp,Cửa hàng,Điện tử,Loa mini,595739,3,0.15,1519134,1170000,349134,Thẻ ngân hàng,Hoàn thành,4.0
+GH10577,2026-06-25,KH1030,Miền Bắc,Thanh Hóa,Cá nhân,Website,Điện tử,Tai nghe Bluetooth,435859,1,0.0,435859,260000,175859,Thẻ ngân hàng,Hoàn thành,3.0
+GH10578,2025-03-02,KH1015,Miền Trung,Đà Nẵng,Doanh nghiệp,Mạng xã hội,Điện tử,Chuột không dây,268021,1,0.1,241219,145000,96219,Tiền mặt,Hoàn thành,4.0
+GH10579,2025-09-03,KH1127,Miền Trung,Nghệ An,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Máy xay sinh tố,905934,2,0.0,1811868,1120000,691868,Tiền mặt,Hoàn thành,4.0
+GH10580,2026-10-11,KH1069,Miền Trung,Quảng Nam,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Balo laptop,552720,2,0.1,994896,620000,374896,Chuyển khoản,Hoàn thành,5.0
+GH10581,2026-05-28,KH1096,Miền Nam,Cần Thơ,Khách hàng thân thiết,Website,Gia dụng,Máy xay sinh tố,956916,2,0.1,1722449,1120000,602449,Chuyển khoản,Hoàn thành,4.0
+GH10582,2026-09-28,KH1001,Miền Trung,Quảng Nam,Cá nhân,Mạng xã hội,Điện tử,Tai nghe Bluetooth,484115,1,0.1,435704,260000,175704,Thẻ ngân hàng,Hoàn trả,4.0
+GH10583,2026-06-07,KH1137,Miền Nam,Đồng Nai,Khách hàng thân thiết,Cửa hàng,Gia dụng,Ấm siêu tốc,372142,4,0.0,1488568,880000,608568,Thẻ ngân hàng,Hoàn thành,2.0
+GH10584,2025-08-04,KH1082,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Sàn thương mại điện tử,Điện tử,Chuột không dây,300611,3,0.05,856741,435000,421741,Thẻ ngân hàng,Đã hủy,5.0
+GH10585,2026-04-16,KH1178,Miền Nam,Đồng Nai,Cá nhân,Cửa hàng,Gia dụng,Máy xay sinh tố,829819,1,0.05,788328,560000,228328,Ví điện tử,Hoàn thành,1.0
+GH10586,2026-02-07,KH1167,Miền Bắc,Hải Phòng,Khách hàng thân thiết,Cửa hàng,Văn phòng phẩm,Bút ký,47164,2,0.2,75462,36000,39462,Tiền mặt,Hoàn thành,5.0
+GH10587,2026-01-02,KH1179,Miền Nam,Đồng Nai,Cá nhân,Cửa hàng,Điện tử,Loa mini,654640,2,0.1,1178352,780000,398352,Ví điện tử,Đã hủy,4.0
+GH10588,2026-01-02,KH1161,Miền Bắc,Thanh Hóa,Doanh nghiệp,Website,Điện tử,Tai nghe Bluetooth,473598,1,0.0,473598,260000,213598,Chuyển khoản,Hoàn thành,5.0
+GH10589,2025-08-03,KH1164,Miền Trung,Đà Nẵng,Doanh nghiệp,Cửa hàng,Gia dụng,Máy xay sinh tố,959099,2,0.2,1534558,1120000,414558,Thẻ ngân hàng,Hoàn thành,4.0
+GH10590,2026-09-10,KH1033,Miền Trung,Huế,Khách hàng thân thiết,Cửa hàng,Phụ kiện,Balo laptop,488698,1,0.2,390958,310000,80958,Chuyển khoản,Hoàn thành,4.0
+GH10591,2025-01-24,KH1065,Miền Nam,Cần Thơ,Khách hàng thân thiết,Mạng xã hội,Phụ kiện,Balo laptop,525169,3,0.05,1496732,930000,566732,Tiền mặt,Hoàn thành,5.0
+GH10592,2026-06-15,KH1012,Miền Nam,TP. Hồ Chí Minh,Khách hàng thân thiết,Website,Gia dụng,Ấm siêu tốc,383846,2,0.1,690923,440000,250923,Tiền mặt,Hoàn thành,4.0
+GH10593,2026-08-09,KH1058,Miền Trung,Quảng Nam,Khách hàng thân thiết,Mạng xã hội,Gia dụng,Ấm siêu tốc,420630,1,0.0,420630,220000,200630,Tiền mặt,Hoàn thành,5.0
+GH10594,2025-01-29,KH1152,Miền Bắc,,Khách hàng thân thiết,Sàn thương mại điện tử,Gia dụng,Ấm siêu tốc,409971,1,0.2,327977,220000,107977,Thẻ ngân hàng,Hoàn thành,3.0
+GH10595,2025-08-31,KH1113,Miền Trung,Huế,Cá nhân,Mạng xã hội,Gia dụng,Ấm siêu tốc,397797,4,0.05,1511629,880000,631629,Tiền mặt,Hoàn thành,2.0
+GH10596,2025-05-11,KH1015,Miền Bắc,Hà Nội,Doanh nghiệp,Mạng xã hội,Văn phòng phẩm,Bút ký,47266,1,0.2,37813,18000,19813,Tiền mặt,Hoàn thành,3.0
+GH10597,2026-02-25,KH1169,Miền Bắc,Hà Nội,Khách hàng thân thiết,Cửa hàng,Gia dụng,Máy xay sinh tố,907743,4,0.1,3267875,2240000,1027875,Ví điện tử,Hoàn thành,4.0
+GH10598,2026-04-10,KH1028,Miền Trung,Đà Nẵng,Cá nhân,Cửa hàng,Gia dụng,Ấm siêu tốc,397087,3,0.2,953009,660000,293009,Tiền mặt,Hoàn thành,4.0
+GH10599,2026-09-28,KH1012,Miền Bắc,Hải Phòng,Cá nhân,Website,Phụ kiện,Balo laptop,502565,1,0.1,452308,310000,142308,Thẻ ngân hàng,Hoàn thành,4.0
+GH10600,2025-05-31,KH1075,Miền Nam,Bình Dương,Doanh nghiệp,Cửa hàng,Gia dụng,Máy xay sinh tố,908244,2,0.15,1544015,1120000,424015,Chuyển khoản,Hoàn thành,2.0
+GH10311,2026-05-14,KH1156,Miền Bắc,Bắc Ninh,Cá nhân,Sàn thương mại điện tử,Văn phòng phẩm,Sổ tay,71727,2,0.05,136281,64000,72281,Chuyển khoản,Hoàn thành,5.0
+GH10334,2026-08-24,KH1067,Miền Trung,Quảng Nam,Cá nhân,Mạng xã hội,Gia dụng,Nồi chiên không dầu,1854246,3,0.1,5006464,3750000,1256464,Chuyển khoản,Hoàn thành,5.0
+GH10464,2026-06-01,KH1123,Miền Bắc,Thanh Hóa,Khách hàng thân thiết,Cửa hàng,Điện tử,Tai nghe Bluetooth,454350,1,0.1,408915,260000,148915,Ví điện tử,Hoàn thành,4.0
+GH10027,2026-02-26,KH1064,Miền Bắc,Thanh Hóa,Doanh nghiệp,Website,Điện tử,Tai nghe Bluetooth,476824,1,0.05,452983,260000,192983,Tiền mặt,Hoàn thành,4.0
+GH10491,2025-08-21,KH1021,Miền Bắc,Hà Nội,Doanh nghiệp,Cửa hàng,Gia dụng,Nồi chiên không dầu,1778730,1,0.2,1422984,1250000,172984,Tiền mặt,Hoàn thành,1.0
+GH10295,2025-11-17,KH1065,Miền Nam,Bình Dương,Cá nhân,Mạng xã hội,Điện tử,Tai nghe Bluetooth,419375,4,0.1,1509750,1040000,469750,Chuyển khoản,Hoàn thành,5.0
+GH10331,2025-01-01,KH1103,Miền Nam,Cần Thơ,Doanh nghiệp,Mạng xã hội,Phụ kiện,Cáp sạc nhanh,172723,1,0.0,172723,65000,107723,Ví điện tử,Hoàn thành,4.0
+GH10159,2025-05-17,KH1046,Miền Trung,Quảng Nam,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,608942,3,0.2,1461461,1170000,291461,Chuyển khoản,Đã hủy,5.0
+GH10549,2026-03-09,KH1040,Miền Nam,Cần Thơ,Khách hàng thân thiết,Mạng xã hội,Điện tử,Loa mini,592047,1,0.1,532842,390000,142842,Ví điện tử,Hoàn thành,4.0
+GH10330,2026-03-26,KH1133,Miền Trung,Nghệ An,Doanh nghiệp,Website,Phụ kiện,Cáp sạc nhanh,169213,1,0.0,169213,65000,104213,Tiền mặt,Hoàn thành,5.0

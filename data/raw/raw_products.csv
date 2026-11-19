@@ -1,0 +1,21 @@
+ProductID,ProductName,Category,Subcategory,CostPrice,ListPrice,Supplier
+PRD-101,Laptop Gaming Asus ROG Strix G16,Laptops & PCs,Gaming Laptop,24500000,31990000,Asus VN
+PRD-102,MacBook Air M2 13.6 inch 256GB,Laptops & PCs,Ultrabook,19200000,24490000,Apple VN
+PRD-103,Dell XPS 13 9315 Core i7,Laptops & PCs,Ultrabook,22000000,28900000,Dell VN
+PRD-104,Lenovo ThinkPad E14 Gen 5,Laptops & PCs,Business Laptop,14500000,18990000,Lenovo VN
+PRD-105,PC Workstation Creator Pro i9,Laptops & PCs,Desktop PC,32000000,42500000,Nova Assemble
+PRD-201,Smartphone Galaxy S24 Ultra 256GB,Smart Devices,Smartphone,21500000,27990000,Samsung VN
+PRD-202,iPhone 15 Pro Max 256GB Natural,Smart Devices,Smartphone,24800000,31490000,Apple VN
+PRD-203,Tablet iPad Air 5 64GB Wi-Fi,Smart Devices,Tablet,11200000,14990000,Apple VN
+PRD-204,Smartwatch Apple Watch Series 9,Smart Devices,Wearable,7500000,9990000,Apple VN
+PRD-205,Vòng đeo Garmin Forerunner 265,Smart Devices,Wearable,8200000,10890000,Garmin VN
+PRD-301,Tai nghe Sony WH-1000XM5 ANC,Audio & Accessories,Headphones,5600000,7890000,Sony VN
+PRD-302,Tai nghe AirPods Pro 2 USB-C,Audio & Accessories,TWS Earbuds,4200000,5690000,Apple VN
+PRD-303,Loa Bluetooth Marshall Acton III,Audio & Accessories,Wireless Speaker,4800000,6990000,Marshall VN
+PRD-304,Bàn phím cơ Keychron Q1 Pro Wireless,Audio & Accessories,Peripherals,3100000,4450000,Keychron VN
+PRD-305,Chuột không dây Logitech MX Master 3S,Audio & Accessories,Peripherals,1650000,2390000,Logitech VN
+PRD-401,Màn hình Dell UltraSharp U2723QE 4K,Office Gear,Monitors,9800000,13500000,Dell VN
+PRD-402,Ghế công thái học Ergonomic Sihoo M57,Office Gear,Furniture,2800000,4190000,Sihoo VN
+PRD-403,Bàn nâng hạ thông minh FlexiSpot E7,Office Gear,Furniture,5200000,7690000,FlexiSpot VN
+PRD-404,Robot hút bụi lau nhà Dreame L10s Ultra,Smart Home,Home Appliances,11500000,15990000,Dreame VN
+PRD-405,Máy lọc không khí Xiaomi Pro 4,Smart Home,Home Appliances,3200000,4490000,Xiaomi VN

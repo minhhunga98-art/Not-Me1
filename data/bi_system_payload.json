@@ -1,0 +1,1607 @@
+{
+  "meta": {
+    "generated_at": "2026-11-19T01:05:36.939100",
+    "platform": "AI-Powered Business Intelligence Platform (AI301 Final Project)",
+    "architecture": "6-Layer Business Intelligence",
+    "status": "ALL_SKILLS_ACTIVE"
+  },
+  "execution_log": [
+    {
+      "step": 1,
+      "skill": "Business Understanding",
+      "status": "COMPLETED"
+    },
+    {
+      "step": 2,
+      "skill": "Data Ingestion",
+      "tables": 6,
+      "status": "COMPLETED"
+    },
+    {
+      "step": 3,
+      "skill": "Data Quality",
+      "score": 100.0,
+      "status": "COMPLETED"
+    },
+    {
+      "step": 4,
+      "skill": "ETL Pipeline",
+      "sales_rows": 1200,
+      "status": "COMPLETED"
+    },
+    {
+      "step": 5,
+      "skill": "Data Modeling",
+      "tables": {
+        "fact_sales": 1200,
+        "dim_customer": 250,
+        "dim_product": 20,
+        "dim_date": 365,
+        "fact_marketing": 60
+      },
+      "status": "COMPLETED"
+    },
+    {
+      "step": 6,
+      "skill": "KPI & Metric Tree",
+      "net_revenue": "25,800,767,500 đ",
+      "status": "COMPLETED"
+    },
+    {
+      "step": 7,
+      "skill": "OLAP Analysis",
+      "months": 12,
+      "status": "COMPLETED"
+    },
+    {
+      "step": 8,
+      "skill": "Business Analytics",
+      "rfm_customers": 242,
+      "status": "COMPLETED"
+    },
+    {
+      "step": 9,
+      "skill": "Dashboard Development",
+      "modules": 10,
+      "status": "COMPLETED"
+    },
+    {
+      "step": 10,
+      "skill": "Insight Generation",
+      "insights_count": 4,
+      "status": "COMPLETED"
+    },
+    {
+      "step": 11,
+      "skill": "Report Generation",
+      "report_length": 4092,
+      "status": "COMPLETED"
+    },
+    {
+      "step": 12,
+      "skill": "Decision Support",
+      "actions": 4,
+      "status": "COMPLETED"
+    }
+  ],
+  "business_understanding": {
+    "status": "SUCCESS",
+    "company": "NovaTech Retail & E-Commerce Vietnam",
+    "industry": "Retail & Consumer Electronics Omnichannel",
+    "stakeholders": {
+      "Executive (Ban Giám Đốc)": {
+        "focus": [
+          "Tổng doanh thu",
+          "Biên lợi nhuận gộp/ròng",
+          "Tốc độ tăng trưởng",
+          "Hiệu quả sử dụng vốn"
+        ],
+        "key_questions": [
+          "Doanh nghiệp có đạt chỉ tiêu doanh thu và lợi nhuận năm không?",
+          "Khu vực và kênh bán hàng nào đang dẫn dắt tăng trưởng?",
+          "Những rủi ro vận hành và tài chính lớn nhất hiện nay là gì?"
+        ],
+        "reporting_cadence": "Hàng tháng / Hàng quý"
+      },
+      "Head of Sales (Trưởng phòng Kinh doanh)": {
+        "focus": [
+          "Doanh số theo kênh/khu vực",
+          "Giá trị đơn hàng trung bình (AOV)",
+          "Năng suất nhân viên sales",
+          "Top sản phẩm bán chạy"
+        ],
+        "key_questions": [
+          "Kênh bán nào đang có doanh số cao nhất và kênh nào sụt giảm?",
+          "Tại sao AOV biến động giữa các kênh online và cửa hàng trực tiếp?",
+          "Hiệu suất của các sales reps đang chênh lệch như thế nào?"
+        ],
+        "reporting_cadence": "Hàng tuần / Hàng tháng"
+      },
+      "Marketing Team (Bộ phận Tiếp thị)": {
+        "focus": [
+          "Chi phí thu hút khách hàng (CAC)",
+          "Tỷ lệ chuyển đổi phễu",
+          "Lợi tức chi tiêu quảng cáo (ROAS)",
+          "Chất lượng Lead"
+        ],
+        "key_questions": [
+          "Kênh marketing nào mang lại đơn hàng với chi phí rẻ nhất (Tối ưu CAC)?",
+          "Điểm nghẽn phễu từ Impression -> Clicks -> Leads -> Orders nằm ở đâu?",
+          "ROAS của chiến dịch Facebook Ads vs Google Search vs TikTok khác nhau ra sao?"
+        ],
+        "reporting_cadence": "Hàng ngày / Hàng tuần"
+      },
+      "Operations Team (Bộ phận Vận hành & Kho vận)": {
+        "focus": [
+          "Thời gian xử lý & giao hàng",
+          "Tỷ lệ giao đúng hạn (OTD)",
+          "Tỷ lệ đơn hàng hoàn/hủy",
+          "Chi phí fulfillment"
+        ],
+        "key_questions": [
+          "Kho hàng nào có thời gian xuất kho chậm nhất?",
+          "Đơn vị vận chuyển nào có tỷ lệ chậm trễ hoặc hư hỏng cao nhất?",
+          "Nguyên nhân chính dẫn đến 5% tỷ lệ trả hàng (Returns) là gì?"
+        ],
+        "reporting_cadence": "Hàng tuần / Real-time"
+      },
+      "BI & Data Analyst": {
+        "focus": [
+          "Chất lượng dữ liệu",
+          "Mô hình Star Schema",
+          "Cây chỉ số MECE",
+          "Tự động hóa báo cáo"
+        ],
+        "key_questions": [
+          "Dữ liệu có thiếu sót, trùng lặp hoặc bất thường không?",
+          "Các bảng Fact và Dimension đã được liên kết đúng Grain chưa?",
+          "Các công thức tính toán có đồng nhất giữa các báo cáo không?"
+        ],
+        "reporting_cadence": "Liên tục"
+      }
+    },
+    "smart_objectives": [
+      {
+        "id": "OBJ-1",
+        "area": "Tài chính & Doanh thu",
+        "smart_statement": "Đạt tổng doanh thu thuần 22.5 tỷ VNĐ trong năm 2025 với biên lợi nhuận gộp tối thiểu 25.5%.",
+        "kpis": [
+          "Net Revenue",
+          "Gross Margin %"
+        ]
+      },
+      {
+        "id": "OBJ-2",
+        "area": "Khách hàng & Bán lẻ",
+        "smart_statement": "Nâng giá trị đơn hàng trung bình (AOV) từ 18 triệu lên 21.5 triệu VNĐ và tăng tỷ lệ khách hàng quay lại lên 32%.",
+        "kpis": [
+          "AOV",
+          "Customer Retention Rate",
+          "Repeat Purchase Rate"
+        ]
+      },
+      {
+        "id": "OBJ-3",
+        "area": "Marketing Tối ưu",
+        "smart_statement": "Giảm CAC trung bình xuống dưới 420,000 VNĐ/khách hàng và duy trì ROAS toàn kênh trên 4.2x.",
+        "kpis": [
+          "CAC",
+          "ROAS",
+          "Funnel Conversion Rate"
+        ]
+      },
+      {
+        "id": "OBJ-4",
+        "area": "Vận hành xuất sắc",
+        "smart_statement": "Giảm tỷ lệ trả hàng từ 6% xuống dưới 3.5% và duy trì tỷ lệ giao hàng đúng hạn trên 93%.",
+        "kpis": [
+          "Return Rate %",
+          "On-Time Delivery Rate %",
+          "Average Delivery Time"
+        ]
+      }
+    ],
+    "core_framework": "DATA -> INFORMATION -> INSIGHT -> DECISION -> ACTION"
+  },
+  "data_quality": {
+    "scorecard": {
+      "table_name": "SalesTransactions",
+      "total_rows": 1200,
+      "columns_count": 14,
+      "primary_key": "TransactionID",
+      "completeness_score": 100.0,
+      "uniqueness_score": 100.0,
+      "validity_score": 100.0,
+      "overall_quality_score": 100.0,
+      "missing_stats": {
+        "TransactionID": 0,
+        "OrderID": 0,
+        "OrderDate": 0,
+        "CustomerID": 0,
+        "ProductID": 0,
+        "Channel": 0,
+        "Quantity": 0,
+        "UnitPrice": 0,
+        "UnitCost": 0,
+        "DiscountAmount": 0,
+        "ShippingFee": 0,
+        "OrderStatus": 0,
+        "SalesRepID": 0,
+        "PaymentMethod": 0
+      },
+      "duplicate_pks": 0,
+      "sample_anomalies": []
+    },
+    "integrity": {
+      "consistency_score": 100.0,
+      "orphan_customer_records": 0,
+      "orphan_product_records": 0,
+      "status": "PASS"
+    }
+  },
+  "verify_checks": {
+    "scorecard": {
+      "table_name": "SalesTransactions",
+      "total_rows": 1200,
+      "columns_count": 14,
+      "primary_key": "TransactionID",
+      "completeness_score": 100.0,
+      "uniqueness_score": 100.0,
+      "validity_score": 100.0,
+      "overall_quality_score": 100.0,
+      "missing_stats": {
+        "TransactionID": 0,
+        "OrderID": 0,
+        "OrderDate": 0,
+        "CustomerID": 0,
+        "ProductID": 0,
+        "Channel": 0,
+        "Quantity": 0,
+        "UnitPrice": 0,
+        "UnitCost": 0,
+        "DiscountAmount": 0,
+        "ShippingFee": 0,
+        "OrderStatus": 0,
+        "SalesRepID": 0,
+        "PaymentMethod": 0
+      },
+      "duplicate_pks": 0,
+      "sample_anomalies": []
+    },
+    "integrity": {
+      "consistency_score": 100.0,
+      "orphan_customer_records": 0,
+      "orphan_product_records": 0,
+      "status": "PASS"
+    },
+    "status": "PASS"
+  },
+  "warehouse_model": {
+    "status": "SUCCESS",
+    "schema_definition": {
+      "warehouse_name": "NovaTech Enterprise BI Warehouse",
+      "schema_type": "Star Schema",
+      "fact_tables": {
+        "fact_sales": {
+          "grain": "Mỗi dòng tương ứng với một sản phẩm trong một đơn hàng (Order Item Grain)",
+          "primary_key": "TransactionID",
+          "foreign_keys": {
+            "CustomerID": "dim_customer.CustomerID",
+            "ProductID": "dim_product.ProductID",
+            "OrderDate": "dim_date.DateKey",
+            "Channel": "dim_channel.ChannelName"
+          },
+          "measures": [
+            "Quantity",
+            "UnitPrice",
+            "UnitCost",
+            "GrossSales",
+            "DiscountAmount",
+            "NetSales",
+            "TotalCOGS",
+            "GrossProfit",
+            "ShippingFee"
+          ]
+        },
+        "fact_marketing": {
+          "grain": "Mỗi dòng tương ứng với một chiến dịch tiếp thị theo tháng/kênh (Campaign Month Grain)",
+          "primary_key": "CampaignID",
+          "foreign_keys": {
+            "StartDate": "dim_date.DateKey"
+          },
+          "measures": [
+            "SpendVND",
+            "Impressions",
+            "Clicks",
+            "Leads",
+            "AttributedOrders"
+          ]
+        },
+        "fact_operations": {
+          "grain": "Mỗi dòng tương ứng với một vận đơn giao hàng (Shipment Fulfillment Grain)",
+          "primary_key": "DeliveryID",
+          "foreign_keys": {
+            "OrderID": "fact_sales.OrderID",
+            "DispatchDate": "dim_date.DateKey"
+          },
+          "measures": [
+            "FulfillmentCostVND",
+            "DeliveryStatus"
+          ]
+        }
+      },
+      "dimension_tables": {
+        "dim_customer": {
+          "primary_key": "CustomerID",
+          "attributes": [
+            "CustomerName",
+            "Email",
+            "Phone",
+            "City",
+            "Region",
+            "CustomerSegment",
+            "RegistrationDate"
+          ]
+        },
+        "dim_product": {
+          "primary_key": "ProductID",
+          "attributes": [
+            "ProductName",
+            "Category",
+            "Subcategory",
+            "CostPrice",
+            "ListPrice",
+            "TargetMarginPct",
+            "Supplier"
+          ]
+        },
+        "dim_date": {
+          "primary_key": "DateKey",
+          "attributes": [
+            "FullDate",
+            "Day",
+            "Month",
+            "MonthName",
+            "Quarter",
+            "Year",
+            "DayOfWeek",
+            "IsWeekend"
+          ]
+        },
+        "dim_channel": {
+          "primary_key": "ChannelName",
+          "attributes": [
+            "ChannelType",
+            "Platform",
+            "Region"
+          ]
+        }
+      }
+    },
+    "warehouse_status": {
+      "status": "SUCCESS",
+      "db_path": "C:\\Users\\PC\\Downloads\\BI301- Confirm\\warehouse\\bi_datawarehouse.db",
+      "table_counts": {
+        "fact_sales": 1200,
+        "dim_customer": 250,
+        "dim_product": 20,
+        "dim_date": 365,
+        "fact_marketing": 60
+      }
+    }
+  },
+  "kpis": {
+    "NetRevenue": {
+      "value": 25800767500.0,
+      "formatted": "25,800,767,500 đ",
+      "unit": "VNĐ",
+      "name": "Doanh thu thuần",
+      "description": "Tổng doanh thu bán sau khi trừ giảm giá khuyến mại"
+    },
+    "GrossProfit": {
+      "value": 5536067500.0,
+      "formatted": "5,536,067,500 đ",
+      "unit": "VNĐ",
+      "name": "Lợi nhuận gộp",
+      "description": "Doanh thu thuần trừ đi giá vốn hàng bán (COGS)"
+    },
+    "GrossMarginPct": {
+      "value": 21.46,
+      "formatted": "21.46%",
+      "unit": "%",
+      "name": "Biên lợi nhuận gộp",
+      "description": "Tỷ lệ phần trăm lợi nhuận gộp trên doanh thu thuần"
+    },
+    "TotalOrders": {
+      "value": 1099,
+      "formatted": "1,099",
+      "unit": "Đơn",
+      "name": "Số đơn hoàn tất",
+      "description": "Số lượng đơn hàng giao dịch thành công"
+    },
+    "AOV": {
+      "value": 23476586.0,
+      "formatted": "23,476,586 đ",
+      "unit": "VNĐ/Đơn",
+      "name": "Giá trị đơn hàng TB (AOV)",
+      "description": "Average Order Value = Doanh thu thuần / Số đơn hoàn tất"
+    },
+    "UPT": {
+      "value": 1.51,
+      "formatted": "1.51 SP/Đơn",
+      "unit": "Sản phẩm",
+      "name": "Số sản phẩm / Đơn (UPT)",
+      "description": "Units per Transaction"
+    },
+    "CAC": {
+      "value": 8834985.0,
+      "formatted": "8,834,985 đ",
+      "unit": "VNĐ/Khách",
+      "name": "Chi phí thu hút KH (CAC)",
+      "description": "Customer Acquisition Cost = Tổng Marketing Spend / Khách hàng mới"
+    },
+    "ROAS": {
+      "value": 12.07,
+      "formatted": "12.07x",
+      "unit": "Lần",
+      "name": "Lợi tức quảng cáo (ROAS)",
+      "description": "Return on Ad Spend = Doanh thu thuần / Chi tiêu Marketing"
+    },
+    "ReturnRatePct": {
+      "value": 4.75,
+      "formatted": "4.75%",
+      "unit": "%",
+      "name": "Tỷ lệ hoàn trả (Return Rate)",
+      "description": "Tỷ lệ đơn hàng bị trả do hư hỏng hoặc khách từ chối"
+    },
+    "CancelRatePct": {
+      "value": 3.67,
+      "formatted": "3.67%",
+      "unit": "%",
+      "name": "Tỷ lệ hủy đơn (Cancel Rate)",
+      "description": "Tỷ lệ đơn hàng bị hủy trước khi đóng gói hoặc xuất kho"
+    }
+  },
+  "metric_tree": {
+    "root_goal": "Tối đa hóa Lợi nhuận Ròng (Net Operating Profit)",
+    "level_1_breakdown": {
+      "Revenue (Doanh thu thuần)": {
+        "formula": "Sum of NetSales = Total Orders * Average Order Value (AOV)",
+        "level_2_submetrics": {
+          "Total Orders (Số lượng đơn hàng)": {
+            "formula": "Traffic/Leads * Conversion Rate",
+            "drivers": [
+              "Marketing Reach",
+              "Website UI/UX",
+              "Store Footfall",
+              "Sales Promotion"
+            ]
+          },
+          "AOV (Giá trị đơn hàng TB)": {
+            "formula": "Units per Order (UPT) * Average Unit Price (AUP)",
+            "drivers": [
+              "Cross-selling",
+              "Bundling",
+              "Upselling cao cấp"
+            ]
+          }
+        }
+      },
+      "COGS (Giá vốn hàng bán)": {
+        "formula": "Sum of (Quantity * UnitCost)",
+        "level_2_submetrics": {
+          "Procurement Unit Cost": "Chi phí nhập hàng từ nhà phân phối",
+          "Inventory Shrinkage": "Tỷ lệ hao hụt, hư hỏng sản phẩm"
+        }
+      },
+      "Operating Expenses (Chi phí hoạt động - OPEX)": {
+        "formula": "Marketing Spend + Fulfillment/Logistics Cost + Store Rental & Staff",
+        "level_2_submetrics": {
+          "Marketing CAC": "Spend / Attributed Customers",
+          "Fulfillment Cost per Order": "Chi phí đóng gói và vận chuyển / Đơn",
+          "Return & Defect Cost": "Chi phí xử lý đơn hoàn hủy"
+        }
+      }
+    }
+  },
+  "olap": {
+    "monthly_rollup": [
+      {
+        "TimePeriod": "2025-01",
+        "Orders": 94,
+        "UnitsSold": 143,
+        "NetRevenue": 2000682400.0,
+        "GrossProfit": 422032400.0,
+        "MarginPct": 21.09,
+        "AOV": 21283855.0
+      },
+      {
+        "TimePeriod": "2025-02",
+        "Orders": 97,
+        "UnitsSold": 141,
+        "NetRevenue": 2640270000.0,
+        "GrossProfit": 561870000.0,
+        "MarginPct": 21.28,
+        "AOV": 27219278.0
+      },
+      {
+        "TimePeriod": "2025-03",
+        "Orders": 95,
+        "UnitsSold": 165,
+        "NetRevenue": 2614080700.0,
+        "GrossProfit": 576380700.0,
+        "MarginPct": 22.05,
+        "AOV": 27516639.0
+      },
+      {
+        "TimePeriod": "2025-04",
+        "Orders": 79,
+        "UnitsSold": 111,
+        "NetRevenue": 1967184000.0,
+        "GrossProfit": 423934000.0,
+        "MarginPct": 21.55,
+        "AOV": 24901063.0
+      },
+      {
+        "TimePeriod": "2025-05",
+        "Orders": 97,
+        "UnitsSold": 157,
+        "NetRevenue": 2614332400.0,
+        "GrossProfit": 555082400.0,
+        "MarginPct": 21.23,
+        "AOV": 26951880.0
+      },
+      {
+        "TimePeriod": "2025-06",
+        "Orders": 86,
+        "UnitsSold": 132,
+        "NetRevenue": 1653627900.0,
+        "GrossProfit": 374627900.0,
+        "MarginPct": 22.65,
+        "AOV": 19228231.0
+      },
+      {
+        "TimePeriod": "2025-07",
+        "Orders": 106,
+        "UnitsSold": 162,
+        "NetRevenue": 2275570300.0,
+        "GrossProfit": 474920300.0,
+        "MarginPct": 20.87,
+        "AOV": 21467644.0
+      },
+      {
+        "TimePeriod": "2025-08",
+        "Orders": 83,
+        "UnitsSold": 113,
+        "NetRevenue": 1651748600.0,
+        "GrossProfit": 361798600.0,
+        "MarginPct": 21.9,
+        "AOV": 19900586.0
+      },
+      {
+        "TimePeriod": "2025-09",
+        "Orders": 100,
+        "UnitsSold": 168,
+        "NetRevenue": 2378223700.0,
+        "GrossProfit": 545823700.0,
+        "MarginPct": 22.95,
+        "AOV": 23782237.0
+      },
+      {
+        "TimePeriod": "2025-10",
+        "Orders": 85,
+        "UnitsSold": 108,
+        "NetRevenue": 2051133500.0,
+        "GrossProfit": 396333500.0,
+        "MarginPct": 19.32,
+        "AOV": 24130982.0
+      },
+      {
+        "TimePeriod": "2025-11",
+        "Orders": 81,
+        "UnitsSold": 110,
+        "NetRevenue": 1913242900.0,
+        "GrossProfit": 387192900.0,
+        "MarginPct": 20.24,
+        "AOV": 23620283.0
+      },
+      {
+        "TimePeriod": "2025-12",
+        "Orders": 96,
+        "UnitsSold": 147,
+        "NetRevenue": 2040671100.0,
+        "GrossProfit": 456071100.0,
+        "MarginPct": 22.35,
+        "AOV": 21256991.0
+      }
+    ],
+    "quarterly_rollup": [
+      {
+        "TimePeriod": "Q1-2025",
+        "Orders": 286,
+        "UnitsSold": 449,
+        "NetRevenue": 7255033100.0,
+        "GrossProfit": 1560283100.0,
+        "MarginPct": 21.51,
+        "AOV": 25367249.0
+      },
+      {
+        "TimePeriod": "Q2-2025",
+        "Orders": 262,
+        "UnitsSold": 400,
+        "NetRevenue": 6235144300.0,
+        "GrossProfit": 1353644300.0,
+        "MarginPct": 21.71,
+        "AOV": 23798261.0
+      },
+      {
+        "TimePeriod": "Q3-2025",
+        "Orders": 289,
+        "UnitsSold": 443,
+        "NetRevenue": 6305542600.0,
+        "GrossProfit": 1382542600.0,
+        "MarginPct": 21.93,
+        "AOV": 21818487.0
+      },
+      {
+        "TimePeriod": "Q4-2025",
+        "Orders": 262,
+        "UnitsSold": 365,
+        "NetRevenue": 6005047500.0,
+        "GrossProfit": 1239597500.0,
+        "MarginPct": 20.64,
+        "AOV": 22920029.0
+      }
+    ],
+    "product_drilldown": [
+      {
+        "Category": "Laptops & PCs",
+        "Subcategory": "Desktop PC",
+        "ProductName": "PC Workstation Creator Pro i9",
+        "TotalUnits": 92,
+        "TotalRevenue": 3763800000.0,
+        "TotalProfit": 819800000.0,
+        "MarginPct": 21.78
+      },
+      {
+        "Category": "Smart Devices",
+        "Subcategory": "Smartphone",
+        "ProductName": "iPhone 15 Pro Max 256GB Natural",
+        "TotalUnits": 95,
+        "TotalRevenue": 2872832700.0,
+        "TotalProfit": 516832700.0,
+        "MarginPct": 17.99
+      },
+      {
+        "Category": "Laptops & PCs",
+        "Subcategory": "Ultrabook",
+        "ProductName": "MacBook Air M2 13.6 inch 256GB",
+        "TotalUnits": 105,
+        "TotalRevenue": 2438714200.0,
+        "TotalProfit": 422714200.0,
+        "MarginPct": 17.33
+      },
+      {
+        "Category": "Laptops & PCs",
+        "Subcategory": "Ultrabook",
+        "ProductName": "Dell XPS 13 9315 Core i7",
+        "TotalUnits": 87,
+        "TotalRevenue": 2414017000.0,
+        "TotalProfit": 500017000.0,
+        "MarginPct": 20.71
+      },
+      {
+        "Category": "Laptops & PCs",
+        "Subcategory": "Gaming Laptop",
+        "ProductName": "Laptop Gaming Asus ROG Strix G16",
+        "TotalUnits": 73,
+        "TotalRevenue": 2258174100.0,
+        "TotalProfit": 469674100.0,
+        "MarginPct": 20.8
+      },
+      {
+        "Category": "Laptops & PCs",
+        "Subcategory": "Business Laptop",
+        "ProductName": "Lenovo ThinkPad E14 Gen 5",
+        "TotalUnits": 112,
+        "TotalRevenue": 2047881600.0,
+        "TotalProfit": 423881600.0,
+        "MarginPct": 20.7
+      },
+      {
+        "Category": "Smart Devices",
+        "Subcategory": "Smartphone",
+        "ProductName": "Smartphone Galaxy S24 Ultra 256GB",
+        "TotalUnits": 65,
+        "TotalRevenue": 1717466400.0,
+        "TotalProfit": 319966400.0,
+        "MarginPct": 18.63
+      },
+      {
+        "Category": "Smart Home",
+        "Subcategory": "Home Appliances",
+        "ProductName": "Robot hút bụi lau nhà Dreame L10s Ultra",
+        "TotalUnits": 79,
+        "TotalRevenue": 1226592900.0,
+        "TotalProfit": 318092900.0,
+        "MarginPct": 25.93
+      },
+      {
+        "Category": "Office Gear",
+        "Subcategory": "Monitors",
+        "ProductName": "Màn hình Dell UltraSharp U2723QE 4K",
+        "TotalUnits": 84,
+        "TotalRevenue": 1082430000.0,
+        "TotalProfit": 259230000.0,
+        "MarginPct": 23.95
+      },
+      {
+        "Category": "Smart Devices",
+        "Subcategory": "Tablet",
+        "ProductName": "Tablet iPad Air 5 64GB Wi-Fi",
+        "TotalUnits": 74,
+        "TotalRevenue": 1062191400.0,
+        "TotalProfit": 233391400.0,
+        "MarginPct": 21.97
+      },
+      {
+        "Category": "Smart Devices",
+        "Subcategory": "Wearable",
+        "ProductName": "Vòng đeo Garmin Forerunner 265",
+        "TotalUnits": 77,
+        "TotalRevenue": 809453700.0,
+        "TotalProfit": 178053700.0,
+        "MarginPct": 22.0
+      },
+      {
+        "Category": "Audio & Accessories",
+        "Subcategory": "Headphones",
+        "ProductName": "Tai nghe Sony WH-1000XM5 ANC",
+        "TotalUnits": 98,
+        "TotalRevenue": 735584700.0,
+        "TotalProfit": 186784700.0,
+        "MarginPct": 25.39
+      },
+      {
+        "Category": "Office Gear",
+        "Subcategory": "Furniture",
+        "ProductName": "Bàn nâng hạ thông minh FlexiSpot E7",
+        "TotalUnits": 95,
+        "TotalRevenue": 698252000.0,
+        "TotalProfit": 204252000.0,
+        "MarginPct": 29.25
+      },
+      {
+        "Category": "Smart Devices",
+        "Subcategory": "Wearable",
+        "ProductName": "Smartwatch Apple Watch Series 9",
+        "TotalUnits": 65,
+        "TotalRevenue": 622077300.0,
+        "TotalProfit": 134577300.0,
+        "MarginPct": 21.63
+      },
+      {
+        "Category": "Audio & Accessories",
+        "Subcategory": "Wireless Speaker",
+        "ProductName": "Loa Bluetooth Marshall Acton III",
+        "TotalUnits": 83,
+        "TotalRevenue": 553468200.0,
+        "TotalProfit": 155068200.0,
+        "MarginPct": 28.02
+      }
+    ],
+    "pivot_matrix": {
+      "channels": [
+        "Lazada Flagship",
+        "Online Web",
+        "Retail Store DN",
+        "Retail Store HCM",
+        "Retail Store HN",
+        "Shopee Mall"
+      ],
+      "categories": [
+        "Audio & Accessories",
+        "Laptops & PCs",
+        "Office Gear",
+        "Smart Devices",
+        "Smart Home"
+      ],
+      "pivot_data": [
+        {
+          "Channel": "Lazada Flagship",
+          "Audio & Accessories": 238880100.0,
+          "Laptops & PCs": 1395869200.0,
+          "Office Gear": 318006000.0,
+          "Smart Devices": 1477234500.0,
+          "Smart Home": 314618100.0,
+          "TotalRevenue": 3744607900.0
+        },
+        {
+          "Channel": "Online Web",
+          "Audio & Accessories": 654094600.0,
+          "Laptops & PCs": 4178696600.0,
+          "Office Gear": 688565200.0,
+          "Smart Devices": 1945522600.0,
+          "Smart Home": 514088400.0,
+          "TotalRevenue": 7980967400.0
+        },
+        {
+          "Channel": "Retail Store DN",
+          "Audio & Accessories": 88619000.0,
+          "Laptops & PCs": 224699600.0,
+          "Office Gear": 55226100.0,
+          "Smart Devices": 63671000.0,
+          "Smart Home": 176036500.0,
+          "TotalRevenue": 608252200.0
+        },
+        {
+          "Channel": "Retail Store HCM",
+          "Audio & Accessories": 299221500.0,
+          "Laptops & PCs": 1323237300.0,
+          "Office Gear": 119927900.0,
+          "Smart Devices": 581946300.0,
+          "Smart Home": 154849900.0,
+          "TotalRevenue": 2479182900.0
+        },
+        {
+          "Channel": "Retail Store HN",
+          "Audio & Accessories": 230836300.0,
+          "Laptops & PCs": 1416282200.0,
+          "Office Gear": 281210900.0,
+          "Smart Devices": 1224648000.0,
+          "Smart Home": 70195500.0,
+          "TotalRevenue": 3223172900.0
+        },
+        {
+          "Channel": "Shopee Mall",
+          "Audio & Accessories": 632089000.0,
+          "Laptops & PCs": 4383802000.0,
+          "Office Gear": 605640800.0,
+          "Smart Devices": 1790999100.0,
+          "Smart Home": 352053300.0,
+          "TotalRevenue": 7764584200.0
+        }
+      ]
+    }
+  },
+  "business_analytics": {
+    "sales": {
+      "channel_performance": [
+        {
+          "Channel": "Online Web",
+          "Orders": 369,
+          "Revenue": 7980967400.0,
+          "Profit": 1721917400.0,
+          "MarginPct": 21.58,
+          "AOV": 21628638.0
+        },
+        {
+          "Channel": "Shopee Mall",
+          "Orders": 287,
+          "Revenue": 7764584200.0,
+          "Profit": 1655784200.0,
+          "MarginPct": 21.32,
+          "AOV": 27054300.0
+        },
+        {
+          "Channel": "Lazada Flagship",
+          "Orders": 171,
+          "Revenue": 3744607900.0,
+          "Profit": 798207900.0,
+          "MarginPct": 21.32,
+          "AOV": 21898292.0
+        },
+        {
+          "Channel": "Retail Store HN",
+          "Orders": 130,
+          "Revenue": 3223172900.0,
+          "Profit": 682622900.0,
+          "MarginPct": 21.18,
+          "AOV": 24793638.0
+        },
+        {
+          "Channel": "Retail Store HCM",
+          "Orders": 106,
+          "Revenue": 2479182900.0,
+          "Profit": 537882900.0,
+          "MarginPct": 21.7,
+          "AOV": 23388518.0
+        },
+        {
+          "Channel": "Retail Store DN",
+          "Orders": 36,
+          "Revenue": 608252200.0,
+          "Profit": 139652200.0,
+          "MarginPct": 22.96,
+          "AOV": 16895894.0
+        }
+      ],
+      "sales_rep_ranking": [
+        {
+          "SalesRepID": "REP-03",
+          "DealsClosed": 221,
+          "Revenue": 5639030000.0,
+          "Profit": 1244980000.0,
+          "AOV": 25515973.0
+        },
+        {
+          "SalesRepID": "REP-04",
+          "DealsClosed": 221,
+          "Revenue": 5513761000.0,
+          "Profit": 1166261000.0,
+          "AOV": 24949145.0
+        },
+        {
+          "SalesRepID": "REP-05",
+          "DealsClosed": 226,
+          "Revenue": 5071223100.0,
+          "Profit": 1066773100.0,
+          "AOV": 22439040.0
+        },
+        {
+          "SalesRepID": "REP-02",
+          "DealsClosed": 210,
+          "Revenue": 5042932200.0,
+          "Profit": 1075432200.0,
+          "AOV": 24013963.0
+        },
+        {
+          "SalesRepID": "REP-01",
+          "DealsClosed": 221,
+          "Revenue": 4533821200.0,
+          "Profit": 982621200.0,
+          "AOV": 20515028.0
+        }
+      ],
+      "category_performance": [
+        {
+          "Category": "Laptops & PCs",
+          "Units": 469,
+          "Revenue": 12922586900.0,
+          "Profit": 2636086900.0,
+          "MarginPct": 20.4
+        },
+        {
+          "Category": "Smart Devices",
+          "Units": 376,
+          "Revenue": 7084021500.0,
+          "Profit": 1382821500.0,
+          "MarginPct": 19.52
+        },
+        {
+          "Category": "Audio & Accessories",
+          "Units": 400,
+          "Revenue": 2143740500.0,
+          "Profit": 556440500.0,
+          "MarginPct": 25.96
+        },
+        {
+          "Category": "Office Gear",
+          "Units": 251,
+          "Revenue": 2068576900.0,
+          "Profit": 549776900.0,
+          "MarginPct": 26.58
+        },
+        {
+          "Category": "Smart Home",
+          "Units": 161,
+          "Revenue": 1581841700.0,
+          "Profit": 410941700.0,
+          "MarginPct": 25.98
+        }
+      ]
+    },
+    "customer_rfm": {
+      "total_customers_analyzed": 242,
+      "estimated_average_clv": 191906535.0,
+      "rfm_segment_summary": {
+        "Champions": {
+          "count": 68,
+          "total_revenue": 10696803500.0
+        },
+        "Loyal Customers": {
+          "count": 89,
+          "total_revenue": 10201288800.0
+        },
+        "Potential Loyalists": {
+          "count": 32,
+          "total_revenue": 1865031600.0
+        },
+        "At Risk": {
+          "count": 4,
+          "total_revenue": 542995500.0
+        },
+        "Hibernating": {
+          "count": 19,
+          "total_revenue": 1068615700.0
+        },
+        "New Customers": {
+          "count": 30,
+          "total_revenue": 1426032400.0
+        }
+      },
+      "top_customers": [
+        {
+          "CustomerID": "CUST-0246",
+          "CustomerName": "Hồ Thu Cường",
+          "City": "Cần Thơ",
+          "Segment": "Champions",
+          "RecencyDays": 20,
+          "Frequency": 9,
+          "Monetary": 704783000.0,
+          "R_Score": 5,
+          "F_Score": 5,
+          "M_Score": 5,
+          "RFM_Composite": "555"
+        },
+        {
+          "CustomerID": "CUST-0203",
+          "CustomerName": "Hoàng Quang Dũng",
+          "City": "Bắc Ninh",
+          "Segment": "Champions",
+          "RecencyDays": 8,
+          "Frequency": 7,
+          "Monetary": 498689000.0,
+          "R_Score": 5,
+          "F_Score": 4,
+          "M_Score": 5,
+          "RFM_Composite": "545"
+        },
+        {
+          "CustomerID": "CUST-0111",
+          "CustomerName": "Phạm Quang Linh",
+          "City": "Quảng Ninh",
+          "Segment": "Loyal Customers",
+          "RecencyDays": 27,
+          "Frequency": 5,
+          "Monetary": 364675500.0,
+          "R_Score": 5,
+          "F_Score": 3,
+          "M_Score": 5,
+          "RFM_Composite": "535"
+        },
+        {
+          "CustomerID": "CUST-0022",
+          "CustomerName": "Võ Minh Trang",
+          "City": "Đồng Nai",
+          "Segment": "Champions",
+          "RecencyDays": 62,
+          "Frequency": 10,
+          "Monetary": 335312100.0,
+          "R_Score": 4,
+          "F_Score": 5,
+          "M_Score": 5,
+          "RFM_Composite": "455"
+        },
+        {
+          "CustomerID": "CUST-0147",
+          "CustomerName": "Trần Bảo Hà",
+          "City": "Quảng Ninh",
+          "Segment": "Champions",
+          "RecencyDays": 10,
+          "Frequency": 6,
+          "Monetary": 329621500.0,
+          "R_Score": 5,
+          "F_Score": 4,
+          "M_Score": 5,
+          "RFM_Composite": "545"
+        },
+        {
+          "CustomerID": "CUST-0021",
+          "CustomerName": "Phan Tuấn Cường",
+          "City": "Nha Trang",
+          "Segment": "Loyal Customers",
+          "RecencyDays": 105,
+          "Frequency": 8,
+          "Monetary": 317071400.0,
+          "R_Score": 3,
+          "F_Score": 5,
+          "M_Score": 5,
+          "RFM_Composite": "355"
+        },
+        {
+          "CustomerID": "CUST-0085",
+          "CustomerName": "Trần Hoàng Hà",
+          "City": "Bắc Ninh",
+          "Segment": "At Risk",
+          "RecencyDays": 207,
+          "Frequency": 5,
+          "Monetary": 315825800.0,
+          "R_Score": 2,
+          "F_Score": 3,
+          "M_Score": 5,
+          "RFM_Composite": "235"
+        },
+        {
+          "CustomerID": "CUST-0237",
+          "CustomerName": "Lê Thu Long",
+          "City": "Vũng Tàu",
+          "Segment": "Loyal Customers",
+          "RecencyDays": 32,
+          "Frequency": 4,
+          "Monetary": 299796800.0,
+          "R_Score": 4,
+          "F_Score": 3,
+          "M_Score": 5,
+          "RFM_Composite": "435"
+        },
+        {
+          "CustomerID": "CUST-0090",
+          "CustomerName": "Nguyễn Bảo Hà",
+          "City": "Quy Nhơn",
+          "Segment": "Hibernating",
+          "RecencyDays": 230,
+          "Frequency": 2,
+          "Monetary": 285917600.0,
+          "R_Score": 2,
+          "F_Score": 2,
+          "M_Score": 5,
+          "RFM_Composite": "225"
+        },
+        {
+          "CustomerID": "CUST-0196",
+          "CustomerName": "Hồ Thị Sơn",
+          "City": "Quảng Ninh",
+          "Segment": "Champions",
+          "RecencyDays": 68,
+          "Frequency": 6,
+          "Monetary": 262616300.0,
+          "R_Score": 4,
+          "F_Score": 4,
+          "M_Score": 5,
+          "RFM_Composite": "445"
+        }
+      ]
+    },
+    "marketing": {
+      "overall_funnel": {
+        "TotalSpend": 2138066420.0,
+        "TotalImpressions": 79970523,
+        "TotalClicks": 1707067,
+        "TotalLeads": 91760,
+        "TotalAttributedOrders": 10892,
+        "OverallCTR": 2.13,
+        "OverallLeadConv": 5.38,
+        "OverallOrderConv": 11.87,
+        "BlendedCAC": 196297.0
+      },
+      "channel_breakdown": [
+        {
+          "Channel": "Google Search",
+          "Spend": 679588123.0,
+          "Impressions": 14827373,
+          "Clicks": 593090,
+          "Leads": 34591,
+          "Orders": 3979,
+          "CTR_Pct": 4.0,
+          "ClickToLead_Pct": 5.83,
+          "LeadToOrder_Pct": 11.5,
+          "OverallConversion_Pct": 0.67,
+          "CPC": 1146.0,
+          "CAC": 170794.0
+        },
+        {
+          "Channel": "Facebook Ads",
+          "Spend": 602772117.0,
+          "Impressions": 24110880,
+          "Clicks": 428632,
+          "Leads": 21426,
+          "Orders": 2616,
+          "CTR_Pct": 1.78,
+          "ClickToLead_Pct": 5.0,
+          "LeadToOrder_Pct": 12.21,
+          "OverallConversion_Pct": 0.61,
+          "CPC": 1406.0,
+          "CAC": 230417.0
+        },
+        {
+          "Channel": "TikTok Ads",
+          "Spend": 482888726.0,
+          "Impressions": 30498230,
+          "Clicks": 355808,
+          "Leads": 13973,
+          "Orders": 1619,
+          "CTR_Pct": 1.17,
+          "ClickToLead_Pct": 3.93,
+          "LeadToOrder_Pct": 11.59,
+          "OverallConversion_Pct": 0.46,
+          "CPC": 1357.0,
+          "CAC": 298264.0
+        },
+        {
+          "Channel": "Affiliate Marketing",
+          "Spend": 280717894.0,
+          "Impressions": 7655936,
+          "Clicks": 191394,
+          "Leads": 10840,
+          "Orders": 1324,
+          "CTR_Pct": 2.5,
+          "ClickToLead_Pct": 5.66,
+          "LeadToOrder_Pct": 12.21,
+          "OverallConversion_Pct": 0.69,
+          "CPC": 1467.0,
+          "CAC": 212023.0
+        },
+        {
+          "Channel": "Email Marketing",
+          "Spend": 92099560.0,
+          "Impressions": 2878104,
+          "Clicks": 138143,
+          "Leads": 10930,
+          "Orders": 1354,
+          "CTR_Pct": 4.8,
+          "ClickToLead_Pct": 7.91,
+          "LeadToOrder_Pct": 12.39,
+          "OverallConversion_Pct": 0.98,
+          "CPC": 667.0,
+          "CAC": 68020.0
+        }
+      ]
+    },
+    "operations": {
+      "total_shipments": 1000,
+      "on_time_delivery_rate_pct": 76.3,
+      "damaged_return_rate_pct": 4.6,
+      "status_distribution": {
+        "Delivered Delayed": 156,
+        "Delivered On-Time": 763,
+        "Damaged/Customer Return": 46,
+        "Cancelled Before Dispatch": 35
+      },
+      "carrier_performance": [
+        {
+          "Carrier": "GHTK Fast",
+          "TotalShipments": 340,
+          "OnTimeRatePct": 77.94,
+          "DelayRatePct": 14.71,
+          "DamageReturnRatePct": 3.82
+        },
+        {
+          "Carrier": "Viettel Post",
+          "TotalShipments": 331,
+          "OnTimeRatePct": 75.53,
+          "DelayRatePct": 17.52,
+          "DamageReturnRatePct": 3.93
+        },
+        {
+          "Carrier": "GHN Express",
+          "TotalShipments": 329,
+          "OnTimeRatePct": 75.38,
+          "DelayRatePct": 14.59,
+          "DamageReturnRatePct": 6.08
+        }
+      ],
+      "warehouse_performance": {
+        "Kho Đà Nẵng (Hòa Cầm)": {
+          "total": 319,
+          "damaged_returns": 18
+        },
+        "Kho Bình Dương (Sóng Thần)": {
+          "total": 336,
+          "damaged_returns": 15
+        },
+        "Kho Hà Nội (Long Biên)": {
+          "total": 345,
+          "damaged_returns": 13
+        }
+      }
+    },
+    "financial_variance": {
+      "total_actual_revenue": 25800767500.0,
+      "total_target_revenue": 22050000000.0,
+      "total_revenue_variance_vnd": 3750767500.0,
+      "total_revenue_variance_pct": 17.01,
+      "variance_status": "AHEAD OF PLAN",
+      "monthly_variance_breakdown": [
+        {
+          "Month": "2025-01",
+          "ActualRevenue": 2000682400.0,
+          "TargetRevenue": 1400000000.0,
+          "RevenueVarianceAmount": 600682400.0,
+          "RevenueVariancePct": 42.91,
+          "ActualGrossMarginPct": 21.09,
+          "TargetGrossMarginPct": 24.0,
+          "ActualAOV": 21283855.0,
+          "TargetAOV": 18000000.0,
+          "Status": "SURPASS"
+        },
+        {
+          "Month": "2025-02",
+          "ActualRevenue": 2640270000.0,
+          "TargetRevenue": 1300000000.0,
+          "RevenueVarianceAmount": 1340270000.0,
+          "RevenueVariancePct": 103.1,
+          "ActualGrossMarginPct": 21.28,
+          "TargetGrossMarginPct": 24.0,
+          "ActualAOV": 27219278.0,
+          "TargetAOV": 17500000.0,
+          "Status": "SURPASS"
+        },
+        {
+          "Month": "2025-03",
+          "ActualRevenue": 2614080700.0,
+          "TargetRevenue": 1500000000.0,
+          "RevenueVarianceAmount": 1114080700.0,
+          "RevenueVariancePct": 74.27,
+          "ActualGrossMarginPct": 22.05,
+          "TargetGrossMarginPct": 25.0,
+          "ActualAOV": 27516639.0,
+          "TargetAOV": 18500000.0,
+          "Status": "SURPASS"
+        },
+        {
+          "Month": "2025-04",
+          "ActualRevenue": 1967184000.0,
+          "TargetRevenue": 1600000000.0,
+          "RevenueVarianceAmount": 367184000.0,
+          "RevenueVariancePct": 22.95,
+          "ActualGrossMarginPct": 21.55,
+          "TargetGrossMarginPct": 25.0,
+          "ActualAOV": 24901063.0,
+          "TargetAOV": 19000000.0,
+          "Status": "SURPASS"
+        },
+        {
+          "Month": "2025-05",
+          "ActualRevenue": 2614332400.0,
+          "TargetRevenue": 1650000000.0,
+          "RevenueVarianceAmount": 964332400.0,
+          "RevenueVariancePct": 58.44,
+          "ActualGrossMarginPct": 21.23,
+          "TargetGrossMarginPct": 25.0,
+          "ActualAOV": 26951880.0,
+          "TargetAOV": 19500000.0,
+          "Status": "SURPASS"
+        },
+        {
+          "Month": "2025-06",
+          "ActualRevenue": 1653627900.0,
+          "TargetRevenue": 1750000000.0,
+          "RevenueVarianceAmount": -96372100.0,
+          "RevenueVariancePct": -5.51,
+          "ActualGrossMarginPct": 22.65,
+          "TargetGrossMarginPct": 26.0,
+          "ActualAOV": 19228231.0,
+          "TargetAOV": 20000000.0,
+          "Status": "LAGGING"
+        },
+        {
+          "Month": "2025-07",
+          "ActualRevenue": 2275570300.0,
+          "TargetRevenue": 1700000000.0,
+          "RevenueVarianceAmount": 575570300.0,
+          "RevenueVariancePct": 33.86,
+          "ActualGrossMarginPct": 20.87,
+          "TargetGrossMarginPct": 25.0,
+          "ActualAOV": 21467644.0,
+          "TargetAOV": 19000000.0,
+          "Status": "SURPASS"
+        },
+        {
+          "Month": "2025-08",
+          "ActualRevenue": 1651748600.0,
+          "TargetRevenue": 1800000000.0,
+          "RevenueVarianceAmount": -148251400.0,
+          "RevenueVariancePct": -8.24,
+          "ActualGrossMarginPct": 21.9,
+          "TargetGrossMarginPct": 25.0,
+          "ActualAOV": 19900586.0,
+          "TargetAOV": 20500000.0,
+          "Status": "LAGGING"
+        },
+        {
+          "Month": "2025-09",
+          "ActualRevenue": 2378223700.0,
+          "TargetRevenue": 1950000000.0,
+          "RevenueVarianceAmount": 428223700.0,
+          "RevenueVariancePct": 21.96,
+          "ActualGrossMarginPct": 22.95,
+          "TargetGrossMarginPct": 26.0,
+          "ActualAOV": 23782237.0,
+          "TargetAOV": 21000000.0,
+          "Status": "SURPASS"
+        },
+        {
+          "Month": "2025-10",
+          "ActualRevenue": 2051133500.0,
+          "TargetRevenue": 2100000000.0,
+          "RevenueVarianceAmount": -48866500.0,
+          "RevenueVariancePct": -2.33,
+          "ActualGrossMarginPct": 19.32,
+          "TargetGrossMarginPct": 26.0,
+          "ActualAOV": 24130982.0,
+          "TargetAOV": 21500000.0,
+          "Status": "LAGGING"
+        },
+        {
+          "Month": "2025-11",
+          "ActualRevenue": 1913242900.0,
+          "TargetRevenue": 2500000000.0,
+          "RevenueVarianceAmount": -586757100.0,
+          "RevenueVariancePct": -23.47,
+          "ActualGrossMarginPct": 20.24,
+          "TargetGrossMarginPct": 27.0,
+          "ActualAOV": 23620283.0,
+          "TargetAOV": 22500000.0,
+          "Status": "LAGGING"
+        },
+        {
+          "Month": "2025-12",
+          "ActualRevenue": 2040671100.0,
+          "TargetRevenue": 2800000000.0,
+          "RevenueVarianceAmount": -759328900.0,
+          "RevenueVariancePct": -27.12,
+          "ActualGrossMarginPct": 22.35,
+          "TargetGrossMarginPct": 28.000000000000004,
+          "ActualAOV": 21256991.0,
+          "TargetAOV": 23000000.0,
+          "Status": "LAGGING"
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "id": "INSIGHT-01",
+      "category": "Sales & Channel Strategy",
+      "title": "Kênh 'Online Web' dẫn đầu quy mô doanh thu (30.93% thị phần) và giữ vững biên lợi nhuận 21.58%",
+      "urgency": "HIGH",
+      "chain": {
+        "Observation": "Kênh 'Online Web' dẫn đầu hệ sinh thái phân phối với doanh thu thuần đạt 7,980,967,400 đ, đóng góp 30.93% tổng doanh thu toàn doanh nghiệp (25,800,767,500 đ).",
+        "Finding": "Biên lợi nhuận gộp của kênh 'Online Web' đạt 21.58%, là nguồn tạo dòng tiền và bảo toàn lợi nhuận cốt lõi.",
+        "Hypothesis": "Khách hàng tập trung tiêu dùng mạnh mẽ tại kênh 'Online Web' nhờ sự thuận tiện trong tiếp cận và chính sách phân phối hiệu quả.",
+        "Conclusion": "Kênh 'Online Web' đóng vai trò động lực tăng trưởng dòng tiền chính, cần tập trung bảo vệ độ phủ và tối ưu chi phí phục vụ.",
+        "Action": "Ưu tiên phân bổ nguồn lực vận hành vào kênh 'Online Web', đồng thời thiết lập trần chiết khấu để bảo vệ biên lợi nhuận gộp trên 20.0%."
+      }
+    },
+    {
+      "id": "INSIGHT-02",
+      "category": "Product & Margin Health",
+      "title": "Sản phẩm/Ngành hàng 'Laptops & PCs' là động lực tạo lợi nhuận then chốt với biên sinh lời 20.4%",
+      "urgency": "CRITICAL",
+      "chain": {
+        "Observation": "Danh mục/Sản phẩm 'Laptops & PCs' đóng góp lớn nhất vào cơ cấu doanh số và lợi nhuận với biên sinh lời 20.4%.",
+        "Finding": "'Laptops & PCs' đạt doanh thu 12,922,586,900 đ, tạo tỷ suất sinh lời vượt trội so với mức bình quân toàn hệ thống (21.46%).",
+        "Hypothesis": "'Laptops & PCs' đáp ứng đúng nhu cầu tiêu dùng cốt lõi của thị trường mục tiêu và có vị thế định giá vững chắc.",
+        "Conclusion": "'Laptops & PCs' là cỗ máy tạo lợi nhuận số 1 (Profit Engine), quyết định trực tiếp đến sức khỏe tài chính toàn công ty.",
+        "Action": "Đảm bảo an toàn chuỗi cung ứng cho 'Laptops & PCs', đóng gói các gói combo phụ kiện đi kèm để tiếp tục nâng cao giá trị đơn trung bình (23,476,586 đ)."
+      }
+    },
+    {
+      "id": "INSIGHT-03",
+      "category": "Commercial Efficiency",
+      "title": "Quy mô đơn hàng đạt 1,099 với AOV 23,476,586 đ, bảo toàn biên lợi nhuận gộp 21.46%",
+      "urgency": "MEDIUM",
+      "chain": {
+        "Observation": "Doanh nghiệp đã hoàn tất thành công 1,099 với giá trị đơn hàng trung bình (AOV) đạt 23,476,586 đ.",
+        "Finding": "Biên lợi nhuận gộp toàn hệ thống duy trì ở mức 21.46%, phản ánh chính sách kiểm soát chi phí giá vốn và trợ giá ổn định.",
+        "Hypothesis": "Quy mô giỏ hàng ổn định nhưng cần khai thác thêm tiềm năng bán chéo để tối ưu hóa doanh thu trên mỗi lượt giao dịch.",
+        "Conclusion": "Hiệu quả thương mại tích cực, doanh nghiệp sẵn sàng mở rộng quy mô khi tối ưu hóa được chính sách khuyến mại.",
+        "Action": "Ứng dụng chính sách tích điểm và ưu đãi theo bậc giá trị đơn nhằm kích thích AOV vượt ngưỡng 23,476,586 đ trong kỳ kế tiếp."
+      }
+    },
+    {
+      "id": "INSIGHT-04",
+      "category": "Logistics & Operational Excellence",
+      "title": "Tỷ lệ hoàn hàng đạt 4.75%, kiểm soát an toàn chi phí giao vận và giảm thiểu tổn thất",
+      "urgency": "HIGH",
+      "chain": {
+        "Observation": "Ghi nhận tỷ lệ hoàn trả/hủy đơn thực tế ở mức 4.75% trên tổng số giao dịch phát sinh.",
+        "Finding": "Tỷ lệ hoàn trả 4.75% cần được giám sát chặt chẽ để tránh suy hao dòng tiền thực thu.",
+        "Hypothesis": "Chất lượng hoàn tất đơn và thời gian vận chuyển quyết định trực tiếp tới tỷ lệ nhận hàng thành công của khách.",
+        "Conclusion": "Bảo toàn dòng tiền thực thu đòi hỏi duy trì khâu đóng gói chuẩn mực và kiểm soát chất lượng đối tác vận chuyển.",
+        "Action": "Siết chặt quy trình đóng gói và thiết lập cam kết SLA giao hàng COD nhanh chóng để duy trì tỷ lệ hoàn trả dưới ngưỡng 3.0%."
+      }
+    }
+  ],
+  "report_markdown": "# BÁO CÁO QUẢN TRỊ HIỆU QUẢ KINH DOANH (KỲ PHÂN TÍCH HIỆN TẠI)\n**Ban Lãnh Đạo & Khách Hàng – Mô hình: Doanh nghiệp (Thương mại & Dịch vụ)**\n*Phương pháp luận: Minto Pyramid Principle & Data-driven Decision Making*\n\n---\n\n## I. KẾT LUẬN ĐIỀU HÀNH TỐI CAO (GOVERNING THOUGHT)\n\n> **DOANH NGHIỆP DUY TRÌ TĂNG TRƯỞNG VỮNG CHẮC VỚI DOANH THU THUẦN 25,800,767,500 đ VÀ BIÊN LỢI NHUẬN GỘP 21.46% QUA 1,099 GIAO DỊCH. KÊNH 'Online Web' LÀ TRỤ CỘT DOANH SỐ CHÍNH (BIÊN LN 21.58%), KẾT HỢP VỚI DANH MỤC/SẢN PHẨM 'Laptops & PCs' LÀ ĐỘNG CƠ SINH LỜI SỐ 1. TOÀN BỘ CÔNG THỨC TOÁN HỌC ĐÃ ĐƯỢC XÁC THỰC MECE 100% VERIFY GATE.**\n\n---\n\n## II. BẢNG TỔNG QUAN CHỈ SỐ KPI ĐIỀU HÀNH CỐT LÕI\n\n| Chỉ số chiến lược | Kết quả Thực tế | Đánh giá Ý nghĩa Quản trị | Trạng thái |\n| :--- | :--- | :--- | :--- |\n| **Doanh thu thuần (Net Revenue)** | **25,800,767,500 đ** | Doanh số thực thu sau khi đã trừ toàn bộ chiết khấu | **ĐẠT (PASS)** |\n| **Biên lợi nhuận gộp (Gross Margin %)** | **21.46%** | Tỷ suất sinh lời sau khi trang trải chi phí giá vốn | **ĐẠT (PASS)** |\n| **Tổng số đơn hàng hoàn tất** | **1,099** | Khối lượng đơn hàng giao dịch thành công | **ĐẠT (PASS)** |\n| **Giá trị đơn hàng TB (AOV)** | **23,476,586 đ** | Quy mô giỏ hàng trung bình trên mỗi giao dịch | **ĐẠT (PASS)** |\n| **Tỷ lệ hoàn trả (Return Rate)** | **4.75%** | Tỷ lệ đơn giao thất bại hoặc khách hủy/hoàn hàng | **KIỂM SOÁT** |\n\n---\n\n## III. BA TRỤ CỘT LUẬN ĐIỂM CHIẾN LƯỢC & BẰNG CHỨNG THỰC TẾ\n\n### 1. Trụ cột 1: Hiệu quả Kênh Phân phối & Bảo toàn Biên Lợi nhuận\n- **Luận điểm**: Kênh 'Online Web' giữ vai trò dẫn dắt doanh số toàn hệ thống với biên lợi nhuận đạt 21.58%.\n- **Bằng chứng thực tế**:\n  - Tỷ trọng đóng góp dòng tiền lớn nhất trong tất cả các kênh phân phối đã ghi nhận.\n  - Biên lợi nhuận được bảo toàn ổn định nhờ chính sách giá và kiểm soát chiết khấu hiệu quả.\n\n### 2. Trụ cột 2: Cơ cấu Sản phẩm & Động lực Lợi nhuận Cốt lõi\n- **Luận điểm**: Mặt hàng/Danh mục 'Laptops & PCs' là cỗ máy tạo lợi nhuận quan trọng nhất của doanh nghiệp.\n- **Bằng chứng thực tế**:\n  - Đóng góp tỷ trọng lợi nhuận gộp vượt trội, giúp nâng đỡ biên lợi nhuận toàn công ty lên mức 21.46%.\n  - Khách hàng có xu hướng tiếp tục chọn mua và đánh giá cao chất lượng mặt hàng này.\n\n### 3. Trụ cột 3: Vận hành, Hoàn hàng & Trải nghiệm Mua sắm\n- **Luận điểm**: Tỷ lệ hoàn hủy ghi nhận ở mức 4.75%%, việc duy trì tốc độ giao nhận và đóng gói cẩn thận là chìa khóa bảo vệ dòng tiền.\n- **Bằng chứng thực tế**:\n  - Duy trì tỷ lệ hoàn hàng thấp giúp tiết kiệm chi phí vận chuyển đảo chiều và tối ưu hóa vòng quay hàng tồn kho.\n\n---\n\n## IV. CÁC INSIGHT CHIẾN LƯỢC NỔI BẬT\n\n- **Insight 1**: Kênh 'Online Web' dẫn đầu quy mô doanh thu (30.93% thị phần) và giữ vững biên lợi nhuận 21.58%\n  *Hành động*: Ưu tiên phân bổ nguồn lực vận hành vào kênh 'Online Web', đồng thời thiết lập trần chiết khấu để bảo vệ biên lợi nhuận gộp trên 20.0%.\n- **Insight 2**: Sản phẩm/Ngành hàng 'Laptops & PCs' là động lực tạo lợi nhuận then chốt với biên sinh lời 20.4%\n  *Hành động*: Đảm bảo an toàn chuỗi cung ứng cho 'Laptops & PCs', đóng gói các gói combo phụ kiện đi kèm để tiếp tục nâng cao giá trị đơn trung bình (23,476,586 đ).\n- **Insight 3**: Quy mô đơn hàng đạt 1,099 với AOV 23,476,586 đ, bảo toàn biên lợi nhuận gộp 21.46%\n  *Hành động*: Ứng dụng chính sách tích điểm và ưu đãi theo bậc giá trị đơn nhằm kích thích AOV vượt ngưỡng 23,476,586 đ trong kỳ kế tiếp.\n\n\n---\n\n## V. LỘ TRÌNH HÀNH ĐỘNG ƯU TIÊN (PRIORITIZED ACTION PLAN)\n\n1. **Hành động Ngay lập tức (Quick Wins)**:\n   - Tập trung nguồn lực bảo vệ lượng hàng hóa cho sản phẩm chủ lực 'Laptops & PCs'.\n   - Duy trì trần chiết khấu tại kênh 'Online Web' để giữ vững biên lợi nhuận 21.58%.\n2. **Hành động Trung hạn (Strategic Shifts)**:\n   - Triển khai gói combo bán kèm để tiếp tục gia tăng giá trị đơn hàng trung bình vượt mức 23,476,586 đ.\n   - Nâng cấp tiêu chuẩn đóng gói để giữ tỷ lệ hoàn hàng luôn dưới 3.0%.\n3. **Theo dõi Đo lường (Governance)**:\n   - Chỉ số dẫn dắt: Số lượng đơn hàng mới mỗi ngày, AOV trên kênh 'Online Web'.\n   - Chỉ số kết quả: Tổng doanh thu thuần thực thu, Biên lợi nhuận gộp toàn kỳ.\n",
+  "decision_support": {
+    "status": "SUCCESS",
+    "three_core_questions": {
+      "question_1_what_happened": {
+        "title": "1. What Happened? – Điều gì đã xảy ra?",
+        "summary": "Doanh nghiệp (Doanh nghiệp) ghi nhận doanh thu thuần thực thu đạt 25,800,767,500 đ qua 1,099 đơn hàng thành công, biên lợi nhuận gộp đạt 21.46%. Kênh 'Online Web' dẫn đầu dòng tiền và sản phẩm 'Laptops & PCs' tạo lợi nhuận tốt nhất.",
+        "key_facts": [
+          "Tổng doanh thu thuần thực thu đạt 25,800,767,500 đ, phản ánh quy mô kinh doanh thực tế.",
+          "Khối lượng giao dịch đạt 1,099 với giá trị đơn hàng trung bình (AOV) 23,476,586 đ.",
+          "Kênh 'Online Web' đóng góp lớn nhất với doanh số 7,980,967,400 đ và biên lợi nhuận 21.58%.",
+          "Sản phẩm/Danh mục 'Laptops & PCs' mang lại 2,636,086,900 đ lợi nhuận gộp cho toàn hệ thống."
+        ]
+      },
+      "question_2_why_did_it_happen": {
+        "title": "2. Why Did It Happen? – Tại sao điều đó xảy ra?",
+        "summary": "Các động lực cốt lõi (Root Causes) được xác định thông qua đối chiếu đa chiều trên tệp dữ liệu:",
+        "root_causes": [
+          {
+            "cause": "Kênh 'Online Web' dẫn đầu quy mô",
+            "driver": "Chính sách tiếp cận người dùng và trải nghiệm mua sắm trên kênh 'Online Web' tạo ra lưu lượng khách hàng lớn và tỷ lệ chuyển đổi cao."
+          },
+          {
+            "cause": "Sản phẩm 'Laptops & PCs' là cỗ máy tạo lợi nhuận",
+            "driver": "Định vị giá trị sản phẩm tốt, kiểm soát được chi phí giá vốn (COGS) giúp bảo toàn biên lợi nhuận cao."
+          },
+          {
+            "cause": "Biên lợi nhuận gộp đạt 21.46%",
+            "driver": "Chính sách trợ giá và chiết khấu được kiểm soát chặt chẽ, không bị xói mòn bởi các chương trình khuyến mại dàn trải."
+          },
+          {
+            "cause": "Tỷ lệ hoàn trả ghi nhận ở mức 4.75%",
+            "driver": "Khâu kiểm soát đơn hàng và chất lượng giao nhận được duy trì trong ngưỡng cho phép."
+          }
+        ]
+      },
+      "question_3_what_should_we_do": {
+        "title": "3. What Should We Do? – Doanh nghiệp nên làm gì tiếp theo?",
+        "summary": "Lộ trình hành động được sắp xếp theo Ma trận Tác động - Nỗ lực (Impact vs Effort Matrix):",
+        "action_initiatives": [
+          {
+            "id": "ACT-01",
+            "initiative": "Tập trung đầu tư nguồn lực tiếp thị vào kênh dẫn đầu 'Online Web'",
+            "category": "Quick Win (Tác động Cao - Nỗ lực Thấp)",
+            "impact": "HIGH",
+            "effort": "LOW",
+            "expected_outcome": "Bảo vệ thị phần kênh 'Online Web', duy trì biên lợi nhuận gộp trên 20.0%.",
+            "timeline": "Trong vòng 7 ngày tới"
+          },
+          {
+            "id": "ACT-02",
+            "initiative": "Bảo đảm chuỗi cung ứng không đứt đoạn cho mặt hàng 'Laptops & PCs'",
+            "category": "Quick Win (Tác động Cao - Nỗ lực Thấp)",
+            "impact": "HIGH",
+            "effort": "LOW",
+            "expected_outcome": "Duy trì nguồn cung ổn định cho cỗ máy sinh lời chính, kết hợp đóng gói combo để tăng AOV.",
+            "timeline": "Trong vòng 14 ngày tới"
+          },
+          {
+            "id": "ACT-03",
+            "initiative": "Thiết lập cơ chế kiểm soát chiết khấu và tối ưu giá vốn bán hàng",
+            "category": "Strategic Fix (Tác động Cao - Nỗ lực Trung bình)",
+            "impact": "HIGH",
+            "effort": "MEDIUM",
+            "expected_outcome": "Giữ vững biên lợi nhuận gộp toàn hệ thống trên mức sàn an toàn (21.46%).",
+            "timeline": "Trong vòng 30 ngày tới"
+          },
+          {
+            "id": "ACT-04",
+            "initiative": "Nâng cấp trải nghiệm khách hàng và mở rộng các kênh phân phối tiềm năng",
+            "category": "Major Project (Tác động Cao - Nỗ lực Cao)",
+            "impact": "HIGH",
+            "effort": "HIGH",
+            "expected_outcome": "Gia tăng tỷ lệ khách hàng mua lại và mở rộng quy mô doanh thu bền vững.",
+            "timeline": "Kỳ kinh doanh tiếp theo"
+          }
+        ]
+      }
+    },
+    "governance_framework": {
+      "leading_indicators": [
+        {
+          "kpi": "Doanh thu thuần mỗi kỳ từ kênh 'Online Web'",
+          "target": "Tăng trưởng >= 15%"
+        },
+        {
+          "kpi": "Sản lượng tiêu thụ sản phẩm 'Laptops & PCs'",
+          "target": "Duy trì tỷ trọng dẫn đầu"
+        },
+        {
+          "kpi": "Tỷ lệ đơn hàng giao thành công",
+          "target": "> 95%"
+        }
+      ],
+      "lagging_indicators": [
+        {
+          "kpi": "Tổng Doanh thu thuần (Net Revenue)",
+          "target": "> 25,800,767,500 đ"
+        },
+        {
+          "kpi": "Biên lợi nhuận gộp (Gross Margin %)",
+          "target": ">= 21.46%"
+        },
+        {
+          "kpi": "Tỷ lệ đơn hàng hoàn trả (Return Rate %)",
+          "target": "< 3.0%"
+        }
+      ]
+    }
+  }
+}

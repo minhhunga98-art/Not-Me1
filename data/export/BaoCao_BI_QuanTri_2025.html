@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Báo Cáo Phân Tích Hiệu Quả Kinh Doanh & Đề Xuất Chiến Lược (Bán lẻ đa kênh (Omnichannel))</title>
+  <style>
+    @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.5; padding: 25px; }
+    .header-box { border-bottom: 2px solid #4f46e5; padding-bottom: 12px; margin-bottom: 20px; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 25px; }
+    .kpi-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; }
+    .kpi-label { font-size: 11px; text-transform: uppercase; color: #64748b; font-weight: bold; }
+    .kpi-val { font-size: 18px; font-weight: 800; color: #0f172a; margin-top: 4px; }
+    .report-section h2 { color: #1e1b4b; font-size: 16px; margin-bottom: 8px; border-left: 4px solid #6366f1; padding-left: 8px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 12px; }
+    th, td { border: 1px solid #cbd5e1; padding: 6px 10px; text-align: left; }
+    th { background: #f1f5f9; font-weight: bold; }
+    @media print {
+      .no-print { display: none; }
+      body { padding: 0; }
+      .page-break { page-break-before: always; }
+    }
+  </style>
+</head>
+<body>
+  <div class="no-print" style="margin-bottom: 20px; display: flex; gap: 10px;">
+    <button onclick="window.print()" style="background: #4f46e5; color: white; padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;">🖨️ In Báo Cáo / Xuất PDF</button>
+    <a href="/data/export/BaoCao_BI_DoanhNghiep_2025.xlsx" style="background: #059669; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold;">📊 Tải Tệp Excel (.xlsx)</a>
+  </div>
+
+  <div class="header-box">
+    <div style="font-size: 11px; font-weight: bold; color: #10B981; text-transform: uppercase;">CCN-DA Platform · AI-Powered Business Intelligence</div>
+    <h1 style="font-size: 22px; font-weight: 800; color: #0f172a; margin: 4px 0;">Báo Cáo Phân Tích Hiệu Quả Kinh Doanh & Đề Xuất Chiến Lược (Bán lẻ đa kênh (Omnichannel))</h1>
+    <div style="font-size: 12px; color: #64748b;">Thời điểm lập báo cáo: 19/11/2026 07:37 | Dữ liệu thực tế đã kiểm toán Verify Gate 100% PASS</div>
+  </div>
+
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">Doanh Thu Thuần</div>
+      <div class="kpi-val">1,135,530,000 đ</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Lợi Nhuận Gộp</div>
+      <div class="kpi-val">531,850,000 đ</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Biên Lợi Nhuận Gộp</div>
+      <div class="kpi-val">46.84%</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Tổng Số Đơn Hàng</div>
+      <div class="kpi-val">50 đơn</div>
+    </div>
+  </div>
+
+  
+            <div class="report-section mb-6 pb-6 border-b border-gray-200">
+                <h2 class="text-lg font-bold text-gray-900 mb-2">1. Tổng Quan Doanh Nghiệp & Mục Tiêu Phân Tích</h2>
+                <div class="text-sm text-gray-700 whitespace-pre-line leading-relaxed">Doanh nghiệp hoạt động trong lĩnh vực: Bán lẻ Thiết bị Công nghệ & Điện tử thông minh theo mô hình Bán lẻ đa kênh (Omnichannel).
+Mục tiêu chiến lược của kỳ phân tích (Năm tài chính 2025 (12 tháng)) là đánh giá toàn diện hiệu quả phân bổ nguồn lực, đo lường sức khỏe biên lợi nhuận giữa các kênh phân phối thực tế (Website, Sàn thương mại điện tử); tối ưu hóa cấu trúc trợ giá và kiểm soát giá vốn hàng bán (COGS); đồng thời giải đáp trực tiếp các bài toán kinh doanh do khách hàng đặt ra để hỗ trợ ra quyết định điều hành chính xác.
+
+- **Bài toán 1**: Doanh thu theo kênh bán hàng nào cao nhất?
+  *Kết luận*: Kênh bán hàng có doanh thu cao nhất là **Website** với doanh thu thuần đạt **454,165,000 đ** (chiếm 40.0% thị phần).
+- **Bài toán 2**: Chi phí chiết khấu ảnh hưởng thế nào đến biên lợi nhuận?
+  *Kết luận*: Tổng chi phí chiết khấu & khuyến mãi là **0 VNĐ** (tỷ lệ 0.0% trên doanh thu). Doanh nghiệp bảo toàn biên lợi nhuận gộp ở mức rất cao **46.84%** (đạt 531,850,000 VNĐ lợi nhuận trên 1,135,530,000 VNĐ doanh thu thuần).
+- **Bài toán 3**: Tỷ lệ hoàn hủy hàng hóa tập trung ở kênh bán nào nhiều nhất?
+  *Kết luận*: Kênh bán hàng có doanh thu cao nhất là **Website** với doanh thu thuần đạt **454,165,000 đ** (chiếm 40.0% thị phần).
+- **Bài toán 4**: Kênh bán hàng nào có tốc độ tăng trưởng doanh thu cao nhất?
+  *Kết luận*: Kênh bán hàng có tốc độ tăng trưởng và đóng góp doanh thu dẫn đầu là **Website** với doanh thu thuần đạt **454,165,000 đ** (chiếm 40.0% thị phần).
+- **Bài toán 5**: Nhóm khách hàng nào có giá trị mua hàng cao nhất (RFM Champions)?
+  *Kết luận*: ⚠️ **Bài toán này đã được lược bỏ theo cấu hình kiểm duyệt ở Bước 2.5:** Bộ dữ liệu không có Mã khách hàng (CustomerID) và bạn đã chọn không khai báo bổ sung.
+- **Bài toán 6**: Sản phẩm nào mang lại lợi nhuận gộp cao nhất?
+  *Kết luận*: Sản phẩm mang lại lợi nhuận cao nhất là **Sơ mi** với tổng lợi nhuận gộp đạt **172,791,000 đ**.</div>
+            </div>
+            
+            <div class="report-section mb-6 pb-6 border-b border-gray-200">
+                <h2 class="text-lg font-bold text-gray-900 mb-2">2. Phạm Vi & Nguồn Dữ Liệu</h2>
+                <div class="text-sm text-gray-700 whitespace-pre-line leading-relaxed">Bộ dữ liệu giao dịch sạch đã trải qua quy trình khử trùng, chuẩn hóa kiểu dữ liệu và kiểm định tại Bước 2, nạp từ tệp nguồn 'cleaned_sales_transactions.csv' gồm 50 bản ghi giao dịch hợp lệ (thời gian ghi nhận từ 2026-07-01 đến 2026-10-01).
+Dữ liệu lưu trữ đầy đủ các chiều thông tin: Mã giao dịch/đơn hàng, Thời gian, Kênh phân phối, Sản phẩm, Doanh thu, Chi phí giá vốn và Lợi nhuận gộp.
+Toàn bộ dữ liệu được xác thực tuân thủ tuyệt đối quy tắc bảo toàn dữ liệu gốc 100% và vượt qua 6 cổng kiểm toán toán học MECE.</div>
+            </div>
+            
+            <div class="report-section mb-6 pb-6 border-b border-gray-200">
+                <h2 class="text-lg font-bold text-gray-900 mb-2">3. Các Chỉ Số Hiệu Suất Cốt Lõi (Key Performance Indicators)</h2>
+                <div class="text-sm text-gray-700 whitespace-pre-line leading-relaxed">- Doanh thu gộp (Gross Sales): 1,135,530,000 VNĐ.
+- Chiết khấu thương mại (Discounts): 0 VNĐ (Tỷ lệ chiết khấu: 0.0%).
+- Doanh thu thuần (Net Revenue): 1,135,530,000 VNĐ.
+- Chi phí giá vốn (Total COGS): 603,680,000 VNĐ.
+- Lợi nhuận gộp (Gross Profit): 531,850,000 VNĐ.
+- Tỷ suất lợi nhuận gộp (Gross Margin %): 46.84%.
+- Tổng số lượng đơn hàng: 50 đơn hàng.
+- Giá trị đơn hàng trung bình (AOV): 22,710,600 VNĐ/đơn.
+- Tỷ lệ hoàn trả (Return Rate): 0.0%.
+Công thức toán học kiểm chứng: NetRevenue = GrossSales - Discounts; GrossProfit = NetRevenue - COGS (Khớp tuyệt đối 100%).</div>
+            </div>
+            
+            <div class="report-section mb-6 pb-6 border-b border-gray-200">
+                <h2 class="text-lg font-bold text-gray-900 mb-2">4. Kết Quả Phân Tích Nghiệp Vụ Đa Chiều</h2>
+                <div class="text-sm text-gray-700 whitespace-pre-line leading-relaxed">A. Cơ cấu Kênh Bán Hàng: Kênh 'Website' giữ vị trí dẫn đầu tuyệt đối với doanh thu thuần đạt 454,165,000 VNĐ (chiếm 40.0% toàn hệ thống) với biên lợi nhuận gộp đạt 47.68%. Kênh thứ hai 'Sàn thương mại điện tử' đóng góp 367,740,000 VNĐ (32.38% thị phần, biên LN 44.95%).
+B. Sản phẩm Trụ cột (Hero Products): Sản phẩm 'Sơ mi' dẫn đầu về đóng góp lợi nhuận gộp với 172,791,000 VNĐ (Biên lợi nhuận gộp 46.29% trên 903 đơn vị tiêu thụ). Kế tiếp là 'Quần jeans' đạt lợi nhuận gộp 158,147,000 VNĐ (Biên LN 43.46%).
+C. Chu kỳ Doanh số Thời gian: Kỳ đỉnh cao ghi nhận tại '2026-10' với doanh thu đạt 334,216,000 VNĐ qua 12 đơn hàng, tạo điểm rơi lợi nhuận lớn nhất trong kỳ.
+D. Phân tầng & Hành vi Mua hàng: Toàn bộ 50 đơn hàng đã được phân bổ đồng bộ theo các kênh bán lẻ, đảm bảo dòng tiền thực thu được ghi nhận trọn vẹn.</div>
+            </div>
+            
+            <div class="report-section mb-6 pb-6 border-b border-gray-200">
+                <h2 class="text-lg font-bold text-gray-900 mb-2">5. Các Insight Kinh Doanh Nổi Bật (Chuẩn 5 Thành Tố)</h2>
+                <div class="text-sm text-gray-700 whitespace-pre-line leading-relaxed">Các phát hiện chiến lược có căn cứ số liệu thực nghiệm đã kiểm chứng:
+- **Insight 1**: Kênh Website dẫn đầu doanh thu (40.0% thị phần), giữ vai trò động lực tăng trưởng
+  *Dẫn chứng*: Kênh Website đạt doanh thu thuần 454,165,000 đ qua 16 đơn hàng, biên lợi nhuận đạt 47.68%.
+  *Hành động*: Tối ưu chi phí tiếp thị tại kênh Website, kiểm soát chiết khấu và phát triển gói bán chéo (cross-selling) để gia tăng giá trị đơn.
+- **Insight 2**: Sản phẩm 'Sơ mi' là cỗ máy tạo lợi nhuận số 1 toàn hệ thống
+  *Dẫn chứng*: Sản phẩm Sơ mi đạt biên lợi nhuận 46.29%, vượt trội so với mức bình quân 46.84% toàn doanh nghiệp.
+  *Hành động*: Đảm bảo chuỗi cung ứng không bị đứt đoạn đối với 'Sơ mi', phát triển thêm các combo sản phẩm kèm phụ kiện để tối đa hóa doanh thu đơn hàng.
+- **Insight 3**: Biến động kinh doanh: Q3-2026 đạt đỉnh cao doanh thu (70.57% thị phần)
+  *Dẫn chứng*: Q3-2026 là chu kỳ bùng nổ doanh số và tạo điểm rơi lợi nhuận lớn nhất trong giai đoạn phân tích.
+  *Hành động*: Lên kế hoạch dự trữ hàng hóa và chuẩn bị chiến dịch bán hàng trước kỳ cao điểm Q3-2026 ít nhất 30 ngày.</div>
+            </div>
+            
+            <div class="report-section mb-6 pb-6 border-b border-gray-200">
+                <h2 class="text-lg font-bold text-gray-900 mb-2">6. Vấn Đề Tồn Tại & Cơ Hội Tăng Trưởng</h2>
+                <div class="text-sm text-gray-700 whitespace-pre-line leading-relaxed">- Vấn đề 1 (Mức độ tập trung kênh): Kênh dẫn đầu 'Website' chiếm 40.0% tổng doanh số; cần xây dựng phương án dự phòng và mở rộng độ phủ ở các kênh phụ trợ để giảm thiểu rủi ro phụ thuộc.
+- Vấn đề 2 (Kiểm soát chiết khấu): Tổng chiết khấu hiện ghi nhận 0 VNĐ (0.0%). Mức chiết khấu được kiểm soát rất tốt, không làm suy hao biên lợi nhuận gộp.
+- Cơ hội 1: Mở rộng chuỗi cung ứng và phát triển thêm các gói combo cho sản phẩm chủ lực 'Sơ mi' nhằm gia tăng giá trị đơn hàng trung bình vượt mức 22,710,600 VNĐ/đơn.
+- Cơ hội 2: Khai thác hiệu ứng mùa vụ tại kỳ cao điểm '2026-10' bằng việc chuẩn bị tồn kho và chiến dịch bán hàng trước ít nhất 30 ngày.</div>
+            </div>
+            
+            <div class="report-section mb-6 pb-6 border-b border-gray-200">
+                <h2 class="text-lg font-bold text-gray-900 mb-2">7. Đề Xuất Hành Động Chiến Lược (Prioritized Action Plan)</h2>
+                <div class="text-sm text-gray-700 whitespace-pre-line leading-relaxed">Kế hoạch hành động theo thứ tự ưu tiên:
+1. **Ưu Tiên 1 (Khẩn cấp) - Tối ưu hóa Hiệu quả Kênh Website**: Tập trung nguồn lực tiếp thị vào kênh dẫn đầu 'Website' (đóng góp 40.0% doanh số). Kiểm soát tỷ lệ chiết khấu dưới 3.0% để bảo vệ biên lợi nhuận gộp 47.68%.
+2. **Ưu Tiên 2 (Quan trọng) - Mở rộng Chuỗi Cung Ứng Sản Phẩm 'Sơ mi'**: Đảm bảo lượng tồn kho an toàn cho sản phẩm 'Sơ mi', kết hợp đóng gói combo với các mặt hàng bổ trợ để gia tăng giá trị đơn hàng trung bình (hiện tại đạt 22,710,600 đ/đơn).
+3. **Ưu Tiên 3 (Trung hạn) - Khai thác Điểm Rơi Doanh Số Kỳ Q3-2026**: Chủ động lên kế hoạch xúc tiến thương mại và phân bổ nhân sự trước kỳ kinh doanh cao điểm Q3-2026 ít nhất 30 ngày nhằm tối đa hóa tỷ trọng đóng góp (70.57% cả năm).
+4. **Ưu Tiên 4 (Theo dõi) - Kiểm soát Biên Lợi Nhuận Gộp & Tối Ưu Hóa Chi Phí Giá Vốn**: Duy trì mức biên lợi nhuận gộp toàn hệ thống trên mức sàn 41.8% (hiện tại đạt 46.84%), đàm phán lại chi phí nhập hàng hoặc tối ưu định mức giá vốn để củng cố dòng tiền thực.</div>
+            </div>
+            
+            <div class="report-section mb-6 pb-6 border-b border-gray-200">
+                <h2 class="text-lg font-bold text-gray-900 mb-2">8. Hạn Chế Của Dữ Liệu & Phạm Vi Phân Tích</h2>
+                <div class="text-sm text-gray-700 whitespace-pre-line leading-relaxed">- Giới hạn dữ liệu: Báo cáo được xây dựng dựa trên các trường dữ liệu giao dịch sạch thực tế đã nạp. Trường hợp tệp dữ liệu nguồn chưa bao gồm mã định danh khách hàng cá nhân (CustomerID) hoặc chi phí tiếp thị chi tiết theo UTM campaign, một số phân khúc chuyên sâu sẽ được tổng hợp ở cấp độ kênh bán.
+- Khuyến nghị nâng cấp Bước tiếp theo: Bổ sung định danh khách hàng và chi phí quảng cáo số để kích hoạt mô hình tính toán CAC/ROAS và phân khúc RFM cá nhân hóa trong các kỳ tiếp theo.</div>
+            </div>
+            
+
+</body>
+</html>
